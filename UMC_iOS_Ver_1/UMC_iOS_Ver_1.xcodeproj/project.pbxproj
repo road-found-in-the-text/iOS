@@ -112,6 +112,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21C06D7C296C581F00E205E2 /* HomeModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = HomeModel;
+			sourceTree = "<group>";
+		};
+		21C06D7D296C583100E205E2 /* HomeView */ = {
+			isa = PBXGroup;
+			children = (
+				5E32FC17296955910010A376 /* Main.storyboard */,
+			);
+			path = HomeView;
+			sourceTree = "<group>";
+		};
+		21C06D7E296C583F00E205E2 /* HomeController */ = {
+			isa = PBXGroup;
+			children = (
+				5E32FC15296955910010A376 /* HomeViewController.swift */,
+			);
+			path = HomeController;
+			sourceTree = "<group>";
+		};
 		5E32FC05296955910010A376 = {
 			isa = PBXGroup;
 			children = (
@@ -220,8 +243,9 @@
 		5E32FC5E296958F10010A376 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				5E32FC15296955910010A376 /* HomeViewController.swift */,
-				5E32FC17296955910010A376 /* Main.storyboard */,
+				21C06D7E296C583F00E205E2 /* HomeController */,
+				21C06D7D296C583100E205E2 /* HomeView */,
+				21C06D7C296C581F00E205E2 /* HomeModel */,
 			);
 			path = Home;
 			sourceTree = "<group>";
