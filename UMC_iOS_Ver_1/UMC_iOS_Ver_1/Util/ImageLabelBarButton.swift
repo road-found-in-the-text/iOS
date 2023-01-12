@@ -65,8 +65,8 @@ class ImageLabelBarButton: TMBarButton {
         } else {
             UIView.transition(with: self, duration: 0.25, options: .transitionCrossDissolve, animations: {
                 self.label.font = UIFont.systemFont(ofSize: 14)
-                self.label.textColor = .systemGray4
-                self.imageView.setImageColor(color: .systemGray4)
+                self.label.textColor = UIColor(named: "Sub2")
+                self.imageView.setImageColor(color: UIColor(named: "Sub2") ?? UIColor())
             }, completion: nil)
         }
     }

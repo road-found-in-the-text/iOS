@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -25,7 +26,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="성장해 있는 자신을 만나볼 수 있습니다:-)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXk-PE-KZf">
                                 <rect key="frame" x="16" y="104.33333333333333" width="361" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" name="Sub1"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRK-LU-mLY">
@@ -54,7 +55,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpB-Da-Gbr">
                                                 <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
-                                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                <color key="backgroundColor" name="Sub4"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="36" id="Bgj-68-MH6"/>
                                                     <constraint firstAttribute="height" constant="36" id="NnI-kA-dhq"/>
@@ -63,7 +64,7 @@
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleColor" name="Sub2"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="touchFirstAnswerButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Obg-sd-wFH"/>
@@ -71,7 +72,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lR1-U1-fe7">
                                                 <rect key="frame" x="56" y="0.0" width="36" height="36"/>
-                                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                <color key="backgroundColor" name="Sub4"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="36" id="0Fs-iy-3ZT"/>
                                                     <constraint firstAttribute="height" constant="36" id="caY-VZ-7XN"/>
@@ -80,7 +81,7 @@
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="2">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleColor" name="Sub2"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="touchFirstAnswerButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="0AC-Np-w8I"/>
@@ -88,7 +89,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNB-Tt-YLc">
                                                 <rect key="frame" x="112" y="0.0" width="36" height="36"/>
-                                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                <color key="backgroundColor" name="Sub4"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="36" id="6mB-GH-1w0"/>
                                                     <constraint firstAttribute="height" constant="36" id="ycD-x6-OfD"/>
@@ -97,7 +98,7 @@
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="3">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleColor" name="Sub2"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="touchFirstAnswerButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="vJS-gI-9UK"/>
@@ -105,7 +106,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqB-LQ-0G2">
                                                 <rect key="frame" x="168" y="0.0" width="36" height="36"/>
-                                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                <color key="backgroundColor" name="Sub4"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="AdD-k8-eJt"/>
                                                     <constraint firstAttribute="width" constant="36" id="rHk-zV-WaL"/>
@@ -114,7 +115,7 @@
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="4">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleColor" name="Sub2"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="touchFirstAnswerButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="QVD-hy-KW0"/>
@@ -122,7 +123,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmD-WC-PEL">
                                                 <rect key="frame" x="224" y="0.0" width="36" height="36"/>
-                                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                <color key="backgroundColor" name="Sub4"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="36" id="TL8-iJ-S4N"/>
                                                     <constraint firstAttribute="height" constant="36" id="dVX-gc-KfD"/>
@@ -131,7 +132,7 @@
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="5">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleColor" name="Sub2"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="touchFirstAnswerButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Hep-sx-DTl"/>
@@ -155,7 +156,7 @@
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSP-ch-Vv2">
                                                 <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
-                                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                <color key="backgroundColor" name="Sub4"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="fGF-PP-Oyu"/>
                                                     <constraint firstAttribute="width" constant="36" id="wSy-r4-ERy"/>
@@ -164,7 +165,7 @@
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="1">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleColor" name="Sub2"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="touchSecondAnswerButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="wnx-Sy-Wk9"/>
@@ -172,7 +173,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dht-8q-yJp">
                                                 <rect key="frame" x="56" y="0.0" width="36" height="36"/>
-                                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                <color key="backgroundColor" name="Sub4"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="36" id="4ip-Qq-anA"/>
                                                     <constraint firstAttribute="height" constant="36" id="WHC-l3-4cH"/>
@@ -181,7 +182,7 @@
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="2">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleColor" name="Sub2"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="touchSecondAnswerButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="rTu-R1-91B"/>
@@ -189,7 +190,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRY-WA-6cJ">
                                                 <rect key="frame" x="112" y="0.0" width="36" height="36"/>
-                                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                <color key="backgroundColor" name="Sub4"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="36" id="Gh3-sz-EaK"/>
                                                     <constraint firstAttribute="height" constant="36" id="Mhq-ha-Zch"/>
@@ -198,7 +199,7 @@
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="3">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleColor" name="Sub2"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="touchSecondAnswerButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Jsm-ax-OeH"/>
@@ -206,7 +207,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4Y-fZ-lLO">
                                                 <rect key="frame" x="168" y="0.0" width="36" height="36"/>
-                                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                <color key="backgroundColor" name="Sub4"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="36" id="DQO-nq-Lmr"/>
                                                     <constraint firstAttribute="height" constant="36" id="cSm-B5-106"/>
@@ -215,7 +216,7 @@
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="4">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleColor" name="Sub2"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="touchSecondAnswerButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="hQH-gD-ZsT"/>
@@ -223,7 +224,7 @@
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nk3-Kw-JWg">
                                                 <rect key="frame" x="224" y="0.0" width="36" height="36"/>
-                                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                                <color key="backgroundColor" name="Sub4"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="36" id="42G-fN-csZ"/>
                                                     <constraint firstAttribute="height" constant="36" id="brI-u5-Ioj"/>
@@ -232,7 +233,7 @@
                                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                                 <state key="normal" title="5">
-                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="titleColor" name="Sub2"/>
                                                 </state>
                                                 <connections>
                                                     <action selector="touchSecondAnswerButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="8dV-r4-Uwv"/>
@@ -247,8 +248,8 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQM-LX-KMW">
                                         <rect key="frame" x="0.0" y="0.0" width="173" height="50"/>
-                                        <color key="backgroundColor" systemColor="systemGray4Color"/>
-                                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" name="Sub4"/>
+                                        <color key="tintColor" name="Sub2"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="건너뛰기">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
@@ -318,11 +319,17 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="Sub1">
+            <color red="0.32156862745098042" green="0.38039215686274508" blue="0.41568627450980394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Sub2">
+            <color red="0.67843137254901964" green="0.70980392156862748" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Sub4">
+            <color red="0.94117647058823528" green="0.96078431372549022" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemGray4Color">
-            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
