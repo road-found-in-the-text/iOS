@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		216023A429708131009DA16E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 216023A329708131009DA16E /* Home.storyboard */; };
+		218DA9052970847F00D76C03 /* BestForumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218DA9032970847F00D76C03 /* BestForumCollectionViewCell.swift */; };
+		218DA9062970847F00D76C03 /* BestForumCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 218DA9042970847F00D76C03 /* BestForumCollectionViewCell.xib */; };
+		218DA908297084A700D76C03 /* BestForumDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218DA907297084A700D76C03 /* BestForumDataModel.swift */; };
+		218DA90D297084B200D76C03 /* ForumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 218DA909297084B200D76C03 /* ForumTableViewCell.xib */; };
+		218DA90E297084B200D76C03 /* BestForumTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 218DA90A297084B200D76C03 /* BestForumTableViewCell.xib */; };
+		218DA90F297084B200D76C03 /* ForumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218DA90B297084B200D76C03 /* ForumTableViewCell.swift */; };
+		218DA910297084B200D76C03 /* BestForumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218DA90C297084B200D76C03 /* BestForumTableViewCell.swift */; };
 		5E32FC12296955910010A376 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32FC11296955910010A376 /* AppDelegate.swift */; };
 		5E32FC14296955910010A376 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32FC13296955910010A376 /* SceneDelegate.swift */; };
 		5E32FC16296955910010A376 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32FC15296955910010A376 /* HomeViewController.swift */; };
@@ -54,6 +62,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		216023A329708131009DA16E /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		218DA9032970847F00D76C03 /* BestForumCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BestForumCollectionViewCell.swift; sourceTree = "<group>"; };
+		218DA9042970847F00D76C03 /* BestForumCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BestForumCollectionViewCell.xib; sourceTree = "<group>"; };
+		218DA907297084A700D76C03 /* BestForumDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BestForumDataModel.swift; sourceTree = "<group>"; };
+		218DA909297084B200D76C03 /* ForumTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ForumTableViewCell.xib; sourceTree = "<group>"; };
+		218DA90A297084B200D76C03 /* BestForumTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BestForumTableViewCell.xib; sourceTree = "<group>"; };
+		218DA90B297084B200D76C03 /* ForumTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumTableViewCell.swift; sourceTree = "<group>"; };
+		218DA90C297084B200D76C03 /* BestForumTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BestForumTableViewCell.swift; sourceTree = "<group>"; };
 		5E32FC0E296955910010A376 /* UMC_iOS_Ver_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UMC_iOS_Ver_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E32FC11296955910010A376 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E32FC13296955910010A376 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -115,6 +131,7 @@
 		21C06D7C296C581F00E205E2 /* HomeModel */ = {
 			isa = PBXGroup;
 			children = (
+				218DA907297084A700D76C03 /* BestForumDataModel.swift */,
 			);
 			path = HomeModel;
 			sourceTree = "<group>";
@@ -123,6 +140,13 @@
 			isa = PBXGroup;
 			children = (
 				5E32FC17296955910010A376 /* Main.storyboard */,
+				216023A329708131009DA16E /* Home.storyboard */,
+				218DA9032970847F00D76C03 /* BestForumCollectionViewCell.swift */,
+				218DA9042970847F00D76C03 /* BestForumCollectionViewCell.xib */,
+				218DA90C297084B200D76C03 /* BestForumTableViewCell.swift */,
+				218DA90A297084B200D76C03 /* BestForumTableViewCell.xib */,
+				218DA90B297084B200D76C03 /* ForumTableViewCell.swift */,
+				218DA909297084B200D76C03 /* ForumTableViewCell.xib */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -381,11 +405,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				218DA90D297084B200D76C03 /* ForumTableViewCell.xib in Resources */,
+				218DA90E297084B200D76C03 /* BestForumTableViewCell.xib in Resources */,
+				216023A429708131009DA16E /* Home.storyboard in Resources */,
 				5E32FC6329695CF20010A376 /* ScriptPractice.storyboard in Resources */,
 				5E32FC6729695D060010A376 /* MyPage.storyboard in Resources */,
 				5E32FC1E296955930010A376 /* LaunchScreen.storyboard in Resources */,
 				5E32FC1B296955930010A376 /* Assets.xcassets in Resources */,
 				5E32FC6529695CFC0010A376 /* InterviewPractice.storyboard in Resources */,
+				218DA9062970847F00D76C03 /* BestForumCollectionViewCell.xib in Resources */,
 				5E32FC19296955910010A376 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,19 +442,23 @@
 				5E32FC16296955910010A376 /* HomeViewController.swift in Sources */,
 				5E32FC6D29695DFF0010A376 /* MyPageViewController.swift in Sources */,
 				5E32FC4D296957030010A376 /* UIColor.swift in Sources */,
+				218DA910297084B200D76C03 /* BestForumTableViewCell.swift in Sources */,
 				5E32FC4B296956EB0010A376 /* Date.swift in Sources */,
 				5E32FC552969576A0010A376 /* UIViewController.swift in Sources */,
 				5E32FC57296957840010A376 /* UIImageView.swift in Sources */,
 				5E32FC51296957350010A376 /* String.swift in Sources */,
 				5E32FC12296955910010A376 /* AppDelegate.swift in Sources */,
 				5E32FC532969574E0010A376 /* UIButton.swift in Sources */,
+				218DA90F297084B200D76C03 /* ForumTableViewCell.swift in Sources */,
 				5E32FC14296955910010A376 /* SceneDelegate.swift in Sources */,
 				5E32FC5B296957BB0010A376 /* UITextField.swift in Sources */,
 				5E32FC592969579B0010A376 /* UIFont.swift in Sources */,
 				5E32FC45296956470010A376 /* Constant.swift in Sources */,
+				218DA9052970847F00D76C03 /* BestForumCollectionViewCell.swift in Sources */,
 				5E32FC6929695DE90010A376 /* ScriptPracticeViewController.swift in Sources */,
 				5E32FC48296956A40010A376 /* IndicatorView.swift in Sources */,
 				5E32FC6B29695DF60010A376 /* InterviewPracticeViewController.swift in Sources */,
+				218DA908297084A700D76C03 /* BestForumDataModel.swift in Sources */,
 				5E32FC4F296957170010A376 /* CustomSegmentedControl.swift in Sources */,
 				5E32FC5D296957CE0010A376 /* CustomTextField.swift in Sources */,
 			);
