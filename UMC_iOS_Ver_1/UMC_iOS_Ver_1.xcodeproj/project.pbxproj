@@ -41,6 +41,8 @@
 		89C31EE7296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C31EE6296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift */; };
 		89C31EE9296DD8CB00CBF249 /* ImageLabelBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C31EE8296DD8CB00CBF249 /* ImageLabelBarButton.swift */; };
 		89CD521B29744C1300E1F424 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 89CD521A29744C1300E1F424 /* Charts */; };
+		89CD521E29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CD521D29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard */; };
+		89CD522029744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD521F29744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +99,8 @@
 		89C31EE4296DBDD000CBF249 /* ScriptPracticeRecord.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeRecord.storyboard; sourceTree = "<group>"; };
 		89C31EE6296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeRecordViewController.swift; sourceTree = "<group>"; };
 		89C31EE8296DD8CB00CBF249 /* ImageLabelBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLabelBarButton.swift; sourceTree = "<group>"; };
+		89CD521D29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeRecordResult.storyboard; sourceTree = "<group>"; };
+		89CD521F29744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeRecordResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -262,6 +266,7 @@
 		5E32FC6129695CA20010A376 /* ScriptPractice */ = {
 			isa = PBXGroup;
 			children = (
+				89CD521C29744CA100E1F424 /* ScriptPracticeRecordResult */,
 				89C31EE3296DBDC300CBF249 /* ScriptPracticeRecord */,
 				89028EC0296C6B2A00B28DB7 /* ScriptEdit */,
 				5E32FC6229695CF20010A376 /* ScriptPractice.storyboard */,
@@ -286,6 +291,15 @@
 				89C31EE6296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift */,
 			);
 			path = ScriptPracticeRecord;
+			sourceTree = "<group>";
+		};
+		89CD521C29744CA100E1F424 /* ScriptPracticeRecordResult */ = {
+			isa = PBXGroup;
+			children = (
+				89CD521D29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard */,
+				89CD521F29744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift */,
+			);
+			path = ScriptPracticeRecordResult;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -405,6 +419,7 @@
 				5E32FC6329695CF20010A376 /* ScriptPractice.storyboard in Resources */,
 				5E32FC6729695D060010A376 /* MyPage.storyboard in Resources */,
 				5E32FC1E296955930010A376 /* LaunchScreen.storyboard in Resources */,
+				89CD521E29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard in Resources */,
 				5E32FC1B296955930010A376 /* Assets.xcassets in Resources */,
 				5E32FC6529695CFC0010A376 /* InterviewPractice.storyboard in Resources */,
 				5E32FC19296955910010A376 /* Main.storyboard in Resources */,
@@ -438,6 +453,7 @@
 				5E32FC4B296956EB0010A376 /* Date.swift in Sources */,
 				5E32FC552969576A0010A376 /* UIViewController.swift in Sources */,
 				5E32FC57296957840010A376 /* UIImageView.swift in Sources */,
+				89CD522029744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift in Sources */,
 				5E32FC51296957350010A376 /* String.swift in Sources */,
 				5E32FC12296955910010A376 /* AppDelegate.swift in Sources */,
 				5E32FC532969574E0010A376 /* UIButton.swift in Sources */,
