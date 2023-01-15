@@ -74,4 +74,15 @@ extension ScriptPracticeRecordResultViewController: UITextViewDelegate {
             updateMemoTextCountLabel(length: 0)
         }
     }
+    
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        let textLength = textView.text.count + text.count
+        let isAtLimit = textLength <= 60
+        
+        return isAtLimit
+    }
+    
+    func textViewDidChange(_ textView: UITextView) {
+        updateMemoTextCountLabel(length: textView.text.count)
+    }
 }
