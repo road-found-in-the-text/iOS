@@ -11,6 +11,8 @@ import Charts
 
 class ScriptPracticeRecordResultViewController: UIViewController {
     
+    // MARK: - Properteis
+    
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var subtitleLabel: UILabel!
     
@@ -21,11 +23,16 @@ class ScriptPracticeRecordResultViewController: UIViewController {
     @IBOutlet var memoTextCountLabel: UILabel!
     
     @IBOutlet var doneButton: UIButton!
+    
+    private let memoTextViewPlaceholder = "내용을 입력해주세요."
 
+    // MARK: - Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        memoTextView.delegate = self
+        self.dismissKeyboardWhenTappedAround()
         
         style()
     }
@@ -37,15 +44,34 @@ class ScriptPracticeRecordResultViewController: UIViewController {
         
         doneButton.layer.cornerRadius = 8
         
-        styleTextCountLabel(length: "0")
+        updateMemoTextCountLabel(length: 0)
     }
     
-    func styleTextCountLabel(length: String) {
-        let fullText = length + " / 60"
+    func updateMemoTextCountLabel(length: Int) {
+        
+        let fullText = "\(length) / 60"
 
         let attributedString = NSMutableAttributedString(string: fullText)
-        let range = (fullText as NSString).range(of: length)
+        let range = (fullText as NSString).range(of: String(length))
         attributedString.addAttribute(.foregroundColor, value: UIColor.systemBlue, range: range)
         memoTextCountLabel.attributedText = attributedString
+    }
+}
+
+// MARK: - UITextViewDelegate
+extension ScriptPracticeRecordResultViewController: UITextViewDelegate {
+    func textViewDidBeginEditing(_ textView: UITextView) {
+        if textView.text == memoTextViewPlaceholder {
+            textView.text = nil
+            textView.textColor = UIColor(named: "Sub1")
+        }
+    }
+
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if textView.text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+            textView.text = memoTextViewPlaceholder
+            textView.textColor = UIColor(named: "Sub2")
+            updateMemoTextCountLabel(length: 0)
+        }
     }
 }
