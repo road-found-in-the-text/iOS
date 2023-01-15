@@ -26,5 +26,26 @@ class ScriptPracticeRecordResultViewController: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        style()
+    }
+    
+    func style() {
+        memoView.layer.cornerRadius = 8
+        memoView.layer.borderColor = UIColor(named: "Sub4")?.cgColor
+        memoView.layer.borderWidth = 1
+        
+        doneButton.layer.cornerRadius = 8
+        
+        styleTextCountLabel(length: "0")
+    }
+    
+    func styleTextCountLabel(length: String) {
+        let fullText = length + " / 60"
+
+        let attributedString = NSMutableAttributedString(string: fullText)
+        let range = (fullText as NSString).range(of: length)
+        attributedString.addAttribute(.foregroundColor, value: UIColor.systemBlue, range: range)
+        memoTextCountLabel.attributedText = attributedString
     }
 }

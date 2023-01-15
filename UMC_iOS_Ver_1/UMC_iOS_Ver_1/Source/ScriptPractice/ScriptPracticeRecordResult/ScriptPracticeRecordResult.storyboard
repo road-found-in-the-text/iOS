@@ -76,15 +76,15 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y9P-4Y-hAb">
                                                 <rect key="frame" x="28" y="466.66666666666663" width="337" height="100"/>
                                                 <subviews>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="내용을 입력해주세요" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2hb-9I-RPg">
-                                                        <rect key="frame" x="8" y="16.000000000000004" width="321" height="60.333333333333343"/>
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" text="내용을 입력해주세요" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="2hb-9I-RPg">
+                                                        <rect key="frame" x="8" y="16.000000000000004" width="321" height="56.333333333333343"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <color key="textColor" name="Sub1"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                     </textView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 / 60" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OxS-ua-Gb9">
-                                                        <rect key="frame" x="293.33333333333331" y="80.333333333333371" width="35.666666666666686" height="15.666666666666671"/>
+                                                        <rect key="frame" x="293.33333333333331" y="76.333333333333371" width="35.666666666666686" height="15.666666666666671"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                         <color key="textColor" name="Sub1"/>
                                                         <nil key="highlightedColor"/>
@@ -98,7 +98,7 @@
                                                     <constraint firstItem="2hb-9I-RPg" firstAttribute="leading" secondItem="Y9P-4Y-hAb" secondAttribute="leading" constant="8" id="Nm4-Ok-SAb"/>
                                                     <constraint firstAttribute="trailing" secondItem="OxS-ua-Gb9" secondAttribute="trailing" constant="8" id="RUY-2M-FRv"/>
                                                     <constraint firstItem="OxS-ua-Gb9" firstAttribute="top" secondItem="2hb-9I-RPg" secondAttribute="bottom" constant="4" id="mfo-o5-BQr"/>
-                                                    <constraint firstAttribute="bottom" secondItem="OxS-ua-Gb9" secondAttribute="bottom" constant="4" id="rtf-st-m5m"/>
+                                                    <constraint firstAttribute="bottom" secondItem="OxS-ua-Gb9" secondAttribute="bottom" constant="8" id="rtf-st-m5m"/>
                                                 </constraints>
                                             </view>
                                         </subviews>
