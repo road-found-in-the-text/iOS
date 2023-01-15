@@ -40,6 +40,7 @@
 		89C31EE5296DBDD000CBF249 /* ScriptPracticeRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89C31EE4296DBDD000CBF249 /* ScriptPracticeRecord.storyboard */; };
 		89C31EE7296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C31EE6296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift */; };
 		89C31EE9296DD8CB00CBF249 /* ImageLabelBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C31EE8296DD8CB00CBF249 /* ImageLabelBarButton.swift */; };
+		89CD521B29744C1300E1F424 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 89CD521A29744C1300E1F424 /* Charts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +105,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				89C31EE2296DB73D00CBF249 /* Tabman in Frameworks */,
+				89CD521B29744C1300E1F424 /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +306,7 @@
 			name = UMC_iOS_Ver_1;
 			packageProductDependencies = (
 				89C31EE1296DB73D00CBF249 /* Tabman */,
+				89CD521A29744C1300E1F424 /* Charts */,
 			);
 			productName = UMC_iOS_Ver_1;
 			productReference = 5E32FC0E296955910010A376 /* UMC_iOS_Ver_1.app */;
@@ -379,6 +382,7 @@
 			mainGroup = 5E32FC05296955910010A376;
 			packageReferences = (
 				89C31EE0296DB73D00CBF249 /* XCRemoteSwiftPackageReference "Tabman" */,
+				89CD521929744C1300E1F424 /* XCRemoteSwiftPackageReference "Charts" */,
 			);
 			productRefGroup = 5E32FC0F296955910010A376 /* Products */;
 			projectDirPath = "";
@@ -800,6 +804,14 @@
 				kind = branch;
 			};
 		};
+		89CD521929744C1300E1F424 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -807,6 +819,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 89C31EE0296DB73D00CBF249 /* XCRemoteSwiftPackageReference "Tabman" */;
 			productName = Tabman;
+		};
+		89CD521A29744C1300E1F424 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 89CD521929744C1300E1F424 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

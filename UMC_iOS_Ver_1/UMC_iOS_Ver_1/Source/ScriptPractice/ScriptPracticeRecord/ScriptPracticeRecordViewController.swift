@@ -50,7 +50,7 @@ class ScriptPracticeRecordViewController: UIViewController {
     func styleAnswerButtonStatus(_ button: UIButton) {
         if button.isSelected {
             button.backgroundColor = UIColor(named: "Sub1")
-            button.setTitleColor(.black, for: .normal)
+            button.setTitleColor(.white, for: .normal)
         } else {
             button.backgroundColor = UIColor(named: "Sub4")
             button.setTitleColor(UIColor(named: "Sub2"), for: .normal)
