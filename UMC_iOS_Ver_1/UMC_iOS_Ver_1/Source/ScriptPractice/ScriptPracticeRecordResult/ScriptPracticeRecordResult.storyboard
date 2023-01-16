@@ -36,7 +36,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i2E-bs-FY3" customClass="RadarChartView" customModule="Charts">
-                                                <rect key="frame" x="35" y="81.666666666666657" width="323" height="267"/>
+                                                <rect key="frame" x="16" y="81.666666666666657" width="361" height="267"/>
                                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="267" id="pf0-kH-qW6"/>
@@ -106,14 +106,14 @@
                                         <constraints>
                                             <constraint firstItem="Y9P-4Y-hAb" firstAttribute="leading" secondItem="wC3-Bn-0FD" secondAttribute="leading" constant="28" id="01P-Bb-v9q"/>
                                             <constraint firstAttribute="trailing" secondItem="zud-4B-0WI" secondAttribute="trailing" constant="16" id="32o-L2-tXP"/>
-                                            <constraint firstAttribute="trailing" secondItem="i2E-bs-FY3" secondAttribute="trailing" constant="35" id="4a9-2f-T04"/>
+                                            <constraint firstAttribute="trailing" secondItem="i2E-bs-FY3" secondAttribute="trailing" constant="16" id="4a9-2f-T04"/>
                                             <constraint firstAttribute="trailing" secondItem="cyz-Rt-eG5" secondAttribute="trailing" constant="16" id="4zY-dm-EuZ"/>
                                             <constraint firstAttribute="trailing" secondItem="rUj-26-91g" secondAttribute="trailing" constant="16" id="5SH-KU-BZ8"/>
                                             <constraint firstAttribute="trailing" secondItem="e0e-Vy-s7N" secondAttribute="trailing" constant="16" id="6wg-sa-NVy"/>
                                             <constraint firstItem="rUj-26-91g" firstAttribute="leading" secondItem="wC3-Bn-0FD" secondAttribute="leading" constant="16" id="7LC-qf-kXf"/>
                                             <constraint firstAttribute="trailing" secondItem="Y9P-4Y-hAb" secondAttribute="trailing" constant="28" id="8YZ-lx-SAz"/>
                                             <constraint firstItem="zud-4B-0WI" firstAttribute="top" secondItem="rUj-26-91g" secondAttribute="bottom" constant="8" id="9Lp-qT-FfI"/>
-                                            <constraint firstItem="i2E-bs-FY3" firstAttribute="leading" secondItem="wC3-Bn-0FD" secondAttribute="leading" constant="35" id="Dgb-4w-DKn"/>
+                                            <constraint firstItem="i2E-bs-FY3" firstAttribute="leading" secondItem="wC3-Bn-0FD" secondAttribute="leading" constant="16" id="Dgb-4w-DKn"/>
                                             <constraint firstItem="zgK-NK-kJz" firstAttribute="leading" secondItem="wC3-Bn-0FD" secondAttribute="leading" constant="16" id="HAI-kM-Ho3"/>
                                             <constraint firstItem="gUX-sj-OxM" firstAttribute="top" secondItem="i2E-bs-FY3" secondAttribute="bottom" constant="40" id="HNw-9k-UgE"/>
                                             <constraint firstAttribute="bottom" secondItem="zgK-NK-kJz" secondAttribute="bottom" constant="16" id="P6e-Hv-bn2"/>
@@ -159,7 +159,7 @@
                         <outlet property="memoTextCountLabel" destination="OxS-ua-Gb9" id="7xu-Vt-uWg"/>
                         <outlet property="memoTextView" destination="2hb-9I-RPg" id="ln2-lc-1YC"/>
                         <outlet property="memoView" destination="Y9P-4Y-hAb" id="67R-Sb-WpW"/>
-                        <outlet property="resultChartView" destination="i2E-bs-FY3" id="Gc1-jD-5Gb"/>
+                        <outlet property="resultChart" destination="i2E-bs-FY3" id="Gc1-jD-5Gb"/>
                         <outlet property="subtitleLabel" destination="e0e-Vy-s7N" id="RCH-vR-S9J"/>
                         <outlet property="titleLabel" destination="cyz-Rt-eG5" id="89b-Ab-s7a"/>
                     </connections>

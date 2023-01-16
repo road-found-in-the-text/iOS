@@ -16,7 +16,7 @@ class ScriptPracticeRecordResultViewController: UIViewController {
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var subtitleLabel: UILabel!
     
-    @IBOutlet var resultChartView: RadarChartView!
+    @IBOutlet var resultChart: RadarChartView!
     
     @IBOutlet var memoView: UIView!
     @IBOutlet var memoTextView: UITextView!
@@ -24,6 +24,7 @@ class ScriptPracticeRecordResultViewController: UIViewController {
     
     @IBOutlet var doneButton: UIButton!
     
+    private let resultChartLabels = ["분석력", "논리력", "전문성", "전달력", "창의력"]
     private let memoTextViewPlaceholder = "내용을 입력해주세요."
 
     // MARK: - Lifecycle
@@ -35,6 +36,7 @@ class ScriptPracticeRecordResultViewController: UIViewController {
         self.dismissKeyboardWhenTappedAround()
         
         style()
+        configureResultChart()
     }
     
     func style() {
@@ -55,6 +57,59 @@ class ScriptPracticeRecordResultViewController: UIViewController {
         let range = (fullText as NSString).range(of: String(length))
         attributedString.addAttribute(.foregroundColor, value: UIColor.systemBlue, range: range)
         memoTextCountLabel.attributedText = attributedString
+    }
+    
+    func configureResultChart() {
+        let backgroundDataSet = RadarChartDataSet(
+            entries: [
+                RadarChartDataEntry(value: 5.0),
+                RadarChartDataEntry(value: 5.0),
+                RadarChartDataEntry(value: 5.0),
+                RadarChartDataEntry(value: 5.0),
+                RadarChartDataEntry(value: 5.0),
+            ]
+        )
+        
+        let dataSet = RadarChartDataSet(
+            entries: [
+                RadarChartDataEntry(value: 4.0),
+                RadarChartDataEntry(value: 3.0),
+                RadarChartDataEntry(value: 4.0),
+                RadarChartDataEntry(value: 5.0),
+                RadarChartDataEntry(value: 3.0),
+            ]
+        )
+        
+        let data = RadarChartData()
+        data.dataSets = [backgroundDataSet, dataSet]
+        
+        // Style
+        resultChart.isUserInteractionEnabled = false
+        resultChart.legend.enabled = false
+        resultChart.webLineWidth = 0
+        resultChart.innerWebColor = UIColor(named: "Sub3") ?? UIColor()
+        
+        backgroundDataSet.drawValuesEnabled = false
+        backgroundDataSet.colors = [.clear]
+        backgroundDataSet.fillColor = UIColor(named: "Sub4") ?? UIColor()
+        backgroundDataSet.drawFilledEnabled = true
+        
+        dataSet.colors = [.systemBlue]
+        dataSet.lineWidth = 2
+        dataSet.drawValuesEnabled = false
+        
+        let xAxis = resultChart.xAxis
+        xAxis.labelFont = .boldSystemFont(ofSize: 14)
+        xAxis.labelTextColor = UIColor(named: "Sub1") ?? UIColor()
+        xAxis.valueFormatter = IndexAxisValueFormatter(values: resultChartLabels)
+        
+        let yAxis = resultChart.yAxis
+        yAxis.axisMinimum = 0
+        yAxis.axisMaximum = 4
+        yAxis.drawLabelsEnabled = false
+        
+        
+        resultChart.data = data
     }
 }
 
