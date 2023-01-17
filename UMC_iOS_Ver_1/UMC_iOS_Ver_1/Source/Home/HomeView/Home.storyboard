@@ -33,7 +33,11 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="글길" id="maL-Ek-c3f">
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="add" id="jdX-0N-p94"/>
+                            <barButtonItem systemItem="add" id="jdX-0N-p94">
+                                <connections>
+                                    <segue destination="ms0-06-jSs" kind="presentation" modalPresentationStyle="fullScreen" id="Cv3-Hq-fCi"/>
+                                </connections>
+                            </barButtonItem>
                             <barButtonItem systemItem="search" id="wr9-6R-snk">
                                 <connections>
                                     <segue destination="r5P-Bo-4mA" kind="show" id="lbC-1x-Khe"/>
@@ -53,17 +57,26 @@
         <!--Search-->
         <scene sceneID="4Lv-hW-kqv">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="kgD-dg-Dhc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder storyboardName="Search" id="r5P-Bo-4mA" sceneMemberID="viewController">
                     <navigationItem key="navigationItem" id="aXb-p6-dbB"/>
                 </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kgD-dg-Dhc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1836" y="17"/>
+        </scene>
+        <!--AddPost-->
+        <scene sceneID="iPr-vd-Jnw">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddPost" id="ms0-06-jSs" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="eVz-7j-2lm"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n1w-nH-LJX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1860" y="66"/>
         </scene>
         <!--홈-->
         <scene sceneID="IU4-R6-6HH">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dj8-DQ-s5S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Y51-K4-AEO" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="홈" image="ic_home_gray" id="2WZ-bf-mPf"/>
                     <toolbarItems/>
@@ -76,6 +89,7 @@
                         <segue destination="RwN-bz-acq" kind="relationship" relationship="rootViewController" id="z7g-b1-9Dn"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dj8-DQ-s5S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="313.74045801526717" y="16.901408450704228"/>
         </scene>
