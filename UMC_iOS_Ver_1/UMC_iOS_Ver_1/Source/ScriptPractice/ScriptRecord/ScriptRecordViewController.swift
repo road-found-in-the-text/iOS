@@ -7,6 +7,8 @@
 
 import UIKit
 
+import Charts
+
 class ScriptRecordViewController: UIViewController {
     
     @IBOutlet var collectionView: UICollectionView!
@@ -36,19 +38,33 @@ extension ScriptRecordViewController: UICollectionViewDelegate, UICollectionView
         
         switch indexPath.section {
         case 0:
-            print(cellIdentifier[indexPath.section])
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier[indexPath.section], for: indexPath) as? ScriptRecordResultCollectionViewCell else {
                 return UICollectionViewCell()
             }
             return cell
         case 1:
-            print(cellIdentifier[indexPath.section])
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier[indexPath.section], for: indexPath) as? ScriptRecordChartCollectionViewCell else {
                 return UICollectionViewCell()
             }
+            
+            let dataSet = RadarChartDataSet(
+                entries: [
+                    RadarChartDataEntry(value: 4.0),
+                    RadarChartDataEntry(value: 3.0),
+                    RadarChartDataEntry(value: 4.0),
+                    RadarChartDataEntry(value: 5.0),
+                    RadarChartDataEntry(value: 3.0),
+                ]
+            )
+            
+            dataSet.colors = [.systemBlue]
+            dataSet.lineWidth = 2
+            dataSet.drawValuesEnabled = false
+            
+            cell.resultChart.data?.append(dataSet)
+            
             return cell
         case 2:
-            print(cellIdentifier[indexPath.section])
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier[indexPath.section], for: indexPath) as? ScriptRecordMemoCollectionViewCell else {
                 return UICollectionViewCell()
             }
