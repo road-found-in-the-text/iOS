@@ -1,0 +1,21 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'UMC_iOS_Ver_1' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  pod 'DLRadioButton', '~> 1.4'
+
+  # Pods for UMC_iOS_Ver_1
+
+  target 'UMC_iOS_Ver_1Tests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'UMC_iOS_Ver_1UITests' do
+    # Pods for testing
+  end
+
+end

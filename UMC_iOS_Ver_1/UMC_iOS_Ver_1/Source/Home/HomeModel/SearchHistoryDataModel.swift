@@ -7,4 +7,4 @@
 
 import Foundation
 
-//var searchHistoryData: [String] = []
+var searchHistoryData: [String] = []

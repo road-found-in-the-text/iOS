@@ -8,7 +8,7 @@
 import UIKit
 
 class SearchViewController: UIViewController {
-    var searchHistoryData: [String] = []
+    
     @IBOutlet weak var recentSearchKeyword: UILabel!
     @IBOutlet weak var deleteAllButton: UIButton!
     @IBOutlet weak var searchBar: UISearchBar!

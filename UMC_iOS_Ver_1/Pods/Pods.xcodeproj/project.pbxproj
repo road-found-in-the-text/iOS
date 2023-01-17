@@ -1,0 +1,968 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1B2A3E1D8488055BCB009636F113B7C9 /* DLRadioButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4570AC68CAD26A4B210C89FFC759705E /* DLRadioButton.m */; };
+		384C0A8927D22848E4487AE37C37D546 /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A766022D16145E06EB0EE4A1BBED29BC /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		78953B88386EB2E7A3B1878537851318 /* DLRadioButton-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0B5E007E8747243E146D4DBC4126E2 /* DLRadioButton-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7C4B3DEC988CA70B27EAA408749B6B55 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		7D6F950F68F5C7BC607E1616EDAADE50 /* Pods-UMC_iOS_Ver_1Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B6E9B65DE0AD7B55DDF6C565B5795DE5 /* Pods-UMC_iOS_Ver_1Tests-dummy.m */; };
+		8DC27195BA1C54FC949AD1AB3D66B226 /* DLRadioButton-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2971E1D64C3D267B79457EB82B1D0639 /* DLRadioButton-dummy.m */; };
+		9AAE21CD481AA3DC067D2F167D0374B8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		A14CA14D8C9EFD9612EF710A1547DF93 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		BF7827976522E32BA884B46D39575372 /* Pods-UMC_iOS_Ver_1-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F71CA1416F595A42959176C6D5A0B90 /* Pods-UMC_iOS_Ver_1-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E79741E7B02225379B308173E6D62F76 /* Pods-UMC_iOS_Ver_1Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EDB0A177310B28C5BF68362790C28ADD /* Pods-UMC_iOS_Ver_1Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F05457E0BFE05B8CA71F85C4AB42B526 /* Pods-UMC_iOS_Ver_1-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C81793BF0E0298D35605C9613346CF84 /* Pods-UMC_iOS_Ver_1-dummy.m */; };
+		F3579B030CCB270667A0390E7D9CF30A /* DLRadioButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 628B13222FE228E41E7264A01ACEB76A /* DLRadioButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F48A09B615E0A2A459EDD66AF0B248D3 /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5439843B6F2AA845E1A1C39F1BE71C /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests-dummy.m */; };
+		FF8163F2D49E43375CD4CA3F71516654 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		68CA64C1BA1D070D2613A6269F2EDF8C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BED8F38B6D4A3AD6DFF85D18F9F09435;
+			remoteInfo = DLRadioButton;
+		};
+		B86425EB9CEB0E52EFF1747214D348C6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BED8F38B6D4A3AD6DFF85D18F9F09435;
+			remoteInfo = DLRadioButton;
+		};
+		D1EACE3EFB9DE17E3F2802AFF2C968EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FA5839E49E34E757533AEF998597A270;
+			remoteInfo = "Pods-UMC_iOS_Ver_1";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05650906A745BF0F79C271F3F771FA31 /* Pods-UMC_iOS_Ver_1Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UMC_iOS_Ver_1Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		07DF32AE3A5D3FAC8320EDD23F582536 /* DLRadioButton-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DLRadioButton-prefix.pch"; sourceTree = "<group>"; };
+		088DB73941C06FA027F3D4DCBCB5CBB7 /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		08A2B6B3DF9CC9F9E0807F9AB1559024 /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests.release.xcconfig"; sourceTree = "<group>"; };
+		0D9854DF2E466452721C847D655697B3 /* DLRadioButton.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DLRadioButton.debug.xcconfig; sourceTree = "<group>"; };
+		22FB8DF6D9CADD308187AF183256E276 /* Pods-UMC_iOS_Ver_1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UMC_iOS_Ver_1Tests.release.xcconfig"; sourceTree = "<group>"; };
+		2971E1D64C3D267B79457EB82B1D0639 /* DLRadioButton-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DLRadioButton-dummy.m"; sourceTree = "<group>"; };
+		30BFB77894C45F83BA936639A5E5FE92 /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests"; path = Pods_UMC_iOS_Ver_1_UMC_iOS_Ver_1UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E26BA03994713FBEB9C3406695782F1 /* DLRadioButton */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DLRadioButton; path = DLRadioButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4570AC68CAD26A4B210C89FFC759705E /* DLRadioButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DLRadioButton.m; path = DLRadioButton/DLRadioButton.m; sourceTree = "<group>"; };
+		4773AE90FB8CB09C2B0805D13E5ED0C9 /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		49DB2904F90564E280A3A740192865C7 /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests-Info.plist"; sourceTree = "<group>"; };
+		536B403CE206A0FBB7E3D4E420A9188E /* Pods-UMC_iOS_Ver_1Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UMC_iOS_Ver_1Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		552450E3BB88D05F0CA38BECF565E1E1 /* Pods-UMC_iOS_Ver_1 */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-UMC_iOS_Ver_1"; path = Pods_UMC_iOS_Ver_1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		628B13222FE228E41E7264A01ACEB76A /* DLRadioButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DLRadioButton.h; path = DLRadioButton/DLRadioButton.h; sourceTree = "<group>"; };
+		64F1FF9BA7047FCC249F85307D9C20A4 /* Pods-UMC_iOS_Ver_1Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-UMC_iOS_Ver_1Tests.modulemap"; sourceTree = "<group>"; };
+		66277072A9718E117DE3351FB84BE91B /* DLRadioButton.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DLRadioButton.modulemap; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		77A1C905D64B8F4E02ECAC3947B67F68 /* Pods-UMC_iOS_Ver_1.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-UMC_iOS_Ver_1.modulemap"; sourceTree = "<group>"; };
+		80B55099E7394459DF14ED9402711697 /* DLRadioButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DLRadioButton.release.xcconfig; sourceTree = "<group>"; };
+		8A891DD0341A920BB6A1BFBA9F9C82C8 /* Pods-UMC_iOS_Ver_1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UMC_iOS_Ver_1.debug.xcconfig"; sourceTree = "<group>"; };
+		8F71CA1416F595A42959176C6D5A0B90 /* Pods-UMC_iOS_Ver_1-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UMC_iOS_Ver_1-umbrella.h"; sourceTree = "<group>"; };
+		99C3535D7D1C218532EDD3B302F196E3 /* DLRadioButton-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "DLRadioButton-Info.plist"; sourceTree = "<group>"; };
+		9D152C36D2D314C33BAD70347059ACD8 /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests.modulemap"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A766022D16145E06EB0EE4A1BBED29BC /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests-umbrella.h"; sourceTree = "<group>"; };
+		AB974A9276A84DF5F98837293992A4E2 /* Pods-UMC_iOS_Ver_1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UMC_iOS_Ver_1Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B6E9B65DE0AD7B55DDF6C565B5795DE5 /* Pods-UMC_iOS_Ver_1Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UMC_iOS_Ver_1Tests-dummy.m"; sourceTree = "<group>"; };
+		BB1C5E7A2826E57D69C5F2066779BBF3 /* Pods-UMC_iOS_Ver_1-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UMC_iOS_Ver_1-Info.plist"; sourceTree = "<group>"; };
+		C269C2D0661BB63B5A85E4A985F44F41 /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C52613598B061B0EE36E1735C884513A /* Pods-UMC_iOS_Ver_1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-UMC_iOS_Ver_1.release.xcconfig"; sourceTree = "<group>"; };
+		C69A7E8781484C97526DF3BA8C308E4B /* Pods-UMC_iOS_Ver_1-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UMC_iOS_Ver_1-acknowledgements.plist"; sourceTree = "<group>"; };
+		C81793BF0E0298D35605C9613346CF84 /* Pods-UMC_iOS_Ver_1-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UMC_iOS_Ver_1-dummy.m"; sourceTree = "<group>"; };
+		CA415A9039EE53C34CEA8DC5B2331332 /* Pods-UMC_iOS_Ver_1-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UMC_iOS_Ver_1-frameworks.sh"; sourceTree = "<group>"; };
+		CC5439843B6F2AA845E1A1C39F1BE71C /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests-dummy.m"; sourceTree = "<group>"; };
+		D38AACBBCC7A88A8E3FAD67D2910F842 /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests-frameworks.sh"; sourceTree = "<group>"; };
+		DC0B5E007E8747243E146D4DBC4126E2 /* DLRadioButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DLRadioButton-umbrella.h"; sourceTree = "<group>"; };
+		DC67F858B95D45EB6C1158142B764DBB /* Pods-UMC_iOS_Ver_1Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-UMC_iOS_Ver_1Tests-Info.plist"; sourceTree = "<group>"; };
+		E8B90D8EE90CCC5D8B10C26CCD27DA5F /* Pods-UMC_iOS_Ver_1Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-UMC_iOS_Ver_1Tests"; path = Pods_UMC_iOS_Ver_1Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EDB0A177310B28C5BF68362790C28ADD /* Pods-UMC_iOS_Ver_1Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-UMC_iOS_Ver_1Tests-umbrella.h"; sourceTree = "<group>"; };
+		F2789C086714739A72F1395A4F0B600E /* Pods-UMC_iOS_Ver_1-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-UMC_iOS_Ver_1-acknowledgements.markdown"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		16C5E81C67D2BC31554A66CF30CC93EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF8163F2D49E43375CD4CA3F71516654 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		267916F4920166D74F9DAEE2409C8A8F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AAE21CD481AA3DC067D2F167D0374B8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		71CD5A8344F62777D2E603C9E0CD413D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7C4B3DEC988CA70B27EAA408749B6B55 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B16E5E11A310921C0EFB86BAD8AA26F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A14CA14D8C9EFD9612EF710A1547DF93 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		65BEB32AC40B9F7072037E062A5F5A55 /* Pods-UMC_iOS_Ver_1 */ = {
+			isa = PBXGroup;
+			children = (
+				77A1C905D64B8F4E02ECAC3947B67F68 /* Pods-UMC_iOS_Ver_1.modulemap */,
+				F2789C086714739A72F1395A4F0B600E /* Pods-UMC_iOS_Ver_1-acknowledgements.markdown */,
+				C69A7E8781484C97526DF3BA8C308E4B /* Pods-UMC_iOS_Ver_1-acknowledgements.plist */,
+				C81793BF0E0298D35605C9613346CF84 /* Pods-UMC_iOS_Ver_1-dummy.m */,
+				CA415A9039EE53C34CEA8DC5B2331332 /* Pods-UMC_iOS_Ver_1-frameworks.sh */,
+				BB1C5E7A2826E57D69C5F2066779BBF3 /* Pods-UMC_iOS_Ver_1-Info.plist */,
+				8F71CA1416F595A42959176C6D5A0B90 /* Pods-UMC_iOS_Ver_1-umbrella.h */,
+				8A891DD0341A920BB6A1BFBA9F9C82C8 /* Pods-UMC_iOS_Ver_1.debug.xcconfig */,
+				C52613598B061B0EE36E1735C884513A /* Pods-UMC_iOS_Ver_1.release.xcconfig */,
+			);
+			name = "Pods-UMC_iOS_Ver_1";
+			path = "Target Support Files/Pods-UMC_iOS_Ver_1";
+			sourceTree = "<group>";
+		};
+		9A650DF3D8C3D03343460EC96E0D7119 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E48FBFB5E3D0A475C5D89D39DD481B69 /* DLRadioButton */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9FB625DFA86CE998A219BC1FB0671F6F /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests */ = {
+			isa = PBXGroup;
+			children = (
+				9D152C36D2D314C33BAD70347059ACD8 /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests.modulemap */,
+				C269C2D0661BB63B5A85E4A985F44F41 /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests-acknowledgements.markdown */,
+				088DB73941C06FA027F3D4DCBCB5CBB7 /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests-acknowledgements.plist */,
+				CC5439843B6F2AA845E1A1C39F1BE71C /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests-dummy.m */,
+				D38AACBBCC7A88A8E3FAD67D2910F842 /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests-frameworks.sh */,
+				49DB2904F90564E280A3A740192865C7 /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests-Info.plist */,
+				A766022D16145E06EB0EE4A1BBED29BC /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests-umbrella.h */,
+				4773AE90FB8CB09C2B0805D13E5ED0C9 /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests.debug.xcconfig */,
+				08A2B6B3DF9CC9F9E0807F9AB1559024 /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests.release.xcconfig */,
+			);
+			name = "Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests";
+			path = "Target Support Files/Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests";
+			sourceTree = "<group>";
+		};
+		A79773267BEA63B68B79A1CCCCA2F17E /* Pods-UMC_iOS_Ver_1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				64F1FF9BA7047FCC249F85307D9C20A4 /* Pods-UMC_iOS_Ver_1Tests.modulemap */,
+				536B403CE206A0FBB7E3D4E420A9188E /* Pods-UMC_iOS_Ver_1Tests-acknowledgements.markdown */,
+				05650906A745BF0F79C271F3F771FA31 /* Pods-UMC_iOS_Ver_1Tests-acknowledgements.plist */,
+				B6E9B65DE0AD7B55DDF6C565B5795DE5 /* Pods-UMC_iOS_Ver_1Tests-dummy.m */,
+				DC67F858B95D45EB6C1158142B764DBB /* Pods-UMC_iOS_Ver_1Tests-Info.plist */,
+				EDB0A177310B28C5BF68362790C28ADD /* Pods-UMC_iOS_Ver_1Tests-umbrella.h */,
+				AB974A9276A84DF5F98837293992A4E2 /* Pods-UMC_iOS_Ver_1Tests.debug.xcconfig */,
+				22FB8DF6D9CADD308187AF183256E276 /* Pods-UMC_iOS_Ver_1Tests.release.xcconfig */,
+			);
+			name = "Pods-UMC_iOS_Ver_1Tests";
+			path = "Target Support Files/Pods-UMC_iOS_Ver_1Tests";
+			sourceTree = "<group>";
+		};
+		C0D6F9F1A8831425280664AE2F22098A /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				65BEB32AC40B9F7072037E062A5F5A55 /* Pods-UMC_iOS_Ver_1 */,
+				9FB625DFA86CE998A219BC1FB0671F6F /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests */,
+				A79773267BEA63B68B79A1CCCCA2F17E /* Pods-UMC_iOS_Ver_1Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				9A650DF3D8C3D03343460EC96E0D7119 /* Pods */,
+				D1379C22989E9F3A5844203AA258C7B0 /* Products */,
+				C0D6F9F1A8831425280664AE2F22098A /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D1379C22989E9F3A5844203AA258C7B0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3E26BA03994713FBEB9C3406695782F1 /* DLRadioButton */,
+				552450E3BB88D05F0CA38BECF565E1E1 /* Pods-UMC_iOS_Ver_1 */,
+				30BFB77894C45F83BA936639A5E5FE92 /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests */,
+				E8B90D8EE90CCC5D8B10C26CCD27DA5F /* Pods-UMC_iOS_Ver_1Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E48FBFB5E3D0A475C5D89D39DD481B69 /* DLRadioButton */ = {
+			isa = PBXGroup;
+			children = (
+				628B13222FE228E41E7264A01ACEB76A /* DLRadioButton.h */,
+				4570AC68CAD26A4B210C89FFC759705E /* DLRadioButton.m */,
+				EF77EDC3C54D8075EC398E1F0326144A /* Support Files */,
+			);
+			name = DLRadioButton;
+			path = DLRadioButton;
+			sourceTree = "<group>";
+		};
+		EF77EDC3C54D8075EC398E1F0326144A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				66277072A9718E117DE3351FB84BE91B /* DLRadioButton.modulemap */,
+				2971E1D64C3D267B79457EB82B1D0639 /* DLRadioButton-dummy.m */,
+				99C3535D7D1C218532EDD3B302F196E3 /* DLRadioButton-Info.plist */,
+				07DF32AE3A5D3FAC8320EDD23F582536 /* DLRadioButton-prefix.pch */,
+				DC0B5E007E8747243E146D4DBC4126E2 /* DLRadioButton-umbrella.h */,
+				0D9854DF2E466452721C847D655697B3 /* DLRadioButton.debug.xcconfig */,
+				80B55099E7394459DF14ED9402711697 /* DLRadioButton.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/DLRadioButton";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3DD921E0111869872AE7B86316889FB3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3579B030CCB270667A0390E7D9CF30A /* DLRadioButton.h in Headers */,
+				78953B88386EB2E7A3B1878537851318 /* DLRadioButton-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4BD93B8D8F85A791BA1B735F8EFC71AE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF7827976522E32BA884B46D39575372 /* Pods-UMC_iOS_Ver_1-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		651F1E5D1F7FFC0CA43F999283143682 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E79741E7B02225379B308173E6D62F76 /* Pods-UMC_iOS_Ver_1Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD559DB9CDD277D842A39DE8B21D58D0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				384C0A8927D22848E4487AE37C37D546 /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		B033638669D9BBE29FAC5DAB9265FA19 /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3CDF15DC996766C471754090152561B /* Build configuration list for PBXNativeTarget "Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests" */;
+			buildPhases = (
+				AD559DB9CDD277D842A39DE8B21D58D0 /* Headers */,
+				3E769D525B551F5355CA5667633A79BB /* Sources */,
+				71CD5A8344F62777D2E603C9E0CD413D /* Frameworks */,
+				55EDB83FF77777380466CAE0CFBB124D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F6E42B40983249676FF5983B8851C449 /* PBXTargetDependency */,
+			);
+			name = "Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests";
+			productName = Pods_UMC_iOS_Ver_1_UMC_iOS_Ver_1UITests;
+			productReference = 30BFB77894C45F83BA936639A5E5FE92 /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests */;
+			productType = "com.apple.product-type.framework";
+		};
+		BED8F38B6D4A3AD6DFF85D18F9F09435 /* DLRadioButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7874750D41DB4C79CE8774C9CCDF386E /* Build configuration list for PBXNativeTarget "DLRadioButton" */;
+			buildPhases = (
+				3DD921E0111869872AE7B86316889FB3 /* Headers */,
+				BE172C3DB2CE6966A4D532550BE47AC4 /* Sources */,
+				B16E5E11A310921C0EFB86BAD8AA26F5 /* Frameworks */,
+				E3A38AA479335008FF1F0207AA860900 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DLRadioButton;
+			productName = DLRadioButton;
+			productReference = 3E26BA03994713FBEB9C3406695782F1 /* DLRadioButton */;
+			productType = "com.apple.product-type.framework";
+		};
+		C8D7F0E06EF2788E2AE28CEBFA3B0B99 /* Pods-UMC_iOS_Ver_1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8684ED682E54F6755AA12B6EEC0D07D5 /* Build configuration list for PBXNativeTarget "Pods-UMC_iOS_Ver_1Tests" */;
+			buildPhases = (
+				651F1E5D1F7FFC0CA43F999283143682 /* Headers */,
+				F1EF995A37055F32C94B729B39D83BC5 /* Sources */,
+				267916F4920166D74F9DAEE2409C8A8F /* Frameworks */,
+				3A53BA269C47D9AB2B1903883A210330 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F177D2C389772EAFD1C4689795746D22 /* PBXTargetDependency */,
+			);
+			name = "Pods-UMC_iOS_Ver_1Tests";
+			productName = Pods_UMC_iOS_Ver_1Tests;
+			productReference = E8B90D8EE90CCC5D8B10C26CCD27DA5F /* Pods-UMC_iOS_Ver_1Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+		FA5839E49E34E757533AEF998597A270 /* Pods-UMC_iOS_Ver_1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 81683F615BB4CE843C023AF94A39058C /* Build configuration list for PBXNativeTarget "Pods-UMC_iOS_Ver_1" */;
+			buildPhases = (
+				4BD93B8D8F85A791BA1B735F8EFC71AE /* Headers */,
+				DBD7D3C70BB6CEC735FEB0BD211A9D6C /* Sources */,
+				16C5E81C67D2BC31554A66CF30CC93EC /* Frameworks */,
+				0F8AB04789CD3342724EE26DD0EF104E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4C3D520624290D0715E2D8BC85C3B82D /* PBXTargetDependency */,
+			);
+			name = "Pods-UMC_iOS_Ver_1";
+			productName = Pods_UMC_iOS_Ver_1;
+			productReference = 552450E3BB88D05F0CA38BECF565E1E1 /* Pods-UMC_iOS_Ver_1 */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = D1379C22989E9F3A5844203AA258C7B0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BED8F38B6D4A3AD6DFF85D18F9F09435 /* DLRadioButton */,
+				FA5839E49E34E757533AEF998597A270 /* Pods-UMC_iOS_Ver_1 */,
+				B033638669D9BBE29FAC5DAB9265FA19 /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests */,
+				C8D7F0E06EF2788E2AE28CEBFA3B0B99 /* Pods-UMC_iOS_Ver_1Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0F8AB04789CD3342724EE26DD0EF104E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3A53BA269C47D9AB2B1903883A210330 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55EDB83FF77777380466CAE0CFBB124D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E3A38AA479335008FF1F0207AA860900 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3E769D525B551F5355CA5667633A79BB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F48A09B615E0A2A459EDD66AF0B248D3 /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE172C3DB2CE6966A4D532550BE47AC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1B2A3E1D8488055BCB009636F113B7C9 /* DLRadioButton.m in Sources */,
+				8DC27195BA1C54FC949AD1AB3D66B226 /* DLRadioButton-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DBD7D3C70BB6CEC735FEB0BD211A9D6C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F05457E0BFE05B8CA71F85C4AB42B526 /* Pods-UMC_iOS_Ver_1-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1EF995A37055F32C94B729B39D83BC5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D6F950F68F5C7BC607E1616EDAADE50 /* Pods-UMC_iOS_Ver_1Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4C3D520624290D0715E2D8BC85C3B82D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DLRadioButton;
+			target = BED8F38B6D4A3AD6DFF85D18F9F09435 /* DLRadioButton */;
+			targetProxy = 68CA64C1BA1D070D2613A6269F2EDF8C /* PBXContainerItemProxy */;
+		};
+		F177D2C389772EAFD1C4689795746D22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-UMC_iOS_Ver_1";
+			target = FA5839E49E34E757533AEF998597A270 /* Pods-UMC_iOS_Ver_1 */;
+			targetProxy = D1EACE3EFB9DE17E3F2802AFF2C968EC /* PBXContainerItemProxy */;
+		};
+		F6E42B40983249676FF5983B8851C449 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = DLRadioButton;
+			target = BED8F38B6D4A3AD6DFF85D18F9F09435 /* DLRadioButton */;
+			targetProxy = B86425EB9CEB0E52EFF1747214D348C6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		164CDCB2EF4E6CA141E118AD36FB9C54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 22FB8DF6D9CADD308187AF183256E276 /* Pods-UMC_iOS_Ver_1Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-UMC_iOS_Ver_1Tests/Pods-UMC_iOS_Ver_1Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UMC_iOS_Ver_1Tests/Pods-UMC_iOS_Ver_1Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1AB09BC073DF050B1120B82E288A2BC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80B55099E7394459DF14ED9402711697 /* DLRadioButton.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DLRadioButton/DLRadioButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DLRadioButton/DLRadioButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DLRadioButton/DLRadioButton.modulemap";
+				PRODUCT_MODULE_NAME = DLRadioButton;
+				PRODUCT_NAME = DLRadioButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2DB280362A0C4923E2D4B3BD7317AC8E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0D9854DF2E466452721C847D655697B3 /* DLRadioButton.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/DLRadioButton/DLRadioButton-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/DLRadioButton/DLRadioButton-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/DLRadioButton/DLRadioButton.modulemap";
+				PRODUCT_MODULE_NAME = DLRadioButton;
+				PRODUCT_NAME = DLRadioButton;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		446BA1B9A1F1F2F95D04E5F82EB1B0F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		590954DFBFC3B7A22F573FA5EE0C4672 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C52613598B061B0EE36E1735C884513A /* Pods-UMC_iOS_Ver_1.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-UMC_iOS_Ver_1/Pods-UMC_iOS_Ver_1-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UMC_iOS_Ver_1/Pods-UMC_iOS_Ver_1.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5D47E2EFAC6FAC81A782D9BFD8736F53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		9AAD4ACDEEE75F61E3E969872C5E7C8F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB974A9276A84DF5F98837293992A4E2 /* Pods-UMC_iOS_Ver_1Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-UMC_iOS_Ver_1Tests/Pods-UMC_iOS_Ver_1Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UMC_iOS_Ver_1Tests/Pods-UMC_iOS_Ver_1Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B7408151C49C784C6FD367A567403926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08A2B6B3DF9CC9F9E0807F9AB1559024 /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests/Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests/Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BB828C9D6A7FA3905D9965416FDA1953 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4773AE90FB8CB09C2B0805D13E5ED0C9 /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests/Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests/Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F2E5E924248F26AA895D69F6A0846205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8A891DD0341A920BB6A1BFBA9F9C82C8 /* Pods-UMC_iOS_Ver_1.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-UMC_iOS_Ver_1/Pods-UMC_iOS_Ver_1-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-UMC_iOS_Ver_1/Pods-UMC_iOS_Ver_1.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				446BA1B9A1F1F2F95D04E5F82EB1B0F4 /* Debug */,
+				5D47E2EFAC6FAC81A782D9BFD8736F53 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7874750D41DB4C79CE8774C9CCDF386E /* Build configuration list for PBXNativeTarget "DLRadioButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2DB280362A0C4923E2D4B3BD7317AC8E /* Debug */,
+				1AB09BC073DF050B1120B82E288A2BC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		81683F615BB4CE843C023AF94A39058C /* Build configuration list for PBXNativeTarget "Pods-UMC_iOS_Ver_1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F2E5E924248F26AA895D69F6A0846205 /* Debug */,
+				590954DFBFC3B7A22F573FA5EE0C4672 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8684ED682E54F6755AA12B6EEC0D07D5 /* Build configuration list for PBXNativeTarget "Pods-UMC_iOS_Ver_1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AAD4ACDEEE75F61E3E969872C5E7C8F /* Debug */,
+				164CDCB2EF4E6CA141E118AD36FB9C54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3CDF15DC996766C471754090152561B /* Build configuration list for PBXNativeTarget "Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB828C9D6A7FA3905D9965416FDA1953 /* Debug */,
+				B7408151C49C784C6FD367A567403926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
