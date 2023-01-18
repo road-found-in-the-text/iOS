@@ -6,6 +6,7 @@ target 'UMC_iOS_Ver_1' do
   use_frameworks!
 
   pod 'DLRadioButton', '~> 1.4'
+  pod 'Alamofire'
 
   # Pods for UMC_iOS_Ver_1
 
