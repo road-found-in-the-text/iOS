@@ -34,6 +34,8 @@
 		5E32FC6929695DE90010A376 /* ScriptPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32FC6829695DE90010A376 /* ScriptPracticeViewController.swift */; };
 		5E32FC6B29695DF60010A376 /* InterviewPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32FC6A29695DF60010A376 /* InterviewPracticeViewController.swift */; };
 		5E32FC6D29695DFF0010A376 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32FC6C29695DFF0010A376 /* MyPageViewController.swift */; };
+		89DCF50B2977060000CB2296 /* ScriptPractice.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89DCF50A2977060000CB2296 /* ScriptPractice.storyboard */; };
+		89DCF50D2977060500CB2296 /* ScriptPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCF50C2977060500CB2296 /* ScriptPracticeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +87,8 @@
 		5E32FC6829695DE90010A376 /* ScriptPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeViewController.swift; sourceTree = "<group>"; };
 		5E32FC6A29695DF60010A376 /* InterviewPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewPracticeViewController.swift; sourceTree = "<group>"; };
 		5E32FC6C29695DFF0010A376 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		89DCF50A2977060000CB2296 /* ScriptPractice.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPractice.storyboard; sourceTree = "<group>"; };
+		89DCF50C2977060500CB2296 /* ScriptPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -247,8 +251,18 @@
 		5E32FC6129695CA20010A376 /* ScriptPractice */ = {
 			isa = PBXGroup;
 			children = (
+				89DCF505297705C800CB2296 /* ScriptPractice */,
 				5E32FC6229695CF20010A376 /* ScriptPractice.storyboard */,
 				5E32FC6829695DE90010A376 /* ScriptPracticeViewController.swift */,
+			);
+			path = ScriptPractice;
+			sourceTree = "<group>";
+		};
+		89DCF505297705C800CB2296 /* ScriptPractice */ = {
+			isa = PBXGroup;
+			children = (
+				89DCF50A2977060000CB2296 /* ScriptPractice.storyboard */,
+				89DCF50C2977060500CB2296 /* ScriptPracticeViewController.swift */,
 			);
 			path = ScriptPractice;
 			sourceTree = "<group>";
@@ -363,6 +377,7 @@
 				5E32FC1B296955930010A376 /* Assets.xcassets in Resources */,
 				5E32FC6529695CFC0010A376 /* InterviewPractice.storyboard in Resources */,
 				5E32FC19296955910010A376 /* Main.storyboard in Resources */,
+				89DCF50B2977060000CB2296 /* ScriptPractice.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,6 +415,7 @@
 				5E32FC5B296957BB0010A376 /* UITextField.swift in Sources */,
 				5E32FC592969579B0010A376 /* UIFont.swift in Sources */,
 				5E32FC45296956470010A376 /* Constant.swift in Sources */,
+				89DCF50D2977060500CB2296 /* ScriptPracticeViewController.swift in Sources */,
 				5E32FC6929695DE90010A376 /* ScriptPracticeViewController.swift in Sources */,
 				5E32FC48296956A40010A376 /* IndicatorView.swift in Sources */,
 				5E32FC6B29695DF60010A376 /* InterviewPracticeViewController.swift in Sources */,
