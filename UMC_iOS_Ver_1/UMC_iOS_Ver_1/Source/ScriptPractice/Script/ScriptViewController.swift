@@ -22,6 +22,13 @@ class ScriptViewController: UIViewController {
         super.viewDidLoad()
 
         configureCollectionView()
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        presentModal()
     }
     
     func configureCollectionView() {
@@ -30,6 +37,29 @@ class ScriptViewController: UIViewController {
         
         collectionView.contentInset = UIEdgeInsets(top: 0, left: insetX, bottom: 0, right: insetX)
     }
+    
+    private func presentModal() {
+        guard let detailViewController = self.storyboard?.instantiateViewController(withIdentifier: "ScriptBottomSheetViewController") as? ScriptBottomSheetViewController else {
+            return
+        }
+        let nav = UINavigationController(rootViewController: detailViewController)
+        nav.modalPresentationStyle = .pageSheet
+
+        if let sheet = nav.sheetPresentationController {
+            sheet.detents = [
+                .custom { _ in
+                    return 286
+                },
+                .medium()
+            ]
+            sheet.prefersScrollingExpandsWhenScrolledToEdge = false
+            sheet.prefersEdgeAttachedInCompactHeight = true
+            sheet.largestUndimmedDetentIdentifier = .medium
+        }
+        present(nav, animated: true, completion: nil)
+        
+    }
+
 
 }
 
