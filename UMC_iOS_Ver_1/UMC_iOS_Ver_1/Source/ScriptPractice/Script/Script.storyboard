@@ -114,7 +114,14 @@
                                 </state>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s1q-Lc-oSL">
-                                <rect key="frame" x="30" y="506" width="333" height="216"/>
+                                <rect key="frame" x="30" y="602" width="333" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="L7h-Yz-fYR"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="dataSource" destination="ON3-9P-9NM" id="Kkr-8d-TGf"/>
+                                    <outlet property="delegate" destination="ON3-9P-9NM" id="7Fk-0a-LIk"/>
+                                </connections>
                             </pickerView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JNO-8v-H4F"/>
@@ -135,7 +142,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TGD-FC-vRQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="874" y="-2"/>
+            <point key="canvasLocation" x="872.51908396946567" y="-2.1126760563380285"/>
         </scene>
     </scenes>
     <resources>
