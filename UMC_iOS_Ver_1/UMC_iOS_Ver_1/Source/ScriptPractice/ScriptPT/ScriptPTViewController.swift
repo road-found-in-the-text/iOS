@@ -9,6 +9,7 @@ import UIKit
 
 class ScriptPTViewController: UIViewController {
     
+    // MARK: - Properties
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var collectionView: UICollectionView!
     
@@ -18,12 +19,18 @@ class ScriptPTViewController: UIViewController {
     private let cellSize = CGSize(width: 302, height: 140)
     private var minimumItemSpacing: CGFloat = 20
     private let cellIdentifier = "scriptPTcell"
-
+    
+    private var timer: Timer?
+    private var timerNumber = 60
+    private var isPaused = false
+    
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
         configureCollectionView()
         styleButton()
+        startTimer()
     }
     
     func configureCollectionView() {
@@ -37,7 +44,42 @@ class ScriptPTViewController: UIViewController {
         pauseButton.layer.cornerRadius = 8
         stopButton.layer.cornerRadius = 8
     }
+    
+}
 
+// MARK: - Timer
+extension ScriptPTViewController {
+    func startTimer() {
+        if timer != nil && timer!.isValid {
+            timer!.invalidate()
+        }
+        
+        timerNumber = 10 // 타이머 시간 설정
+        
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerCallback), userInfo: nil, repeats: true)
+
+    }
+    
+    @objc func timerCallback() {
+        print(timerNumber)
+        
+        if(timerNumber == 0) {
+            timer?.invalidate()
+            timer = nil
+        }
+        
+        timerNumber -= 1
+    }
+    
+    @IBAction func pressPauseButton(_ sender: UIButton) {
+        isPaused.toggle()
+        
+        if isPaused {
+            timer?.invalidate()
+        } else {
+            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerCallback), userInfo: nil, repeats: true)
+        }
+    }
 }
 
 // MARK: - UICollectionView
