@@ -36,6 +36,8 @@
 		5E32FC6D29695DFF0010A376 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32FC6C29695DFF0010A376 /* MyPageViewController.swift */; };
 		89273C062977A80100208B6D /* ScriptPTCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89273C052977A80100208B6D /* ScriptPTCollectionViewCell.swift */; };
 		89273C082977B6DF00208B6D /* ScriptBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89273C072977B6DF00208B6D /* ScriptBottomSheetViewController.swift */; };
+		89273C0B2977CAE600208B6D /* ScriptPT.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89273C0A2977CAE600208B6D /* ScriptPT.storyboard */; };
+		89273C0D2977CAEF00208B6D /* ScriptPTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89273C0C2977CAEF00208B6D /* ScriptPTViewController.swift */; };
 		89DCF50B2977060000CB2296 /* ScriptPracticeSet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89DCF50A2977060000CB2296 /* ScriptPracticeSet.storyboard */; };
 		89DCF50D2977060500CB2296 /* ScriptPracticeSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCF50C2977060500CB2296 /* ScriptPracticeSetViewController.swift */; };
 /* End PBXBuildFile section */
@@ -91,6 +93,8 @@
 		5E32FC6C29695DFF0010A376 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		89273C052977A80100208B6D /* ScriptPTCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPTCollectionViewCell.swift; sourceTree = "<group>"; };
 		89273C072977B6DF00208B6D /* ScriptBottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptBottomSheetViewController.swift; sourceTree = "<group>"; };
+		89273C0A2977CAE600208B6D /* ScriptPT.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPT.storyboard; sourceTree = "<group>"; };
+		89273C0C2977CAEF00208B6D /* ScriptPTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPTViewController.swift; sourceTree = "<group>"; };
 		89DCF50A2977060000CB2296 /* ScriptPracticeSet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeSet.storyboard; sourceTree = "<group>"; };
 		89DCF50C2977060500CB2296 /* ScriptPracticeSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeSetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -255,6 +259,7 @@
 		5E32FC6129695CA20010A376 /* ScriptPractice */ = {
 			isa = PBXGroup;
 			children = (
+				89273C092977CAD700208B6D /* ScriptPT */,
 				89DCF505297705C800CB2296 /* ScriptPracticeSet */,
 				5E32FC6229695CF20010A376 /* ScriptPractice.storyboard */,
 				5E32FC6829695DE90010A376 /* ScriptPracticeViewController.swift */,
@@ -268,6 +273,15 @@
 				89273C052977A80100208B6D /* ScriptPTCollectionViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		89273C092977CAD700208B6D /* ScriptPT */ = {
+			isa = PBXGroup;
+			children = (
+				89273C0A2977CAE600208B6D /* ScriptPT.storyboard */,
+				89273C0C2977CAEF00208B6D /* ScriptPTViewController.swift */,
+			);
+			path = ScriptPT;
 			sourceTree = "<group>";
 		};
 		89DCF505297705C800CB2296 /* ScriptPracticeSet */ = {
@@ -388,6 +402,7 @@
 				5E32FC6329695CF20010A376 /* ScriptPractice.storyboard in Resources */,
 				5E32FC6729695D060010A376 /* MyPage.storyboard in Resources */,
 				5E32FC1E296955930010A376 /* LaunchScreen.storyboard in Resources */,
+				89273C0B2977CAE600208B6D /* ScriptPT.storyboard in Resources */,
 				5E32FC1B296955930010A376 /* Assets.xcassets in Resources */,
 				5E32FC6529695CFC0010A376 /* InterviewPractice.storyboard in Resources */,
 				5E32FC19296955910010A376 /* Main.storyboard in Resources */,
@@ -427,6 +442,7 @@
 				89273C082977B6DF00208B6D /* ScriptBottomSheetViewController.swift in Sources */,
 				5E32FC12296955910010A376 /* AppDelegate.swift in Sources */,
 				5E32FC532969574E0010A376 /* UIButton.swift in Sources */,
+				89273C0D2977CAEF00208B6D /* ScriptPTViewController.swift in Sources */,
 				5E32FC14296955910010A376 /* SceneDelegate.swift in Sources */,
 				5E32FC5B296957BB0010A376 /* UITextField.swift in Sources */,
 				5E32FC592969579B0010A376 /* UIFont.swift in Sources */,
