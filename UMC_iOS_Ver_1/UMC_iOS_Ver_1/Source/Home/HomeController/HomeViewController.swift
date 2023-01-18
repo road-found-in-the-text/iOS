@@ -31,10 +31,12 @@ class HomeViewController: UIViewController {
 
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+    //섹션 개수
     func numberOfSections(in tableView: UITableView) -> Int {
         return 2
     }
     
+    //섹션 제목
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if section == 0 {
             return "🔥 Best Forum"
@@ -43,6 +45,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    //섹션 안의 셀 개수
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0 {
             return 1
@@ -51,6 +54,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    //셀 설정
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         switch indexPath.section{
         case 0:
@@ -64,6 +68,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    //셀 높이
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0 {
             return 175
@@ -72,4 +77,10 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         }
     }
     
+    //셀 선택 시 화면이동
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let postStoryboard = UIStoryboard(name: Const.Storyboard.Name.post, bundle: nil)
+        guard let postVC = postStoryboard.instantiateViewController(withIdentifier: Const.ViewController.identifier.post) as? PostViewController else { return }
+        self.navigationController?.pushViewController(postVC, animated: true)
+    }
 }
