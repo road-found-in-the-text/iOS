@@ -51,17 +51,21 @@ class ReportViewController: UIViewController {
         reportOptionButton7.addTarget(self, action: #selector(reportOptionButtonTap(_:)), for: .touchUpInside)
     }
     
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
     @objc func reportOptionButtonTap(_ sender:DLRadioButton) {
         reportContent = sender.currentTitle!
     }
     
     func updateMemoTextCountLabel(length: Int) {
-           let fullText = "\(length) / 80"
-           let attributedString = NSMutableAttributedString(string: fullText)
-           let range = (fullText as NSString).range(of: String(length))
-           attributedString.addAttribute(.foregroundColor, value: UIColor.systemBlue, range: range)
-           textCountLabel.attributedText = attributedString
-       }
+        let fullText = "\(length) / 80"
+        let attributedString = NSMutableAttributedString(string: fullText)
+        let range = (fullText as NSString).range(of: String(length))
+        attributedString.addAttribute(.foregroundColor, value: UIColor.systemBlue, range: range)
+        textCountLabel.attributedText = attributedString
+    }
     
     func settingTextView() {
         etcReportTextView.layer.borderWidth = 0.3
@@ -81,28 +85,27 @@ class ReportViewController: UIViewController {
 
 extension ReportViewController: UITextViewDelegate {
     func textViewDidBeginEditing(_ textView: UITextView) {
-            if textView.text == textViewPlaceholder {
-                textView.text = nil
-                textView.textColor = UIColor(named: "Sub1")
-            }
+        if textView.text == textViewPlaceholder {
+            textView.text = nil
+            textView.textColor = .black
         }
-
-        func textViewDidEndEditing(_ textView: UITextView) {
-            if textView.text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
-                textView.text = textViewPlaceholder
-                textView.textColor = UIColor(named: "Sub2")
-                updateMemoTextCountLabel(length: 0)
-            }
+    }
+    
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if textView.text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+            textView.text = textViewPlaceholder
+            textView.textColor = UIColor(named: "Sub2")
+            updateMemoTextCountLabel(length: 0)
         }
-        
-        func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
-            let textLength = textView.text.count + text.count
-            let isAtLimit = textLength <= 80
-            
-            return isAtLimit
-        }
-        
-        func textViewDidChange(_ textView: UITextView) {
-            updateMemoTextCountLabel(length: textView.text.count)
-        }
+    }
+    
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        let textLength = textView.text.count + text.count
+        let isAtLimit = textLength <= 80
+        return isAtLimit
+    }
+    
+    func textViewDidChange(_ textView: UITextView) {
+        updateMemoTextCountLabel(length: textView.text.count)
+    }
 }
