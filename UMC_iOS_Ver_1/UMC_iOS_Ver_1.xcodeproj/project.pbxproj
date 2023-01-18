@@ -36,8 +36,8 @@
 		5E32FC6D29695DFF0010A376 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32FC6C29695DFF0010A376 /* MyPageViewController.swift */; };
 		89273C062977A80100208B6D /* ScriptPTCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89273C052977A80100208B6D /* ScriptPTCollectionViewCell.swift */; };
 		89273C082977B6DF00208B6D /* ScriptBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89273C072977B6DF00208B6D /* ScriptBottomSheetViewController.swift */; };
-		89DCF50B2977060000CB2296 /* Script.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89DCF50A2977060000CB2296 /* Script.storyboard */; };
-		89DCF50D2977060500CB2296 /* ScriptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCF50C2977060500CB2296 /* ScriptViewController.swift */; };
+		89DCF50B2977060000CB2296 /* ScriptPracticeSet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89DCF50A2977060000CB2296 /* ScriptPracticeSet.storyboard */; };
+		89DCF50D2977060500CB2296 /* ScriptPracticeSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCF50C2977060500CB2296 /* ScriptPracticeSetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,8 +91,8 @@
 		5E32FC6C29695DFF0010A376 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		89273C052977A80100208B6D /* ScriptPTCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPTCollectionViewCell.swift; sourceTree = "<group>"; };
 		89273C072977B6DF00208B6D /* ScriptBottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptBottomSheetViewController.swift; sourceTree = "<group>"; };
-		89DCF50A2977060000CB2296 /* Script.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Script.storyboard; sourceTree = "<group>"; };
-		89DCF50C2977060500CB2296 /* ScriptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptViewController.swift; sourceTree = "<group>"; };
+		89DCF50A2977060000CB2296 /* ScriptPracticeSet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeSet.storyboard; sourceTree = "<group>"; };
+		89DCF50C2977060500CB2296 /* ScriptPracticeSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeSetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,7 +255,7 @@
 		5E32FC6129695CA20010A376 /* ScriptPractice */ = {
 			isa = PBXGroup;
 			children = (
-				89DCF505297705C800CB2296 /* Script */,
+				89DCF505297705C800CB2296 /* ScriptPracticeSet */,
 				5E32FC6229695CF20010A376 /* ScriptPractice.storyboard */,
 				5E32FC6829695DE90010A376 /* ScriptPracticeViewController.swift */,
 			);
@@ -270,15 +270,15 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		89DCF505297705C800CB2296 /* Script */ = {
+		89DCF505297705C800CB2296 /* ScriptPracticeSet */ = {
 			isa = PBXGroup;
 			children = (
 				89273C042977A42C00208B6D /* Cell */,
-				89DCF50A2977060000CB2296 /* Script.storyboard */,
-				89DCF50C2977060500CB2296 /* ScriptViewController.swift */,
+				89DCF50A2977060000CB2296 /* ScriptPracticeSet.storyboard */,
+				89DCF50C2977060500CB2296 /* ScriptPracticeSetViewController.swift */,
 				89273C072977B6DF00208B6D /* ScriptBottomSheetViewController.swift */,
 			);
-			path = Script;
+			path = ScriptPracticeSet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -391,7 +391,7 @@
 				5E32FC1B296955930010A376 /* Assets.xcassets in Resources */,
 				5E32FC6529695CFC0010A376 /* InterviewPractice.storyboard in Resources */,
 				5E32FC19296955910010A376 /* Main.storyboard in Resources */,
-				89DCF50B2977060000CB2296 /* Script.storyboard in Resources */,
+				89DCF50B2977060000CB2296 /* ScriptPracticeSet.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,7 +431,7 @@
 				5E32FC5B296957BB0010A376 /* UITextField.swift in Sources */,
 				5E32FC592969579B0010A376 /* UIFont.swift in Sources */,
 				5E32FC45296956470010A376 /* Constant.swift in Sources */,
-				89DCF50D2977060500CB2296 /* ScriptViewController.swift in Sources */,
+				89DCF50D2977060500CB2296 /* ScriptPracticeSetViewController.swift in Sources */,
 				5E32FC6929695DE90010A376 /* ScriptPracticeViewController.swift in Sources */,
 				5E32FC48296956A40010A376 /* IndicatorView.swift in Sources */,
 				5E32FC6B29695DF60010A376 /* InterviewPracticeViewController.swift in Sources */,

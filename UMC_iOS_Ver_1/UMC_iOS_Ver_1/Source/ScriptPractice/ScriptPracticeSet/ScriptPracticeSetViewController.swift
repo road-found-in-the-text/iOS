@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ScriptViewController: UIViewController {
+class ScriptPracticeSetViewController: UIViewController {
     
     // MARK: - Properties
     @IBOutlet var collectionView: UICollectionView!
@@ -64,7 +64,7 @@ class ScriptViewController: UIViewController {
 }
 
 // MARK: - UICollectionView
-extension ScriptViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension ScriptPracticeSetViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return 5
     }
