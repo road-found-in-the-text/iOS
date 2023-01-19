@@ -433,6 +433,8 @@
 				9605E6568465799CFD279686 /* Pods-UMC_iOS_Ver_1Tests.release.xcconfig */,
 			);
 			path = Pods;
+            sourceTree = "<group>";
+        };
 		89028EC0296C6B2A00B28DB7 /* ScriptEdit */ = {
 			isa = PBXGroup;
 			children = (
