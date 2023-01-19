@@ -12,6 +12,7 @@ struct Const {
         struct Name {
             static let post = "Post"
             static let report = "Report"
+            static let reportAlert = "ReportAlert"
         }
     }
     
@@ -19,6 +20,7 @@ struct Const {
         struct identifier {
             static let post = "PostViewController"
             static let report = "ReportViewController"
+            static let reportAlert = "CustomAlertViewController"
         }
     }
     

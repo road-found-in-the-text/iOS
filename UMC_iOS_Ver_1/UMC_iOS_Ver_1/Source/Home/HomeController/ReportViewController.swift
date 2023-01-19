@@ -10,7 +10,7 @@ import DLRadioButton
 
 class ReportViewController: UIViewController {
     
-    var reportContent: String?
+    static var reportContent: String?
     private let textViewPlaceholder = "신고 사유를 입력해주세요."
     
     @IBOutlet weak var textCountLabel: UILabel!
@@ -31,6 +31,7 @@ class ReportViewController: UIViewController {
         etcReportTextView.delegate = self
         reportButton.layer.cornerRadius = 10
         settingTextView()
+        setReportButton()
     }
     
     //report 체크 버튼 기본 설정
@@ -48,7 +49,7 @@ class ReportViewController: UIViewController {
         reportOptionButton4.addTarget(self, action: #selector(reportOptionButtonTap(_:)), for: .touchUpInside)
         reportOptionButton5.addTarget(self, action: #selector(reportOptionButtonTap(_:)), for: .touchUpInside)
         reportOptionButton6.addTarget(self, action: #selector(reportOptionButtonTap(_:)), for: .touchUpInside)
-        reportOptionButton7.addTarget(self, action: #selector(reportOptionButtonTap(_:)), for: .touchUpInside)
+        reportOptionButton7.addTarget(self, action: #selector(reportEtcButtonTap(_:)), for: .touchUpInside)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -56,7 +57,13 @@ class ReportViewController: UIViewController {
     }
     
     @objc func reportOptionButtonTap(_ sender:DLRadioButton) {
-        reportContent = sender.currentTitle!
+        ReportViewController.reportContent = sender.currentTitle!
+        etcReportTextView.isEditable = false
+    }
+    
+    @objc func reportEtcButtonTap(_ sender:DLRadioButton) {
+        etcReportTextView.isEditable = true
+        etcReportTextView.isUserInteractionEnabled = true
     }
     
     func updateMemoTextCountLabel(length: Int) {
@@ -78,6 +85,9 @@ class ReportViewController: UIViewController {
     }
     
     @IBAction func reportButtonTapped(_ sender: Any) {
+        let alertStoryboard = UIStoryboard(name: Const.Storyboard.Name.reportAlert, bundle: nil)
+        guard let alertVC = alertStoryboard.instantiateViewController(withIdentifier: Const.ViewController.identifier.reportAlert) as? CustomAlertViewController else { return }
+        present(alertVC, animated: false)
     }
     
     
@@ -96,6 +106,8 @@ extension ReportViewController: UITextViewDelegate {
             textView.text = textViewPlaceholder
             textView.textColor = UIColor(named: "Sub2")
             updateMemoTextCountLabel(length: 0)
+        } else {
+            ReportViewController.reportContent = textView.text
         }
     }
     

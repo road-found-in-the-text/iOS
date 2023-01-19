@@ -269,12 +269,12 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TO8-yj-TVQ">
                                                 <rect key="frame" x="10" y="453" width="355" height="120"/>
                                                 <subviews>
-                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="신고 사유를 입력해주세요." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Bqu-je-iJs">
+                                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="신고 사유를 입력해주세요." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Bqu-je-iJs">
                                                         <rect key="frame" x="0.0" y="0.0" width="355" height="120"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <color key="textColor" name="Sub2"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
                                                     </textView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(0/80)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdz-Ce-xse">
                                                         <rect key="frame" x="295" y="97" width="60" height="21"/>
