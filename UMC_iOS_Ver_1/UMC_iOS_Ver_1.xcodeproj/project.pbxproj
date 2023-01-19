@@ -328,6 +328,10 @@
 				897C634C2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift */,
 				897C634E2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift */,
 				897C63502976BA6900CCF25F /* ScriptRecordMemoCollectionViewCell.swift */,
+            );
+            path = Cell;
+            sourceTree = "<group>";
+        };
 		89273C042977A42C00208B6D /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -352,6 +356,8 @@
 				89CD521F29744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift */,
 			);
 			path = ScriptPracticeRecordResult;
+            sourceTree = "<group>";
+        };
 		89273C092977CAD700208B6D /* ScriptPT */ = {
 			isa = PBXGroup;
 			children = (
