@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--ReportAlert-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="CustomAlertViewController" title="ReportAlert" id="Y6W-OH-hqX" customClass="CustomAlertViewController" customModule="UMC_iOS_Ver_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dau-Ng-iA8">
+                                <rect key="frame" x="15" y="277" width="345" height="180"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="신고하기" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QRW-Bl-HSB">
+                                        <rect key="frame" x="10" y="8" width="325" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Dqx-Ib-FXC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="신고하시겠습니까?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ipc-lq-GmC">
+                                        <rect key="frame" x="5" y="78" width="335" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="1aj-GA-Sek"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="ujH-fb-jrf">
+                                        <rect key="frame" x="10" y="122" width="325" height="48"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h84-If-zpa">
+                                                <rect key="frame" x="0.0" y="0.0" width="153" height="48"/>
+                                                <color key="backgroundColor" name="Sub3"/>
+                                                <color key="tintColor" white="0.62143920070000003" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="취소">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="cancelButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="djz-z8-Spf"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxJ-XC-2K7">
+                                                <rect key="frame" x="172" y="0.0" width="153" height="48"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="신고">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="14"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="reportButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="bfx-fy-lVT"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="Ipc-lq-GmC" firstAttribute="top" secondItem="QRW-Bl-HSB" secondAttribute="bottom" constant="40" id="87I-Hp-n1t"/>
+                                    <constraint firstItem="Ipc-lq-GmC" firstAttribute="leading" secondItem="Dau-Ng-iA8" secondAttribute="leading" constant="5" id="AYA-Pb-p4f"/>
+                                    <constraint firstAttribute="bottom" secondItem="ujH-fb-jrf" secondAttribute="bottom" constant="10" id="BIe-eL-w3b"/>
+                                    <constraint firstItem="QRW-Bl-HSB" firstAttribute="top" secondItem="Dau-Ng-iA8" secondAttribute="top" constant="8" id="HeR-eU-eJg"/>
+                                    <constraint firstItem="ujH-fb-jrf" firstAttribute="top" secondItem="Ipc-lq-GmC" secondAttribute="bottom" constant="20" id="UpB-L3-13Z"/>
+                                    <constraint firstAttribute="trailing" secondItem="ujH-fb-jrf" secondAttribute="trailing" constant="10" id="fs8-m1-aKH"/>
+                                    <constraint firstAttribute="trailing" secondItem="Ipc-lq-GmC" secondAttribute="trailing" constant="5" id="gaB-wN-Dfu"/>
+                                    <constraint firstAttribute="height" constant="180" id="i0E-EV-rMZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="QRW-Bl-HSB" secondAttribute="trailing" constant="10" id="k4d-Ca-Gl6"/>
+                                    <constraint firstItem="QRW-Bl-HSB" firstAttribute="leading" secondItem="Dau-Ng-iA8" secondAttribute="leading" constant="10" id="kFH-PD-e1m"/>
+                                    <constraint firstItem="ujH-fb-jrf" firstAttribute="leading" secondItem="Dau-Ng-iA8" secondAttribute="leading" constant="10" id="ttK-3y-eUf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.67843137249999996" green="0.70980392160000005" blue="0.74117647060000003" alpha="0.65017073680000004" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Dau-Ng-iA8" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="230" id="PX8-pZ-b8x"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Dau-Ng-iA8" secondAttribute="trailing" constant="15" id="YCI-xI-wvY"/>
+                            <constraint firstItem="Dau-Ng-iA8" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="15" id="h7U-oT-PQf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="h84-If-zpa" id="MP6-0r-VHS"/>
+                        <outlet property="reportAlertView" destination="Dau-Ng-iA8" id="ep8-mJ-Bbu"/>
+                        <outlet property="reportButton" destination="hxJ-XC-2K7" id="de5-Bj-2iq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="49.618320610687022" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Sub3">
+            <color red="0.78823529411764703" green="0.83921568627450982" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
