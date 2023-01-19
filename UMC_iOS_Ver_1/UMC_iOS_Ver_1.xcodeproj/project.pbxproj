@@ -34,6 +34,21 @@
 		5E32FC6929695DE90010A376 /* ScriptPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32FC6829695DE90010A376 /* ScriptPracticeViewController.swift */; };
 		5E32FC6B29695DF60010A376 /* InterviewPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32FC6A29695DF60010A376 /* InterviewPracticeViewController.swift */; };
 		5E32FC6D29695DFF0010A376 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32FC6C29695DFF0010A376 /* MyPageViewController.swift */; };
+		89028EC2296C6B3800B28DB7 /* ScriptEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89028EC1296C6B3800B28DB7 /* ScriptEdit.storyboard */; };
+		89028EC4296C6B5900B28DB7 /* ScriptEditTabmanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89028EC3296C6B5900B28DB7 /* ScriptEditTabmanViewController.swift */; };
+		896854B32975564200E70868 /* ScriptRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896854B22975564200E70868 /* ScriptRecord.storyboard */; };
+		896854B52975565400E70868 /* ScriptRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896854B42975565400E70868 /* ScriptRecordViewController.swift */; };
+		897C634B2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C634A2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift */; };
+		897C634D2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C634C2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift */; };
+		897C634F2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C634E2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift */; };
+		897C63512976BA6900CCF25F /* ScriptRecordMemoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C63502976BA6900CCF25F /* ScriptRecordMemoCollectionViewCell.swift */; };
+		89C31EE2296DB73D00CBF249 /* Tabman in Frameworks */ = {isa = PBXBuildFile; productRef = 89C31EE1296DB73D00CBF249 /* Tabman */; };
+		89C31EE5296DBDD000CBF249 /* ScriptPracticeRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89C31EE4296DBDD000CBF249 /* ScriptPracticeRecord.storyboard */; };
+		89C31EE7296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C31EE6296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift */; };
+		89C31EE9296DD8CB00CBF249 /* ImageLabelBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C31EE8296DD8CB00CBF249 /* ImageLabelBarButton.swift */; };
+		89CD521B29744C1300E1F424 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 89CD521A29744C1300E1F424 /* Charts */; };
+		89CD521E29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CD521D29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard */; };
+		89CD522029744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD521F29744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift */; };
 		89273C062977A80100208B6D /* ScriptPTCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89273C052977A80100208B6D /* ScriptPTCollectionViewCell.swift */; };
 		89273C082977B6DF00208B6D /* ScriptBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89273C072977B6DF00208B6D /* ScriptBottomSheetViewController.swift */; };
 		89273C0B2977CAE600208B6D /* ScriptPT.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89273C0A2977CAE600208B6D /* ScriptPT.storyboard */; };
@@ -91,6 +106,19 @@
 		5E32FC6829695DE90010A376 /* ScriptPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeViewController.swift; sourceTree = "<group>"; };
 		5E32FC6A29695DF60010A376 /* InterviewPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewPracticeViewController.swift; sourceTree = "<group>"; };
 		5E32FC6C29695DFF0010A376 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
+		89028EC1296C6B3800B28DB7 /* ScriptEdit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptEdit.storyboard; sourceTree = "<group>"; };
+		89028EC3296C6B5900B28DB7 /* ScriptEditTabmanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptEditTabmanViewController.swift; sourceTree = "<group>"; };
+		896854B22975564200E70868 /* ScriptRecord.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptRecord.storyboard; sourceTree = "<group>"; };
+		896854B42975565400E70868 /* ScriptRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordViewController.swift; sourceTree = "<group>"; };
+		897C634A2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordCollectionReusableView.swift; sourceTree = "<group>"; };
+		897C634C2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordResultCollectionViewCell.swift; sourceTree = "<group>"; };
+		897C634E2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordChartCollectionViewCell.swift; sourceTree = "<group>"; };
+		897C63502976BA6900CCF25F /* ScriptRecordMemoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordMemoCollectionViewCell.swift; sourceTree = "<group>"; };
+		89C31EE4296DBDD000CBF249 /* ScriptPracticeRecord.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeRecord.storyboard; sourceTree = "<group>"; };
+		89C31EE6296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeRecordViewController.swift; sourceTree = "<group>"; };
+		89C31EE8296DD8CB00CBF249 /* ImageLabelBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLabelBarButton.swift; sourceTree = "<group>"; };
+		89CD521D29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeRecordResult.storyboard; sourceTree = "<group>"; };
+		89CD521F29744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeRecordResultViewController.swift; sourceTree = "<group>"; };
 		89273C052977A80100208B6D /* ScriptPTCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPTCollectionViewCell.swift; sourceTree = "<group>"; };
 		89273C072977B6DF00208B6D /* ScriptBottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptBottomSheetViewController.swift; sourceTree = "<group>"; };
 		89273C0A2977CAE600208B6D /* ScriptPT.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPT.storyboard; sourceTree = "<group>"; };
@@ -104,6 +132,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89C31EE2296DB73D00CBF249 /* Tabman in Frameworks */,
+				89CD521B29744C1300E1F424 /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +219,7 @@
 			isa = PBXGroup;
 			children = (
 				5E32FC47296956A40010A376 /* IndicatorView.swift */,
+				89C31EE8296DD8CB00CBF249 /* ImageLabelBarButton.swift */,
 				5E32FC49296956D70010A376 /* Extension */,
 			);
 			path = Util;
@@ -259,6 +290,10 @@
 		5E32FC6129695CA20010A376 /* ScriptPractice */ = {
 			isa = PBXGroup;
 			children = (
+				896854B12975563800E70868 /* ScriptRecord */,
+				89CD521C29744CA100E1F424 /* ScriptPracticeRecordResult */,
+				89C31EE3296DBDC300CBF249 /* ScriptPracticeRecord */,
+				89028EC0296C6B2A00B28DB7 /* ScriptEdit */,
 				89273C092977CAD700208B6D /* ScriptPT */,
 				89DCF505297705C800CB2296 /* ScriptPracticeSet */,
 				5E32FC6229695CF20010A376 /* ScriptPractice.storyboard */,
@@ -267,6 +302,32 @@
 			path = ScriptPractice;
 			sourceTree = "<group>";
 		};
+		89028EC0296C6B2A00B28DB7 /* ScriptEdit */ = {
+			isa = PBXGroup;
+			children = (
+				89028EC1296C6B3800B28DB7 /* ScriptEdit.storyboard */,
+				89028EC3296C6B5900B28DB7 /* ScriptEditTabmanViewController.swift */,
+			);
+			path = ScriptEdit;
+			sourceTree = "<group>";
+		};
+		896854B12975563800E70868 /* ScriptRecord */ = {
+			isa = PBXGroup;
+			children = (
+				897C63492976B7E700CCF25F /* Cell */,
+				896854B22975564200E70868 /* ScriptRecord.storyboard */,
+				896854B42975565400E70868 /* ScriptRecordViewController.swift */,
+			);
+			path = ScriptRecord;
+			sourceTree = "<group>";
+		};
+		897C63492976B7E700CCF25F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				897C634A2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift */,
+				897C634C2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift */,
+				897C634E2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift */,
+				897C63502976BA6900CCF25F /* ScriptRecordMemoCollectionViewCell.swift */,
 		89273C042977A42C00208B6D /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -275,6 +336,22 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
+		89C31EE3296DBDC300CBF249 /* ScriptPracticeRecord */ = {
+			isa = PBXGroup;
+			children = (
+				89C31EE4296DBDD000CBF249 /* ScriptPracticeRecord.storyboard */,
+				89C31EE6296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift */,
+			);
+			path = ScriptPracticeRecord;
+			sourceTree = "<group>";
+		};
+		89CD521C29744CA100E1F424 /* ScriptPracticeRecordResult */ = {
+			isa = PBXGroup;
+			children = (
+				89CD521D29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard */,
+				89CD521F29744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift */,
+			);
+			path = ScriptPracticeRecordResult;
 		89273C092977CAD700208B6D /* ScriptPT */ = {
 			isa = PBXGroup;
 			children = (
@@ -311,6 +388,10 @@
 			dependencies = (
 			);
 			name = UMC_iOS_Ver_1;
+			packageProductDependencies = (
+				89C31EE1296DB73D00CBF249 /* Tabman */,
+				89CD521A29744C1300E1F424 /* Charts */,
+			);
 			productName = UMC_iOS_Ver_1;
 			productReference = 5E32FC0E296955910010A376 /* UMC_iOS_Ver_1.app */;
 			productType = "com.apple.product-type.application";
@@ -383,6 +464,10 @@
 				Base,
 			);
 			mainGroup = 5E32FC05296955910010A376;
+			packageReferences = (
+				89C31EE0296DB73D00CBF249 /* XCRemoteSwiftPackageReference "Tabman" */,
+				89CD521929744C1300E1F424 /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = 5E32FC0F296955910010A376 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -399,9 +484,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89028EC2296C6B3800B28DB7 /* ScriptEdit.storyboard in Resources */,
+				89C31EE5296DBDD000CBF249 /* ScriptPracticeRecord.storyboard in Resources */,
 				5E32FC6329695CF20010A376 /* ScriptPractice.storyboard in Resources */,
 				5E32FC6729695D060010A376 /* MyPage.storyboard in Resources */,
 				5E32FC1E296955930010A376 /* LaunchScreen.storyboard in Resources */,
+				896854B32975564200E70868 /* ScriptRecord.storyboard in Resources */,
+				89CD521E29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard in Resources */,
 				89273C0B2977CAE600208B6D /* ScriptPT.storyboard in Resources */,
 				5E32FC1B296955930010A376 /* Assets.xcassets in Resources */,
 				5E32FC6529695CFC0010A376 /* InterviewPractice.storyboard in Resources */,
@@ -435,8 +524,12 @@
 				5E32FC6D29695DFF0010A376 /* MyPageViewController.swift in Sources */,
 				5E32FC4D296957030010A376 /* UIColor.swift in Sources */,
 				5E32FC4B296956EB0010A376 /* Date.swift in Sources */,
+				896854B52975565400E70868 /* ScriptRecordViewController.swift in Sources */,
 				5E32FC552969576A0010A376 /* UIViewController.swift in Sources */,
 				5E32FC57296957840010A376 /* UIImageView.swift in Sources */,
+				89CD522029744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift in Sources */,
+				5E32FC51296957350010A376 /* String.swift in Sources */,
+				897C634F2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift in Sources */,
 				89273C062977A80100208B6D /* ScriptPTCollectionViewCell.swift in Sources */,
 				5E32FC51296957350010A376 /* String.swift in Sources */,
 				89273C082977B6DF00208B6D /* ScriptBottomSheetViewController.swift in Sources */,
@@ -446,12 +539,18 @@
 				5E32FC14296955910010A376 /* SceneDelegate.swift in Sources */,
 				5E32FC5B296957BB0010A376 /* UITextField.swift in Sources */,
 				5E32FC592969579B0010A376 /* UIFont.swift in Sources */,
+				89C31EE9296DD8CB00CBF249 /* ImageLabelBarButton.swift in Sources */,
+				897C63512976BA6900CCF25F /* ScriptRecordMemoCollectionViewCell.swift in Sources */,
 				5E32FC45296956470010A376 /* Constant.swift in Sources */,
 				89DCF50D2977060500CB2296 /* ScriptPracticeSetViewController.swift in Sources */,
 				5E32FC6929695DE90010A376 /* ScriptPracticeViewController.swift in Sources */,
+				897C634B2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift in Sources */,
 				5E32FC48296956A40010A376 /* IndicatorView.swift in Sources */,
+				897C634D2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift in Sources */,
 				5E32FC6B29695DF60010A376 /* InterviewPracticeViewController.swift in Sources */,
 				5E32FC4F296957170010A376 /* CustomSegmentedControl.swift in Sources */,
+				89028EC4296C6B5900B28DB7 /* ScriptEditTabmanViewController.swift in Sources */,
+				89C31EE7296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift in Sources */,
 				5E32FC5D296957CE0010A376 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -794,6 +893,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		89C31EE0296DB73D00CBF249 /* XCRemoteSwiftPackageReference "Tabman" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uias/Tabman";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		89CD521929744C1300E1F424 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		89C31EE1296DB73D00CBF249 /* Tabman */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 89C31EE0296DB73D00CBF249 /* XCRemoteSwiftPackageReference "Tabman" */;
+			productName = Tabman;
+		};
+		89CD521A29744C1300E1F424 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 89CD521929744C1300E1F424 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5E32FC06296955910010A376 /* Project object */;
 }

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Script Practice Record View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="ScriptPracticeRecordViewController" id="Y6W-OH-hqX" customClass="ScriptPracticeRecordViewController" customModule="UMC_iOS_Ver_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이번 연습에 대해 스스로 점수를 매겨보세요! " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HzS-eu-Dgj">
+                                <rect key="frame" x="16" y="79" width="361" height="19.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="성장해 있는 자신을 만나볼 수 있습니다:-)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXk-PE-KZf">
+                                <rect key="frame" x="16" y="104.33333333333333" width="361" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" name="Sub1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1/5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRK-LU-mLY">
+                                <rect key="frame" x="20" y="159.33333333333334" width="353" height="19.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. 분석력" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9i3-em-WpV">
+                                <rect key="frame" x="20" y="202.66666666666666" width="353" height="19.333333333333343"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gxU-I0-js3">
+                                <rect key="frame" x="20" y="232" width="260" height="63"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주제와 관련된 내용을 보여주는가?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpi-A4-Bao">
+                                        <rect key="frame" x="0.0" y="0.0" width="260" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="so9-Cv-L59">
+                                        <rect key="frame" x="0.0" y="27" width="260" height="36"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpB-Da-Gbr">
+                                                <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                                <color key="backgroundColor" name="Sub4"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="36" id="Bgj-68-MH6"/>
+                                                    <constraint firstAttribute="height" constant="36" id="NnI-kA-dhq"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="1">
+                                                    <color key="titleColor" name="Sub2"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="touchFirstAnswerButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Obg-sd-wFH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lR1-U1-fe7">
+                                                <rect key="frame" x="56" y="0.0" width="36" height="36"/>
+                                                <color key="backgroundColor" name="Sub4"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="36" id="0Fs-iy-3ZT"/>
+                                                    <constraint firstAttribute="height" constant="36" id="caY-VZ-7XN"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="2">
+                                                    <color key="titleColor" name="Sub2"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="touchFirstAnswerButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="0AC-Np-w8I"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eNB-Tt-YLc">
+                                                <rect key="frame" x="112" y="0.0" width="36" height="36"/>
+                                                <color key="backgroundColor" name="Sub4"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="36" id="6mB-GH-1w0"/>
+                                                    <constraint firstAttribute="height" constant="36" id="ycD-x6-OfD"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="3">
+                                                    <color key="titleColor" name="Sub2"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="touchFirstAnswerButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="vJS-gI-9UK"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wqB-LQ-0G2">
+                                                <rect key="frame" x="168" y="0.0" width="36" height="36"/>
+                                                <color key="backgroundColor" name="Sub4"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="AdD-k8-eJt"/>
+                                                    <constraint firstAttribute="width" constant="36" id="rHk-zV-WaL"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="4">
+                                                    <color key="titleColor" name="Sub2"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="touchFirstAnswerButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="QVD-hy-KW0"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tmD-WC-PEL">
+                                                <rect key="frame" x="224" y="0.0" width="36" height="36"/>
+                                                <color key="backgroundColor" name="Sub4"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="36" id="TL8-iJ-S4N"/>
+                                                    <constraint firstAttribute="height" constant="36" id="dVX-gc-KfD"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="5">
+                                                    <color key="titleColor" name="Sub2"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="touchFirstAnswerButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Hep-sx-DTl"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9qe-9v-nht">
+                                <rect key="frame" x="20" y="313" width="260" height="63"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주제를 벗어나지 않았는가?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcK-uH-rw1">
+                                        <rect key="frame" x="0.0" y="0.0" width="260" height="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vGc-Xo-Sbj">
+                                        <rect key="frame" x="0.0" y="27" width="260" height="36"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSP-ch-Vv2">
+                                                <rect key="frame" x="0.0" y="0.0" width="36" height="36"/>
+                                                <color key="backgroundColor" name="Sub4"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="36" id="fGF-PP-Oyu"/>
+                                                    <constraint firstAttribute="width" constant="36" id="wSy-r4-ERy"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="1">
+                                                    <color key="titleColor" name="Sub2"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="touchSecondAnswerButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="wnx-Sy-Wk9"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dht-8q-yJp">
+                                                <rect key="frame" x="56" y="0.0" width="36" height="36"/>
+                                                <color key="backgroundColor" name="Sub4"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="36" id="4ip-Qq-anA"/>
+                                                    <constraint firstAttribute="height" constant="36" id="WHC-l3-4cH"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="2">
+                                                    <color key="titleColor" name="Sub2"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="touchSecondAnswerButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="rTu-R1-91B"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DRY-WA-6cJ">
+                                                <rect key="frame" x="112" y="0.0" width="36" height="36"/>
+                                                <color key="backgroundColor" name="Sub4"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="36" id="Gh3-sz-EaK"/>
+                                                    <constraint firstAttribute="height" constant="36" id="Mhq-ha-Zch"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="3">
+                                                    <color key="titleColor" name="Sub2"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="touchSecondAnswerButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Jsm-ax-OeH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4Y-fZ-lLO">
+                                                <rect key="frame" x="168" y="0.0" width="36" height="36"/>
+                                                <color key="backgroundColor" name="Sub4"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="36" id="DQO-nq-Lmr"/>
+                                                    <constraint firstAttribute="height" constant="36" id="cSm-B5-106"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="4">
+                                                    <color key="titleColor" name="Sub2"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="touchSecondAnswerButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="hQH-gD-ZsT"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nk3-Kw-JWg">
+                                                <rect key="frame" x="224" y="0.0" width="36" height="36"/>
+                                                <color key="backgroundColor" name="Sub4"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="36" id="42G-fN-csZ"/>
+                                                    <constraint firstAttribute="height" constant="36" id="brI-u5-Ioj"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" title="5">
+                                                    <color key="titleColor" name="Sub2"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="touchSecondAnswerButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="8dV-r4-Uwv"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="xFh-DO-jOz">
+                                <rect key="frame" x="16" y="752" width="361" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQM-LX-KMW">
+                                        <rect key="frame" x="0.0" y="0.0" width="173" height="50"/>
+                                        <color key="backgroundColor" name="Sub4"/>
+                                        <color key="tintColor" name="Sub2"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="건너뛰기">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6aS-D0-Oh0">
+                                        <rect key="frame" x="188" y="0.0" width="173" height="50"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="다음">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
+                                        </buttonConfiguration>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="FbO-sE-7Vu"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="xFh-DO-jOz" secondAttribute="trailing" constant="16" id="3Mm-fs-InN"/>
+                            <constraint firstItem="HzS-eu-Dgj" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="54L-Rj-q0l"/>
+                            <constraint firstItem="gxU-I0-js3" firstAttribute="top" secondItem="9i3-em-WpV" secondAttribute="bottom" constant="10" id="5Fh-7s-MWf"/>
+                            <constraint firstItem="HzS-eu-Dgj" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="20" id="7dR-e3-9ZN"/>
+                            <constraint firstItem="9qe-9v-nht" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="Dr0-lI-GJi"/>
+                            <constraint firstAttribute="trailing" secondItem="jXk-PE-KZf" secondAttribute="trailing" constant="16" id="LOv-Tf-lAf"/>
+                            <constraint firstItem="jXk-PE-KZf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="LWg-uF-GHy"/>
+                            <constraint firstItem="9i3-em-WpV" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="QES-8x-B5f"/>
+                            <constraint firstItem="hRK-LU-mLY" firstAttribute="top" secondItem="jXk-PE-KZf" secondAttribute="bottom" constant="37" id="UKN-J8-G3E"/>
+                            <constraint firstItem="9qe-9v-nht" firstAttribute="top" secondItem="gxU-I0-js3" secondAttribute="bottom" constant="18" id="ZO2-9X-XyE"/>
+                            <constraint firstItem="hRK-LU-mLY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="aVb-EH-1vV"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="HzS-eu-Dgj" secondAttribute="trailing" constant="16" id="ab3-fU-pVP"/>
+                            <constraint firstItem="jXk-PE-KZf" firstAttribute="top" secondItem="HzS-eu-Dgj" secondAttribute="bottom" constant="6" id="bO7-fo-fLx"/>
+                            <constraint firstItem="gxU-I0-js3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="bfK-Ss-OzX"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="xFh-DO-jOz" secondAttribute="bottom" constant="16" id="cQh-xv-KRx"/>
+                            <constraint firstItem="xFh-DO-jOz" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="fiN-el-deS"/>
+                            <constraint firstItem="9i3-em-WpV" firstAttribute="top" secondItem="hRK-LU-mLY" secondAttribute="bottom" constant="24" id="hF4-i4-cq3"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="9i3-em-WpV" secondAttribute="trailing" constant="20" id="rP3-uD-awi"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="hRK-LU-mLY" secondAttribute="trailing" constant="20" id="tKA-EI-BaZ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="firstQuestionLabel" destination="xpi-A4-Bao" id="lcR-Mh-596"/>
+                        <outlet property="nextButton" destination="6aS-D0-Oh0" id="c1X-a5-zMd"/>
+                        <outlet property="secondQuestionLabel" destination="pcK-uH-rw1" id="Hd4-x1-ekr"/>
+                        <outlet property="skipButton" destination="hQM-LX-KMW" id="OZ5-ui-NkR"/>
+                        <outlet property="stepLabel" destination="hRK-LU-mLY" id="w5y-FG-vr6"/>
+                        <outlet property="titleLabel" destination="9i3-em-WpV" id="Jeh-fi-a7E"/>
+                        <outletCollection property="firstAnswerButtons" destination="xpB-Da-Gbr" collectionClass="NSMutableArray" id="MPQ-SW-xwj"/>
+                        <outletCollection property="firstAnswerButtons" destination="lR1-U1-fe7" collectionClass="NSMutableArray" id="QZo-8Z-r6j"/>
+                        <outletCollection property="firstAnswerButtons" destination="eNB-Tt-YLc" collectionClass="NSMutableArray" id="WvO-Ll-L4A"/>
+                        <outletCollection property="firstAnswerButtons" destination="wqB-LQ-0G2" collectionClass="NSMutableArray" id="JvH-UR-2vi"/>
+                        <outletCollection property="firstAnswerButtons" destination="tmD-WC-PEL" collectionClass="NSMutableArray" id="xqY-lM-lBU"/>
+                        <outletCollection property="secondAnswerButtons" destination="KSP-ch-Vv2" collectionClass="NSMutableArray" id="4gl-aD-UpX"/>
+                        <outletCollection property="secondAnswerButtons" destination="dht-8q-yJp" collectionClass="NSMutableArray" id="RJc-Se-W4G"/>
+                        <outletCollection property="secondAnswerButtons" destination="DRY-WA-6cJ" collectionClass="NSMutableArray" id="Gkf-s3-vZ2"/>
+                        <outletCollection property="secondAnswerButtons" destination="q4Y-fZ-lLO" collectionClass="NSMutableArray" id="qYD-xF-lin"/>
+                        <outletCollection property="secondAnswerButtons" destination="nk3-Kw-JWg" collectionClass="NSMutableArray" id="ZC1-mq-aav"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Sub1">
+            <color red="0.32156862745098042" green="0.38039215686274508" blue="0.41568627450980394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Sub2">
+            <color red="0.67843137254901964" green="0.70980392156862748" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Sub4">
+            <color red="0.94117647058823528" green="0.96078431372549022" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
