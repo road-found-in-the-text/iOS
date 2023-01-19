@@ -60,6 +60,27 @@
 		6778D2355D99D72941DEBC63 /* Pods_UMC_iOS_Ver_1_UMC_iOS_Ver_1UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F6FA7EC2A2DF7ADD8C68E3 /* Pods_UMC_iOS_Ver_1_UMC_iOS_Ver_1UITests.framework */; };
 		9419EEF196C59F8A276BC2C0 /* Pods_UMC_iOS_Ver_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B928E9BB947B94197FC9A1 /* Pods_UMC_iOS_Ver_1.framework */; };
 		9627E4EC12C0657B54F74B64 /* Pods_UMC_iOS_Ver_1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D71B72BC0CFA2711D70661A /* Pods_UMC_iOS_Ver_1Tests.framework */; };
+		89028EC2296C6B3800B28DB7 /* ScriptEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89028EC1296C6B3800B28DB7 /* ScriptEdit.storyboard */; };
+		89028EC4296C6B5900B28DB7 /* ScriptEditTabmanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89028EC3296C6B5900B28DB7 /* ScriptEditTabmanViewController.swift */; };
+		896854B32975564200E70868 /* ScriptRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896854B22975564200E70868 /* ScriptRecord.storyboard */; };
+		896854B52975565400E70868 /* ScriptRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896854B42975565400E70868 /* ScriptRecordViewController.swift */; };
+		897C634B2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C634A2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift */; };
+		897C634D2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C634C2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift */; };
+		897C634F2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C634E2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift */; };
+		897C63512976BA6900CCF25F /* ScriptRecordMemoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C63502976BA6900CCF25F /* ScriptRecordMemoCollectionViewCell.swift */; };
+		89C31EE2296DB73D00CBF249 /* Tabman in Frameworks */ = {isa = PBXBuildFile; productRef = 89C31EE1296DB73D00CBF249 /* Tabman */; };
+		89C31EE5296DBDD000CBF249 /* ScriptPracticeRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89C31EE4296DBDD000CBF249 /* ScriptPracticeRecord.storyboard */; };
+		89C31EE7296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C31EE6296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift */; };
+		89C31EE9296DD8CB00CBF249 /* ImageLabelBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C31EE8296DD8CB00CBF249 /* ImageLabelBarButton.swift */; };
+		89CD521B29744C1300E1F424 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 89CD521A29744C1300E1F424 /* Charts */; };
+		89CD521E29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CD521D29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard */; };
+		89CD522029744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD521F29744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift */; };
+		89273C062977A80100208B6D /* ScriptPTCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89273C052977A80100208B6D /* ScriptPTCollectionViewCell.swift */; };
+		89273C082977B6DF00208B6D /* ScriptBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89273C072977B6DF00208B6D /* ScriptBottomSheetViewController.swift */; };
+		89273C0B2977CAE600208B6D /* ScriptPT.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89273C0A2977CAE600208B6D /* ScriptPT.storyboard */; };
+		89273C0D2977CAEF00208B6D /* ScriptPTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89273C0C2977CAEF00208B6D /* ScriptPTViewController.swift */; };
+		89DCF50B2977060000CB2296 /* ScriptPracticeSet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89DCF50A2977060000CB2296 /* ScriptPracticeSet.storyboard */; };
+		89DCF50D2977060500CB2296 /* ScriptPracticeSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCF50C2977060500CB2296 /* ScriptPracticeSetViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -143,6 +164,25 @@
 		B6F6FA7EC2A2DF7ADD8C68E3 /* Pods_UMC_iOS_Ver_1_UMC_iOS_Ver_1UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UMC_iOS_Ver_1_UMC_iOS_Ver_1UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BE1B10E59B9F8AA3D6921249 /* Pods-UMC_iOS_Ver_1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC_iOS_Ver_1.debug.xcconfig"; path = "Target Support Files/Pods-UMC_iOS_Ver_1/Pods-UMC_iOS_Ver_1.debug.xcconfig"; sourceTree = "<group>"; };
 		E33296865E5A34A1A08AF1F4 /* Pods-UMC_iOS_Ver_1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC_iOS_Ver_1.release.xcconfig"; path = "Target Support Files/Pods-UMC_iOS_Ver_1/Pods-UMC_iOS_Ver_1.release.xcconfig"; sourceTree = "<group>"; };
+		89028EC1296C6B3800B28DB7 /* ScriptEdit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptEdit.storyboard; sourceTree = "<group>"; };
+		89028EC3296C6B5900B28DB7 /* ScriptEditTabmanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptEditTabmanViewController.swift; sourceTree = "<group>"; };
+		896854B22975564200E70868 /* ScriptRecord.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptRecord.storyboard; sourceTree = "<group>"; };
+		896854B42975565400E70868 /* ScriptRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordViewController.swift; sourceTree = "<group>"; };
+		897C634A2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordCollectionReusableView.swift; sourceTree = "<group>"; };
+		897C634C2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordResultCollectionViewCell.swift; sourceTree = "<group>"; };
+		897C634E2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordChartCollectionViewCell.swift; sourceTree = "<group>"; };
+		897C63502976BA6900CCF25F /* ScriptRecordMemoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordMemoCollectionViewCell.swift; sourceTree = "<group>"; };
+		89C31EE4296DBDD000CBF249 /* ScriptPracticeRecord.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeRecord.storyboard; sourceTree = "<group>"; };
+		89C31EE6296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeRecordViewController.swift; sourceTree = "<group>"; };
+		89C31EE8296DD8CB00CBF249 /* ImageLabelBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLabelBarButton.swift; sourceTree = "<group>"; };
+		89CD521D29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeRecordResult.storyboard; sourceTree = "<group>"; };
+		89CD521F29744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeRecordResultViewController.swift; sourceTree = "<group>"; };
+		89273C052977A80100208B6D /* ScriptPTCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPTCollectionViewCell.swift; sourceTree = "<group>"; };
+		89273C072977B6DF00208B6D /* ScriptBottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptBottomSheetViewController.swift; sourceTree = "<group>"; };
+		89273C0A2977CAE600208B6D /* ScriptPT.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPT.storyboard; sourceTree = "<group>"; };
+		89273C0C2977CAEF00208B6D /* ScriptPTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPTViewController.swift; sourceTree = "<group>"; };
+		89DCF50A2977060000CB2296 /* ScriptPracticeSet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeSet.storyboard; sourceTree = "<group>"; };
+		89DCF50C2977060500CB2296 /* ScriptPracticeSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeSetViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +191,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9419EEF196C59F8A276BC2C0 /* Pods_UMC_iOS_Ver_1.framework in Frameworks */,
+				89C31EE2296DB73D00CBF249 /* Tabman in Frameworks */,
+				89CD521B29744C1300E1F424 /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +338,7 @@
 			isa = PBXGroup;
 			children = (
 				5E32FC47296956A40010A376 /* IndicatorView.swift */,
+				89C31EE8296DD8CB00CBF249 /* ImageLabelBarButton.swift */,
 				5E32FC49296956D70010A376 /* Extension */,
 			);
 			path = Util;
@@ -367,6 +410,12 @@
 		5E32FC6129695CA20010A376 /* ScriptPractice */ = {
 			isa = PBXGroup;
 			children = (
+				896854B12975563800E70868 /* ScriptRecord */,
+				89CD521C29744CA100E1F424 /* ScriptPracticeRecordResult */,
+				89C31EE3296DBDC300CBF249 /* ScriptPracticeRecord */,
+				89028EC0296C6B2A00B28DB7 /* ScriptEdit */,
+				89273C092977CAD700208B6D /* ScriptPT */,
+				89DCF505297705C800CB2296 /* ScriptPracticeSet */,
 				5E32FC6229695CF20010A376 /* ScriptPractice.storyboard */,
 				5E32FC6829695DE90010A376 /* ScriptPracticeViewController.swift */,
 			);
@@ -384,6 +433,80 @@
 				9605E6568465799CFD279686 /* Pods-UMC_iOS_Ver_1Tests.release.xcconfig */,
 			);
 			path = Pods;
+		89028EC0296C6B2A00B28DB7 /* ScriptEdit */ = {
+			isa = PBXGroup;
+			children = (
+				89028EC1296C6B3800B28DB7 /* ScriptEdit.storyboard */,
+				89028EC3296C6B5900B28DB7 /* ScriptEditTabmanViewController.swift */,
+			);
+			path = ScriptEdit;
+			sourceTree = "<group>";
+		};
+		896854B12975563800E70868 /* ScriptRecord */ = {
+			isa = PBXGroup;
+			children = (
+				897C63492976B7E700CCF25F /* Cell */,
+				896854B22975564200E70868 /* ScriptRecord.storyboard */,
+				896854B42975565400E70868 /* ScriptRecordViewController.swift */,
+			);
+			path = ScriptRecord;
+			sourceTree = "<group>";
+		};
+		897C63492976B7E700CCF25F /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				897C634A2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift */,
+				897C634C2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift */,
+				897C634E2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift */,
+				897C63502976BA6900CCF25F /* ScriptRecordMemoCollectionViewCell.swift */,
+            );
+            path = Cell;
+            sourceTree = "<group>";
+        };
+		89273C042977A42C00208B6D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				89273C052977A80100208B6D /* ScriptPTCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		89C31EE3296DBDC300CBF249 /* ScriptPracticeRecord */ = {
+			isa = PBXGroup;
+			children = (
+				89C31EE4296DBDD000CBF249 /* ScriptPracticeRecord.storyboard */,
+				89C31EE6296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift */,
+			);
+			path = ScriptPracticeRecord;
+			sourceTree = "<group>";
+		};
+		89CD521C29744CA100E1F424 /* ScriptPracticeRecordResult */ = {
+			isa = PBXGroup;
+			children = (
+				89CD521D29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard */,
+				89CD521F29744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift */,
+			);
+			path = ScriptPracticeRecordResult;
+            sourceTree = "<group>";
+        };
+		89273C092977CAD700208B6D /* ScriptPT */ = {
+			isa = PBXGroup;
+			children = (
+				89273C0A2977CAE600208B6D /* ScriptPT.storyboard */,
+				89273C0C2977CAEF00208B6D /* ScriptPTViewController.swift */,
+			);
+			path = ScriptPT;
+			sourceTree = "<group>";
+		};
+		89DCF505297705C800CB2296 /* ScriptPracticeSet */ = {
+			isa = PBXGroup;
+			children = (
+				89273C042977A42C00208B6D /* Cell */,
+				89DCF50A2977060000CB2296 /* ScriptPracticeSet.storyboard */,
+				89DCF50C2977060500CB2296 /* ScriptPracticeSetViewController.swift */,
+				89273C072977B6DF00208B6D /* ScriptBottomSheetViewController.swift */,
+			);
+			path = ScriptPracticeSet;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -404,6 +527,10 @@
 			dependencies = (
 			);
 			name = UMC_iOS_Ver_1;
+			packageProductDependencies = (
+				89C31EE1296DB73D00CBF249 /* Tabman */,
+				89CD521A29744C1300E1F424 /* Charts */,
+			);
 			productName = UMC_iOS_Ver_1;
 			productReference = 5E32FC0E296955910010A376 /* UMC_iOS_Ver_1.app */;
 			productType = "com.apple.product-type.application";
@@ -479,6 +606,10 @@
 				Base,
 			);
 			mainGroup = 5E32FC05296955910010A376;
+			packageReferences = (
+				89C31EE0296DB73D00CBF249 /* XCRemoteSwiftPackageReference "Tabman" */,
+				89CD521929744C1300E1F424 /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			productRefGroup = 5E32FC0F296955910010A376 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -500,17 +631,23 @@
 				210A9E8E29714B100063972B /* SearchKeywordTableViewCell.xib in Resources */,
 				218DA90E297084B200D76C03 /* BestForumTableViewCell.xib in Resources */,
 				216023A429708131009DA16E /* Home.storyboard in Resources */,
+				89028EC2296C6B3800B28DB7 /* ScriptEdit.storyboard in Resources */,
+				89C31EE5296DBDD000CBF249 /* ScriptPracticeRecord.storyboard in Resources */,
 				5E32FC6329695CF20010A376 /* ScriptPractice.storyboard in Resources */,
 				211E919C29741B8E00BD406C /* AddPost.storyboard in Resources */,
 				5E32FC6729695D060010A376 /* MyPage.storyboard in Resources */,
 				5E32FC1E296955930010A376 /* LaunchScreen.storyboard in Resources */,
 				2195E0F0297672AA00203C49 /* Report.storyboard in Resources */,
+				896854B32975564200E70868 /* ScriptRecord.storyboard in Resources */,
+				89CD521E29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard in Resources */,
+				89273C0B2977CAE600208B6D /* ScriptPT.storyboard in Resources */,
 				5E32FC1B296955930010A376 /* Assets.xcassets in Resources */,
 				210A9E8429713D9B0063972B /* Search.storyboard in Resources */,
 				5E32FC6529695CFC0010A376 /* InterviewPractice.storyboard in Resources */,
 				218DA9062970847F00D76C03 /* BestForumCollectionViewCell.xib in Resources */,
 				213812402977A58700EC7B26 /* Post.storyboard in Resources */,
 				5E32FC19296955910010A376 /* Main.storyboard in Resources */,
+				89DCF50B2977060000CB2296 /* ScriptPracticeSet.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -647,15 +784,26 @@
 				5E32FC552969576A0010A376 /* UIViewController.swift in Sources */,
 				5E32FC57296957840010A376 /* UIImageView.swift in Sources */,
 				21D4B6E629791D3600D7B485 /* CustomAlertViewController.swift in Sources */,
+				896854B52975565400E70868 /* ScriptRecordViewController.swift in Sources */,
+				5E32FC552969576A0010A376 /* UIViewController.swift in Sources */,
+				5E32FC57296957840010A376 /* UIImageView.swift in Sources */,
+				89CD522029744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift in Sources */,
 				5E32FC51296957350010A376 /* String.swift in Sources */,
+				897C634F2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift in Sources */,
+				89273C062977A80100208B6D /* ScriptPTCollectionViewCell.swift in Sources */,
+				5E32FC51296957350010A376 /* String.swift in Sources */,
+				89273C082977B6DF00208B6D /* ScriptBottomSheetViewController.swift in Sources */,
 				5E32FC12296955910010A376 /* AppDelegate.swift in Sources */,
 				5E32FC532969574E0010A376 /* UIButton.swift in Sources */,
 				210A9E8A29714A8A0063972B /* SearchContainerViewController.swift in Sources */,
 				218DA90F297084B200D76C03 /* ForumTableViewCell.swift in Sources */,
+				89273C0D2977CAEF00208B6D /* ScriptPTViewController.swift in Sources */,
 				5E32FC14296955910010A376 /* SceneDelegate.swift in Sources */,
 				5E32FC5B296957BB0010A376 /* UITextField.swift in Sources */,
 				210A9E8629713DC00063972B /* SearchViewController.swift in Sources */,
 				5E32FC592969579B0010A376 /* UIFont.swift in Sources */,
+				89C31EE9296DD8CB00CBF249 /* ImageLabelBarButton.swift in Sources */,
+				897C63512976BA6900CCF25F /* ScriptRecordMemoCollectionViewCell.swift in Sources */,
 				5E32FC45296956470010A376 /* Constant.swift in Sources */,
 				218DA9052970847F00D76C03 /* BestForumCollectionViewCell.swift in Sources */,
 				5E32FC6929695DE90010A376 /* ScriptPracticeViewController.swift in Sources */,
@@ -663,10 +811,16 @@
 				21348A1B297677F4002190E5 /* ReportViewController.swift in Sources */,
 				210A9E8829714A660063972B /* SearchHistoryDataModel.swift in Sources */,
 				210A9E8D29714B100063972B /* SearchKeywordTableViewCell.swift in Sources */,
+				89DCF50D2977060500CB2296 /* ScriptPracticeSetViewController.swift in Sources */,
+				5E32FC6929695DE90010A376 /* ScriptPracticeViewController.swift in Sources */,
+				897C634B2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift in Sources */,
 				5E32FC48296956A40010A376 /* IndicatorView.swift in Sources */,
+				897C634D2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift in Sources */,
 				5E32FC6B29695DF60010A376 /* InterviewPracticeViewController.swift in Sources */,
 				218DA908297084A700D76C03 /* BestForumDataModel.swift in Sources */,
 				5E32FC4F296957170010A376 /* CustomSegmentedControl.swift in Sources */,
+				89028EC4296C6B5900B28DB7 /* ScriptEditTabmanViewController.swift in Sources */,
+				89C31EE7296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift in Sources */,
 				5E32FC5D296957CE0010A376 /* CustomTextField.swift in Sources */,
 				213812422977A5A800EC7B26 /* PostViewController.swift in Sources */,
 			);
@@ -1016,6 +1170,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		89C31EE0296DB73D00CBF249 /* XCRemoteSwiftPackageReference "Tabman" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uias/Tabman";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		89CD521929744C1300E1F424 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielgindi/Charts.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		89C31EE1296DB73D00CBF249 /* Tabman */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 89C31EE0296DB73D00CBF249 /* XCRemoteSwiftPackageReference "Tabman" */;
+			productName = Tabman;
+		};
+		89CD521A29744C1300E1F424 /* Charts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 89CD521929744C1300E1F424 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = Charts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 5E32FC06296955910010A376 /* Project object */;
 }
