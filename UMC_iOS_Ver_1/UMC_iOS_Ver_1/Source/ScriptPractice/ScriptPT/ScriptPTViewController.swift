@@ -16,7 +16,7 @@ class ScriptPTViewController: UIViewController {
     @IBOutlet var pauseButton: UIButton!
     @IBOutlet var stopButton: UIButton!
     
-    private let cellSize = CGSize(width: 302, height: 140)
+    private var cellSize = CGSize()
     private var minimumItemSpacing: CGFloat = 20
     private let cellIdentifier = "scriptPTcell"
     
@@ -34,6 +34,7 @@ class ScriptPTViewController: UIViewController {
     }
     
     func configureCollectionView() {
+        cellSize = CGSize(width: collectionView.frame.width - 37 * 2, height: collectionView.frame.height)
         let cellWidth: CGFloat = floor(cellSize.width)
         let insetX = (view.bounds.width - cellWidth) / 2.0
         
