@@ -8,6 +8,7 @@ target 'UMC_iOS_Ver_1' do
   pod 'DLRadioButton', '~> 1.4'
   pod 'Alamofire'
   pod 'IQKeyboardManagerSwift'
+  pod 'lottie-ios'
 
   # Pods for UMC_iOS_Ver_1
 
