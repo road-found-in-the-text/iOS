@@ -54,6 +54,14 @@ extension ScriptEditTabmanViewController: PageboyViewControllerDataSource, TMBar
     }
 
     func barItem(for bar: TMBar, at index: Int) -> TMBarItemable {
-        return TMBarItem(title: barButtonTitle[index], image: UIImage(named: "ic_script_black")!)
+        var image: UIImage
+        if index == 0 {
+            image = UIImage(named: "ic_edit")!
+        } else if index == 1 {
+            image = UIImage(named: "ic_script")!
+        } else {
+            image = UIImage(named: "ic_bar chart")!
+        }
+        return TMBarItem(title: barButtonTitle[index], image: image)
     }
 }
