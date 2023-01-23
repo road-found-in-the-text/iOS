@@ -47,6 +47,21 @@ extension ScriptRecordViewController: UICollectionViewDelegate, UICollectionView
                 return UICollectionViewCell()
             }
             
+            let previousDataSet = RadarChartDataSet(
+                entries: [
+                    RadarChartDataEntry(value: 3.0),
+                    RadarChartDataEntry(value: 3.0),
+                    RadarChartDataEntry(value: 3.0),
+                    RadarChartDataEntry(value: 4.0),
+                    RadarChartDataEntry(value: 5.0),
+                ]
+            )
+            
+            previousDataSet.colors = [UIColor(named: "Sub1")!]
+            previousDataSet.lineWidth = 2
+            previousDataSet.drawValuesEnabled = false
+            previousDataSet.label = "이전 연습"
+            
             let dataSet = RadarChartDataSet(
                 entries: [
                     RadarChartDataEntry(value: 4.0),
@@ -60,8 +75,13 @@ extension ScriptRecordViewController: UICollectionViewDelegate, UICollectionView
             dataSet.colors = [.systemBlue]
             dataSet.lineWidth = 2
             dataSet.drawValuesEnabled = false
+            dataSet.label = "최근 연습"
             
-            cell.resultChart.data?.append(dataSet)
+            
+            let data = RadarChartData()
+            data.dataSets = [dataSet, previousDataSet]
+            
+            cell.resultChart.data = data
             
             return cell
         case 2:
