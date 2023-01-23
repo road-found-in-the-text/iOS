@@ -77,8 +77,10 @@ extension ScriptPTViewController {
         
         if isPaused {
             timer?.invalidate()
+            pauseButton.setImage(UIImage(named: "ic_play"), for: .normal)
         } else {
             timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerCallback), userInfo: nil, repeats: true)
+            pauseButton.setImage(UIImage(named: "ic_pause"), for: .normal)
         }
     }
 }
