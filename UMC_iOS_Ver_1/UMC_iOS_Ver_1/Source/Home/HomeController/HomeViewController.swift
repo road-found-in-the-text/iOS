@@ -59,6 +59,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         switch indexPath.section {
         case 0:
             guard let bestForumcell = tableView.dequeueReusableCell(withIdentifier: "BestForumTableViewCell", for: indexPath) as? BestForumTableViewCell else { return UITableViewCell() }
+            bestForumcell.cellDelegate = self
             return bestForumcell
         case 1:
             guard let forumCell = tableView.dequeueReusableCell(withIdentifier: "ForumTableViewCell", for: indexPath) as? ForumTableViewCell else { return UITableViewCell() }
@@ -79,6 +80,14 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     //셀 선택 시 화면이동
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let postStoryboard = UIStoryboard(name: Const.Storyboard.Name.post, bundle: nil)
+        guard let postVC = postStoryboard.instantiateViewController(withIdentifier: Const.ViewController.identifier.post) as? PostViewController else { return }
+        self.navigationController?.pushViewController(postVC, animated: true)
+    }
+}
+
+extension HomeViewController: CollectionViewCellDelegate {
+    func collectionView(collectionViewCell: BestForumCollectionViewCell?, index: Int, didTappedInTableViewCell: BestForumTableViewCell) {
         let postStoryboard = UIStoryboard(name: Const.Storyboard.Name.post, bundle: nil)
         guard let postVC = postStoryboard.instantiateViewController(withIdentifier: Const.ViewController.identifier.post) as? PostViewController else { return }
         self.navigationController?.pushViewController(postVC, animated: true)
