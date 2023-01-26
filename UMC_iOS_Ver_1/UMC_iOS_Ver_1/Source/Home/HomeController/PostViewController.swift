@@ -21,9 +21,10 @@ class PostViewController: UIViewController {
         transparentNavigationBar()
         registerXib()
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "ic_more"), style: .plain, target: self, action: #selector(reportTapped))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "ic_more"), style: .plain, target: self, action: #selector(reportTapped))     //네이게이션바 오른쪽 버튼 생성
     }
     
+    //custom cell 등록
     func registerXib() {
         let userProfileCell = UINib(nibName: "UserProfileTableViewCell", bundle: nil)
         postTableView.register(userProfileCell, forCellReuseIdentifier: "UserProfileTableViewCell")
@@ -52,6 +53,7 @@ class PostViewController: UIViewController {
         postTableView.contentInset = .init(top: 321, left: 0, bottom: 0, right: 0)
     }
     
+    //신고하기 버튼 클릭
     @objc func reportTapped() {
         let reportStoryboard = UIStoryboard(name: Const.Storyboard.Name.report, bundle: nil)
         guard let reportVC = reportStoryboard.instantiateViewController(withIdentifier: Const.ViewController.identifier.report) as? ReportViewController else { return }
@@ -96,6 +98,7 @@ extension PostViewController: UITableViewDelegate, UITableViewDataSource, UIScro
         }
     }
     
+    //스크롤 시 실행(스크롤 한 만큼 imageView 투명해지게 하기)
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let y: CGFloat = -scrollView.contentOffset.y
         let ratio = y / (maxImageTopHeight - minImageTopHeight)

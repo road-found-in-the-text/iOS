@@ -60,6 +60,7 @@ extension BestForumTableViewCell: UICollectionViewDataSource {
         return collectionViewCell
     }
     
+    //collectionView item 선택 시 화면 이동
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         let cell = collectionView.cellForItem(at: indexPath) as? BestForumCollectionViewCell
         self.cellDelegate?.collectionView(collectionViewCell: cell, index: indexPath.item, didTappedInTableViewCell: self)
