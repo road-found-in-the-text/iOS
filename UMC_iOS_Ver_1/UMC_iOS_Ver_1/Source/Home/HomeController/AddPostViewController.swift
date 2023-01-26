@@ -28,7 +28,6 @@ class AddPostViewController: UIViewController {
     
     @objc func touchToPickPhoto() {
         openPhoto()
-        print("HI")
     }
     
     func openPhoto() {
@@ -44,7 +43,7 @@ class AddPostViewController: UIViewController {
 
 extension AddPostViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+        if let image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
             imageView.image = image
             imageView.contentMode = .scaleToFill
         }

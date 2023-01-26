@@ -46,7 +46,7 @@ class BestForumTableViewCell: UITableViewCell, UICollectionViewDelegate {
     
 }
 
-extension BestForumTableViewCell: UICollectionViewDataSource{
+extension BestForumTableViewCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return BestForumDataModel.bestForumData.count
     }

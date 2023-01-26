@@ -56,7 +56,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     //셀 설정
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        switch indexPath.section{
+        switch indexPath.section {
         case 0:
             guard let bestForumcell = tableView.dequeueReusableCell(withIdentifier: "BestForumTableViewCell", for: indexPath) as? BestForumTableViewCell else { return UITableViewCell() }
             return bestForumcell
