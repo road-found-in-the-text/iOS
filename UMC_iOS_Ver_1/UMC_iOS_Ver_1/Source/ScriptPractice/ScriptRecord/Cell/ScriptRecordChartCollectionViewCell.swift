@@ -22,10 +22,41 @@ class ScriptRecordChartCollectionViewCell: UICollectionViewCell {
     }
     
     func configureResultChart() {
+        let dataSet = RadarChartDataSet(
+            entries: [
+                RadarChartDataEntry(value: 4.0),
+                RadarChartDataEntry(value: 3.0),
+                RadarChartDataEntry(value: 4.0),
+                RadarChartDataEntry(value: 5.0),
+                RadarChartDataEntry(value: 3.0),
+            ]
+        )
+        
+        dataSet.colors = [.systemBlue]
+        dataSet.lineWidth = 2
+        dataSet.drawValuesEnabled = false
+        dataSet.label = "최근 연습"
+        
+        let previousDataSet = RadarChartDataSet(
+            entries: [
+                RadarChartDataEntry(value: 3.0),
+                RadarChartDataEntry(value: 3.0),
+                RadarChartDataEntry(value: 3.0),
+                RadarChartDataEntry(value: 4.0),
+                RadarChartDataEntry(value: 5.0),
+            ]
+        )
+        
+        previousDataSet.colors = [UIColor(named: "Sub1")!]
+        previousDataSet.lineWidth = 2
+        previousDataSet.drawValuesEnabled = false
+        previousDataSet.label = "이전 연습"
+        
         // Style
         resultChart.layer.cornerRadius = 6
         resultChart.layer.masksToBounds = true
         
+        resultChart.legend.enabled = true
         resultChart.legend.horizontalAlignment = .center
         resultChart.legend.drawInside = true
         resultChart.legend.yOffset = 10
@@ -51,9 +82,9 @@ class ScriptRecordChartCollectionViewCell: UICollectionViewCell {
         yAxis.axisMaximum = 4
         yAxis.drawLabelsEnabled = false
         
-        let data = RadarChartData()
-        data.dataSets = []
-        
-        resultChart.data = data
+//        let data = RadarChartData()
+//        data.dataSets = []
+//        
+//        resultChart.data = data
     }
 }
