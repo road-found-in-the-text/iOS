@@ -46,4 +46,26 @@ extension UIFont {
    static func IBMPlexSans(_ type: IBMPlexSansKRType, size: CGFloat) -> UIFont {
        return UIFont(name: "IBMPlexSansKR-\(type.rawValue)", size: size)!
    }
+    
+    enum FontType {
+        case regular, bold, medium, light, semibold
+    }
+
+    static func AppleSDGothicNeo(type: FontType, size: CGFloat) -> UIFont {
+        var fontName = ""
+        switch type {
+        case .regular:
+            fontName = "AppleSDGothicNeo-Regular"
+        case .light:
+            fontName = "AppleSDGothicNeo-Light"
+        case .medium:
+            fontName = "AppleSDGothicNeo-Medium"
+        case .semibold:
+            fontName = "AppleSDGothicNeo-SemiBold"
+        case .bold:
+            fontName = "AppleSDGothicNeo-Bold"
+        }
+        
+        return UIFont(name: fontName, size: size) ?? UIFont.systemFont(ofSize: size)
+    }
 }
