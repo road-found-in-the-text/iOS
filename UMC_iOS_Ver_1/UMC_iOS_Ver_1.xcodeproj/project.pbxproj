@@ -58,12 +58,16 @@
 		5E32FC6B29695DF60010A376 /* InterviewPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32FC6A29695DF60010A376 /* InterviewPracticeViewController.swift */; };
 		5E32FC6D29695DFF0010A376 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32FC6C29695DFF0010A376 /* MyPageViewController.swift */; };
 		6778D2355D99D72941DEBC63 /* Pods_UMC_iOS_Ver_1_UMC_iOS_Ver_1UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F6FA7EC2A2DF7ADD8C68E3 /* Pods_UMC_iOS_Ver_1_UMC_iOS_Ver_1UITests.framework */; };
-		9419EEF196C59F8A276BC2C0 /* Pods_UMC_iOS_Ver_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B928E9BB947B94197FC9A1 /* Pods_UMC_iOS_Ver_1.framework */; };
-		9627E4EC12C0657B54F74B64 /* Pods_UMC_iOS_Ver_1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D71B72BC0CFA2711D70661A /* Pods_UMC_iOS_Ver_1Tests.framework */; };
 		89028EC2296C6B3800B28DB7 /* ScriptEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89028EC1296C6B3800B28DB7 /* ScriptEdit.storyboard */; };
 		89028EC4296C6B5900B28DB7 /* ScriptEditTabmanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89028EC3296C6B5900B28DB7 /* ScriptEditTabmanViewController.swift */; };
+		89273C062977A80100208B6D /* ScriptPTCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89273C052977A80100208B6D /* ScriptPTCollectionViewCell.swift */; };
+		89273C082977B6DF00208B6D /* ScriptBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89273C072977B6DF00208B6D /* ScriptBottomSheetViewController.swift */; };
+		89273C0B2977CAE600208B6D /* ScriptPT.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89273C0A2977CAE600208B6D /* ScriptPT.storyboard */; };
+		89273C0D2977CAEF00208B6D /* ScriptPTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89273C0C2977CAEF00208B6D /* ScriptPTViewController.swift */; };
 		896854B32975564200E70868 /* ScriptRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896854B22975564200E70868 /* ScriptRecord.storyboard */; };
 		896854B52975565400E70868 /* ScriptRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896854B42975565400E70868 /* ScriptRecordViewController.swift */; };
+		8971322D2980216E0093456B /* InterviewPracticeEx.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8971322C2980216E0093456B /* InterviewPracticeEx.storyboard */; };
+		8971322F298021740093456B /* InterviewPracticeExViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971322E298021740093456B /* InterviewPracticeExViewController.swift */; };
 		897C634B2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C634A2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift */; };
 		897C634D2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C634C2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift */; };
 		897C634F2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C634E2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift */; };
@@ -75,12 +79,10 @@
 		89CD521B29744C1300E1F424 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 89CD521A29744C1300E1F424 /* Charts */; };
 		89CD521E29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CD521D29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard */; };
 		89CD522029744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD521F29744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift */; };
-		89273C062977A80100208B6D /* ScriptPTCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89273C052977A80100208B6D /* ScriptPTCollectionViewCell.swift */; };
-		89273C082977B6DF00208B6D /* ScriptBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89273C072977B6DF00208B6D /* ScriptBottomSheetViewController.swift */; };
-		89273C0B2977CAE600208B6D /* ScriptPT.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89273C0A2977CAE600208B6D /* ScriptPT.storyboard */; };
-		89273C0D2977CAEF00208B6D /* ScriptPTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89273C0C2977CAEF00208B6D /* ScriptPTViewController.swift */; };
 		89DCF50B2977060000CB2296 /* ScriptPracticeSet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89DCF50A2977060000CB2296 /* ScriptPracticeSet.storyboard */; };
 		89DCF50D2977060500CB2296 /* ScriptPracticeSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCF50C2977060500CB2296 /* ScriptPracticeSetViewController.swift */; };
+		9419EEF196C59F8A276BC2C0 /* Pods_UMC_iOS_Ver_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B928E9BB947B94197FC9A1 /* Pods_UMC_iOS_Ver_1.framework */; };
+		9627E4EC12C0657B54F74B64 /* Pods_UMC_iOS_Ver_1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D71B72BC0CFA2711D70661A /* Pods_UMC_iOS_Ver_1Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,15 +161,16 @@
 		5E32FC6A29695DF60010A376 /* InterviewPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewPracticeViewController.swift; sourceTree = "<group>"; };
 		5E32FC6C29695DFF0010A376 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		5E64DE603605238BE8969A94 /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests.debug.xcconfig"; path = "Target Support Files/Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests/Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests.debug.xcconfig"; sourceTree = "<group>"; };
-		9605E6568465799CFD279686 /* Pods-UMC_iOS_Ver_1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC_iOS_Ver_1Tests.release.xcconfig"; path = "Target Support Files/Pods-UMC_iOS_Ver_1Tests/Pods-UMC_iOS_Ver_1Tests.release.xcconfig"; sourceTree = "<group>"; };
-		A0DB99903F02E1B48D715375 /* Pods-UMC_iOS_Ver_1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC_iOS_Ver_1Tests.debug.xcconfig"; path = "Target Support Files/Pods-UMC_iOS_Ver_1Tests/Pods-UMC_iOS_Ver_1Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B6F6FA7EC2A2DF7ADD8C68E3 /* Pods_UMC_iOS_Ver_1_UMC_iOS_Ver_1UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UMC_iOS_Ver_1_UMC_iOS_Ver_1UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE1B10E59B9F8AA3D6921249 /* Pods-UMC_iOS_Ver_1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC_iOS_Ver_1.debug.xcconfig"; path = "Target Support Files/Pods-UMC_iOS_Ver_1/Pods-UMC_iOS_Ver_1.debug.xcconfig"; sourceTree = "<group>"; };
-		E33296865E5A34A1A08AF1F4 /* Pods-UMC_iOS_Ver_1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC_iOS_Ver_1.release.xcconfig"; path = "Target Support Files/Pods-UMC_iOS_Ver_1/Pods-UMC_iOS_Ver_1.release.xcconfig"; sourceTree = "<group>"; };
 		89028EC1296C6B3800B28DB7 /* ScriptEdit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptEdit.storyboard; sourceTree = "<group>"; };
 		89028EC3296C6B5900B28DB7 /* ScriptEditTabmanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptEditTabmanViewController.swift; sourceTree = "<group>"; };
+		89273C052977A80100208B6D /* ScriptPTCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPTCollectionViewCell.swift; sourceTree = "<group>"; };
+		89273C072977B6DF00208B6D /* ScriptBottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptBottomSheetViewController.swift; sourceTree = "<group>"; };
+		89273C0A2977CAE600208B6D /* ScriptPT.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPT.storyboard; sourceTree = "<group>"; };
+		89273C0C2977CAEF00208B6D /* ScriptPTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPTViewController.swift; sourceTree = "<group>"; };
 		896854B22975564200E70868 /* ScriptRecord.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptRecord.storyboard; sourceTree = "<group>"; };
 		896854B42975565400E70868 /* ScriptRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordViewController.swift; sourceTree = "<group>"; };
+		8971322C2980216E0093456B /* InterviewPracticeEx.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InterviewPracticeEx.storyboard; sourceTree = "<group>"; };
+		8971322E298021740093456B /* InterviewPracticeExViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewPracticeExViewController.swift; sourceTree = "<group>"; };
 		897C634A2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordCollectionReusableView.swift; sourceTree = "<group>"; };
 		897C634C2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordResultCollectionViewCell.swift; sourceTree = "<group>"; };
 		897C634E2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordChartCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -177,12 +180,13 @@
 		89C31EE8296DD8CB00CBF249 /* ImageLabelBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLabelBarButton.swift; sourceTree = "<group>"; };
 		89CD521D29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeRecordResult.storyboard; sourceTree = "<group>"; };
 		89CD521F29744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeRecordResultViewController.swift; sourceTree = "<group>"; };
-		89273C052977A80100208B6D /* ScriptPTCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPTCollectionViewCell.swift; sourceTree = "<group>"; };
-		89273C072977B6DF00208B6D /* ScriptBottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptBottomSheetViewController.swift; sourceTree = "<group>"; };
-		89273C0A2977CAE600208B6D /* ScriptPT.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPT.storyboard; sourceTree = "<group>"; };
-		89273C0C2977CAEF00208B6D /* ScriptPTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPTViewController.swift; sourceTree = "<group>"; };
 		89DCF50A2977060000CB2296 /* ScriptPracticeSet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeSet.storyboard; sourceTree = "<group>"; };
 		89DCF50C2977060500CB2296 /* ScriptPracticeSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeSetViewController.swift; sourceTree = "<group>"; };
+		9605E6568465799CFD279686 /* Pods-UMC_iOS_Ver_1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC_iOS_Ver_1Tests.release.xcconfig"; path = "Target Support Files/Pods-UMC_iOS_Ver_1Tests/Pods-UMC_iOS_Ver_1Tests.release.xcconfig"; sourceTree = "<group>"; };
+		A0DB99903F02E1B48D715375 /* Pods-UMC_iOS_Ver_1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC_iOS_Ver_1Tests.debug.xcconfig"; path = "Target Support Files/Pods-UMC_iOS_Ver_1Tests/Pods-UMC_iOS_Ver_1Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B6F6FA7EC2A2DF7ADD8C68E3 /* Pods_UMC_iOS_Ver_1_UMC_iOS_Ver_1UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UMC_iOS_Ver_1_UMC_iOS_Ver_1UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE1B10E59B9F8AA3D6921249 /* Pods-UMC_iOS_Ver_1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC_iOS_Ver_1.debug.xcconfig"; path = "Target Support Files/Pods-UMC_iOS_Ver_1/Pods-UMC_iOS_Ver_1.debug.xcconfig"; sourceTree = "<group>"; };
+		E33296865E5A34A1A08AF1F4 /* Pods-UMC_iOS_Ver_1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC_iOS_Ver_1.release.xcconfig"; path = "Target Support Files/Pods-UMC_iOS_Ver_1/Pods-UMC_iOS_Ver_1.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -401,6 +405,7 @@
 		5E32FC6029695C960010A376 /* InterviewPractice */ = {
 			isa = PBXGroup;
 			children = (
+				8971322B298021130093456B /* InterviewPracticeEx */,
 				5E32FC6429695CFC0010A376 /* InterviewPractice.storyboard */,
 				5E32FC6A29695DF60010A376 /* InterviewPracticeViewController.swift */,
 			);
@@ -433,8 +438,8 @@
 				9605E6568465799CFD279686 /* Pods-UMC_iOS_Ver_1Tests.release.xcconfig */,
 			);
 			path = Pods;
-            sourceTree = "<group>";
-        };
+			sourceTree = "<group>";
+		};
 		89028EC0296C6B2A00B28DB7 /* ScriptEdit */ = {
 			isa = PBXGroup;
 			children = (
@@ -442,6 +447,23 @@
 				89028EC3296C6B5900B28DB7 /* ScriptEditTabmanViewController.swift */,
 			);
 			path = ScriptEdit;
+			sourceTree = "<group>";
+		};
+		89273C042977A42C00208B6D /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				89273C052977A80100208B6D /* ScriptPTCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		89273C092977CAD700208B6D /* ScriptPT */ = {
+			isa = PBXGroup;
+			children = (
+				89273C0A2977CAE600208B6D /* ScriptPT.storyboard */,
+				89273C0C2977CAEF00208B6D /* ScriptPTViewController.swift */,
+			);
+			path = ScriptPT;
 			sourceTree = "<group>";
 		};
 		896854B12975563800E70868 /* ScriptRecord */ = {
@@ -454,6 +476,15 @@
 			path = ScriptRecord;
 			sourceTree = "<group>";
 		};
+		8971322B298021130093456B /* InterviewPracticeEx */ = {
+			isa = PBXGroup;
+			children = (
+				8971322C2980216E0093456B /* InterviewPracticeEx.storyboard */,
+				8971322E298021740093456B /* InterviewPracticeExViewController.swift */,
+			);
+			path = InterviewPracticeEx;
+			sourceTree = "<group>";
+		};
 		897C63492976B7E700CCF25F /* Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -461,14 +492,6 @@
 				897C634C2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift */,
 				897C634E2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift */,
 				897C63502976BA6900CCF25F /* ScriptRecordMemoCollectionViewCell.swift */,
-            );
-            path = Cell;
-            sourceTree = "<group>";
-        };
-		89273C042977A42C00208B6D /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				89273C052977A80100208B6D /* ScriptPTCollectionViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -489,15 +512,6 @@
 				89CD521F29744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift */,
 			);
 			path = ScriptPracticeRecordResult;
-            sourceTree = "<group>";
-        };
-		89273C092977CAD700208B6D /* ScriptPT */ = {
-			isa = PBXGroup;
-			children = (
-				89273C0A2977CAE600208B6D /* ScriptPT.storyboard */,
-				89273C0C2977CAEF00208B6D /* ScriptPTViewController.swift */,
-			);
-			path = ScriptPT;
 			sourceTree = "<group>";
 		};
 		89DCF505297705C800CB2296 /* ScriptPracticeSet */ = {
@@ -641,6 +655,7 @@
 				5E32FC1E296955930010A376 /* LaunchScreen.storyboard in Resources */,
 				2195E0F0297672AA00203C49 /* Report.storyboard in Resources */,
 				896854B32975564200E70868 /* ScriptRecord.storyboard in Resources */,
+				8971322D2980216E0093456B /* InterviewPracticeEx.storyboard in Resources */,
 				89CD521E29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard in Resources */,
 				89273C0B2977CAE600208B6D /* ScriptPT.storyboard in Resources */,
 				5E32FC1B296955930010A376 /* Assets.xcassets in Resources */,
@@ -812,6 +827,7 @@
 				2133B7A5297419290037D85D /* AddPostViewController.swift in Sources */,
 				21348A1B297677F4002190E5 /* ReportViewController.swift in Sources */,
 				210A9E8829714A660063972B /* SearchHistoryDataModel.swift in Sources */,
+				8971322F298021740093456B /* InterviewPracticeExViewController.swift in Sources */,
 				210A9E8D29714B100063972B /* SearchKeywordTableViewCell.swift in Sources */,
 				89DCF50D2977060500CB2296 /* ScriptPracticeSetViewController.swift in Sources */,
 				5E32FC6929695DE90010A376 /* ScriptPracticeViewController.swift in Sources */,
