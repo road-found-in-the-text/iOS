@@ -14,6 +14,7 @@ class PostViewController: UIViewController {
     
     @IBOutlet weak var representativeImage: UIView!
     @IBOutlet weak var postTableView: UITableView!
+    @IBOutlet weak var commentTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -60,6 +61,12 @@ class PostViewController: UIViewController {
         present(reportVC, animated: true)
     }
     
+    @IBAction func commentButtonTapped(_ sender: UIButton) {
+        guard let commentText = commentTextField.text else { return }
+        let task = PostCommentDataModel(comment: commentText)
+        postCommentData.append(task)
+        postTableView.reloadData()
+    }
 }
 
 extension PostViewController: UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate {
@@ -69,7 +76,7 @@ extension PostViewController: UITableViewDelegate, UITableViewDataSource, UIScro
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 4 {
-            return 1
+            return postCommentData.count
         } else {
             return 1
         }
@@ -90,8 +97,10 @@ extension PostViewController: UITableViewDelegate, UITableViewDataSource, UIScro
             guard let numOfCommentsCell = tableView.dequeueReusableCell(withIdentifier: "NumOfCommentsTableViewCell", for: indexPath) as? NumOfCommentsTableViewCell else { return UITableViewCell() }
             return numOfCommentsCell
         case 4:
-            guard let postCommetsCell = tableView.dequeueReusableCell(withIdentifier: "PostCommentsTableViewCell", for: indexPath) as? PostCommentsTableViewCell else { return UITableViewCell() }
-            return postCommetsCell
+            guard let postCommentsCell = tableView.dequeueReusableCell(withIdentifier: "PostCommentsTableViewCell", for: indexPath) as? PostCommentsTableViewCell else { return UITableViewCell() }
+            let postCommentDataModel = postCommentData[indexPath.row]
+            postCommentsCell.commentText.text = postCommentDataModel.comment
+            return postCommentsCell
         default:
             return UITableViewCell()
             
