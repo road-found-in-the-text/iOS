@@ -19,6 +19,7 @@ class CustomAlertViewController: UIViewController {
         setLayer()
     }
 
+    //테두리 설정
     func setLayer() {
         reportAlertView.layer.cornerRadius = 10
         reportButton.layer.cornerRadius = 10
