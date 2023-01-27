@@ -75,11 +75,8 @@
 		89273C082977B6DF00208B6D /* ScriptBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89273C072977B6DF00208B6D /* ScriptBottomSheetViewController.swift */; };
 		89273C0B2977CAE600208B6D /* ScriptPT.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89273C0A2977CAE600208B6D /* ScriptPT.storyboard */; };
 		89273C0D2977CAEF00208B6D /* ScriptPTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89273C0C2977CAEF00208B6D /* ScriptPTViewController.swift */; };
-<<<<<<< HEAD
-=======
 		8932B507297E814F0054D9A4 /* ScriptPracticeRecordRoading.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8932B506297E814F0054D9A4 /* ScriptPracticeRecordRoading.storyboard */; };
 		8932B509297E81580054D9A4 /* ScriptPracticeRecordRoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8932B508297E81580054D9A4 /* ScriptPracticeRecordRoadingViewController.swift */; };
->>>>>>> develop
 		896854B32975564200E70868 /* ScriptRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896854B22975564200E70868 /* ScriptRecord.storyboard */; };
 		896854B52975565400E70868 /* ScriptRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896854B42975565400E70868 /* ScriptRecordViewController.swift */; };
 		8971322D2980216E0093456B /* InterviewPracticeEx.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8971322C2980216E0093456B /* InterviewPracticeEx.storyboard */; };
@@ -196,11 +193,8 @@
 		89273C072977B6DF00208B6D /* ScriptBottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptBottomSheetViewController.swift; sourceTree = "<group>"; };
 		89273C0A2977CAE600208B6D /* ScriptPT.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPT.storyboard; sourceTree = "<group>"; };
 		89273C0C2977CAEF00208B6D /* ScriptPTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPTViewController.swift; sourceTree = "<group>"; };
-<<<<<<< HEAD
-=======
 		8932B506297E814F0054D9A4 /* ScriptPracticeRecordRoading.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeRecordRoading.storyboard; sourceTree = "<group>"; };
 		8932B508297E81580054D9A4 /* ScriptPracticeRecordRoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeRecordRoadingViewController.swift; sourceTree = "<group>"; };
->>>>>>> develop
 		896854B22975564200E70868 /* ScriptRecord.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptRecord.storyboard; sourceTree = "<group>"; };
 		896854B42975565400E70868 /* ScriptRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordViewController.swift; sourceTree = "<group>"; };
 		8971322C2980216E0093456B /* InterviewPracticeEx.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InterviewPracticeEx.storyboard; sourceTree = "<group>"; };
@@ -515,8 +509,6 @@
 			path = ScriptPT;
 			sourceTree = "<group>";
 		};
-<<<<<<< HEAD
-=======
 		8932B505297E81390054D9A4 /* ScriptPracticeRecordRoading */ = {
 			isa = PBXGroup;
 			children = (
@@ -526,7 +518,6 @@
 			path = ScriptPracticeRecordRoading;
 			sourceTree = "<group>";
 		};
->>>>>>> develop
 		896854B12975563800E70868 /* ScriptRecord */ = {
 			isa = PBXGroup;
 			children = (

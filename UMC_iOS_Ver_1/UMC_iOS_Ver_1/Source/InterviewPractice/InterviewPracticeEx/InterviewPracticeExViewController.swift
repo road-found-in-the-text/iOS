@@ -8,22 +8,39 @@
 import UIKit
 
 class InterviewPracticeExViewController: UIViewController {
+    
+    @IBOutlet var questionBackgroundView: UIView!
+    @IBOutlet var questionTitleLabel: UILabel!
+    @IBOutlet var questionContentLabel: UILabel!
+    
+    @IBOutlet var guideLabel: UILabel!
+    
+    @IBOutlet var recordBackgroundView: UIView!
+    @IBOutlet var recordImageView: UIImageView!
+    
+    @IBOutlet var skipButton: UIButton!
+    @IBOutlet var recordTimeLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        style()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func style() {
+        questionBackgroundView.layer.cornerRadius = 12
+        questionBackgroundView.layer.shadowOpacity = 0.1
+        questionBackgroundView.layer.shadowColor = UIColor.black.cgColor
+        questionBackgroundView.layer.shadowOffset = CGSize(width: 0, height: 0)
+        
+        recordBackgroundView.layer.cornerRadius = recordBackgroundView.frame.width / 2
+        recordBackgroundView.layer.shadowOpacity = 0.1
+        recordBackgroundView.layer.shadowColor = UIColor.black.cgColor
+        recordBackgroundView.layer.shadowOffset = CGSize(width: 0, height: 0)
+        
+        recordImageView.image = UIImage(named: "ic_ interview")
+        recordImageView.setImageColor(color: .systemBlue)
+        
+        recordTimeLabel.isHidden = true
+        
     }
-    */
-
 }

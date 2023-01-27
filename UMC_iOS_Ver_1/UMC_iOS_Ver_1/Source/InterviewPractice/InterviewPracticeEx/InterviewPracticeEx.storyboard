@@ -54,7 +54,10 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oN9-V4-uut">
-                                <rect key="frame" x="158" y="781" width="77" height="29"/>
+                                <rect key="frame" x="158" y="772" width="77" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="ufE-6X-XW6"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="질문 건너뛰기">
@@ -67,34 +70,61 @@
                                 <color key="textColor" name="Sub1"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8pm-Up-8dH">
-                                <rect key="frame" x="156.66666666666666" y="692.66666666666663" width="80" height="80"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aWm-Ve-GJa">
+                                <rect key="frame" x="156.66666666666666" y="684" width="80" height="80"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fXy-0A-KjQ">
+                                        <rect key="frame" x="18" y="18" width="44" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="B03-II-hE5"/>
+                                            <constraint firstAttribute="height" constant="44" id="tcm-Hb-HuJ"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="80" id="Tpr-Em-Ttl"/>
-                                    <constraint firstAttribute="height" constant="80" id="exp-Jv-fXu"/>
+                                    <constraint firstAttribute="height" constant="80" id="Jg9-MD-i3X"/>
+                                    <constraint firstItem="fXy-0A-KjQ" firstAttribute="centerX" secondItem="aWm-Ve-GJa" secondAttribute="centerX" id="Usw-pq-8y8"/>
+                                    <constraint firstItem="fXy-0A-KjQ" firstAttribute="centerY" secondItem="aWm-Ve-GJa" secondAttribute="centerY" id="cgq-cN-rmv"/>
+                                    <constraint firstAttribute="width" constant="80" id="tzp-in-Sgo"/>
                                 </constraints>
-                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                <state key="normal" image="ic_mic_gray"/>
-                            </button>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="편안하게 답변해보세요." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xCN-Kd-lKK">
+                                <rect key="frame" x="122.66666666666667" y="640.66666666666663" width="147.66666666666663" height="19.333333333333371"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" name="Sub1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" name="Sub4"/>
                         <constraints>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="oN9-V4-uut" secondAttribute="bottom" constant="8" id="0nc-QN-LFr"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="USc-it-pb6" secondAttribute="trailing" constant="38" id="4Mw-w2-EtU"/>
+                            <constraint firstItem="xCN-Kd-lKK" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="4ed-MW-ixn"/>
                             <constraint firstItem="oN9-V4-uut" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="6fr-i2-1Ma"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="5wT-Kz-vhF" secondAttribute="bottom" constant="18" id="9Jb-w2-G5N"/>
-                            <constraint firstItem="8pm-Up-8dH" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="FTe-Ut-AoI"/>
+                            <constraint firstItem="aWm-Ve-GJa" firstAttribute="top" secondItem="xCN-Kd-lKK" secondAttribute="bottom" constant="24" id="IJQ-L3-o31"/>
+                            <constraint firstItem="oN9-V4-uut" firstAttribute="top" secondItem="aWm-Ve-GJa" secondAttribute="bottom" constant="8" id="Lm6-Za-mTp"/>
                             <constraint firstItem="heV-97-0Hf" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="37" id="OBR-DV-c4n"/>
-                            <constraint firstItem="5wT-Kz-vhF" firstAttribute="top" secondItem="8pm-Up-8dH" secondAttribute="bottom" constant="8" id="Rna-d9-nbU"/>
                             <constraint firstItem="USc-it-pb6" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="38" id="g1P-0l-LSU"/>
+                            <constraint firstItem="aWm-Ve-GJa" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="nXg-JN-t6e"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="heV-97-0Hf" secondAttribute="trailing" constant="37" id="qL6-xL-sCc"/>
                             <constraint firstItem="USc-it-pb6" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="24" id="qiz-Lc-hgh"/>
                             <constraint firstItem="heV-97-0Hf" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="316" id="r3p-Qr-8Ma"/>
                             <constraint firstItem="5wT-Kz-vhF" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="y2u-ns-xgV"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="guideLabel" destination="xCN-Kd-lKK" id="8SH-pr-upC"/>
+                        <outlet property="questionBackgroundView" destination="heV-97-0Hf" id="H1g-fn-tgF"/>
+                        <outlet property="questionContentLabel" destination="SRw-Z8-ljl" id="bEs-Pp-Dfl"/>
+                        <outlet property="questionTitleLabel" destination="JnQ-6e-6Co" id="cz3-lc-xa0"/>
+                        <outlet property="recordBackgroundView" destination="aWm-Ve-GJa" id="7U3-ZA-tbg"/>
+                        <outlet property="recordImageView" destination="fXy-0A-KjQ" id="HiM-jN-ln2"/>
+                        <outlet property="recordTimeLabel" destination="5wT-Kz-vhF" id="dwr-hx-Sgw"/>
+                        <outlet property="skipButton" destination="oN9-V4-uut" id="n6w-lS-PT5"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -103,7 +133,6 @@
     </scenes>
     <resources>
         <image name="Interviewer_Active" width="2134" height="2134"/>
-        <image name="ic_mic_gray" width="24" height="24"/>
         <namedColor name="Sub1">
             <color red="0.32156862745098042" green="0.38039215686274508" blue="0.41568627450980394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
