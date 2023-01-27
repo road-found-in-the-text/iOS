@@ -33,12 +33,12 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="글길" id="maL-Ek-c3f">
                         <rightBarButtonItems>
-                            <barButtonItem systemItem="add" id="jdX-0N-p94">
+                            <barButtonItem image="ic_addPost" id="jdX-0N-p94">
                                 <connections>
                                     <segue destination="ms0-06-jSs" kind="presentation" modalPresentationStyle="fullScreen" id="Cv3-Hq-fCi"/>
                                 </connections>
                             </barButtonItem>
-                            <barButtonItem systemItem="search" id="wr9-6R-snk">
+                            <barButtonItem image="ic_search" id="wr9-6R-snk">
                                 <connections>
                                     <segue destination="r5P-Bo-4mA" kind="show" id="lbC-1x-Khe"/>
                                 </connections>
@@ -95,7 +95,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ic_addPost" width="24" height="24"/>
         <image name="ic_home_gray" width="24" height="24"/>
+        <image name="ic_search" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -20,6 +20,7 @@ class AddPostViewController: UIViewController {
         tapImageView()
     }
     
+    //imageView 클릭 시 실행
     func tapImageView() {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(touchToPickPhoto))
         imageView.addGestureRecognizer(tapGesture)
@@ -28,23 +29,25 @@ class AddPostViewController: UIViewController {
     
     @objc func touchToPickPhoto() {
         openPhoto()
-        print("HI")
     }
     
+    //사진 갤러리 열기
     func openPhoto() {
         imagePicker.sourceType = .photoLibrary
         imagePicker.allowsEditing = true
         present(imagePicker, animated: true)
     }
     
+    //뒤로가기 버튼
     @IBAction func backButtonTapped(_ sender: UIButton) {
         dismiss(animated: true)
     }
 }
 
 extension AddPostViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    //사진 갤러리에서 사진 선택 완료 시 실행
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+        if let image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
             imageView.image = image
             imageView.contentMode = .scaleToFill
         }

@@ -19,6 +19,7 @@
 		213812402977A58700EC7B26 /* Post.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2138123F2977A58700EC7B26 /* Post.storyboard */; };
 		213812422977A5A800EC7B26 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213812412977A5A800EC7B26 /* PostViewController.swift */; };
 		216023A429708131009DA16E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 216023A329708131009DA16E /* Home.storyboard */; };
+		2174690F29828662006B7950 /* PostCommentDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2174690E29828662006B7950 /* PostCommentDataModel.swift */; };
 		218DA9052970847F00D76C03 /* BestForumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218DA9032970847F00D76C03 /* BestForumCollectionViewCell.swift */; };
 		218DA9062970847F00D76C03 /* BestForumCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 218DA9042970847F00D76C03 /* BestForumCollectionViewCell.xib */; };
 		218DA908297084A700D76C03 /* BestForumDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218DA907297084A700D76C03 /* BestForumDataModel.swift */; };
@@ -27,9 +28,19 @@
 		218DA90F297084B200D76C03 /* ForumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218DA90B297084B200D76C03 /* ForumTableViewCell.swift */; };
 		218DA910297084B200D76C03 /* BestForumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218DA90C297084B200D76C03 /* BestForumTableViewCell.swift */; };
 		2195E0F0297672AA00203C49 /* Report.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2195E0EF297672AA00203C49 /* Report.storyboard */; };
-		21A749BB2977AB4E00EBFE82 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A749BA2977AB4E00EBFE82 /* Constants.swift */; };
+		21A6B4A82980E70200F084F6 /* PostContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6B4A62980E70200F084F6 /* PostContentTableViewCell.swift */; };
+		21A6B4A92980E70200F084F6 /* PostContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21A6B4A72980E70200F084F6 /* PostContentTableViewCell.xib */; };
+		21A6B4AC2980F76A00F084F6 /* NumofLikesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6B4AA2980F76A00F084F6 /* NumofLikesTableViewCell.swift */; };
+		21A6B4AD2980F76A00F084F6 /* NumofLikesTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21A6B4AB2980F76A00F084F6 /* NumofLikesTableViewCell.xib */; };
+		21A6B4B02980FA4B00F084F6 /* NumOfCommentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6B4AE2980FA4B00F084F6 /* NumOfCommentsTableViewCell.swift */; };
+		21A6B4B12980FA4B00F084F6 /* NumOfCommentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21A6B4AF2980FA4B00F084F6 /* NumOfCommentsTableViewCell.xib */; };
+		21A6B4B42980FED300F084F6 /* PostCommentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6B4B22980FED300F084F6 /* PostCommentsTableViewCell.swift */; };
+		21A6B4B52980FED300F084F6 /* PostCommentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21A6B4B32980FED300F084F6 /* PostCommentsTableViewCell.xib */; };
+		21A749BB2977AB4E00EBFE82 /* ViewControllerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A749BA2977AB4E00EBFE82 /* ViewControllerConstants.swift */; };
 		21D4B6E429791A8200D7B485 /* ReportAlert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21D4B6E329791A8200D7B485 /* ReportAlert.storyboard */; };
 		21D4B6E629791D3600D7B485 /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B6E529791D3600D7B485 /* CustomAlertViewController.swift */; };
+		21EB2F83297FD47600259C6D /* UserProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EB2F81297FD47600259C6D /* UserProfileTableViewCell.swift */; };
+		21EB2F84297FD47600259C6D /* UserProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21EB2F82297FD47600259C6D /* UserProfileTableViewCell.xib */; };
 		5E32FC12296955910010A376 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32FC11296955910010A376 /* AppDelegate.swift */; };
 		5E32FC14296955910010A376 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32FC13296955910010A376 /* SceneDelegate.swift */; };
 		5E32FC16296955910010A376 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32FC15296955910010A376 /* HomeViewController.swift */; };
@@ -64,6 +75,11 @@
 		89273C082977B6DF00208B6D /* ScriptBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89273C072977B6DF00208B6D /* ScriptBottomSheetViewController.swift */; };
 		89273C0B2977CAE600208B6D /* ScriptPT.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89273C0A2977CAE600208B6D /* ScriptPT.storyboard */; };
 		89273C0D2977CAEF00208B6D /* ScriptPTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89273C0C2977CAEF00208B6D /* ScriptPTViewController.swift */; };
+<<<<<<< HEAD
+=======
+		8932B507297E814F0054D9A4 /* ScriptPracticeRecordRoading.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8932B506297E814F0054D9A4 /* ScriptPracticeRecordRoading.storyboard */; };
+		8932B509297E81580054D9A4 /* ScriptPracticeRecordRoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8932B508297E81580054D9A4 /* ScriptPracticeRecordRoadingViewController.swift */; };
+>>>>>>> develop
 		896854B32975564200E70868 /* ScriptRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896854B22975564200E70868 /* ScriptRecord.storyboard */; };
 		896854B52975565400E70868 /* ScriptRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896854B42975565400E70868 /* ScriptRecordViewController.swift */; };
 		8971322D2980216E0093456B /* InterviewPracticeEx.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8971322C2980216E0093456B /* InterviewPracticeEx.storyboard */; };
@@ -76,6 +92,8 @@
 		89C31EE5296DBDD000CBF249 /* ScriptPracticeRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89C31EE4296DBDD000CBF249 /* ScriptPracticeRecord.storyboard */; };
 		89C31EE7296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C31EE6296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift */; };
 		89C31EE9296DD8CB00CBF249 /* ImageLabelBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C31EE8296DD8CB00CBF249 /* ImageLabelBarButton.swift */; };
+		89C87D5B297EAD7100723E08 /* ScriptPracticeRecordEndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C87D5A297EAD7100723E08 /* ScriptPracticeRecordEndViewController.swift */; };
+		89C87D5D297EAD7500723E08 /* ScriptPracticeRecordEnd.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89C87D5C297EAD7500723E08 /* ScriptPracticeRecordEnd.storyboard */; };
 		89CD521B29744C1300E1F424 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 89CD521A29744C1300E1F424 /* Charts */; };
 		89CD521E29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CD521D29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard */; };
 		89CD522029744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD521F29744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift */; };
@@ -117,6 +135,7 @@
 		2138123F2977A58700EC7B26 /* Post.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Post.storyboard; sourceTree = "<group>"; };
 		213812412977A5A800EC7B26 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		216023A329708131009DA16E /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		2174690E29828662006B7950 /* PostCommentDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCommentDataModel.swift; sourceTree = "<group>"; };
 		218DA9032970847F00D76C03 /* BestForumCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BestForumCollectionViewCell.swift; sourceTree = "<group>"; };
 		218DA9042970847F00D76C03 /* BestForumCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BestForumCollectionViewCell.xib; sourceTree = "<group>"; };
 		218DA907297084A700D76C03 /* BestForumDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BestForumDataModel.swift; sourceTree = "<group>"; };
@@ -125,9 +144,19 @@
 		218DA90B297084B200D76C03 /* ForumTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumTableViewCell.swift; sourceTree = "<group>"; };
 		218DA90C297084B200D76C03 /* BestForumTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BestForumTableViewCell.swift; sourceTree = "<group>"; };
 		2195E0EF297672AA00203C49 /* Report.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Report.storyboard; sourceTree = "<group>"; };
-		21A749BA2977AB4E00EBFE82 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		21A6B4A62980E70200F084F6 /* PostContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostContentTableViewCell.swift; sourceTree = "<group>"; };
+		21A6B4A72980E70200F084F6 /* PostContentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostContentTableViewCell.xib; sourceTree = "<group>"; };
+		21A6B4AA2980F76A00F084F6 /* NumofLikesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumofLikesTableViewCell.swift; sourceTree = "<group>"; };
+		21A6B4AB2980F76A00F084F6 /* NumofLikesTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumofLikesTableViewCell.xib; sourceTree = "<group>"; };
+		21A6B4AE2980FA4B00F084F6 /* NumOfCommentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumOfCommentsTableViewCell.swift; sourceTree = "<group>"; };
+		21A6B4AF2980FA4B00F084F6 /* NumOfCommentsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumOfCommentsTableViewCell.xib; sourceTree = "<group>"; };
+		21A6B4B22980FED300F084F6 /* PostCommentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCommentsTableViewCell.swift; sourceTree = "<group>"; };
+		21A6B4B32980FED300F084F6 /* PostCommentsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCommentsTableViewCell.xib; sourceTree = "<group>"; };
+		21A749BA2977AB4E00EBFE82 /* ViewControllerConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerConstants.swift; sourceTree = "<group>"; };
 		21D4B6E329791A8200D7B485 /* ReportAlert.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReportAlert.storyboard; sourceTree = "<group>"; };
 		21D4B6E529791D3600D7B485 /* CustomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
+		21EB2F81297FD47600259C6D /* UserProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileTableViewCell.swift; sourceTree = "<group>"; };
+		21EB2F82297FD47600259C6D /* UserProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserProfileTableViewCell.xib; sourceTree = "<group>"; };
 		49B928E9BB947B94197FC9A1 /* Pods_UMC_iOS_Ver_1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UMC_iOS_Ver_1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E32FC0E296955910010A376 /* UMC_iOS_Ver_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UMC_iOS_Ver_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E32FC11296955910010A376 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -167,6 +196,11 @@
 		89273C072977B6DF00208B6D /* ScriptBottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptBottomSheetViewController.swift; sourceTree = "<group>"; };
 		89273C0A2977CAE600208B6D /* ScriptPT.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPT.storyboard; sourceTree = "<group>"; };
 		89273C0C2977CAEF00208B6D /* ScriptPTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPTViewController.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
+=======
+		8932B506297E814F0054D9A4 /* ScriptPracticeRecordRoading.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeRecordRoading.storyboard; sourceTree = "<group>"; };
+		8932B508297E81580054D9A4 /* ScriptPracticeRecordRoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeRecordRoadingViewController.swift; sourceTree = "<group>"; };
+>>>>>>> develop
 		896854B22975564200E70868 /* ScriptRecord.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptRecord.storyboard; sourceTree = "<group>"; };
 		896854B42975565400E70868 /* ScriptRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordViewController.swift; sourceTree = "<group>"; };
 		8971322C2980216E0093456B /* InterviewPracticeEx.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InterviewPracticeEx.storyboard; sourceTree = "<group>"; };
@@ -178,6 +212,8 @@
 		89C31EE4296DBDD000CBF249 /* ScriptPracticeRecord.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeRecord.storyboard; sourceTree = "<group>"; };
 		89C31EE6296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeRecordViewController.swift; sourceTree = "<group>"; };
 		89C31EE8296DD8CB00CBF249 /* ImageLabelBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLabelBarButton.swift; sourceTree = "<group>"; };
+		89C87D5A297EAD7100723E08 /* ScriptPracticeRecordEndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeRecordEndViewController.swift; sourceTree = "<group>"; };
+		89C87D5C297EAD7500723E08 /* ScriptPracticeRecordEnd.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeRecordEnd.storyboard; sourceTree = "<group>"; };
 		89CD521D29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeRecordResult.storyboard; sourceTree = "<group>"; };
 		89CD521F29744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeRecordResultViewController.swift; sourceTree = "<group>"; };
 		89DCF50A2977060000CB2296 /* ScriptPracticeSet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeSet.storyboard; sourceTree = "<group>"; };
@@ -232,9 +268,10 @@
 		21C06D7C296C581F00E205E2 /* HomeModel */ = {
 			isa = PBXGroup;
 			children = (
-				21A749BA2977AB4E00EBFE82 /* Constants.swift */,
+				21A749BA2977AB4E00EBFE82 /* ViewControllerConstants.swift */,
 				218DA907297084A700D76C03 /* BestForumDataModel.swift */,
 				210A9E8729714A660063972B /* SearchHistoryDataModel.swift */,
+				2174690E29828662006B7950 /* PostCommentDataModel.swift */,
 			);
 			path = HomeModel;
 			sourceTree = "<group>";
@@ -257,6 +294,16 @@
 				218DA909297084B200D76C03 /* ForumTableViewCell.xib */,
 				210A9E8B29714B100063972B /* SearchKeywordTableViewCell.swift */,
 				210A9E8C29714B100063972B /* SearchKeywordTableViewCell.xib */,
+				21EB2F81297FD47600259C6D /* UserProfileTableViewCell.swift */,
+				21EB2F82297FD47600259C6D /* UserProfileTableViewCell.xib */,
+				21A6B4A62980E70200F084F6 /* PostContentTableViewCell.swift */,
+				21A6B4A72980E70200F084F6 /* PostContentTableViewCell.xib */,
+				21A6B4AA2980F76A00F084F6 /* NumofLikesTableViewCell.swift */,
+				21A6B4AB2980F76A00F084F6 /* NumofLikesTableViewCell.xib */,
+				21A6B4AE2980FA4B00F084F6 /* NumOfCommentsTableViewCell.swift */,
+				21A6B4AF2980FA4B00F084F6 /* NumOfCommentsTableViewCell.xib */,
+				21A6B4B22980FED300F084F6 /* PostCommentsTableViewCell.swift */,
+				21A6B4B32980FED300F084F6 /* PostCommentsTableViewCell.xib */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -415,6 +462,8 @@
 		5E32FC6129695CA20010A376 /* ScriptPractice */ = {
 			isa = PBXGroup;
 			children = (
+				89C87D59297EAD6300723E08 /* ScriptPracticeRecordEnd */,
+				8932B505297E81390054D9A4 /* ScriptPracticeRecordRoading */,
 				896854B12975563800E70868 /* ScriptRecord */,
 				89CD521C29744CA100E1F424 /* ScriptPracticeRecordResult */,
 				89C31EE3296DBDC300CBF249 /* ScriptPracticeRecord */,
@@ -466,6 +515,18 @@
 			path = ScriptPT;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
+=======
+		8932B505297E81390054D9A4 /* ScriptPracticeRecordRoading */ = {
+			isa = PBXGroup;
+			children = (
+				8932B506297E814F0054D9A4 /* ScriptPracticeRecordRoading.storyboard */,
+				8932B508297E81580054D9A4 /* ScriptPracticeRecordRoadingViewController.swift */,
+			);
+			path = ScriptPracticeRecordRoading;
+			sourceTree = "<group>";
+		};
+>>>>>>> develop
 		896854B12975563800E70868 /* ScriptRecord */ = {
 			isa = PBXGroup;
 			children = (
@@ -503,6 +564,15 @@
 				89C31EE6296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift */,
 			);
 			path = ScriptPracticeRecord;
+			sourceTree = "<group>";
+		};
+		89C87D59297EAD6300723E08 /* ScriptPracticeRecordEnd */ = {
+			isa = PBXGroup;
+			children = (
+				89C87D5A297EAD7100723E08 /* ScriptPracticeRecordEndViewController.swift */,
+				89C87D5C297EAD7500723E08 /* ScriptPracticeRecordEnd.storyboard */,
+			);
+			path = ScriptPracticeRecordEnd;
 			sourceTree = "<group>";
 		};
 		89CD521C29744CA100E1F424 /* ScriptPracticeRecordResult */ = {
@@ -646,13 +716,17 @@
 				21D4B6E429791A8200D7B485 /* ReportAlert.storyboard in Resources */,
 				210A9E8E29714B100063972B /* SearchKeywordTableViewCell.xib in Resources */,
 				218DA90E297084B200D76C03 /* BestForumTableViewCell.xib in Resources */,
+				21A6B4B52980FED300F084F6 /* PostCommentsTableViewCell.xib in Resources */,
 				216023A429708131009DA16E /* Home.storyboard in Resources */,
 				89028EC2296C6B3800B28DB7 /* ScriptEdit.storyboard in Resources */,
+				21EB2F84297FD47600259C6D /* UserProfileTableViewCell.xib in Resources */,
 				89C31EE5296DBDD000CBF249 /* ScriptPracticeRecord.storyboard in Resources */,
 				5E32FC6329695CF20010A376 /* ScriptPractice.storyboard in Resources */,
+				21A6B4A92980E70200F084F6 /* PostContentTableViewCell.xib in Resources */,
 				211E919C29741B8E00BD406C /* AddPost.storyboard in Resources */,
 				5E32FC6729695D060010A376 /* MyPage.storyboard in Resources */,
 				5E32FC1E296955930010A376 /* LaunchScreen.storyboard in Resources */,
+				21A6B4B12980FA4B00F084F6 /* NumOfCommentsTableViewCell.xib in Resources */,
 				2195E0F0297672AA00203C49 /* Report.storyboard in Resources */,
 				896854B32975564200E70868 /* ScriptRecord.storyboard in Resources */,
 				8971322D2980216E0093456B /* InterviewPracticeEx.storyboard in Resources */,
@@ -661,7 +735,10 @@
 				5E32FC1B296955930010A376 /* Assets.xcassets in Resources */,
 				210A9E8429713D9B0063972B /* Search.storyboard in Resources */,
 				5E32FC6529695CFC0010A376 /* InterviewPractice.storyboard in Resources */,
+				21A6B4AD2980F76A00F084F6 /* NumofLikesTableViewCell.xib in Resources */,
 				218DA9062970847F00D76C03 /* BestForumCollectionViewCell.xib in Resources */,
+				89C87D5D297EAD7500723E08 /* ScriptPracticeRecordEnd.storyboard in Resources */,
+				8932B507297E814F0054D9A4 /* ScriptPracticeRecordRoading.storyboard in Resources */,
 				213812402977A58700EC7B26 /* Post.storyboard in Resources */,
 				5E32FC19296955910010A376 /* Main.storyboard in Resources */,
 				89DCF50B2977060000CB2296 /* ScriptPracticeSet.storyboard in Resources */,
@@ -797,14 +874,16 @@
 				5E32FC4D296957030010A376 /* UIColor.swift in Sources */,
 				218DA910297084B200D76C03 /* BestForumTableViewCell.swift in Sources */,
 				5E32FC4B296956EB0010A376 /* Date.swift in Sources */,
-				21A749BB2977AB4E00EBFE82 /* Constants.swift in Sources */,
+				21A749BB2977AB4E00EBFE82 /* ViewControllerConstants.swift in Sources */,
 				5E32FC552969576A0010A376 /* UIViewController.swift in Sources */,
 				5E32FC57296957840010A376 /* UIImageView.swift in Sources */,
 				21D4B6E629791D3600D7B485 /* CustomAlertViewController.swift in Sources */,
 				896854B52975565400E70868 /* ScriptRecordViewController.swift in Sources */,
 				5E32FC552969576A0010A376 /* UIViewController.swift in Sources */,
 				5E32FC57296957840010A376 /* UIImageView.swift in Sources */,
+				21A6B4AC2980F76A00F084F6 /* NumofLikesTableViewCell.swift in Sources */,
 				89CD522029744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift in Sources */,
+				21A6B4B02980FA4B00F084F6 /* NumOfCommentsTableViewCell.swift in Sources */,
 				5E32FC51296957350010A376 /* String.swift in Sources */,
 				897C634F2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift in Sources */,
 				89273C062977A80100208B6D /* ScriptPTCollectionViewCell.swift in Sources */,
@@ -814,8 +893,11 @@
 				5E32FC532969574E0010A376 /* UIButton.swift in Sources */,
 				210A9E8A29714A8A0063972B /* SearchContainerViewController.swift in Sources */,
 				218DA90F297084B200D76C03 /* ForumTableViewCell.swift in Sources */,
+				8932B509297E81580054D9A4 /* ScriptPracticeRecordRoadingViewController.swift in Sources */,
 				89273C0D2977CAEF00208B6D /* ScriptPTViewController.swift in Sources */,
+				2174690F29828662006B7950 /* PostCommentDataModel.swift in Sources */,
 				5E32FC14296955910010A376 /* SceneDelegate.swift in Sources */,
+				89C87D5B297EAD7100723E08 /* ScriptPracticeRecordEndViewController.swift in Sources */,
 				5E32FC5B296957BB0010A376 /* UITextField.swift in Sources */,
 				210A9E8629713DC00063972B /* SearchViewController.swift in Sources */,
 				5E32FC592969579B0010A376 /* UIFont.swift in Sources */,
@@ -823,9 +905,12 @@
 				897C63512976BA6900CCF25F /* ScriptRecordMemoCollectionViewCell.swift in Sources */,
 				5E32FC45296956470010A376 /* Constant.swift in Sources */,
 				218DA9052970847F00D76C03 /* BestForumCollectionViewCell.swift in Sources */,
+				21A6B4B42980FED300F084F6 /* PostCommentsTableViewCell.swift in Sources */,
 				5E32FC6929695DE90010A376 /* ScriptPracticeViewController.swift in Sources */,
+				21EB2F83297FD47600259C6D /* UserProfileTableViewCell.swift in Sources */,
 				2133B7A5297419290037D85D /* AddPostViewController.swift in Sources */,
 				21348A1B297677F4002190E5 /* ReportViewController.swift in Sources */,
+				21A6B4A82980E70200F084F6 /* PostContentTableViewCell.swift in Sources */,
 				210A9E8829714A660063972B /* SearchHistoryDataModel.swift in Sources */,
 				8971322F298021740093456B /* InterviewPracticeExViewController.swift in Sources */,
 				210A9E8D29714B100063972B /* SearchKeywordTableViewCell.swift in Sources */,

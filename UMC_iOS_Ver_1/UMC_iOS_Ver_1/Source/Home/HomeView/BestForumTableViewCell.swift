@@ -7,11 +7,15 @@
 
 import UIKit
 
+protocol CollectionViewCellDelegate: AnyObject {
+    func collectionView(collectionViewCell: BestForumCollectionViewCell?, index: Int, didTappedInTableViewCell: BestForumTableViewCell)
+}
+
 class BestForumTableViewCell: UITableViewCell, UICollectionViewDelegate {
     
     @IBOutlet weak var collectionView: UICollectionView!
     
-    
+    weak var cellDelegate: CollectionViewCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -46,7 +50,7 @@ class BestForumTableViewCell: UITableViewCell, UICollectionViewDelegate {
     
 }
 
-extension BestForumTableViewCell: UICollectionViewDataSource{
+extension BestForumTableViewCell: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return BestForumDataModel.bestForumData.count
     }
@@ -54,5 +58,11 @@ extension BestForumTableViewCell: UICollectionViewDataSource{
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let collectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "BestForumCollectionViewCell", for: indexPath) as? BestForumCollectionViewCell else { return UICollectionViewCell() }
         return collectionViewCell
+    }
+    
+    //collectionView item 선택 시 화면 이동
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath) as? BestForumCollectionViewCell
+        self.cellDelegate?.collectionView(collectionViewCell: cell, index: indexPath.item, didTappedInTableViewCell: self)
     }
 }
