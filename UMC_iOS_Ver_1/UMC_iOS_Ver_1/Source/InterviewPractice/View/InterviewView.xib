@@ -20,7 +20,7 @@
             <rect key="frame" x="0.0" y="0.0" width="319" height="471"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Interviewer_Active" translatesAutoresizingMaskIntoConstraints="NO" id="dAU-9f-Ave">
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Interviewer" translatesAutoresizingMaskIntoConstraints="NO" id="dAU-9f-Ave">
                     <rect key="frame" x="0.0" y="0.0" width="319" height="319"/>
                     <constraints>
                         <constraint firstAttribute="width" secondItem="dAU-9f-Ave" secondAttribute="height" multiplier="1:1" id="Vpw-LG-f5R"/>
@@ -30,7 +30,7 @@
                     <rect key="frame" x="0.0" y="311" width="319" height="160"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wWY-91-LSM">
-                            <rect key="frame" x="20" y="31.666666666666689" width="279" height="38.333333333333343"/>
+                            <rect key="frame" x="20" y="31.666666666666689" width="279" height="38.333333333333357"/>
                             <string key="text">면접을 시작합니다
 질문에 편하게 답변해주세요.</string>
                             <fontDescription key="fontDescription" type="system" pointSize="16"/>
@@ -75,7 +75,7 @@
         </view>
     </objects>
     <resources>
-        <image name="Interviewer_Active" width="2134" height="2134"/>
+        <image name="Interviewer" width="2134" height="2134"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
