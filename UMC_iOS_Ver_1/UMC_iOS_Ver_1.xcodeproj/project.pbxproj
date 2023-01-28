@@ -95,6 +95,8 @@
 		89CD26DB2984DEDD00A8AD8A /* InterviewStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD26DA2984DEDD00A8AD8A /* InterviewStartViewController.swift */; };
 		89CD26DE2984E02300A8AD8A /* InterviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD26DD2984E02300A8AD8A /* InterviewView.swift */; };
 		89CD26E02984E02A00A8AD8A /* InterviewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89CD26DF2984E02A00A8AD8A /* InterviewView.xib */; };
+		89CD26E32984E91C00A8AD8A /* InterviewPracticeEnd.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CD26E22984E91C00A8AD8A /* InterviewPracticeEnd.storyboard */; };
+		89CD26E52984E92300A8AD8A /* InterviewPracticeEndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD26E42984E92300A8AD8A /* InterviewPracticeEndViewController.swift */; };
 		89CD521B29744C1300E1F424 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 89CD521A29744C1300E1F424 /* Charts */; };
 		89CD521E29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CD521D29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard */; };
 		89CD522029744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD521F29744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift */; };
@@ -216,6 +218,8 @@
 		89CD26DA2984DEDD00A8AD8A /* InterviewStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewStartViewController.swift; sourceTree = "<group>"; };
 		89CD26DD2984E02300A8AD8A /* InterviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewView.swift; sourceTree = "<group>"; };
 		89CD26DF2984E02A00A8AD8A /* InterviewView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InterviewView.xib; sourceTree = "<group>"; };
+		89CD26E22984E91C00A8AD8A /* InterviewPracticeEnd.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InterviewPracticeEnd.storyboard; sourceTree = "<group>"; };
+		89CD26E42984E92300A8AD8A /* InterviewPracticeEndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewPracticeEndViewController.swift; sourceTree = "<group>"; };
 		89CD521D29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeRecordResult.storyboard; sourceTree = "<group>"; };
 		89CD521F29744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeRecordResultViewController.swift; sourceTree = "<group>"; };
 		89DCF50A2977060000CB2296 /* ScriptPracticeSet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeSet.storyboard; sourceTree = "<group>"; };
@@ -455,6 +459,7 @@
 			isa = PBXGroup;
 			children = (
 				89CD26DC2984DFEF00A8AD8A /* View */,
+				89CD26E12984E90800A8AD8A /* InterviewPracticeEnd */,
 				89CD26D72984DECD00A8AD8A /* InterviewStart */,
 				8971322B298021130093456B /* InterviewPracticeEx */,
 				5E32FC6429695CFC0010A376 /* InterviewPractice.storyboard */,
@@ -592,6 +597,15 @@
 				89CD26DF2984E02A00A8AD8A /* InterviewView.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		89CD26E12984E90800A8AD8A /* InterviewPracticeEnd */ = {
+			isa = PBXGroup;
+			children = (
+				89CD26E22984E91C00A8AD8A /* InterviewPracticeEnd.storyboard */,
+				89CD26E42984E92300A8AD8A /* InterviewPracticeEndViewController.swift */,
+			);
+			path = InterviewPracticeEnd;
 			sourceTree = "<group>";
 		};
 		89CD521C29744CA100E1F424 /* ScriptPracticeRecordResult */ = {
@@ -760,6 +774,7 @@
 				89CD26E02984E02A00A8AD8A /* InterviewView.xib in Resources */,
 				89C87D5D297EAD7500723E08 /* ScriptPracticeRecordEnd.storyboard in Resources */,
 				8932B507297E814F0054D9A4 /* ScriptPracticeRecordRoading.storyboard in Resources */,
+				89CD26E32984E91C00A8AD8A /* InterviewPracticeEnd.storyboard in Resources */,
 				213812402977A58700EC7B26 /* Post.storyboard in Resources */,
 				5E32FC19296955910010A376 /* Main.storyboard in Resources */,
 				89DCF50B2977060000CB2296 /* ScriptPracticeSet.storyboard in Resources */,
@@ -907,6 +922,7 @@
 				21A6B4AC2980F76A00F084F6 /* NumofLikesTableViewCell.swift in Sources */,
 				89CD522029744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift in Sources */,
 				21A6B4B02980FA4B00F084F6 /* NumOfCommentsTableViewCell.swift in Sources */,
+				89CD26E52984E92300A8AD8A /* InterviewPracticeEndViewController.swift in Sources */,
 				5E32FC51296957350010A376 /* String.swift in Sources */,
 				897C634F2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift in Sources */,
 				89273C062977A80100208B6D /* ScriptPTCollectionViewCell.swift in Sources */,
