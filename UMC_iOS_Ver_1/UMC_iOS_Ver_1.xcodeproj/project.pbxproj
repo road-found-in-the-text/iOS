@@ -91,6 +91,10 @@
 		89C31EE9296DD8CB00CBF249 /* ImageLabelBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C31EE8296DD8CB00CBF249 /* ImageLabelBarButton.swift */; };
 		89C87D5B297EAD7100723E08 /* ScriptPracticeRecordEndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C87D5A297EAD7100723E08 /* ScriptPracticeRecordEndViewController.swift */; };
 		89C87D5D297EAD7500723E08 /* ScriptPracticeRecordEnd.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89C87D5C297EAD7500723E08 /* ScriptPracticeRecordEnd.storyboard */; };
+		89CD26D92984DED700A8AD8A /* InterviewStart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CD26D82984DED700A8AD8A /* InterviewStart.storyboard */; };
+		89CD26DB2984DEDD00A8AD8A /* InterviewStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD26DA2984DEDD00A8AD8A /* InterviewStartViewController.swift */; };
+		89CD26DE2984E02300A8AD8A /* InterviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD26DD2984E02300A8AD8A /* InterviewView.swift */; };
+		89CD26E02984E02A00A8AD8A /* InterviewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89CD26DF2984E02A00A8AD8A /* InterviewView.xib */; };
 		89CD521B29744C1300E1F424 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 89CD521A29744C1300E1F424 /* Charts */; };
 		89CD521E29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CD521D29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard */; };
 		89CD522029744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD521F29744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift */; };
@@ -208,6 +212,10 @@
 		89C31EE8296DD8CB00CBF249 /* ImageLabelBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLabelBarButton.swift; sourceTree = "<group>"; };
 		89C87D5A297EAD7100723E08 /* ScriptPracticeRecordEndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeRecordEndViewController.swift; sourceTree = "<group>"; };
 		89C87D5C297EAD7500723E08 /* ScriptPracticeRecordEnd.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeRecordEnd.storyboard; sourceTree = "<group>"; };
+		89CD26D82984DED700A8AD8A /* InterviewStart.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InterviewStart.storyboard; sourceTree = "<group>"; };
+		89CD26DA2984DEDD00A8AD8A /* InterviewStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewStartViewController.swift; sourceTree = "<group>"; };
+		89CD26DD2984E02300A8AD8A /* InterviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewView.swift; sourceTree = "<group>"; };
+		89CD26DF2984E02A00A8AD8A /* InterviewView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InterviewView.xib; sourceTree = "<group>"; };
 		89CD521D29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeRecordResult.storyboard; sourceTree = "<group>"; };
 		89CD521F29744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeRecordResultViewController.swift; sourceTree = "<group>"; };
 		89DCF50A2977060000CB2296 /* ScriptPracticeSet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeSet.storyboard; sourceTree = "<group>"; };
@@ -446,6 +454,8 @@
 		5E32FC6029695C960010A376 /* InterviewPractice */ = {
 			isa = PBXGroup;
 			children = (
+				89CD26DC2984DFEF00A8AD8A /* View */,
+				89CD26D72984DECD00A8AD8A /* InterviewStart */,
 				8971322B298021130093456B /* InterviewPracticeEx */,
 				5E32FC6429695CFC0010A376 /* InterviewPractice.storyboard */,
 				5E32FC6A29695DF60010A376 /* InterviewPracticeViewController.swift */,
@@ -564,6 +574,24 @@
 				89C87D5C297EAD7500723E08 /* ScriptPracticeRecordEnd.storyboard */,
 			);
 			path = ScriptPracticeRecordEnd;
+			sourceTree = "<group>";
+		};
+		89CD26D72984DECD00A8AD8A /* InterviewStart */ = {
+			isa = PBXGroup;
+			children = (
+				89CD26D82984DED700A8AD8A /* InterviewStart.storyboard */,
+				89CD26DA2984DEDD00A8AD8A /* InterviewStartViewController.swift */,
+			);
+			path = InterviewStart;
+			sourceTree = "<group>";
+		};
+		89CD26DC2984DFEF00A8AD8A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				89CD26DD2984E02300A8AD8A /* InterviewView.swift */,
+				89CD26DF2984E02A00A8AD8A /* InterviewView.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		89CD521C29744CA100E1F424 /* ScriptPracticeRecordResult */ = {
@@ -724,10 +752,12 @@
 				89CD521E29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard in Resources */,
 				89273C0B2977CAE600208B6D /* ScriptPT.storyboard in Resources */,
 				5E32FC1B296955930010A376 /* Assets.xcassets in Resources */,
+				89CD26D92984DED700A8AD8A /* InterviewStart.storyboard in Resources */,
 				210A9E8429713D9B0063972B /* Search.storyboard in Resources */,
 				5E32FC6529695CFC0010A376 /* InterviewPractice.storyboard in Resources */,
 				21A6B4AD2980F76A00F084F6 /* NumofLikesTableViewCell.xib in Resources */,
 				218DA9062970847F00D76C03 /* BestForumCollectionViewCell.xib in Resources */,
+				89CD26E02984E02A00A8AD8A /* InterviewView.xib in Resources */,
 				89C87D5D297EAD7500723E08 /* ScriptPracticeRecordEnd.storyboard in Resources */,
 				8932B507297E814F0054D9A4 /* ScriptPracticeRecordRoading.storyboard in Resources */,
 				213812402977A58700EC7B26 /* Post.storyboard in Resources */,
@@ -861,12 +891,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				5E32FC16296955910010A376 /* HomeViewController.swift in Sources */,
+				89CD26DE2984E02300A8AD8A /* InterviewView.swift in Sources */,
 				5E32FC6D29695DFF0010A376 /* MyPageViewController.swift in Sources */,
 				5E32FC4D296957030010A376 /* UIColor.swift in Sources */,
 				218DA910297084B200D76C03 /* BestForumTableViewCell.swift in Sources */,
 				5E32FC4B296956EB0010A376 /* Date.swift in Sources */,
 				21A749BB2977AB4E00EBFE82 /* ViewControllerConstants.swift in Sources */,
 				5E32FC552969576A0010A376 /* UIViewController.swift in Sources */,
+				89CD26DB2984DEDD00A8AD8A /* InterviewStartViewController.swift in Sources */,
 				5E32FC57296957840010A376 /* UIImageView.swift in Sources */,
 				21D4B6E629791D3600D7B485 /* CustomAlertViewController.swift in Sources */,
 				896854B52975565400E70868 /* ScriptRecordViewController.swift in Sources */,

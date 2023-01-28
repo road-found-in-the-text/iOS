@@ -9,6 +9,7 @@ import UIKit
 
 class InterviewPracticeExViewController: UIViewController {
     
+    @IBOutlet var interviewImageView: UIImageView!
     @IBOutlet var questionBackgroundView: UIView!
     @IBOutlet var questionTitleLabel: UILabel!
     @IBOutlet var questionContentLabel: UILabel!
@@ -27,6 +28,10 @@ class InterviewPracticeExViewController: UIViewController {
     }
     
     func style() {
+        interviewImageView.layer.shadowOpacity = 0.1
+        interviewImageView.layer.shadowColor = UIColor.black.cgColor
+        interviewImageView.layer.shadowOffset = CGSize(width: 0, height: 0)
+        
         questionBackgroundView.layer.cornerRadius = 12
         questionBackgroundView.layer.shadowOpacity = 0.1
         questionBackgroundView.layer.shadowColor = UIColor.black.cgColor

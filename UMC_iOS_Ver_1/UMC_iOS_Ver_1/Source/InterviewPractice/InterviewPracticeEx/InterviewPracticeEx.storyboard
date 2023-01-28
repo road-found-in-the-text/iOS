@@ -117,6 +117,7 @@
                     </view>
                     <connections>
                         <outlet property="guideLabel" destination="xCN-Kd-lKK" id="8SH-pr-upC"/>
+                        <outlet property="interviewImageView" destination="USc-it-pb6" id="Qvu-IN-5py"/>
                         <outlet property="questionBackgroundView" destination="heV-97-0Hf" id="H1g-fn-tgF"/>
                         <outlet property="questionContentLabel" destination="SRw-Z8-ljl" id="bEs-Pp-Dfl"/>
                         <outlet property="questionTitleLabel" destination="JnQ-6e-6Co" id="cz3-lc-xa0"/>
