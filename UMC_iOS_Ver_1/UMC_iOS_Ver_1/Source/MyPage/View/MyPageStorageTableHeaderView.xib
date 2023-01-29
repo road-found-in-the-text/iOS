@@ -96,7 +96,6 @@
                     </constraints>
                 </view>
             </subviews>
-            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="vJE-9D-V2G" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="51A-Ab-4QD"/>
                 <constraint firstAttribute="trailing" secondItem="vJE-9D-V2G" secondAttribute="trailing" id="f0b-xM-lrR"/>

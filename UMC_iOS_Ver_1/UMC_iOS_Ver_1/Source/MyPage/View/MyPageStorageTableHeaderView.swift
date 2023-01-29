@@ -13,7 +13,7 @@ class MyPageStorageTableHeaderView: UITableViewHeaderFooterView {
     @IBOutlet var selectedCategoryLabel: UILabel!
     @IBOutlet var selectedCellAmountLabel: UILabel!
     
-    var selectedButtonIndex: Int? = 0
+    var selectedButtonIndex = 0
     let categoryName = ["전체", "대본", "면접"]
     
     override func awakeFromNib() {
@@ -46,31 +46,19 @@ class MyPageStorageTableHeaderView: UITableViewHeaderFooterView {
     }
     
     @IBAction func categoryButtonTapped(_ sender: UIButton) {
-        if selectedButtonIndex != nil {
-            if sender.isSelected {
-                sender.isSelected = false
-                styleButtonStatus(sender)
-                selectedButtonIndex = nil
-            } else {
-                let previousSelectedButton = categoryButtons[selectedButtonIndex!]
-                
-                sender.isSelected = true
-                previousSelectedButton.isSelected = false
-                
-                styleButtonStatus(sender)
-                styleButtonStatus(previousSelectedButton)
-                
-                selectedButtonIndex = categoryButtons.firstIndex(of: sender)
-                
-                selectedCategoryLabel.text = categoryName[selectedButtonIndex!]
-            }
-        } else {
-            sender.isSelected = true
-            styleButtonStatus(sender)
-            selectedButtonIndex = categoryButtons.firstIndex(of: sender)
-            
-            selectedCategoryLabel.text = categoryName[selectedButtonIndex!]
-        }
+        guard categoryButtons[selectedButtonIndex] != sender else { return }
+        
+        let previousSelectedButton = categoryButtons[selectedButtonIndex]
+        
+        sender.isSelected = true
+        previousSelectedButton.isSelected = false
+        
+        styleButtonStatus(sender)
+        styleButtonStatus(previousSelectedButton)
+        
+        selectedButtonIndex = categoryButtons.firstIndex(of: sender)!
+        
+        selectedCategoryLabel.text = categoryName[selectedButtonIndex]
     }
 
 }
