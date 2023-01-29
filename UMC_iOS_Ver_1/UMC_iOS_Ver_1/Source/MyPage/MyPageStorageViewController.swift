@@ -17,6 +17,10 @@ class MyPageStorageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        registerTableViewHeader()
+    }
+    
+    func registerTableViewHeader() {
         let headerNib = UINib(nibName: "MyPageStorageTableHeaderView", bundle: nil)
         tableView.register(headerNib, forHeaderFooterViewReuseIdentifier: headerViewIdentifier)
     }
