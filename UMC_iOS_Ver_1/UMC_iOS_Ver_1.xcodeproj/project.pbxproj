@@ -101,7 +101,6 @@
 		89DCF50B2977060000CB2296 /* ScriptPracticeSet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89DCF50A2977060000CB2296 /* ScriptPracticeSet.storyboard */; };
 		89DCF50D2977060500CB2296 /* ScriptPracticeSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCF50C2977060500CB2296 /* ScriptPracticeSetViewController.swift */; };
 		89EACA0529878345003ACDD6 /* MyPageStorageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EACA0429878345003ACDD6 /* MyPageStorageTableViewCell.swift */; };
-		89EACA07298795DC003ACDD6 /* MyPageTabmanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EACA06298795DC003ACDD6 /* MyPageTabmanViewController.swift */; };
 		89EACA0A2987A12B003ACDD6 /* HPParallaxHeader in Frameworks */ = {isa = PBXBuildFile; productRef = 89EACA092987A12B003ACDD6 /* HPParallaxHeader */; };
 		9419EEF196C59F8A276BC2C0 /* Pods_UMC_iOS_Ver_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B928E9BB947B94197FC9A1 /* Pods_UMC_iOS_Ver_1.framework */; };
 		9627E4EC12C0657B54F74B64 /* Pods_UMC_iOS_Ver_1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D71B72BC0CFA2711D70661A /* Pods_UMC_iOS_Ver_1Tests.framework */; };
@@ -224,7 +223,6 @@
 		89DCF50A2977060000CB2296 /* ScriptPracticeSet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeSet.storyboard; sourceTree = "<group>"; };
 		89DCF50C2977060500CB2296 /* ScriptPracticeSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeSetViewController.swift; sourceTree = "<group>"; };
 		89EACA0429878345003ACDD6 /* MyPageStorageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageStorageTableViewCell.swift; sourceTree = "<group>"; };
-		89EACA06298795DC003ACDD6 /* MyPageTabmanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageTabmanViewController.swift; sourceTree = "<group>"; };
 		9605E6568465799CFD279686 /* Pods-UMC_iOS_Ver_1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC_iOS_Ver_1Tests.release.xcconfig"; path = "Target Support Files/Pods-UMC_iOS_Ver_1Tests/Pods-UMC_iOS_Ver_1Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A0DB99903F02E1B48D715375 /* Pods-UMC_iOS_Ver_1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC_iOS_Ver_1Tests.debug.xcconfig"; path = "Target Support Files/Pods-UMC_iOS_Ver_1Tests/Pods-UMC_iOS_Ver_1Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B6F6FA7EC2A2DF7ADD8C68E3 /* Pods_UMC_iOS_Ver_1_UMC_iOS_Ver_1UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UMC_iOS_Ver_1_UMC_iOS_Ver_1UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -456,7 +454,6 @@
 				5E32FC6629695D060010A376 /* MyPage.storyboard */,
 				895820F12987ACFA00D95B18 /* MyPageScrollViewController.swift */,
 				5E32FC6C29695DFF0010A376 /* MyPageViewController.swift */,
-				89EACA06298795DC003ACDD6 /* MyPageTabmanViewController.swift */,
 				896F42E429869C4800677A05 /* MyPageStorageViewController.swift */,
 			);
 			path = MyPage;
@@ -933,7 +930,6 @@
 				5E32FC6929695DE90010A376 /* ScriptPracticeViewController.swift in Sources */,
 				895820F22987ACFA00D95B18 /* MyPageScrollViewController.swift in Sources */,
 				896F42E529869C4800677A05 /* MyPageStorageViewController.swift in Sources */,
-				89EACA07298795DC003ACDD6 /* MyPageTabmanViewController.swift in Sources */,
 				21EB2F83297FD47600259C6D /* UserProfileTableViewCell.swift in Sources */,
 				2133B7A5297419290037D85D /* AddPostViewController.swift in Sources */,
 				21348A1B297677F4002190E5 /* ReportViewController.swift in Sources */,

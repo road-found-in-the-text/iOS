@@ -12,22 +12,13 @@ import Pageboy
 
 class MyPageViewController: TabmanViewController {
     
-    @IBOutlet var scrollView: UIScrollView!
-    @IBOutlet var tapView: UIView!
-    
     var viewControllers = [UIViewController]()
+    private let tabName = ["보관함", "내가 쓴 글", "내가 쓴 댓글"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         
-        guard let storageViewController = self.storyboard?.instantiateViewController(withIdentifier: "MyPageStorageViewController") as? MyPageStorageViewController else {
-            return
-        }
-        
-        viewControllers.append(storageViewController)
-
+        setViewControllers()
         
         self.dataSource = self
         
@@ -36,6 +27,14 @@ class MyPageViewController: TabmanViewController {
         bar.backgroundView.style = .blur(style: .light)
         bar.backgroundColor = .white
         bar.layout.transitionStyle = .none
+        
+        // 버튼 스타일링
+        bar.buttons.customize { button in
+            button.font = .systemFont(ofSize: 14)
+            button.selectedFont = .boldSystemFont(ofSize: 14)
+            button.tintColor = UIColor(named: "Sub2")
+            button.selectedTintColor = .black
+        }
         
         // 버튼 정렬 및 간격
         bar.layout.alignment = .centerDistributed
@@ -46,6 +45,14 @@ class MyPageViewController: TabmanViewController {
         bar.indicator.tintColor = .black
         
         addBar(bar, dataSource: self, at: .top)
+    }
+    
+    func setViewControllers() {
+        guard let storageViewController = self.storyboard?.instantiateViewController(withIdentifier: "MyPageStorageViewController") as? MyPageStorageViewController else {
+            return
+        }
+        
+        viewControllers.append(storageViewController)
     }
 }
 
@@ -69,8 +76,7 @@ extension MyPageViewController: PageboyViewControllerDataSource, TMBarDataSource
     }
     
     func barItem(for bar: TMBar, at index: Int) -> TMBarItemable {
-        let item = TMBarItem(title: "")
-        item.title = "Page \(index)"
+        let item = TMBarItem(title: tabName[index])
         
         return item
     }
