@@ -65,4 +65,12 @@ extension ScriptPracticeViewController: UITableViewDelegate, UITableViewDataSour
         return cell
         
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "ScriptEdit", bundle: nil)
+        guard let nextViewController = storyboard.instantiateViewController(withIdentifier: "ScriptEditTabmanViewController") as? ScriptEditTabmanViewController else {
+            assert(false, "Can't load next vc")
+        }
+        self.navigationController?.pushViewController(nextViewController, animated: true)
+    }
 }
