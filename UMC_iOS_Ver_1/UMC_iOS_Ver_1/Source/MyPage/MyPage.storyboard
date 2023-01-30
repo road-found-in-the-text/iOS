@@ -16,9 +16,10 @@
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <viewLayoutGuide key="safeArea" id="zSe-mV-8BZ"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <nil key="simulatedTopBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -32,8 +33,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="80" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="mJ4-fe-ZDg">
-                                <rect key="frame" x="0.0" y="59" width="393" height="693"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="80" estimatedSectionHeaderHeight="-1" sectionFooterHeight="1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="mJ4-fe-ZDg">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
                                 <color key="backgroundColor" name="Sub4"/>
                                 <color key="separatorColor" name="Sub4"/>
                                 <color key="sectionIndexBackgroundColor" name="Sub4"/>
@@ -149,15 +150,16 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="mx4-FV-AmP"/>
+                        <viewLayoutGuide key="safeArea" id="cJ0-2d-x9I"/>
                         <color key="backgroundColor" name="Sub4"/>
                         <constraints>
-                            <constraint firstItem="mJ4-fe-ZDg" firstAttribute="leading" secondItem="mx4-FV-AmP" secondAttribute="leading" id="HXT-5H-IHW"/>
-                            <constraint firstAttribute="bottom" secondItem="mJ4-fe-ZDg" secondAttribute="bottom" constant="100" id="ecg-8N-2dn"/>
-                            <constraint firstItem="mx4-FV-AmP" firstAttribute="trailing" secondItem="mJ4-fe-ZDg" secondAttribute="trailing" id="tja-37-SlA"/>
-                            <constraint firstItem="mJ4-fe-ZDg" firstAttribute="top" secondItem="mx4-FV-AmP" secondAttribute="top" id="w0Z-4p-uOw"/>
+                            <constraint firstItem="mJ4-fe-ZDg" firstAttribute="leading" secondItem="cJ0-2d-x9I" secondAttribute="leading" id="HXT-5H-IHW"/>
+                            <constraint firstAttribute="bottom" secondItem="mJ4-fe-ZDg" secondAttribute="bottom" constant="83" id="ecg-8N-2dn"/>
+                            <constraint firstItem="cJ0-2d-x9I" firstAttribute="trailing" secondItem="mJ4-fe-ZDg" secondAttribute="trailing" id="tja-37-SlA"/>
+                            <constraint firstItem="mJ4-fe-ZDg" firstAttribute="top" secondItem="cJ0-2d-x9I" secondAttribute="top" id="w0Z-4p-uOw"/>
                         </constraints>
                     </view>
+                    <nil key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="mJ4-fe-ZDg" id="NIa-He-1R3"/>
                     </connections>
@@ -174,8 +176,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="UPh-yQ-wiB">
-                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="UPh-yQ-wiB">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <inset key="separatorInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
                                 <connections>
@@ -184,13 +186,13 @@
                                 </connections>
                             </tableView>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="ara-Pk-9zc"/>
+                        <viewLayoutGuide key="safeArea" id="yPe-qN-VGy"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="UPh-yQ-wiB" secondAttribute="bottom" id="A1m-O0-3Hv"/>
-                            <constraint firstItem="UPh-yQ-wiB" firstAttribute="top" secondItem="ara-Pk-9zc" secondAttribute="top" id="XtB-kN-lIV"/>
-                            <constraint firstItem="UPh-yQ-wiB" firstAttribute="leading" secondItem="ara-Pk-9zc" secondAttribute="leading" id="e0k-OM-gQZ"/>
-                            <constraint firstItem="ara-Pk-9zc" firstAttribute="trailing" secondItem="UPh-yQ-wiB" secondAttribute="trailing" id="xu0-um-ifY"/>
+                            <constraint firstAttribute="bottom" secondItem="UPh-yQ-wiB" secondAttribute="bottom" constant="83" id="A1m-O0-3Hv"/>
+                            <constraint firstItem="UPh-yQ-wiB" firstAttribute="top" secondItem="yPe-qN-VGy" secondAttribute="top" id="XtB-kN-lIV"/>
+                            <constraint firstItem="UPh-yQ-wiB" firstAttribute="leading" secondItem="yPe-qN-VGy" secondAttribute="leading" id="e0k-OM-gQZ"/>
+                            <constraint firstItem="yPe-qN-VGy" firstAttribute="trailing" secondItem="UPh-yQ-wiB" secondAttribute="trailing" id="xu0-um-ifY"/>
                         </constraints>
                     </view>
                     <connections>
@@ -200,6 +202,40 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9KQ-3n-hnG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1803.8167938931297" y="-2.1126760563380285"/>
+        </scene>
+        <!--My Page My Comment View Controller-->
+        <scene sceneID="tqn-Vq-ki9">
+            <objects>
+                <viewController storyboardIdentifier="MyPageMyCommentViewController" id="kFw-Qo-gdF" customClass="MyPageMyCommentViewController" customModule="UMC_iOS_Ver_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2dM-uv-37b">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="JR8-ql-Bvc">
+                                <rect key="frame" x="0.0" y="59" width="393" height="710"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="kFw-Qo-gdF" id="wwh-P9-buE"/>
+                                    <outlet property="delegate" destination="kFw-Qo-gdF" id="gsa-9A-oHa"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yhu-kZ-PZr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="yhu-kZ-PZr" firstAttribute="trailing" secondItem="JR8-ql-Bvc" secondAttribute="trailing" id="Ci0-7r-FKa"/>
+                            <constraint firstItem="JR8-ql-Bvc" firstAttribute="leading" secondItem="yhu-kZ-PZr" secondAttribute="leading" id="O87-7X-68u"/>
+                            <constraint firstItem="JR8-ql-Bvc" firstAttribute="top" secondItem="yhu-kZ-PZr" secondAttribute="top" id="Q69-p9-ddX"/>
+                            <constraint firstAttribute="bottom" secondItem="JR8-ql-Bvc" secondAttribute="bottom" constant="83" id="f6Z-61-P0F"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="JR8-ql-Bvc" id="jfc-vv-6R2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="b79-eN-eHy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2615" y="-2"/>
         </scene>
         <!--마이페이지-->
         <scene sceneID="fBe-EJ-60j">
@@ -217,12 +253,12 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="ySq-W2-6gK"/>
+                        <viewLayoutGuide key="safeArea" id="o3N-DP-WBr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ySq-W2-6gK" firstAttribute="trailing" secondItem="WNk-w5-637" secondAttribute="trailing" id="6td-Eg-rZC"/>
-                            <constraint firstItem="WNk-w5-637" firstAttribute="top" secondItem="ySq-W2-6gK" secondAttribute="top" id="aas-Ng-flh"/>
-                            <constraint firstItem="WNk-w5-637" firstAttribute="leading" secondItem="ySq-W2-6gK" secondAttribute="leading" id="ayi-1g-wy2"/>
+                            <constraint firstItem="o3N-DP-WBr" firstAttribute="trailing" secondItem="WNk-w5-637" secondAttribute="trailing" id="6td-Eg-rZC"/>
+                            <constraint firstItem="WNk-w5-637" firstAttribute="top" secondItem="o3N-DP-WBr" secondAttribute="top" id="aas-Ng-flh"/>
+                            <constraint firstItem="WNk-w5-637" firstAttribute="leading" secondItem="o3N-DP-WBr" secondAttribute="leading" id="ayi-1g-wy2"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="마이페이지" image="ic_mypage_gray" id="Uyo-Yf-9E9"/>

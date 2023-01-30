@@ -83,6 +83,7 @@
 		895820F42987D79D00D95B18 /* MyPageMyPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895820F32987D79D00D95B18 /* MyPageMyPostViewController.swift */; };
 		895820FB2987E41600D95B18 /* MyPagePostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895820F92987E41600D95B18 /* MyPagePostTableViewCell.swift */; };
 		895820FC2987E41600D95B18 /* MyPagePostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 895820FA2987E41600D95B18 /* MyPagePostTableViewCell.xib */; };
+		895820FE2987FBFA00D95B18 /* MyPageMyCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895820FD2987FBFA00D95B18 /* MyPageMyCommentViewController.swift */; };
 		896854B32975564200E70868 /* ScriptRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896854B22975564200E70868 /* ScriptRecord.storyboard */; };
 		896854B52975565400E70868 /* ScriptRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896854B42975565400E70868 /* ScriptRecordViewController.swift */; };
 		896F42E529869C4800677A05 /* MyPageStorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F42E429869C4800677A05 /* MyPageStorageViewController.swift */; };
@@ -210,6 +211,7 @@
 		895820F32987D79D00D95B18 /* MyPageMyPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageMyPostViewController.swift; sourceTree = "<group>"; };
 		895820F92987E41600D95B18 /* MyPagePostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPagePostTableViewCell.swift; sourceTree = "<group>"; };
 		895820FA2987E41600D95B18 /* MyPagePostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPagePostTableViewCell.xib; sourceTree = "<group>"; };
+		895820FD2987FBFA00D95B18 /* MyPageMyCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageMyCommentViewController.swift; sourceTree = "<group>"; };
 		896854B22975564200E70868 /* ScriptRecord.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptRecord.storyboard; sourceTree = "<group>"; };
 		896854B42975565400E70868 /* ScriptRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordViewController.swift; sourceTree = "<group>"; };
 		896F42E429869C4800677A05 /* MyPageStorageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageStorageViewController.swift; sourceTree = "<group>"; };
@@ -462,6 +464,7 @@
 				5E32FC6C29695DFF0010A376 /* MyPageViewController.swift */,
 				896F42E429869C4800677A05 /* MyPageStorageViewController.swift */,
 				895820F32987D79D00D95B18 /* MyPageMyPostViewController.swift */,
+				895820FD2987FBFA00D95B18 /* MyPageMyCommentViewController.swift */,
 			);
 			path = MyPage;
 			sourceTree = "<group>";
@@ -931,6 +934,7 @@
 				5E32FC5B296957BB0010A376 /* UITextField.swift in Sources */,
 				210A9E8629713DC00063972B /* SearchViewController.swift in Sources */,
 				5E32FC592969579B0010A376 /* UIFont.swift in Sources */,
+				895820FE2987FBFA00D95B18 /* MyPageMyCommentViewController.swift in Sources */,
 				89C31EE9296DD8CB00CBF249 /* ImageLabelBarButton.swift in Sources */,
 				897C63512976BA6900CCF25F /* ScriptRecordMemoCollectionViewCell.swift in Sources */,
 				5E32FC45296956470010A376 /* Constant.swift in Sources */,

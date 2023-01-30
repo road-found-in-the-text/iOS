@@ -26,7 +26,6 @@ class MyPageViewController: TabmanViewController {
         
         bar.backgroundView.style = .blur(style: .light)
         bar.backgroundColor = .white
-        bar.layout.transitionStyle = .none
         
         // 버튼 스타일링
         bar.buttons.customize { button in
@@ -44,6 +43,10 @@ class MyPageViewController: TabmanViewController {
         bar.indicator.weight = .custom(value: 1)
         bar.indicator.tintColor = .black
         
+        bar.layer.shadowOpacity = 0.1
+        bar.layer.shadowColor = UIColor.black.cgColor
+        bar.layer.shadowOffset = CGSize(width: 0, height: 4)
+        
         addBar(bar, dataSource: self, at: .top)
     }
     
@@ -56,8 +59,13 @@ class MyPageViewController: TabmanViewController {
             return
         }
         
+        guard let myCommentViewController = self.storyboard?.instantiateViewController(withIdentifier: "MyPageMyCommentViewController") as? MyPageMyCommentViewController else {
+            return
+        }
+        
         viewControllers.append(storageViewController)
         viewControllers.append(myPostViewController)
+        viewControllers.append(myCommentViewController)
     }
 }
 
@@ -69,11 +77,7 @@ extension MyPageViewController: PageboyViewControllerDataSource, TMBarDataSource
     
     func viewController(for pageboyViewController: PageboyViewController,
                         at index: PageboyViewController.PageIndex) -> UIViewController? {
-        if index != 2 {
-            return viewControllers[index]
-        } else {
-            return UIViewController()
-        }
+        return viewControllers[index]
     }
     
     func defaultPage(for pageboyViewController: PageboyViewController) -> PageboyViewController.Page? {
