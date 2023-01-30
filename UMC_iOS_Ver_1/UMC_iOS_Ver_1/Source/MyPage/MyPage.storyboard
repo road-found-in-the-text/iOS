@@ -27,14 +27,13 @@
         <!--My Page View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="MyPageViewController" id="Y6W-OH-hqX" customClass="MyPageViewController" customModule="UMC_iOS_Ver_1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyPageViewController" automaticallyAdjustsScrollViewInsets="NO" id="Y6W-OH-hqX" customClass="MyPageViewController" customModule="UMC_iOS_Ver_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -48,9 +47,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="80" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="mJ4-fe-ZDg">
-                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="80" estimatedRowHeight="-1" sectionHeaderHeight="80" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="mJ4-fe-ZDg">
+                                <rect key="frame" x="0.0" y="59" width="393" height="693"/>
                                 <color key="backgroundColor" name="Sub4"/>
+                                <color key="separatorColor" name="Sub4"/>
                                 <color key="sectionIndexBackgroundColor" name="Sub4"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="storageCell" rowHeight="140" id="HKA-UU-dgD" customClass="MyPageStorageTableViewCell" customModule="UMC_iOS_Ver_1" customModuleProvider="target">
@@ -147,6 +147,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="Sub4"/>
                                         <connections>
+                                            <outlet property="backgroundImageView" destination="3tC-h2-Rlj" id="60e-53-2L0"/>
                                             <outlet property="contentLabel" destination="wJU-mc-U0e" id="vSy-Aq-OZa"/>
                                             <outlet property="pageLabel" destination="kw8-Qz-Dkb" id="hgi-hA-ZZC"/>
                                             <outlet property="timeLabel" destination="81J-g6-cas" id="emS-Vb-oJu"/>
@@ -167,7 +168,7 @@
                         <color key="backgroundColor" name="Sub4"/>
                         <constraints>
                             <constraint firstItem="mJ4-fe-ZDg" firstAttribute="leading" secondItem="mx4-FV-AmP" secondAttribute="leading" id="HXT-5H-IHW"/>
-                            <constraint firstAttribute="bottom" secondItem="mJ4-fe-ZDg" secondAttribute="bottom" id="ecg-8N-2dn"/>
+                            <constraint firstAttribute="bottom" secondItem="mJ4-fe-ZDg" secondAttribute="bottom" constant="100" id="ecg-8N-2dn"/>
                             <constraint firstItem="mx4-FV-AmP" firstAttribute="trailing" secondItem="mJ4-fe-ZDg" secondAttribute="trailing" id="tja-37-SlA"/>
                             <constraint firstItem="mJ4-fe-ZDg" firstAttribute="top" secondItem="mx4-FV-AmP" secondAttribute="top" id="w0Z-4p-uOw"/>
                         </constraints>
@@ -190,7 +191,7 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WNk-w5-637" customClass="MyPageProfileView" customModule="UMC_iOS_Ver_1" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="59" width="393" height="132"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="backgroundColor" name="Sub3"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="132" id="VUx-o6-bSX"/>
                                 </constraints>
@@ -224,6 +225,9 @@
         </namedColor>
         <namedColor name="Sub2">
             <color red="0.67843137254901964" green="0.70980392156862748" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Sub3">
+            <color red="0.78823529411764703" green="0.83921568627450982" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="Sub4">
             <color red="0.94117647058823528" green="0.96078431372549022" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

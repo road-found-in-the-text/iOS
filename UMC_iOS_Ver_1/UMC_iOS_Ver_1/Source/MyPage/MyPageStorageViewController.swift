@@ -19,6 +19,10 @@ class MyPageStorageViewController: UIViewController {
         super.viewDidLoad()
         
         registerTableViewHeader()
+        
+        if #available(iOS 15.0, *) {
+          tableView.sectionHeaderTopPadding = 0
+        }
     }
     
     func registerTableViewHeader() {

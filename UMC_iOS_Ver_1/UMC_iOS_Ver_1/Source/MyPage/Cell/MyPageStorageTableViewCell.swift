@@ -9,6 +9,7 @@ import UIKit
 
 class MyPageStorageTableViewCell: UITableViewCell {
     
+    @IBOutlet var backgroundImageView: UIImageView!
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var typeView: UIView!
     @IBOutlet var typeViewWidth: NSLayoutConstraint!
@@ -21,6 +22,10 @@ class MyPageStorageTableViewCell: UITableViewCell {
         super.awakeFromNib()
         
         typeView.layer.cornerRadius = 6
+        
+        backgroundImageView.layer.shadowOpacity = 0.1
+        backgroundImageView.layer.shadowColor = UIColor.black.cgColor
+        backgroundImageView.layer.shadowOffset = CGSize(width: 0, height: 0)
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -32,7 +37,7 @@ class MyPageStorageTableViewCell: UITableViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 0, left: 0, bottom: 8, right: 0))
+        contentView.frame = contentView.frame.inset(by: UIEdgeInsets(top: 4, left: 0, bottom: 4, right: 0))
     }
     
     func setTypeViewWidth() {
