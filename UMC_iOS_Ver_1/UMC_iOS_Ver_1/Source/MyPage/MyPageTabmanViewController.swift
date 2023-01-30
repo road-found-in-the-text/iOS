@@ -1,26 +1,21 @@
 //
-//  MyPageViewController.swift
+//  MyPageTabmanViewController.swift
 //  UMC_iOS_Ver_1
 //
-//  Created by 신태원 on 2023/01/07.
+//  Created by 이서영 on 2023/01/30.
 //
 
 import UIKit
 
-import Tabman
 import Pageboy
+import Tabman
 
-class MyPageViewController: TabmanViewController {
-    
-    @IBOutlet var scrollView: UIScrollView!
-    @IBOutlet var tapView: UIView!
-    
+class MyPageTabmanViewController: TabmanViewController {
+
     var viewControllers = [UIViewController]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         
         guard let storageViewController = self.storyboard?.instantiateViewController(withIdentifier: "MyPageStorageViewController") as? MyPageStorageViewController else {
             return
@@ -34,7 +29,6 @@ class MyPageViewController: TabmanViewController {
         let bar = TMBar.ButtonBar()
         
         bar.backgroundView.style = .blur(style: .light)
-        bar.backgroundColor = .white
         bar.layout.transitionStyle = .none
         
         // 버튼 정렬 및 간격
@@ -49,7 +43,8 @@ class MyPageViewController: TabmanViewController {
     }
 }
 
-extension MyPageViewController: PageboyViewControllerDataSource, TMBarDataSource {
+
+extension MyPageTabmanViewController: PageboyViewControllerDataSource, TMBarDataSource {
     
     func numberOfViewControllers(in pageboyViewController: PageboyViewController) -> Int {
         return 3

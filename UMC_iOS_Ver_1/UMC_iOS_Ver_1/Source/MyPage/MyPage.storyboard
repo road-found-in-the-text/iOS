@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OE5-4j-PeT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="nye-5q-bYp">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -9,7 +9,22 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--마이페이지-->
+        <!--View Controller-->
+        <scene sceneID="yv0-cU-YT6">
+            <objects>
+                <viewController id="eu6-Eu-WNA" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="t1O-9V-tt4">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="3AJ-cu-aNc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7Cu-1u-lfi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85" y="-673"/>
+        </scene>
+        <!--My Page View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController storyboardIdentifier="MyPageViewController" id="Y6W-OH-hqX" customClass="MyPageViewController" customModule="UMC_iOS_Ver_1" customModuleProvider="target" sceneMemberID="viewController">
@@ -19,27 +34,26 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="마이페이지" image="ic_mypage_gray" id="LOh-PW-fVL"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="85" y="-2"/>
+            <point key="canvasLocation" x="84.732824427480907" y="-2.1126760563380285"/>
         </scene>
         <!--My Page Storage View Controller-->
         <scene sceneID="h91-t9-UXY">
             <objects>
-                <viewController id="OE5-4j-PeT" customClass="MyPageStorageViewController" customModule="UMC_iOS_Ver_1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MyPageStorageViewController" id="OE5-4j-PeT" customClass="MyPageStorageViewController" customModule="UMC_iOS_Ver_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ijg-ee-5ey">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="80" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="mJ4-fe-ZDg">
-                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="80" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="mJ4-fe-ZDg">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
                                 <color key="backgroundColor" name="Sub4"/>
                                 <color key="sectionIndexBackgroundColor" name="Sub4"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="storageCell" rowHeight="140" id="HKA-UU-dgD" customClass="MyPageStorageTableViewCell" customModule="UMC_iOS_Ver_1" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="storageCell" rowHeight="140" id="HKA-UU-dgD" customClass="MyPageStorageTableViewCell" customModule="UMC_iOS_Ver_1" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="140"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="HKA-UU-dgD" id="Tel-bv-REz">
@@ -153,7 +167,7 @@
                         <color key="backgroundColor" name="Sub4"/>
                         <constraints>
                             <constraint firstItem="mJ4-fe-ZDg" firstAttribute="leading" secondItem="mx4-FV-AmP" secondAttribute="leading" id="HXT-5H-IHW"/>
-                            <constraint firstItem="mx4-FV-AmP" firstAttribute="bottom" secondItem="mJ4-fe-ZDg" secondAttribute="bottom" id="ecg-8N-2dn"/>
+                            <constraint firstAttribute="bottom" secondItem="mJ4-fe-ZDg" secondAttribute="bottom" id="ecg-8N-2dn"/>
                             <constraint firstItem="mx4-FV-AmP" firstAttribute="trailing" secondItem="mJ4-fe-ZDg" secondAttribute="trailing" id="tja-37-SlA"/>
                             <constraint firstItem="mJ4-fe-ZDg" firstAttribute="top" secondItem="mx4-FV-AmP" secondAttribute="top" id="w0Z-4p-uOw"/>
                         </constraints>
@@ -165,6 +179,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mpD-SX-I9Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="948.85496183206101" y="-2.1126760563380285"/>
+        </scene>
+        <!--마이페이지-->
+        <scene sceneID="fBe-EJ-60j">
+            <objects>
+                <viewController id="nye-5q-bYp" customClass="MyPageScrollViewController" customModule="UMC_iOS_Ver_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rpm-g4-OtB">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WNk-w5-637" customClass="MyPageProfileView" customModule="UMC_iOS_Ver_1" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="59" width="393" height="132"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="132" id="VUx-o6-bSX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ySq-W2-6gK"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="ySq-W2-6gK" firstAttribute="trailing" secondItem="WNk-w5-637" secondAttribute="trailing" id="6td-Eg-rZC"/>
+                            <constraint firstItem="WNk-w5-637" firstAttribute="top" secondItem="ySq-W2-6gK" secondAttribute="top" id="aas-Ng-flh"/>
+                            <constraint firstItem="WNk-w5-637" firstAttribute="leading" secondItem="ySq-W2-6gK" secondAttribute="leading" id="ayi-1g-wy2"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="마이페이지" image="ic_mypage_gray" id="Uyo-Yf-9E9"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="profileView" destination="WNk-w5-637" id="o89-fe-c7V"/>
+                        <segue destination="Y6W-OH-hqX" kind="custom" identifier="Contents" customClass="HPScrollViewControllerSegue" customModule="HPParallaxHeader" id="oxF-7v-ktp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="oLe-d2-rNc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-784" y="-2"/>
         </scene>
     </scenes>
     <resources>
