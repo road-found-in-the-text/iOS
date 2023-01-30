@@ -12,6 +12,7 @@ class MyPageStorageViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     
     private let headerViewIdentifier = "storageHeader"
+    private let cellIdentifier = "storageCell"
 
     
     override func viewDidLoad() {
@@ -32,7 +33,14 @@ extension MyPageStorageViewController: UITableViewDelegate, UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        return UITableViewCell()
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? MyPageStorageTableViewCell else {
+            return UITableViewCell()
+        }
+        
+        cell.typeLabel.text = "어쩌고저쩌고"
+        cell.setTypeViewWidth()
+        
+        return cell
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -41,5 +49,9 @@ extension MyPageStorageViewController: UITableViewDelegate, UITableViewDataSourc
         }
                 
         return header
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 148
     }
 }
