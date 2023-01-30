@@ -12,18 +12,22 @@ import Pageboy
 
 class ScriptEditTabmanViewController: TabmanViewController {
     
+    private var viewControllers = [UIViewController()]
     private let barButtonTitle = ["편집", "연습", "기록"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setViewControllers()
 
         self.dataSource = self
         self.isScrollEnabled = false
 
         let bar = TMBarView<TMHorizontalBarLayout, ImageLabelBarButton, TMLineBarIndicator>()
 
-        bar.backgroundView.style = .blur(style: .light)
+        bar.backgroundView.style = .clear
         bar.layout.transitionStyle = .none
+        bar.backgroundColor = .white
         
         // 버튼 정렬 및 간격
         bar.layout.alignment = .centerDistributed
@@ -34,6 +38,23 @@ class ScriptEditTabmanViewController: TabmanViewController {
         bar.indicator.tintColor = .black
         
         addBar(bar, dataSource: self, at: .top)
+    }
+    
+    func setViewControllers() {
+        var storyboard = UIStoryboard(name: "ScriptPracticeSet", bundle: nil)
+        guard let practiceSetViewController = storyboard.instantiateViewController(withIdentifier: "ScriptPracticeSetViewController") as? ScriptPracticeSetViewController else {
+            assert(false, "Can't load set vc")
+        }
+        
+        viewControllers.append(practiceSetViewController)
+        
+        storyboard = UIStoryboard(name: "ScriptRecord", bundle: nil)
+        
+        guard let recordViewController = storyboard.instantiateViewController(withIdentifier: "ScriptRecordViewController") as? ScriptRecordViewController else {
+            assert(false, "Can't load record vc")
+        }
+        
+        viewControllers.append(recordViewController)
     }
 
 }
@@ -46,7 +67,7 @@ extension ScriptEditTabmanViewController: PageboyViewControllerDataSource, TMBar
 
     func viewController(for pageboyViewController: PageboyViewController,
                         at index: PageboyViewController.PageIndex) -> UIViewController? {
-        return UIViewController()
+        return viewControllers[index]
     }
 
     func defaultPage(for pageboyViewController: PageboyViewController) -> PageboyViewController.Page? {

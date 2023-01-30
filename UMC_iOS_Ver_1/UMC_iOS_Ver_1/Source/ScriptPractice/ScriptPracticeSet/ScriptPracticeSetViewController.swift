@@ -31,7 +31,7 @@ class ScriptPracticeSetViewController: UIViewController {
     }
     
     func configureCollectionView() {
-        cellSize = CGSize(width: collectionView.frame.width - 37 * 2, height: collectionView.frame.height)
+        cellSize = CGSize(width: collectionView.frame.width - 37 * 2, height: collectionView.frame.height - 190)
         let cellWidth: CGFloat = floor(cellSize.width)
         let insetX = (view.bounds.width - cellWidth) / 2.0
         

@@ -13,13 +13,13 @@
         <!--Script Practice Set View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="ScriptPracticeSetViewController" customModule="UMC_iOS_Ver_1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScriptPracticeSetViewController" id="Y6W-OH-hqX" customClass="ScriptPracticeSetViewController" customModule="UMC_iOS_Ver_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rev-7n-WdO">
-                                <rect key="frame" x="0.0" y="88" width="393" height="613"/>
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="L1W-NN-dtd">
                                     <size key="itemSize" width="378" height="613"/>
@@ -29,7 +29,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="scriptPTcell" id="cR5-xB-FUk" customClass="ScriptPTCollectionViewCell" customModule="UMC_iOS_Ver_1" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="378" height="613"/>
+                                        <rect key="frame" x="0.0" y="73" width="378" height="613"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="UQi-Ji-oZJ">
                                             <rect key="frame" x="0.0" y="0.0" width="378" height="613"/>
@@ -103,9 +103,9 @@
                         <color key="backgroundColor" name="Sub4"/>
                         <constraints>
                             <constraint firstItem="rev-7n-WdO" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="5KV-P5-BPO"/>
-                            <constraint firstItem="rev-7n-WdO" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="29" id="L6b-9O-jz8"/>
+                            <constraint firstItem="rev-7n-WdO" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="L6b-9O-jz8"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rev-7n-WdO" secondAttribute="trailing" id="af1-9v-Pcz"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="rev-7n-WdO" secondAttribute="bottom" constant="117" id="oZ9-vV-pDa"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="rev-7n-WdO" secondAttribute="bottom" id="oZ9-vV-pDa"/>
                         </constraints>
                     </view>
                     <connections>
