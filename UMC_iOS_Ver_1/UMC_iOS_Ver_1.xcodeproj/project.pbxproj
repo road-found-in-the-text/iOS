@@ -80,6 +80,9 @@
 		895820EE2987A8CC00D95B18 /* MyPageProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895820ED2987A8CC00D95B18 /* MyPageProfileView.swift */; };
 		895820F02987A8D600D95B18 /* MyPageProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 895820EF2987A8D600D95B18 /* MyPageProfileView.xib */; };
 		895820F22987ACFA00D95B18 /* MyPageScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895820F12987ACFA00D95B18 /* MyPageScrollViewController.swift */; };
+		895820F42987D79D00D95B18 /* MyPageMyPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895820F32987D79D00D95B18 /* MyPageMyPostViewController.swift */; };
+		895820FB2987E41600D95B18 /* MyPagePostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895820F92987E41600D95B18 /* MyPagePostTableViewCell.swift */; };
+		895820FC2987E41600D95B18 /* MyPagePostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 895820FA2987E41600D95B18 /* MyPagePostTableViewCell.xib */; };
 		896854B32975564200E70868 /* ScriptRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896854B22975564200E70868 /* ScriptRecord.storyboard */; };
 		896854B52975565400E70868 /* ScriptRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896854B42975565400E70868 /* ScriptRecordViewController.swift */; };
 		896F42E529869C4800677A05 /* MyPageStorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F42E429869C4800677A05 /* MyPageStorageViewController.swift */; };
@@ -204,6 +207,9 @@
 		895820ED2987A8CC00D95B18 /* MyPageProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageProfileView.swift; sourceTree = "<group>"; };
 		895820EF2987A8D600D95B18 /* MyPageProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPageProfileView.xib; sourceTree = "<group>"; };
 		895820F12987ACFA00D95B18 /* MyPageScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageScrollViewController.swift; sourceTree = "<group>"; };
+		895820F32987D79D00D95B18 /* MyPageMyPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageMyPostViewController.swift; sourceTree = "<group>"; };
+		895820F92987E41600D95B18 /* MyPagePostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPagePostTableViewCell.swift; sourceTree = "<group>"; };
+		895820FA2987E41600D95B18 /* MyPagePostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPagePostTableViewCell.xib; sourceTree = "<group>"; };
 		896854B22975564200E70868 /* ScriptRecord.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptRecord.storyboard; sourceTree = "<group>"; };
 		896854B42975565400E70868 /* ScriptRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordViewController.swift; sourceTree = "<group>"; };
 		896F42E429869C4800677A05 /* MyPageStorageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageStorageViewController.swift; sourceTree = "<group>"; };
@@ -455,6 +461,7 @@
 				895820F12987ACFA00D95B18 /* MyPageScrollViewController.swift */,
 				5E32FC6C29695DFF0010A376 /* MyPageViewController.swift */,
 				896F42E429869C4800677A05 /* MyPageStorageViewController.swift */,
+				895820F32987D79D00D95B18 /* MyPageMyPostViewController.swift */,
 			);
 			path = MyPage;
 			sourceTree = "<group>";
@@ -607,6 +614,8 @@
 			isa = PBXGroup;
 			children = (
 				89EACA0429878345003ACDD6 /* MyPageStorageTableViewCell.swift */,
+				895820F92987E41600D95B18 /* MyPagePostTableViewCell.swift */,
+				895820FA2987E41600D95B18 /* MyPagePostTableViewCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -754,6 +763,7 @@
 				5E32FC1B296955930010A376 /* Assets.xcassets in Resources */,
 				210A9E8429713D9B0063972B /* Search.storyboard in Resources */,
 				5E32FC6529695CFC0010A376 /* InterviewPractice.storyboard in Resources */,
+				895820FC2987E41600D95B18 /* MyPagePostTableViewCell.xib in Resources */,
 				21A6B4AD2980F76A00F084F6 /* NumofLikesTableViewCell.xib in Resources */,
 				218DA9062970847F00D76C03 /* BestForumCollectionViewCell.xib in Resources */,
 				89C87D5D297EAD7500723E08 /* ScriptPracticeRecordEnd.storyboard in Resources */,
@@ -924,6 +934,7 @@
 				89C31EE9296DD8CB00CBF249 /* ImageLabelBarButton.swift in Sources */,
 				897C63512976BA6900CCF25F /* ScriptRecordMemoCollectionViewCell.swift in Sources */,
 				5E32FC45296956470010A376 /* Constant.swift in Sources */,
+				895820FB2987E41600D95B18 /* MyPagePostTableViewCell.swift in Sources */,
 				896F42EA29869FB100677A05 /* MyPageStorageTableHeaderView.swift in Sources */,
 				218DA9052970847F00D76C03 /* BestForumCollectionViewCell.swift in Sources */,
 				21A6B4B42980FED300F084F6 /* PostCommentsTableViewCell.swift in Sources */,
@@ -936,6 +947,7 @@
 				21A6B4A82980E70200F084F6 /* PostContentTableViewCell.swift in Sources */,
 				89EACA0529878345003ACDD6 /* MyPageStorageTableViewCell.swift in Sources */,
 				210A9E8829714A660063972B /* SearchHistoryDataModel.swift in Sources */,
+				895820F42987D79D00D95B18 /* MyPageMyPostViewController.swift in Sources */,
 				210A9E8D29714B100063972B /* SearchKeywordTableViewCell.swift in Sources */,
 				89DCF50D2977060500CB2296 /* ScriptPracticeSetViewController.swift in Sources */,
 				5E32FC6929695DE90010A376 /* ScriptPracticeViewController.swift in Sources */,

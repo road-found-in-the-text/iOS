@@ -9,21 +9,6 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="yv0-cU-YT6">
-            <objects>
-                <viewController id="eu6-Eu-WNA" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="t1O-9V-tt4">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="3AJ-cu-aNc"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7Cu-1u-lfi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="85" y="-673"/>
-        </scene>
         <!--My Page View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
@@ -180,6 +165,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mpD-SX-I9Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="948.85496183206101" y="-2.1126760563380285"/>
+        </scene>
+        <!--My Page My Post View Controller-->
+        <scene sceneID="ag2-QC-tcM">
+            <objects>
+                <viewController storyboardIdentifier="MyPageMyPostViewController" id="Mg6-ee-uMJ" customClass="MyPageMyPostViewController" customModule="UMC_iOS_Ver_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nJ2-Bu-2qO">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="UPh-yQ-wiB">
+                                <rect key="frame" x="0.0" y="59" width="393" height="793"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <inset key="separatorInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Mg6-ee-uMJ" id="o4V-xv-Da0"/>
+                                    <outlet property="delegate" destination="Mg6-ee-uMJ" id="RMc-xa-CQB"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ara-Pk-9zc"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="UPh-yQ-wiB" secondAttribute="bottom" id="A1m-O0-3Hv"/>
+                            <constraint firstItem="UPh-yQ-wiB" firstAttribute="top" secondItem="ara-Pk-9zc" secondAttribute="top" id="XtB-kN-lIV"/>
+                            <constraint firstItem="UPh-yQ-wiB" firstAttribute="leading" secondItem="ara-Pk-9zc" secondAttribute="leading" id="e0k-OM-gQZ"/>
+                            <constraint firstItem="ara-Pk-9zc" firstAttribute="trailing" secondItem="UPh-yQ-wiB" secondAttribute="trailing" id="xu0-um-ifY"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="UPh-yQ-wiB" id="Oua-GD-C6D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9KQ-3n-hnG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1803.8167938931297" y="-2.1126760563380285"/>
         </scene>
         <!--마이페이지-->
         <scene sceneID="fBe-EJ-60j">

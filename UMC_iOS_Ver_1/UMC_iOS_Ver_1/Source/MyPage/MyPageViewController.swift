@@ -52,7 +52,12 @@ class MyPageViewController: TabmanViewController {
             return
         }
         
+        guard let myPostViewController = self.storyboard?.instantiateViewController(withIdentifier: "MyPageMyPostViewController") as? MyPageMyPostViewController else {
+            return
+        }
+        
         viewControllers.append(storageViewController)
+        viewControllers.append(myPostViewController)
     }
 }
 
@@ -64,8 +69,8 @@ extension MyPageViewController: PageboyViewControllerDataSource, TMBarDataSource
     
     func viewController(for pageboyViewController: PageboyViewController,
                         at index: PageboyViewController.PageIndex) -> UIViewController? {
-        if index == 0 {
-            return viewControllers[0]
+        if index != 2 {
+            return viewControllers[index]
         } else {
             return UIViewController()
         }
