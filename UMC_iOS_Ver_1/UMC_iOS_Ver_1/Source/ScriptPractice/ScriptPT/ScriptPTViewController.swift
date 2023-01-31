@@ -83,6 +83,15 @@ extension ScriptPTViewController {
             pauseButton.setImage(UIImage(named: "ic_pause"), for: .normal)
         }
     }
+    
+    @IBAction func stopButtonTapped(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "ScriptPracticeRecord", bundle: nil)
+        guard let nextViewController = storyboard.instantiateViewController(withIdentifier: "ScriptPracticeRecordViewController") as? ScriptPracticeRecordViewController else {
+            assert(false)
+        }
+        
+        self.navigationController?.pushViewController(nextViewController, animated: true)
+    }
 }
 
 // MARK: - UICollectionView
