@@ -79,6 +79,7 @@
 		8932B509297E81580054D9A4 /* ScriptPracticeRecordRoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8932B508297E81580054D9A4 /* ScriptPracticeRecordRoadingViewController.swift */; };
 		896854B32975564200E70868 /* ScriptRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896854B22975564200E70868 /* ScriptRecord.storyboard */; };
 		896854B52975565400E70868 /* ScriptRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896854B42975565400E70868 /* ScriptRecordViewController.swift */; };
+		8971E9EA29890ED200DF6ACD /* PracticeQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971E9E929890ED200DF6ACD /* PracticeQuestion.swift */; };
 		897C634B2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C634A2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift */; };
 		897C634D2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C634C2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift */; };
 		897C634F2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C634E2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift */; };
@@ -200,6 +201,7 @@
 		8932B508297E81580054D9A4 /* ScriptPracticeRecordRoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeRecordRoadingViewController.swift; sourceTree = "<group>"; };
 		896854B22975564200E70868 /* ScriptRecord.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptRecord.storyboard; sourceTree = "<group>"; };
 		896854B42975565400E70868 /* ScriptRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordViewController.swift; sourceTree = "<group>"; };
+		8971E9E929890ED200DF6ACD /* PracticeQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeQuestion.swift; sourceTree = "<group>"; };
 		897C634A2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordCollectionReusableView.swift; sourceTree = "<group>"; };
 		897C634C2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordResultCollectionViewCell.swift; sourceTree = "<group>"; };
 		897C634E2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordChartCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -461,14 +463,15 @@
 		5E32FC6129695CA20010A376 /* ScriptPractice */ = {
 			isa = PBXGroup;
 			children = (
+				8971E9E829890E7400DF6ACD /* Entity */,
 				89E0B03F29881C77007F6993 /* Cell */,
 				89028EC0296C6B2A00B28DB7 /* ScriptEdit */,
-				89C87D59297EAD6300723E08 /* ScriptPracticeRecordEnd */,
-				8932B505297E81390054D9A4 /* ScriptPracticeRecordRoading */,
 				89DCF505297705C800CB2296 /* ScriptPracticeSet */,
-				89CD521C29744CA100E1F424 /* ScriptPracticeRecordResult */,
 				89273C092977CAD700208B6D /* ScriptPT */,
 				89C31EE3296DBDC300CBF249 /* ScriptPracticeRecord */,
+				8932B505297E81390054D9A4 /* ScriptPracticeRecordRoading */,
+				89CD521C29744CA100E1F424 /* ScriptPracticeRecordResult */,
+				89C87D59297EAD6300723E08 /* ScriptPracticeRecordEnd */,
 				896854B12975563800E70868 /* ScriptRecord */,
 				5E32FC6229695CF20010A376 /* ScriptPractice.storyboard */,
 				5E32FC6829695DE90010A376 /* ScriptPracticeViewController.swift */,
@@ -535,6 +538,14 @@
 				896854B42975565400E70868 /* ScriptRecordViewController.swift */,
 			);
 			path = ScriptRecord;
+			sourceTree = "<group>";
+		};
+		8971E9E829890E7400DF6ACD /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				8971E9E929890ED200DF6ACD /* PracticeQuestion.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		897C63492976B7E700CCF25F /* Cell */ = {
@@ -872,6 +883,7 @@
 				5E32FC6D29695DFF0010A376 /* MyPageViewController.swift in Sources */,
 				5E32FC4D296957030010A376 /* UIColor.swift in Sources */,
 				218DA910297084B200D76C03 /* BestForumTableViewCell.swift in Sources */,
+				8971E9EA29890ED200DF6ACD /* PracticeQuestion.swift in Sources */,
 				5E32FC4B296956EB0010A376 /* Date.swift in Sources */,
 				89E0B03E29881C60007F6993 /* WriteScriptViewController.swift in Sources */,
 				21A749BB2977AB4E00EBFE82 /* ViewControllerConstants.swift in Sources */,

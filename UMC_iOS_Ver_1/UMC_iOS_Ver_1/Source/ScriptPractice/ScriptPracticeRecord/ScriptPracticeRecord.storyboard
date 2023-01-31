@@ -41,16 +41,16 @@
                                 <color key="textColor" name="Sub1"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gxU-I0-js3">
-                                <rect key="frame" x="20" y="232" width="260" height="63"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gxU-I0-js3">
+                                <rect key="frame" x="20" y="232" width="353" height="63"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주제와 관련된 내용을 보여주는가?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpi-A4-Bao">
-                                        <rect key="frame" x="0.0" y="0.0" width="260" height="17"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="188" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="so9-Cv-L59">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="so9-Cv-L59">
                                         <rect key="frame" x="0.0" y="27" width="260" height="36"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpB-Da-Gbr">
@@ -142,16 +142,16 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9qe-9v-nht">
-                                <rect key="frame" x="20" y="313" width="260" height="63"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9qe-9v-nht">
+                                <rect key="frame" x="20" y="313" width="353" height="63"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="주제를 벗어나지 않았는가?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcK-uH-rw1">
-                                        <rect key="frame" x="0.0" y="0.0" width="260" height="17"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="148" height="17"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vGc-Xo-Sbj">
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vGc-Xo-Sbj">
                                         <rect key="frame" x="0.0" y="27" width="260" height="36"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KSP-ch-Vv2">
@@ -254,6 +254,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="건너뛰기">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="skipButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="FbE-Uv-C8m"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6aS-D0-Oh0">
                                         <rect key="frame" x="188" y="0.0" width="173" height="50"/>
@@ -263,6 +266,9 @@
                                         <buttonConfiguration key="configuration" style="plain" title="다음">
                                             <fontDescription key="titleFontDescription" type="boldSystem" pointSize="16"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="nextButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="zIh-Ns-4gC"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <constraints>
@@ -289,9 +295,11 @@
                             <constraint firstItem="gxU-I0-js3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="bfK-Ss-OzX"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="xFh-DO-jOz" secondAttribute="bottom" constant="16" id="cQh-xv-KRx"/>
                             <constraint firstItem="xFh-DO-jOz" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="fiN-el-deS"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="gxU-I0-js3" secondAttribute="trailing" constant="20" id="gIf-50-Ank"/>
                             <constraint firstItem="9i3-em-WpV" firstAttribute="top" secondItem="hRK-LU-mLY" secondAttribute="bottom" constant="24" id="hF4-i4-cq3"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="9i3-em-WpV" secondAttribute="trailing" constant="20" id="rP3-uD-awi"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="hRK-LU-mLY" secondAttribute="trailing" constant="20" id="tKA-EI-BaZ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="9qe-9v-nht" secondAttribute="trailing" constant="20" id="wTW-5j-ReW"/>
                         </constraints>
                     </view>
                     <connections>

@@ -85,6 +85,8 @@ extension ScriptPTViewController {
     }
     
     @IBAction func stopButtonTapped(_ sender: UIButton) {
+        timer?.invalidate()
+        
         let storyboard = UIStoryboard(name: "ScriptPracticeRecord", bundle: nil)
         guard let nextViewController = storyboard.instantiateViewController(withIdentifier: "ScriptPracticeRecordViewController") as? ScriptPracticeRecordViewController else {
             assert(false)
