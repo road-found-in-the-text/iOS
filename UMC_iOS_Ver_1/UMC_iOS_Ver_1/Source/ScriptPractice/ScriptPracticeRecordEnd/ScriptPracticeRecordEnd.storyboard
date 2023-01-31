@@ -12,7 +12,7 @@
         <!--Script Practice Record End View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="ScriptPracticeRecordEndViewController" customModule="UMC_iOS_Ver_1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScriptPracticeRecordEndViewController" id="Y6W-OH-hqX" customClass="ScriptPracticeRecordEndViewController" customModule="UMC_iOS_Ver_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -91,6 +91,9 @@
             <point key="canvasLocation" x="-4" y="4"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="cH1-pR-Gsk"/>
+    </designables>
     <resources>
         <namedColor name="Sub1">
             <color red="0.32156862745098042" green="0.38039215686274508" blue="0.41568627450980394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

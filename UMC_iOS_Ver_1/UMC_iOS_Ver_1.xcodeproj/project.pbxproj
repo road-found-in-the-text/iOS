@@ -571,8 +571,8 @@
 		89C87D59297EAD6300723E08 /* ScriptPracticeRecordEnd */ = {
 			isa = PBXGroup;
 			children = (
-				89C87D5A297EAD7100723E08 /* ScriptPracticeRecordEndViewController.swift */,
 				89C87D5C297EAD7500723E08 /* ScriptPracticeRecordEnd.storyboard */,
+				89C87D5A297EAD7100723E08 /* ScriptPracticeRecordEndViewController.swift */,
 			);
 			path = ScriptPracticeRecordEnd;
 			sourceTree = "<group>";

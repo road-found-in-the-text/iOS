@@ -111,6 +111,15 @@ class ScriptPracticeRecordResultViewController: UIViewController {
         
         resultChart.data = data
     }
+    
+    @IBAction func doneButtonTapped(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "ScriptPracticeRecordEnd", bundle: nil)
+        guard let nextViewController = storyboard.instantiateViewController(withIdentifier: "ScriptPracticeRecordEndViewController") as? ScriptPracticeRecordEndViewController else {
+            assert(false)
+        }
+        
+        self.navigationController?.pushViewController(nextViewController, animated: true)
+    }
 }
 
 // MARK: - UITextViewDelegate
