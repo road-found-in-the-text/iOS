@@ -27,13 +27,13 @@
                         <rect key="frame" x="65" y="20" width="250" height="35"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="닉네임" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7c6-op-wmb">
-                                <rect key="frame" x="0.0" y="0.0" width="250" height="20.5"/>
+                                <rect key="frame" x="0.0" y="0.0" width="250" height="20.333333333333332"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1분 전" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tZh-U7-iHv">
-                                <rect key="frame" x="0.0" y="20.5" width="250" height="14.5"/>
+                                <rect key="frame" x="0.0" y="20.333333333333336" width="250" height="14.666666666666664"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -69,13 +69,13 @@
                         <buttonConfiguration key="configuration" style="plain" image="ic_like"/>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="답글 달기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kJD-57-3zt">
-                        <rect key="frame" x="128.5" y="113.5" width="63.5" height="20.5"/>
+                        <rect key="frame" x="128.66666666666666" y="113.66666666666667" width="63.333333333333343" height="20.333333333333329"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="좋아요 0개" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KDL-Rq-0Bx">
-                        <rect key="frame" x="40" y="113.5" width="73.5" height="20.5"/>
+                        <rect key="frame" x="40.000000000000007" y="113.66666666666667" width="73.666666666666686" height="20.333333333333329"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -104,6 +104,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="commentText" destination="lSw-zf-zN5" id="75b-tI-fp1"/>
+                <outlet property="commentUserProfile" destination="rLX-AY-o3F" id="pwS-uo-ZTs"/>
             </connections>
             <point key="canvasLocation" x="-15.9375" y="54.929577464788736"/>
         </tableViewCell>

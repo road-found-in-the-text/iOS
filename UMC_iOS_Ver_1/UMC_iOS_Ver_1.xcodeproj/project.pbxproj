@@ -37,6 +37,8 @@
 		21A6B4B42980FED300F084F6 /* PostCommentsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6B4B22980FED300F084F6 /* PostCommentsTableViewCell.swift */; };
 		21A6B4B52980FED300F084F6 /* PostCommentsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21A6B4B32980FED300F084F6 /* PostCommentsTableViewCell.xib */; };
 		21A749BB2977AB4E00EBFE82 /* ViewControllerConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A749BA2977AB4E00EBFE82 /* ViewControllerConstants.swift */; };
+		21D1B40E29879A0300CDBE05 /* NestedCommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D1B40C29879A0300CDBE05 /* NestedCommentTableViewCell.swift */; };
+		21D1B40F29879A0300CDBE05 /* NestedCommentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21D1B40D29879A0300CDBE05 /* NestedCommentTableViewCell.xib */; };
 		21D4B6E429791A8200D7B485 /* ReportAlert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21D4B6E329791A8200D7B485 /* ReportAlert.storyboard */; };
 		21D4B6E629791D3600D7B485 /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B6E529791D3600D7B485 /* CustomAlertViewController.swift */; };
 		21EB2F83297FD47600259C6D /* UserProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EB2F81297FD47600259C6D /* UserProfileTableViewCell.swift */; };
@@ -148,6 +150,8 @@
 		21A6B4B22980FED300F084F6 /* PostCommentsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCommentsTableViewCell.swift; sourceTree = "<group>"; };
 		21A6B4B32980FED300F084F6 /* PostCommentsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCommentsTableViewCell.xib; sourceTree = "<group>"; };
 		21A749BA2977AB4E00EBFE82 /* ViewControllerConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerConstants.swift; sourceTree = "<group>"; };
+		21D1B40C29879A0300CDBE05 /* NestedCommentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NestedCommentTableViewCell.swift; sourceTree = "<group>"; };
+		21D1B40D29879A0300CDBE05 /* NestedCommentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NestedCommentTableViewCell.xib; sourceTree = "<group>"; };
 		21D4B6E329791A8200D7B485 /* ReportAlert.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReportAlert.storyboard; sourceTree = "<group>"; };
 		21D4B6E529791D3600D7B485 /* CustomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
 		21EB2F81297FD47600259C6D /* UserProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileTableViewCell.swift; sourceTree = "<group>"; };
@@ -294,6 +298,8 @@
 				21A6B4AF2980FA4B00F084F6 /* NumOfCommentsTableViewCell.xib */,
 				21A6B4B22980FED300F084F6 /* PostCommentsTableViewCell.swift */,
 				21A6B4B32980FED300F084F6 /* PostCommentsTableViewCell.xib */,
+				21D1B40C29879A0300CDBE05 /* NestedCommentTableViewCell.swift */,
+				21D1B40D29879A0300CDBE05 /* NestedCommentTableViewCell.xib */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -717,6 +723,7 @@
 				8932B507297E814F0054D9A4 /* ScriptPracticeRecordRoading.storyboard in Resources */,
 				213812402977A58700EC7B26 /* Post.storyboard in Resources */,
 				5E32FC19296955910010A376 /* Main.storyboard in Resources */,
+				21D1B40F29879A0300CDBE05 /* NestedCommentTableViewCell.xib in Resources */,
 				89DCF50B2977060000CB2296 /* ScriptPracticeSet.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -873,6 +880,7 @@
 				89273C0D2977CAEF00208B6D /* ScriptPTViewController.swift in Sources */,
 				2174690F29828662006B7950 /* PostCommentDataModel.swift in Sources */,
 				5E32FC14296955910010A376 /* SceneDelegate.swift in Sources */,
+				21D1B40E29879A0300CDBE05 /* NestedCommentTableViewCell.swift in Sources */,
 				89C87D5B297EAD7100723E08 /* ScriptPracticeRecordEndViewController.swift in Sources */,
 				5E32FC5B296957BB0010A376 /* UITextField.swift in Sources */,
 				210A9E8629713DC00063972B /* SearchViewController.swift in Sources */,

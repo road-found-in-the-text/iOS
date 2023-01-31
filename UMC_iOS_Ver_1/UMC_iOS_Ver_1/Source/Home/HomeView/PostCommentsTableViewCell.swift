@@ -10,11 +10,14 @@ import UIKit
 class PostCommentsTableViewCell: UITableViewCell {
 
     
+    @IBOutlet weak var commentUserProfile: UIImageView!
     @IBOutlet weak var commentText: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        commentUserProfile.layer.cornerRadius = commentUserProfile.frame.width / 2
+        commentUserProfile.clipsToBounds = true
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
