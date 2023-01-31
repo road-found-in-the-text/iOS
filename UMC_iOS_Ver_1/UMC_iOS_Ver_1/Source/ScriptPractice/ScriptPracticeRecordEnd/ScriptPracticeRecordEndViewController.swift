@@ -41,4 +41,14 @@ class ScriptPracticeRecordEndViewController: UIViewController {
         againButton.layer.cornerRadius = 8
         resultButton.layer.cornerRadius = 8
     }
+    
+    @IBAction func bottomButtonTapped(_ sender: UIButton) {
+        for viewController in self.navigationController!.viewControllers as Array {
+            if let nextViewController = viewController as? ScriptEditTabmanViewController {
+                nextViewController.pageIndex = sender == againButton ? 1 : 2
+                print(nextViewController.pageIndex)
+                self.navigationController?.popToViewController(nextViewController, animated: true)
+            }
+        }
+    }
 }

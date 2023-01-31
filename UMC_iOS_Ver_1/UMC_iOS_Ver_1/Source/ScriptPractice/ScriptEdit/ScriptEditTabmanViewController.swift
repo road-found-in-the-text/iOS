@@ -14,6 +14,7 @@ class ScriptEditTabmanViewController: TabmanViewController {
     
     private var viewControllers = [UIViewController()]
     private let barButtonTitle = ["편집", "연습", "기록"]
+    var pageIndex = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +39,12 @@ class ScriptEditTabmanViewController: TabmanViewController {
         bar.indicator.tintColor = .black
         
         addBar(bar, dataSource: self, at: .top)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        reloadData()
     }
     
     func setViewControllers() {
@@ -71,7 +78,7 @@ extension ScriptEditTabmanViewController: PageboyViewControllerDataSource, TMBar
     }
 
     func defaultPage(for pageboyViewController: PageboyViewController) -> PageboyViewController.Page? {
-        return nil
+        return .at(index: self.pageIndex)
     }
 
     func barItem(for bar: TMBar, at index: Int) -> TMBarItemable {
