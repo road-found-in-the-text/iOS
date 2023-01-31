@@ -129,6 +129,7 @@ class ScriptPracticeRecordViewController: UIViewController {
             assert(false)
         }
         loadingViewController.modalPresentationStyle = .fullScreen
+        loadingViewController.delegate = self
         
         self.present(loadingViewController, animated: false)
     }
@@ -196,21 +197,32 @@ class ScriptPracticeRecordViewController: UIViewController {
     }
     
     @IBAction func nextButtonTapped(_ sender: UIButton) {
-        if currentQuestionNumber < questions.count {
-            guard let firstSelectedAnswerIndex = firstSelectedAnswerIndex, let secondSelectedAnswerIndex = secondSelectedAnswerIndex else {
-                print("선택좀")
-                return
-            }
-            selectedAnswer[currentQuestionNumber-1].firstAnswer = firstSelectedAnswerIndex + 1
-            selectedAnswer[currentQuestionNumber-1].secondAnswer = secondSelectedAnswerIndex + 1
-            
-            currentQuestionNumber += 1
-            
-            updateSkipButtonTitle()
-            updateQuestionContent()
-            updateSelectedAnswer()
-        } else {
-            presentLoadingViewController()
+//        if currentQuestionNumber < questions.count {
+//            guard let firstSelectedAnswerIndex = firstSelectedAnswerIndex, let secondSelectedAnswerIndex = secondSelectedAnswerIndex else {
+//                print("선택좀")
+//                return
+//            }
+//            selectedAnswer[currentQuestionNumber-1].firstAnswer = firstSelectedAnswerIndex + 1
+//            selectedAnswer[currentQuestionNumber-1].secondAnswer = secondSelectedAnswerIndex + 1
+//
+//            currentQuestionNumber += 1
+//
+//            updateSkipButtonTitle()
+//            updateQuestionContent()
+//            updateSelectedAnswer()
+//        } else {
+//            presentLoadingViewController()
+//        }
+        presentLoadingViewController()
+    }
+}
+
+extension ScriptPracticeRecordViewController: ScriptPracticeRecordLoadingProtocol {
+    func didFinishLoading() {
+        let storyboard = UIStoryboard(name: "ScriptPracticeRecordResult", bundle: nil)
+        guard let nextViewController = storyboard.instantiateViewController(withIdentifier: "ScriptPracticeRecordResultViewController") as? ScriptPracticeRecordResultViewController else {
+            assert(false)
         }
+        self.navigationController?.pushViewController(nextViewController, animated: true)
     }
 }
