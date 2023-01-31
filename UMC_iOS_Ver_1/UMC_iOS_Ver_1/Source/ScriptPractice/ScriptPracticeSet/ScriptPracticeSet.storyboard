@@ -13,7 +13,7 @@
         <!--Script Practice Set View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController storyboardIdentifier="ScriptPracticeSetViewController" id="Y6W-OH-hqX" customClass="ScriptPracticeSetViewController" customModule="UMC_iOS_Ver_1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScriptPracticeSetViewController" hidesBottomBarWhenPushed="YES" id="Y6W-OH-hqX" customClass="ScriptPracticeSetViewController" customModule="UMC_iOS_Ver_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -135,6 +135,9 @@
                                 <state key="normal" title="연습 시작">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="practiceStartButtonTapped:" destination="ON3-9P-9NM" eventType="touchUpInside" id="E14-jN-Evo"/>
+                                </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s1q-Lc-oSL">
                                 <rect key="frame" x="30" y="602" width="333" height="120"/>

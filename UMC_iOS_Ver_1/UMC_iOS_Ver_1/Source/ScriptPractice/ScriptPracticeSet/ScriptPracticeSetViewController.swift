@@ -30,8 +30,14 @@ class ScriptPracticeSetViewController: UIViewController {
         presentModal()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        self.dismiss(animated: true)
+    }
+    
     func configureCollectionView() {
-        cellSize = CGSize(width: collectionView.frame.width - 37 * 2, height: collectionView.frame.height - 190)
+        cellSize = CGSize(width: collectionView.frame.width - 37 * 2, height: collectionView.frame.height * 0.9)
         let cellWidth: CGFloat = floor(cellSize.width)
         let insetX = (view.bounds.width - cellWidth) / 2.0
         
@@ -42,6 +48,8 @@ class ScriptPracticeSetViewController: UIViewController {
         guard let detailViewController = self.storyboard?.instantiateViewController(withIdentifier: "ScriptBottomSheetViewController") as? ScriptBottomSheetViewController else {
             return
         }
+        detailViewController.delegate = self
+        
         let nav = UINavigationController(rootViewController: detailViewController)
         nav.modalPresentationStyle = .pageSheet
 
@@ -63,6 +71,18 @@ class ScriptPracticeSetViewController: UIViewController {
 
 }
 
+extension ScriptPracticeSetViewController: ScriptBottomSheetDelegate {
+    func practiceStartButtonTapped() {
+        self.dismiss(animated: true)
+        
+        let storyboard = UIStoryboard(name: "ScriptPT", bundle: nil)
+        guard let nextViewController = storyboard.instantiateViewController(withIdentifier: "ScriptPTViewController") as? ScriptPTViewController else {
+            assert(false)
+        }
+        self.navigationController?.pushViewController(nextViewController, animated: true)
+    }
+}
+
 // MARK: - UICollectionView
 extension ScriptPracticeSetViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -78,7 +98,7 @@ extension ScriptPracticeSetViewController: UICollectionViewDelegate, UICollectio
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return cellSize
+        return CGSize(width: collectionView.frame.width - 37 * 2, height: collectionView.frame.height * 0.9)
     }
     
     // MARK: Paging Effect
