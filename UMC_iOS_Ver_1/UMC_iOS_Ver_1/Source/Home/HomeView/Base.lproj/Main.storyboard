@@ -51,10 +51,10 @@
             </objects>
             <point key="canvasLocation" x="-723" y="411"/>
         </scene>
-        <!--ScriptPracticeViewController-->
+        <!--ScriptPractice-->
         <scene sceneID="bnk-6C-SjJ">
             <objects>
-                <viewControllerPlaceholder storyboardName="ScriptPractice" referencedIdentifier="ScriptPracticeViewController" id="bmu-Z0-7Qy" sceneMemberID="viewController">
+                <viewControllerPlaceholder storyboardName="ScriptPractice" id="bmu-Z0-7Qy" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Item" id="pcM-IA-hG0"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="y3d-9w-rZv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

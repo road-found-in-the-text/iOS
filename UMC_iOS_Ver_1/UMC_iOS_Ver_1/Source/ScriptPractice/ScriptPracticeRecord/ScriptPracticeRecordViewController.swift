@@ -72,6 +72,7 @@ class ScriptPracticeRecordViewController: UIViewController {
         nextButton.layer.cornerRadius = 8
     }
     
+    // MARK: - Update Status
     func updateQuestionContent() {
         let question = questions[currentQuestionNumber-1]
         
@@ -120,6 +121,16 @@ class ScriptPracticeRecordViewController: UIViewController {
         } else {
             skipButton.setTitle("이전", for: .normal)
         }
+    }
+    
+    func presentLoadingViewController() {
+        let storyboard = UIStoryboard(name: "ScriptPracticeRecordRoading", bundle: nil)
+        guard let loadingViewController = storyboard.instantiateViewController(withIdentifier: "ScriptPracticeRecordRoadingViewController") as? ScriptPracticeRecordRoadingViewController else {
+            assert(false)
+        }
+        loadingViewController.modalPresentationStyle = .fullScreen
+        
+        self.present(loadingViewController, animated: false)
     }
     
     // MARK: - IBAction
@@ -174,7 +185,7 @@ class ScriptPracticeRecordViewController: UIViewController {
     
     @IBAction func skipButtonTapped(_ sender: UIButton) {
         if currentQuestionNumber == 1 {
-            print("건너뛰기")
+            presentLoadingViewController()
         } else {
             currentQuestionNumber -= 1
             
@@ -199,7 +210,7 @@ class ScriptPracticeRecordViewController: UIViewController {
             updateQuestionContent()
             updateSelectedAnswer()
         } else {
-            print("다음 화면으로")
+            presentLoadingViewController()
         }
     }
 }
