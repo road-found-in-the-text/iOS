@@ -15,9 +15,18 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationBarTitle()
         registerXib()
         forumTableView.delegate = self
         forumTableView.dataSource = self
+    }
+    
+    func navigationBarTitle() {
+        let titleLabel = UILabel()
+        titleLabel.textColor = UIColor.black
+        titleLabel.text = "글길"
+        titleLabel.font = UIFont.systemFont(ofSize: 17, weight: .bold)
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: titleLabel)
     }
     
     //커스텀cell 등록

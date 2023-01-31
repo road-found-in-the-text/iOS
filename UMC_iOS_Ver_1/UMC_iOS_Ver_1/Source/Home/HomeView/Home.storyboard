@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--글길-->
+        <!--Home View Controller-->
         <scene sceneID="SXM-5G-jWd">
             <objects>
                 <viewController storyboardIdentifier="Home" id="RwN-bz-acq" customClass="HomeViewController" customModule="UMC_iOS_Ver_1" customModuleProvider="target" sceneMemberID="viewController">
@@ -31,7 +31,7 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="글길" id="maL-Ek-c3f">
+                    <navigationItem key="navigationItem" id="maL-Ek-c3f">
                         <rightBarButtonItems>
                             <barButtonItem image="ic_addPost" id="jdX-0N-p94">
                                 <connections>
