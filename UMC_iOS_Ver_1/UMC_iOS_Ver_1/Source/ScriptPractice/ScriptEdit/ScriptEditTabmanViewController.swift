@@ -28,7 +28,7 @@ class ScriptEditTabmanViewController: TabmanViewController {
         self.isScrollEnabled = false
 
         let bar = TMBarView<TMHorizontalBarLayout, ImageLabelBarButton, TMLineBarIndicator>()
-
+        
         bar.backgroundView.style = .clear
         bar.layout.transitionStyle = .none
         bar.backgroundColor = .white
@@ -75,6 +75,12 @@ class ScriptEditTabmanViewController: TabmanViewController {
         }
         
         viewControllers.append(recordViewController)
+    }
+    
+    override func bar(_ bar: TMBar, didRequestScrollTo index: PageboyViewController.PageIndex) {
+        super.bar(bar, didRequestScrollTo: index)
+        
+        self.navigationItem.rightBarButtonItem?.isHidden = index == 1 ? true : false
     }
 
 }
