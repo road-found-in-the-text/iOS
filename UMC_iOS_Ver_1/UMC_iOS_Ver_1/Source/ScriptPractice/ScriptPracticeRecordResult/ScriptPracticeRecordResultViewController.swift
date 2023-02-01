@@ -40,6 +40,9 @@ class ScriptPracticeRecordResultViewController: UIViewController {
     }
     
     func style() {
+        self.navigationItem.title = "연습 기록"
+        self.navigationItem.hidesBackButton = true
+                                                                                          
         memoView.layer.cornerRadius = 8
         memoView.layer.borderColor = UIColor(named: "Sub4")?.cgColor
         memoView.layer.borderWidth = 1

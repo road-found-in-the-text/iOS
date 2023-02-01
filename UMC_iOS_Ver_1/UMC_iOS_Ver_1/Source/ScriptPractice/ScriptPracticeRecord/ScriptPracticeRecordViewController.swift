@@ -41,12 +41,24 @@ class ScriptPracticeRecordViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+              
+        configureNavigationItem()
         styleAnswerButtons(firstAnswerButtons)
         styleAnswerButtons(secondAnswerButtons)
         
         styleBottomButtons()
 
+    }
+    
+    func configureNavigationItem() {
+        self.navigationItem.title = "연습 기록"
+        self.navigationItem.hidesBackButton = true
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "ic_delete"), style: .plain, target: self, action: #selector(closeButtonTapped))
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = false
+    }
+    
+    @objc func closeButtonTapped() {
+        self.navigationController?.popViewController(animated: true)
     }
     
     // MARK: - Style
