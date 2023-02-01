@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y51-K4-AEO">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--글길-->
+        <scene sceneID="SXM-5G-jWd">
+            <objects>
+                <viewController storyboardIdentifier="Home" id="RwN-bz-acq" customClass="HomeViewController" customModule="UMC_iOS_Ver_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7ds-CF-AGt">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="8yY-mr-JXQ">
+                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="g6Q-P4-H9P"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8yY-mr-JXQ" firstAttribute="bottom" secondItem="g6Q-P4-H9P" secondAttribute="bottom" id="EIB-l4-t5v"/>
+                            <constraint firstItem="8yY-mr-JXQ" firstAttribute="trailing" secondItem="g6Q-P4-H9P" secondAttribute="trailing" id="Kpa-OY-CT1"/>
+                            <constraint firstItem="8yY-mr-JXQ" firstAttribute="leading" secondItem="g6Q-P4-H9P" secondAttribute="leading" id="aQI-bb-7EQ"/>
+                            <constraint firstItem="8yY-mr-JXQ" firstAttribute="top" secondItem="g6Q-P4-H9P" secondAttribute="top" id="xhL-us-30u"/>
+                        </constraints>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="글길" id="maL-Ek-c3f">
+                        <rightBarButtonItems>
+                            <barButtonItem image="ic_addPost" id="jdX-0N-p94">
+                                <connections>
+                                    <segue destination="ms0-06-jSs" kind="presentation" modalPresentationStyle="fullScreen" id="Cv3-Hq-fCi"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem image="ic_search" id="wr9-6R-snk">
+                                <connections>
+                                    <segue destination="r5P-Bo-4mA" kind="show" id="lbC-1x-Khe"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="forumTableView" destination="8yY-mr-JXQ" id="EcE-p6-nWQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Bvo-g9-NVe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1240.4580152671756" y="16.901408450704228"/>
+        </scene>
+        <!--Search-->
+        <scene sceneID="4Lv-hW-kqv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Search" id="r5P-Bo-4mA" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="aXb-p6-dbB"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kgD-dg-Dhc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1836" y="17"/>
+        </scene>
+        <!--AddPost-->
+        <scene sceneID="iPr-vd-Jnw">
+            <objects>
+                <viewControllerPlaceholder storyboardName="AddPost" id="ms0-06-jSs" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="eVz-7j-2lm"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="n1w-nH-LJX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1860" y="66"/>
+        </scene>
+        <!--홈-->
+        <scene sceneID="IU4-R6-6HH">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Y51-K4-AEO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="홈" image="ic_home_gray" id="2WZ-bf-mPf"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="zE5-N3-unc">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="RwN-bz-acq" kind="relationship" relationship="rootViewController" id="z7g-b1-9Dn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dj8-DQ-s5S" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="313.74045801526717" y="16.901408450704228"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_addPost" width="24" height="24"/>
+        <image name="ic_home_gray" width="24" height="24"/>
+        <image name="ic_search" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -75,7 +75,7 @@ class CreateNewScriptViewController: UIViewController {
         
         let footerBtn = UIButton(frame: CGRect(x: 0, y: 0, width: 77, height: 34))
         footerBtn.setTitle("추가", for: .normal)
-        footerBtn.titleLabel?.font = UIFont.AppleSDGothicNeo(type: .medium, size: 14)
+        footerBtn.titleLabel?.font = UIFont.systemFont(ofSize: 14, weight: .medium)
         footerBtn.setTitleColor(.black, for: .normal)
         footerBtn.setBackgroundColor(.white, for: .normal)
         footerBtn.clipsToBounds = true

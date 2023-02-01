@@ -61,7 +61,7 @@ class WriteScriptViewController: UIViewController {
         let attributeString = NSMutableAttributedString(string: text)
 
         // 적용할 글자 크기와 폰트를 설정합니다.
-        let font = UIFont.AppleSDGothicNeo(type: .bold, size: 14)
+        let font = UIFont.boldSystemFont(ofSize: 14)
 
         //현재 내가 선택한 텍스트
         let textSelect = contentString.substring(from: startTextIndex, to: endTextIndex)

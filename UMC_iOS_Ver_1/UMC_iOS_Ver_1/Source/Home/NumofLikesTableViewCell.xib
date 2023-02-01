@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="NumofLikesTableViewCell" rowHeight="52" id="KGk-i7-Jjw" customClass="NumofLikesTableViewCell" customModule="UMC_iOS_Ver_1" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="470" height="52"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="470" height="52"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GSc-zF-8Hg">
+                        <rect key="frame" x="15" y="10" width="48" height="32"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="ic_like" title=""/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="이 글을 5 명이 좋아합니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FGx-cC-OHJ">
+                        <rect key="frame" x="63" y="15" width="387" height="22"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FGx-cC-OHJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="18Q-KK-DhV"/>
+                    <constraint firstItem="GSc-zF-8Hg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="9Pb-OS-VNF"/>
+                    <constraint firstAttribute="bottom" secondItem="GSc-zF-8Hg" secondAttribute="bottom" constant="10" id="FLb-ie-cai"/>
+                    <constraint firstAttribute="trailing" secondItem="FGx-cC-OHJ" secondAttribute="trailing" constant="20" id="Hdc-pW-sZt"/>
+                    <constraint firstItem="GSc-zF-8Hg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="REy-91-AOl"/>
+                    <constraint firstItem="FGx-cC-OHJ" firstAttribute="leading" secondItem="GSc-zF-8Hg" secondAttribute="trailing" id="fmn-gU-vCV"/>
+                    <constraint firstAttribute="bottom" secondItem="FGx-cC-OHJ" secondAttribute="bottom" constant="15" id="lSt-ij-S19"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="70.229007633587784" y="32.394366197183103"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_like" width="24" height="24"/>
+    </resources>
+</document>
