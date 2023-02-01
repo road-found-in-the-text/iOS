@@ -10,6 +10,7 @@ import UIKit
 class PostViewController: UIViewController {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     
     let maxImageTopHeight: CGFloat = 300
     let minImageTopHeight: CGFloat = 47
@@ -60,6 +61,8 @@ class PostViewController: UIViewController {
 =======
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,6 +71,9 @@ class PostViewController: UIViewController {
     }
     
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
@@ -76,6 +82,7 @@ class PostViewController: UIViewController {
         guard let reportVC = reportStoryboard.instantiateViewController(withIdentifier: Const.ViewController.identifier.report) as? ReportViewController else { return }
         present(reportVC, animated: true)
     }
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
     
@@ -132,6 +139,9 @@ extension PostViewController: UITableViewDelegate, UITableViewDataSource, UIScro
         
         representativeImage.alpha = ratio
     }
+=======
+
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)

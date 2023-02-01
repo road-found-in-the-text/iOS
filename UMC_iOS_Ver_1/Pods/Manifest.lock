@@ -4,7 +4,10 @@ PODS:
   - IQKeyboardManagerSwift (6.5.10)
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - lottie-ios (4.1.2)
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
@@ -16,7 +19,10 @@ DEPENDENCIES:
   - IQKeyboardManagerSwift
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   - lottie-ios
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
@@ -29,7 +35,10 @@ SPEC REPOS:
     - IQKeyboardManagerSwift
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     - lottie-ios
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
@@ -41,9 +50,14 @@ SPEC CHECKSUMS:
   IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
   lottie-ios: b3846a9fa8ca1a1a3bebfa256ebe8b6fd4aaaaad
 
 PODFILE CHECKSUM: b7f31d02d32749b925bd70b5f611788d711e9122
+=======
+
+PODFILE CHECKSUM: 7d7ca2b92fb3f5c95d86b550e72404545e6ea215
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 
 PODFILE CHECKSUM: 7d7ca2b92fb3f5c95d86b550e72404545e6ea215

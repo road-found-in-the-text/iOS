@@ -25,7 +25,11 @@
                                         <state key="normal" title="Button"/>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                                         <buttonConfiguration key="configuration" style="plain" image="ic_delete"/>
+=======
+                                        <buttonConfiguration key="configuration" style="plain" title="X"/>
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
                                         <buttonConfiguration key="configuration" style="plain" title="X"/>
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
@@ -84,7 +88,11 @@
                                 <items>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                                     <barButtonItem title="Item" image="ic_camera" id="YV3-3X-8xS"/>
+=======
+                                    <barButtonItem title="Item" image="camera" catalog="system" id="YV3-3X-8xS"/>
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
                                     <barButtonItem title="Item" image="camera" catalog="system" id="YV3-3X-8xS"/>
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
@@ -124,8 +132,11 @@
         <image name="camera" catalog="system" width="128" height="93"/>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <image name="ic_camera" width="24" height="24"/>
         <image name="ic_delete" width="24" height="24"/>
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======

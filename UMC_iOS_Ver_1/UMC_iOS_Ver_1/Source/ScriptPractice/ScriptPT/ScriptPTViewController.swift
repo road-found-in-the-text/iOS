@@ -18,7 +18,11 @@ class ScriptPTViewController: UIViewController {
     
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     private var cellSize = CGSize()
+=======
+    private let cellSize = CGSize(width: 302, height: 140)
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
     private let cellSize = CGSize(width: 302, height: 140)
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
@@ -44,7 +48,10 @@ class ScriptPTViewController: UIViewController {
     func configureCollectionView() {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         cellSize = CGSize(width: collectionView.frame.width - 37 * 2, height: collectionView.frame.height)
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
@@ -93,10 +100,15 @@ extension ScriptPTViewController {
             timer?.invalidate()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             pauseButton.setImage(UIImage(named: "ic_play"), for: .normal)
         } else {
             timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerCallback), userInfo: nil, repeats: true)
             pauseButton.setImage(UIImage(named: "ic_pause"), for: .normal)
+=======
+        } else {
+            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerCallback), userInfo: nil, repeats: true)
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
         } else {
             timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerCallback), userInfo: nil, repeats: true)

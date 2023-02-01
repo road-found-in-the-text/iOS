@@ -9,7 +9,11 @@
 			<key>orderHint</key>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<integer>2</integer>
+=======
+			<integer>4</integer>
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 			<integer>4</integer>
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
@@ -22,7 +26,11 @@
 			<key>orderHint</key>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<integer>0</integer>
+=======
+			<integer>1</integer>
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 			<integer>1</integer>
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
@@ -35,7 +43,11 @@
 			<key>orderHint</key>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<integer>1</integer>
+=======
+			<integer>2</integer>
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 			<integer>2</integer>
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
@@ -48,7 +60,11 @@
 			<key>orderHint</key>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<integer>4</integer>
+=======
+			<integer>0</integer>
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 			<integer>0</integer>
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
@@ -61,7 +77,11 @@
 			<key>orderHint</key>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<integer>7</integer>
+=======
+			<integer>6</integer>
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 			<integer>6</integer>
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
@@ -74,12 +94,16 @@
 			<key>orderHint</key>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<integer>6</integer>
 		</dict>
 		<key>lottie-ios.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>3</integer>
+=======
+			<integer>5</integer>
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 			<integer>5</integer>
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)

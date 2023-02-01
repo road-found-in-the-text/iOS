@@ -2,7 +2,11 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <device id="retina5_9" orientation="portrait" appearance="light"/>
+=======
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
     <device id="retina6_12" orientation="portrait" appearance="light"/>
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
@@ -19,6 +23,7 @@
         <!--Post-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                 <viewController storyboardIdentifier="PostViewController" title="Post" hidesBottomBarWhenPushed="YES" id="Y6W-OH-hqX" customClass="PostViewController" customModule="UMC_iOS_Ver_1" customModuleProvider="target" sceneMemberID="viewController">
@@ -136,6 +141,8 @@
 =======
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
                 <viewController storyboardIdentifier="PostViewController" title="Post" id="Y6W-OH-hqX" customClass="PostViewController" customModule="UMC_iOS_Ver_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
@@ -154,6 +161,9 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)

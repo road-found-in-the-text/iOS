@@ -58,10 +58,16 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         switch indexPath.section {
         case 0:
             guard let bestForumcell = tableView.dequeueReusableCell(withIdentifier: "BestForumTableViewCell", for: indexPath) as? BestForumTableViewCell else { return UITableViewCell() }
             bestForumcell.cellDelegate = self
+=======
+        switch indexPath.section{
+        case 0:
+            guard let bestForumcell = tableView.dequeueReusableCell(withIdentifier: "BestForumTableViewCell", for: indexPath) as? BestForumTableViewCell else { return UITableViewCell() }
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
         switch indexPath.section{
         case 0:
@@ -99,6 +105,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 }
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 extension HomeViewController: CollectionViewCellDelegate {
     func collectionView(collectionViewCell: BestForumCollectionViewCell?, index: Int, didTappedInTableViewCell: BestForumTableViewCell) {
@@ -107,6 +114,8 @@ extension HomeViewController: CollectionViewCellDelegate {
         self.navigationController?.pushViewController(postVC, animated: true)
     }
 }
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======

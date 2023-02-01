@@ -21,11 +21,14 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="rev-7n-WdO">
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                                 <rect key="frame" x="0.0" y="88" width="393" height="613"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="L1W-NN-dtd">
                                     <size key="itemSize" width="378" height="613"/>
 =======
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
                                 <rect key="frame" x="0.0" y="88" width="393" height="145"/>
@@ -36,6 +39,9 @@
                                 <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="L1W-NN-dtd">
                                     <size key="itemSize" width="302" height="128"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
@@ -45,6 +51,7 @@
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="scriptPTcell" id="cR5-xB-FUk" customClass="ScriptPTCollectionViewCell" customModule="UMC_iOS_Ver_1" customModuleProvider="target">
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
                                         <rect key="frame" x="0.0" y="0.0" width="378" height="613"/>
@@ -111,6 +118,8 @@
 =======
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
                                         <rect key="frame" x="0.0" y="8.6666666666666661" width="302" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="UQi-Ji-oZJ">
@@ -148,6 +157,9 @@
                                             <outlet property="contentLabel" destination="Srr-Dg-2vH" id="CUn-IC-uYY"/>
                                             <outlet property="titleLabel" destination="cGV-Ia-H0l" id="aRd-aI-bGL"/>
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
@@ -168,7 +180,10 @@
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="rev-7n-WdO" secondAttribute="trailing" id="af1-9v-Pcz"/>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="rev-7n-WdO" secondAttribute="bottom" constant="117" id="oZ9-vV-pDa"/>
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======

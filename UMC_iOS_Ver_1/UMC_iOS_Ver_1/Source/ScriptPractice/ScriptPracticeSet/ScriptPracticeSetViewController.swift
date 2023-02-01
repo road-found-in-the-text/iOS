@@ -14,7 +14,11 @@ class ScriptPracticeSetViewController: UIViewController {
     
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     private var cellSize = CGSize()
+=======
+    private let cellSize = CGSize(width: 302, height: 140)
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
     private let cellSize = CGSize(width: 302, height: 140)
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
@@ -32,6 +36,10 @@ class ScriptPracticeSetViewController: UIViewController {
         configureCollectionView()
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
         
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
@@ -49,7 +57,10 @@ class ScriptPracticeSetViewController: UIViewController {
     func configureCollectionView() {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         cellSize = CGSize(width: collectionView.frame.width - 37 * 2, height: collectionView.frame.height)
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======

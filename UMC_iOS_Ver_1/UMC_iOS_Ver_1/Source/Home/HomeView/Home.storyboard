@@ -35,7 +35,11 @@
                         <rightBarButtonItems>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                             <barButtonItem image="ic_addPost" id="jdX-0N-p94">
+=======
+                            <barButtonItem systemItem="add" id="jdX-0N-p94">
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
                             <barButtonItem systemItem="add" id="jdX-0N-p94">
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
@@ -48,7 +52,11 @@
                             </barButtonItem>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                             <barButtonItem image="ic_search" id="wr9-6R-snk">
+=======
+                            <barButtonItem systemItem="search" id="wr9-6R-snk">
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
                             <barButtonItem systemItem="search" id="wr9-6R-snk">
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
@@ -113,9 +121,13 @@
     <resources>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         <image name="ic_addPost" width="24" height="24"/>
         <image name="ic_home_gray" width="24" height="24"/>
         <image name="ic_search" width="24" height="24"/>
+=======
+        <image name="ic_home_gray" width="24" height="24"/>
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
         <image name="ic_home_gray" width="24" height="24"/>
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)

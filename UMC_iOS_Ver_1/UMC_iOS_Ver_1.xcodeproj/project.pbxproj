@@ -21,7 +21,10 @@
 		216023A429708131009DA16E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 216023A329708131009DA16E /* Home.storyboard */; };
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		2174690F29828662006B7950 /* PostCommentDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2174690E29828662006B7950 /* PostCommentDataModel.swift */; };
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
@@ -34,6 +37,7 @@
 		218DA90F297084B200D76C03 /* ForumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218DA90B297084B200D76C03 /* ForumTableViewCell.swift */; };
 		218DA910297084B200D76C03 /* BestForumTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218DA90C297084B200D76C03 /* BestForumTableViewCell.swift */; };
 		2195E0F0297672AA00203C49 /* Report.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2195E0EF297672AA00203C49 /* Report.storyboard */; };
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		21A6B4A82980E70200F084F6 /* PostContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6B4A62980E70200F084F6 /* PostContentTableViewCell.swift */; };
@@ -49,6 +53,11 @@
 		21D4B6E629791D3600D7B485 /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B6E529791D3600D7B485 /* CustomAlertViewController.swift */; };
 		21EB2F83297FD47600259C6D /* UserProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EB2F81297FD47600259C6D /* UserProfileTableViewCell.swift */; };
 		21EB2F84297FD47600259C6D /* UserProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21EB2F82297FD47600259C6D /* UserProfileTableViewCell.xib */; };
+=======
+		21A749BB2977AB4E00EBFE82 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A749BA2977AB4E00EBFE82 /* Constants.swift */; };
+		21D4B6E429791A8200D7B485 /* ReportAlert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21D4B6E329791A8200D7B485 /* ReportAlert.storyboard */; };
+		21D4B6E629791D3600D7B485 /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B6E529791D3600D7B485 /* CustomAlertViewController.swift */; };
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 		21A749BB2977AB4E00EBFE82 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A749BA2977AB4E00EBFE82 /* Constants.swift */; };
 		21D4B6E429791A8200D7B485 /* ReportAlert.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 21D4B6E329791A8200D7B485 /* ReportAlert.storyboard */; };
@@ -114,11 +123,14 @@
 		89DCF50D2977060500CB2296 /* ScriptPracticeSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCF50C2977060500CB2296 /* ScriptPracticeSetViewController.swift */; };
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		89E0B03A29881C2E007F6993 /* CreateNewScriptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E0B03929881C2E007F6993 /* CreateNewScriptViewController.swift */; };
 		89E0B03C29881C46007F6993 /* ScriptNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E0B03B29881C46007F6993 /* ScriptNavigationViewController.swift */; };
 		89E0B03E29881C60007F6993 /* WriteScriptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E0B03D29881C60007F6993 /* WriteScriptViewController.swift */; };
 		89E0B04129881C86007F6993 /* CreateNewScriptCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E0B04029881C86007F6993 /* CreateNewScriptCell.swift */; };
 		89E0B04329881C97007F6993 /* ScriptListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E0B04229881C97007F6993 /* ScriptListTableViewCell.swift */; };
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
@@ -161,7 +173,10 @@
 		216023A329708131009DA16E /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		2174690E29828662006B7950 /* PostCommentDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCommentDataModel.swift; sourceTree = "<group>"; };
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
@@ -174,6 +189,7 @@
 		218DA90B297084B200D76C03 /* ForumTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForumTableViewCell.swift; sourceTree = "<group>"; };
 		218DA90C297084B200D76C03 /* BestForumTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BestForumTableViewCell.swift; sourceTree = "<group>"; };
 		2195E0EF297672AA00203C49 /* Report.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Report.storyboard; sourceTree = "<group>"; };
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 		21A6B4A62980E70200F084F6 /* PostContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostContentTableViewCell.swift; sourceTree = "<group>"; };
@@ -189,6 +205,11 @@
 		21D4B6E529791D3600D7B485 /* CustomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
 		21EB2F81297FD47600259C6D /* UserProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileTableViewCell.swift; sourceTree = "<group>"; };
 		21EB2F82297FD47600259C6D /* UserProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserProfileTableViewCell.xib; sourceTree = "<group>"; };
+=======
+		21A749BA2977AB4E00EBFE82 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		21D4B6E329791A8200D7B485 /* ReportAlert.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReportAlert.storyboard; sourceTree = "<group>"; };
+		21D4B6E529791D3600D7B485 /* CustomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 		21A749BA2977AB4E00EBFE82 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		21D4B6E329791A8200D7B485 /* ReportAlert.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ReportAlert.storyboard; sourceTree = "<group>"; };
@@ -257,11 +278,14 @@
 		89DCF50C2977060500CB2296 /* ScriptPracticeSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeSetViewController.swift; sourceTree = "<group>"; };
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 		89E0B03929881C2E007F6993 /* CreateNewScriptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewScriptViewController.swift; sourceTree = "<group>"; };
 		89E0B03B29881C46007F6993 /* ScriptNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptNavigationViewController.swift; sourceTree = "<group>"; };
 		89E0B03D29881C60007F6993 /* WriteScriptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteScriptViewController.swift; sourceTree = "<group>"; };
 		89E0B04029881C86007F6993 /* CreateNewScriptCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewScriptCell.swift; sourceTree = "<group>"; };
 		89E0B04229881C97007F6993 /* ScriptListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptListTableViewCell.swift; sourceTree = "<group>"; };
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
@@ -318,10 +342,16 @@
 			children = (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 				21A749BA2977AB4E00EBFE82 /* ViewControllerConstants.swift */,
 				218DA907297084A700D76C03 /* BestForumDataModel.swift */,
 				210A9E8729714A660063972B /* SearchHistoryDataModel.swift */,
 				2174690E29828662006B7950 /* PostCommentDataModel.swift */,
+=======
+				21A749BA2977AB4E00EBFE82 /* Constants.swift */,
+				218DA907297084A700D76C03 /* BestForumDataModel.swift */,
+				210A9E8729714A660063972B /* SearchHistoryDataModel.swift */,
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 				21A749BA2977AB4E00EBFE82 /* Constants.swift */,
 				218DA907297084A700D76C03 /* BestForumDataModel.swift */,
@@ -356,6 +386,7 @@
 				210A9E8C29714B100063972B /* SearchKeywordTableViewCell.xib */,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 				21EB2F81297FD47600259C6D /* UserProfileTableViewCell.swift */,
 				21EB2F82297FD47600259C6D /* UserProfileTableViewCell.xib */,
 				21A6B4A62980E70200F084F6 /* PostContentTableViewCell.swift */,
@@ -366,6 +397,8 @@
 				21A6B4AF2980FA4B00F084F6 /* NumOfCommentsTableViewCell.xib */,
 				21A6B4B22980FED300F084F6 /* PostCommentsTableViewCell.swift */,
 				21A6B4B32980FED300F084F6 /* PostCommentsTableViewCell.xib */,
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
@@ -529,7 +562,10 @@
 			children = (
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 				89E0B03F29881C77007F6993 /* Cell */,
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
@@ -546,9 +582,12 @@
 				5E32FC6829695DE90010A376 /* ScriptPracticeViewController.swift */,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 				89E0B03929881C2E007F6993 /* CreateNewScriptViewController.swift */,
 				89E0B03B29881C46007F6993 /* ScriptNavigationViewController.swift */,
 				89E0B03D29881C60007F6993 /* WriteScriptViewController.swift */,
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
@@ -585,6 +624,9 @@
 				89273C052977A80100208B6D /* ScriptPTCollectionViewCell.swift */,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 			);
@@ -668,6 +710,7 @@
 			path = ScriptPracticeSet;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 <<<<<<< HEAD
 		89E0B03F29881C77007F6993 /* Cell */ = {
 			isa = PBXGroup;
@@ -757,6 +800,8 @@
 			path = ScriptPracticeSet;
 			sourceTree = "<group>";
 		};
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 /* End PBXGroup section */
@@ -882,6 +927,7 @@
 				218DA90E297084B200D76C03 /* BestForumTableViewCell.xib in Resources */,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 				21A6B4B52980FED300F084F6 /* PostCommentsTableViewCell.xib in Resources */,
 				216023A429708131009DA16E /* Home.storyboard in Resources */,
 				89028EC2296C6B3800B28DB7 /* ScriptEdit.storyboard in Resources */,
@@ -911,6 +957,15 @@
 				5E32FC6729695D060010A376 /* MyPage.storyboard in Resources */,
 				5E32FC1E296955930010A376 /* LaunchScreen.storyboard in Resources */,
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
+				216023A429708131009DA16E /* Home.storyboard in Resources */,
+				89028EC2296C6B3800B28DB7 /* ScriptEdit.storyboard in Resources */,
+				89C31EE5296DBDD000CBF249 /* ScriptPracticeRecord.storyboard in Resources */,
+				5E32FC6329695CF20010A376 /* ScriptPractice.storyboard in Resources */,
+				211E919C29741B8E00BD406C /* AddPost.storyboard in Resources */,
+				5E32FC6729695D060010A376 /* MyPage.storyboard in Resources */,
+				5E32FC1E296955930010A376 /* LaunchScreen.storyboard in Resources */,
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 				2195E0F0297672AA00203C49 /* Report.storyboard in Resources */,
 				896854B32975564200E70868 /* ScriptRecord.storyboard in Resources */,
 				89CD521E29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard in Resources */,
@@ -920,7 +975,10 @@
 				5E32FC6529695CFC0010A376 /* InterviewPractice.storyboard in Resources */,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 				21A6B4AD2980F76A00F084F6 /* NumofLikesTableViewCell.xib in Resources */,
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
@@ -1065,9 +1123,13 @@
 				5E32FC4B296956EB0010A376 /* Date.swift in Sources */,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 				89E0B03E29881C60007F6993 /* WriteScriptViewController.swift in Sources */,
 				21A749BB2977AB4E00EBFE82 /* ViewControllerConstants.swift in Sources */,
 				89E0B04129881C86007F6993 /* CreateNewScriptCell.swift in Sources */,
+=======
+				21A749BB2977AB4E00EBFE82 /* Constants.swift in Sources */,
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 				21A749BB2977AB4E00EBFE82 /* Constants.swift in Sources */,
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
@@ -1082,9 +1144,13 @@
 				5E32FC57296957840010A376 /* UIImageView.swift in Sources */,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 				21A6B4AC2980F76A00F084F6 /* NumofLikesTableViewCell.swift in Sources */,
 				89CD522029744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift in Sources */,
 				21A6B4B02980FA4B00F084F6 /* NumOfCommentsTableViewCell.swift in Sources */,
+=======
+				89CD522029744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift in Sources */,
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 				89CD522029744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift in Sources */,
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
@@ -1104,8 +1170,11 @@
 				89273C0D2977CAEF00208B6D /* ScriptPTViewController.swift in Sources */,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 				2174690F29828662006B7950 /* PostCommentDataModel.swift in Sources */,
 				89E0B03C29881C46007F6993 /* ScriptNavigationViewController.swift in Sources */,
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
@@ -1119,6 +1188,7 @@
 				897C63512976BA6900CCF25F /* ScriptRecordMemoCollectionViewCell.swift in Sources */,
 				5E32FC45296956470010A376 /* Constant.swift in Sources */,
 				218DA9052970847F00D76C03 /* BestForumCollectionViewCell.swift in Sources */,
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 				21A6B4B42980FED300F084F6 /* PostCommentsTableViewCell.swift in Sources */,
@@ -1138,6 +1208,11 @@
 				2133B7A5297419290037D85D /* AddPostViewController.swift in Sources */,
 				21348A1B297677F4002190E5 /* ReportViewController.swift in Sources */,
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
+				5E32FC6929695DE90010A376 /* ScriptPracticeViewController.swift in Sources */,
+				2133B7A5297419290037D85D /* AddPostViewController.swift in Sources */,
+				21348A1B297677F4002190E5 /* ReportViewController.swift in Sources */,
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 				210A9E8829714A660063972B /* SearchHistoryDataModel.swift in Sources */,
 				210A9E8D29714B100063972B /* SearchKeywordTableViewCell.swift in Sources */,
 				89DCF50D2977060500CB2296 /* ScriptPracticeSetViewController.swift in Sources */,
@@ -1145,7 +1220,10 @@
 				897C634B2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift in Sources */,
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 				89E0B03A29881C2E007F6993 /* CreateNewScriptViewController.swift in Sources */,
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======

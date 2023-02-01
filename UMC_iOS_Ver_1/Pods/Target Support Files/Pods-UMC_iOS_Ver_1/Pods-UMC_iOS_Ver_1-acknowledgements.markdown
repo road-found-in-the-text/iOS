@@ -73,6 +73,7 @@ SOFTWARE.
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ## lottie-ios
 
@@ -278,6 +279,8 @@ SOFTWARE.
    See the License for the specific language governing permissions and
    limitations under the License.
 
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
