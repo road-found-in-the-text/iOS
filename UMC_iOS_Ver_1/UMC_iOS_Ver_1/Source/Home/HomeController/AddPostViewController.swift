@@ -32,13 +32,14 @@ class AddPostViewController: UIViewController {
         checkAlbumPermission()
     }
     
-    //사진 갤러리 열기
+    //사진 갤러리 열기 및 이미지 자르기
     func openPhoto() {
         imagePicker.sourceType = .photoLibrary
         imagePicker.allowsEditing = true
         present(imagePicker, animated: true)
     }
     
+    //사진 접근 권한
     func checkAlbumPermission(){
         PHPhotoLibrary.requestAuthorization( { status in
             switch status{
@@ -62,6 +63,7 @@ class AddPostViewController: UIViewController {
         })
     }
     
+    //사진 접근 거부 됐을 때 alert창 띄우기
     func photoDeniedAlert() {
         let alert = UIAlertController(title: "Permission Denied", message: "사진 라이브러리의 사용 권한이 거부되었기 때문에 사용할 수 없습니다. 사진 라이브러리의 권한 설정을 변경하시겠습니까?", preferredStyle: UIAlertController.Style.alert)
         let yesAction = UIAlertAction(title: "YES", style: .default) { action in
@@ -73,6 +75,7 @@ class AddPostViewController: UIViewController {
         present(alert, animated: false)
     }
     
+    //환경설정 화면으로 이동
     private func openSettings(action: UIAlertAction) {
         guard let settingsUrl = URL(string: UIApplication.openSettingsURLString) else { return }
         if UIApplication.shared.canOpenURL(settingsUrl) {

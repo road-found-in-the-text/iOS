@@ -121,6 +121,7 @@ extension SearchViewController: UISearchBarDelegate {
 }
 
 extension SearchViewController: CellButtonTappedDelegate {
+    //deleteButton 클릭된 cell의 indexpath.row 알아낸 후 그 cell의 값들 삭제
     func deleteButtonClicked(_ sender: UIButton) {
         let point = sender.convert(CGPoint.zero, to: searchHistoryTableView)
         guard let indexpath = searchHistoryTableView.indexPathForRow(at: point) else { return }

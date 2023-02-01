@@ -96,6 +96,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 }
 
 extension HomeViewController: CollectionViewCellDelegate {
+    //collectionView Cell 선택 시 post 화면으로 이동
     func collectionView(collectionViewCell: BestForumCollectionViewCell?, index: Int, didTappedInTableViewCell: BestForumTableViewCell) {
         let postStoryboard = UIStoryboard(name: Const.Storyboard.Name.post, bundle: nil)
         guard let postVC = postStoryboard.instantiateViewController(withIdentifier: Const.ViewController.identifier.post) as? PostViewController else { return }
