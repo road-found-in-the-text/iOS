@@ -53,7 +53,10 @@ class ReportViewController: UIViewController {
     }
     
 <<<<<<< HEAD
+<<<<<<< HEAD
     //화면 클릭시 키보드 내리기
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -71,7 +74,10 @@ class ReportViewController: UIViewController {
     }
     
 <<<<<<< HEAD
+<<<<<<< HEAD
     //textView 글자 수 update
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
     func updateMemoTextCountLabel(length: Int) {
@@ -83,7 +89,10 @@ class ReportViewController: UIViewController {
     }
     
 <<<<<<< HEAD
+<<<<<<< HEAD
     //textView 테두리 설정
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
     func settingTextView() {
@@ -97,7 +106,10 @@ class ReportViewController: UIViewController {
     }
     
 <<<<<<< HEAD
+<<<<<<< HEAD
     //신고하기 버튼 클릭 시 팝업 창 띄우기
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
     @IBAction func reportButtonTapped(_ sender: Any) {

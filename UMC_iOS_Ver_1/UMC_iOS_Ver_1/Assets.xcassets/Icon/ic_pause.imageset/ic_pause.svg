@@ -1,7 +1,12 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
 <<<<<<< HEAD
+<<<<<<< HEAD
 <path d="M10 4H6V20H10V4Z" fill="#1E2022"/>
 <path d="M18 4H14V20H18V4Z" fill="#1E2022"/>
+=======
+<path d="M10 4H6V20H10V4Z" stroke="#1E2022" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18 4H14V20H18V4Z" stroke="#1E2022" stroke-linecap="round" stroke-linejoin="round"/>
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 <path d="M10 4H6V20H10V4Z" stroke="#1E2022" stroke-linecap="round" stroke-linejoin="round"/>
 <path d="M18 4H14V20H18V4Z" stroke="#1E2022" stroke-linecap="round" stroke-linejoin="round"/>

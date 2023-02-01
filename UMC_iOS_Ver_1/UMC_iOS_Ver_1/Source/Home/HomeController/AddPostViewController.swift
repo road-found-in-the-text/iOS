@@ -21,7 +21,10 @@ class AddPostViewController: UIViewController {
     }
     
 <<<<<<< HEAD
+<<<<<<< HEAD
     //imageView 클릭 시 실행
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
     func tapImageView() {
@@ -33,9 +36,15 @@ class AddPostViewController: UIViewController {
     @objc func touchToPickPhoto() {
         openPhoto()
 <<<<<<< HEAD
+<<<<<<< HEAD
     }
     
     //사진 갤러리 열기
+=======
+        print("HI")
+    }
+    
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
         print("HI")
     }
@@ -48,7 +57,10 @@ class AddPostViewController: UIViewController {
     }
     
 <<<<<<< HEAD
+<<<<<<< HEAD
     //뒤로가기 버튼
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
     @IBAction func backButtonTapped(_ sender: UIButton) {
@@ -58,9 +70,14 @@ class AddPostViewController: UIViewController {
 
 extension AddPostViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
 <<<<<<< HEAD
+<<<<<<< HEAD
     //사진 갤러리에서 사진 선택 완료 시 실행
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let image = info[UIImagePickerController.InfoKey.editedImage] as? UIImage {
+=======
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {

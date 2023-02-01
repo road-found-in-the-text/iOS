@@ -20,7 +20,10 @@ class SearchContainerViewController: UIViewController {
     }
     
 <<<<<<< HEAD
+<<<<<<< HEAD
     //검색 후 forumTableViewCell Xib 등록
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
     private func registerXib() {

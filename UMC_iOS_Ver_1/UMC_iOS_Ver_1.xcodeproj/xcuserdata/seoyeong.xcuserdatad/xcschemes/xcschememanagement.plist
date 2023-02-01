@@ -29,7 +29,11 @@
 		<dict>
 			<key>orderHint</key>
 <<<<<<< HEAD
+<<<<<<< HEAD
 			<integer>5</integer>
+=======
+			<integer>3</integer>
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 			<integer>3</integer>
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)

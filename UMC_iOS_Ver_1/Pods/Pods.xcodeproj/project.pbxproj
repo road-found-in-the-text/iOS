@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 <<<<<<< HEAD
+<<<<<<< HEAD
 		0017AF6BFF1019335AFE0E748F79BF56 /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC5439843B6F2AA845E1A1C39F1BE71C /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests-dummy.m */; };
 		00345193629C804BD5DB31F96C023923 /* BaseAnimationLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6555F923EAE41D90E81956943648DC11 /* BaseAnimationLayer.swift */; };
 		005B319B494ED2DAA239B9939A504DFC /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A3150EBD43D8C55756578952B1F643C9 /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -304,6 +305,8 @@
 /* Begin PBXContainerItemProxy section */
 		5A1EC28DA993E090C59F159193F3EE52 /* PBXContainerItemProxy */ = {
 =======
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		005B319B494ED2DAA239B9939A504DFC /* Alamofire-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 752F4DC8F02BB39E0E022773B8EF9E7F /* Alamofire-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		041B655D7F5932F03A65C154BC02BDAA /* IQInvocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EADD146A64F57959417283AD968B21FA /* IQInvocation.swift */; };
 		045DE6EBF9B2F63F60F5BE60C1198E06 /* RedirectHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = CF41DA293696C86066ED9972F40A54CD /* RedirectHandler.swift */; };
@@ -391,6 +394,9 @@
 
 /* Begin PBXContainerItemProxy section */
 		173C64F71ED70088E3D3678BCDF253BA /* PBXContainerItemProxy */ = {
+<<<<<<< HEAD
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -398,6 +404,7 @@
 			remoteGlobalIDString = B490E7485944099E16C9CBD79119D1D4;
 			remoteInfo = IQKeyboardManagerSwift;
 		};
+<<<<<<< HEAD
 <<<<<<< HEAD
 		649D22682C5C88500A6799E33F3C3B18 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -417,6 +424,9 @@
 =======
 		22A7BA5F96F30806D1FEF41D015E545C /* PBXContainerItemProxy */ = {
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
+		22A7BA5F96F30806D1FEF41D015E545C /* PBXContainerItemProxy */ = {
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -424,8 +434,11 @@
 			remoteInfo = Alamofire;
 		};
 <<<<<<< HEAD
+<<<<<<< HEAD
 		9A9C5FEDE3CC0AA81242A48AD6739373 /* PBXContainerItemProxy */ = {
 =======
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		5690EF39B96493ADD94BC7B26EB28A66 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -434,6 +447,9 @@
 			remoteInfo = DLRadioButton;
 		};
 		7F6BA22958DAC38A4864B6DF16A5408C /* PBXContainerItemProxy */ = {
+<<<<<<< HEAD
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -442,7 +458,11 @@
 			remoteInfo = "Pods-UMC_iOS_Ver_1";
 		};
 <<<<<<< HEAD
+<<<<<<< HEAD
 		9E75A2DC1EA9A5F70F4BAA816A1042D6 /* PBXContainerItemProxy */ = {
+=======
+		ACA41CC679CBC12FA5507DCEF679255F /* PBXContainerItemProxy */ = {
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 		ACA41CC679CBC12FA5507DCEF679255F /* PBXContainerItemProxy */ = {
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
@@ -452,6 +472,7 @@
 			remoteGlobalIDString = B490E7485944099E16C9CBD79119D1D4;
 			remoteInfo = IQKeyboardManagerSwift;
 		};
+<<<<<<< HEAD
 <<<<<<< HEAD
 		B3F0AB245DA54249CBF41455F3035161 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -471,12 +492,16 @@
 =======
 		BF33B65EDF021B0BABBEE534979D700E /* PBXContainerItemProxy */ = {
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
+		BF33B65EDF021B0BABBEE534979D700E /* PBXContainerItemProxy */ = {
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = BED8F38B6D4A3AD6DFF85D18F9F09435;
 			remoteInfo = DLRadioButton;
 		};
+<<<<<<< HEAD
 <<<<<<< HEAD
 /* End PBXContainerItemProxy section */
 
@@ -812,6 +837,8 @@
 		FF3CCB0EC2CFEF9D7A449598801B9177 /* RoundedCornersNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RoundedCornersNode.swift; path = Sources/Private/MainThread/NodeRenderSystem/Nodes/ModifierNodes/RoundedCornersNode.swift; sourceTree = "<group>"; };
 		FF6DFB50B9722FF81F005819195E2B75 /* ShapeNode.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ShapeNode.swift; path = Sources/Private/MainThread/NodeRenderSystem/Nodes/PathNodes/ShapeNode.swift; sourceTree = "<group>"; };
 =======
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		E4C6CFF95BAF8B30A7ABB7FD936219CA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
@@ -942,6 +969,9 @@
 		F57330C5E972F6885294A66582F56D1B /* DLRadioButton.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DLRadioButton.release.xcconfig; sourceTree = "<group>"; };
 		FCEDBFC03B7ABA5ACA9252E0777517C9 /* DLRadioButton-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DLRadioButton-umbrella.h"; sourceTree = "<group>"; };
 		FF6B0A0B3AF63ED84B1B14CAF5120C14 /* URLConvertible+URLRequestConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URLConvertible+URLRequestConvertible.swift"; path = "Source/URLConvertible+URLRequestConvertible.swift"; sourceTree = "<group>"; };
+<<<<<<< HEAD
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 /* End PBXFileReference section */
 
@@ -964,6 +994,7 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 <<<<<<< HEAD
+<<<<<<< HEAD
 		368D34FB9CFE7633AE5AFD53F78DF925 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -978,11 +1009,16 @@
 			files = (
 				9AD209E14E4FF84D97ADA9097127B8F9 /* Foundation.framework in Frameworks */,
 =======
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		4E1D1B99D24FFCA6FD91E00A5911222D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				9EA90581A8D8393E5B60A4E8A1F86F75 /* Foundation.framework in Frameworks */,
+<<<<<<< HEAD
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -999,7 +1035,10 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		A6ED60821EDE7C419090AEDFD77DBCA5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -1008,6 +1047,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+<<<<<<< HEAD
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		B16E5E11A310921C0EFB86BAD8AA26F5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
@@ -1017,6 +1059,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+<<<<<<< HEAD
 <<<<<<< HEAD
 		DF21EF6711279DB6BAD0981581BED3CF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
@@ -1131,6 +1174,8 @@
 			name = "Support Files";
 			path = "../Target Support Files/Alamofire";
 =======
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -1164,6 +1209,9 @@
 			);
 			name = IQKeyboardManagerSwift;
 			path = IQKeyboardManagerSwift;
+<<<<<<< HEAD
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 			sourceTree = "<group>";
 		};
@@ -1184,6 +1232,7 @@
 			path = "Target Support Files/Pods-UMC_iOS_Ver_1";
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 <<<<<<< HEAD
 		8F659EC811BA99E393CD02ED8154CAC1 /* Support Files */ = {
 			isa = PBXGroup;
@@ -1214,6 +1263,8 @@
 			name = "Support Files";
 			path = "../Target Support Files/IQKeyboardManagerSwift";
 =======
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		7B3E564978FF8195CF978A5D216EECAA /* DLRadioButton */ = {
 			isa = PBXGroup;
 			children = (
@@ -1223,6 +1274,9 @@
 			);
 			name = DLRadioButton;
 			path = DLRadioButton;
+<<<<<<< HEAD
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 			sourceTree = "<group>";
 		};
@@ -1260,7 +1314,10 @@
 			sourceTree = "<group>";
 		};
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		B21575B2DA8EBBF7D5FEE937E0AF9C12 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -1276,6 +1333,9 @@
 			path = "../Target Support Files/DLRadioButton";
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		B94D7768568A9992200DB461E8CF687F /* Frameworks */ = {
 			isa = PBXGroup;
@@ -1285,6 +1345,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 <<<<<<< HEAD
 		BF23138DD38030A44A3012AEB7FBDB1D /* Pods */ = {
 			isa = PBXGroup;
@@ -1299,6 +1360,8 @@
 		};
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		C0D6F9F1A8831425280664AE2F22098A /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -1309,6 +1372,7 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 <<<<<<< HEAD
 		C551C41B7E609003823CF83A37467303 /* lottie-ios */ = {
 			isa = PBXGroup;
@@ -1520,6 +1584,8 @@
 			name = "lottie-ios";
 			path = "lottie-ios";
 =======
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		C19015D1E890C29701A0512DC288DF69 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1528,6 +1594,9 @@
 				28814276C38C360EF7B39959B7C4E003 /* IQKeyboardManagerSwift */,
 			);
 			name = Pods;
+<<<<<<< HEAD
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 			sourceTree = "<group>";
 		};
@@ -1537,8 +1606,13 @@
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				B94D7768568A9992200DB461E8CF687F /* Frameworks */,
 <<<<<<< HEAD
+<<<<<<< HEAD
 				BF23138DD38030A44A3012AEB7FBDB1D /* Pods */,
 				1002C026C493A68A86BAA7613867F010 /* Products */,
+=======
+				C19015D1E890C29701A0512DC288DF69 /* Pods */,
+				DD90D90C8918EA3AEB833C5532D83D04 /* Products */,
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 				C19015D1E890C29701A0512DC288DF69 /* Pods */,
 				DD90D90C8918EA3AEB833C5532D83D04 /* Products */,
@@ -1548,7 +1622,10 @@
 			sourceTree = "<group>";
 		};
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		D036D5C225BAF6E660D471B4545D621C /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
@@ -1594,6 +1671,9 @@
 			path = Alamofire;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		D21A228721E7A09BEF782E68D4232144 /* iOS */ = {
 			isa = PBXGroup;
@@ -1607,6 +1687,7 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+<<<<<<< HEAD
 <<<<<<< HEAD
 		F77F593057AD3789B6F7F39DD5DCDCCA /* IQKeyboardManagerSwift */ = {
 			isa = PBXGroup;
@@ -1639,6 +1720,8 @@
 			name = IQKeyboardManagerSwift;
 			path = IQKeyboardManagerSwift;
 =======
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		D90475B3CB2CDFD3E529BB72389E5511 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -1680,6 +1763,9 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/IQKeyboardManagerSwift";
+<<<<<<< HEAD
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 			sourceTree = "<group>";
 		};
@@ -1687,7 +1773,10 @@
 
 /* Begin PBXHeadersBuildPhase section */
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		2E6296A24AF2AE33DA7A92F44B53920E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1696,6 +1785,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+<<<<<<< HEAD
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		3DD921E0111869872AE7B86316889FB3 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
@@ -1707,6 +1799,7 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 <<<<<<< HEAD
+<<<<<<< HEAD
 		4D03F9E56B07EAD9D1C5D54673EE487D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1715,6 +1808,8 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		52E6F7B26483BE3BC9393C6C05D32424 /* Headers */ = {
@@ -1734,7 +1829,10 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		97767B56859F2595C69B46B9A7F9B8E9 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -1743,6 +1841,9 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+<<<<<<< HEAD
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		CCEEFAA8C63580C9CB8978EDA9312BDF /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
@@ -1752,6 +1853,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+<<<<<<< HEAD
 <<<<<<< HEAD
 		D5142D97B2DE445F749399CCAAD0E852 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
@@ -1799,6 +1901,8 @@
 				8627A66E322E3DFFBCE2144D5C39955D /* Frameworks */,
 				4E0FD9ED40C81C684CE912FAADFD7B02 /* Resources */,
 =======
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -1810,16 +1914,25 @@
 				5C659507D8623005E355B9BC47116CB3 /* Sources */,
 				4E1D1B99D24FFCA6FD91E00A5911222D /* Frameworks */,
 				53332039C413A7B6B29A8B098ED39D79 /* Resources */,
+<<<<<<< HEAD
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 			);
 			buildRules = (
 			);
 			dependencies = (
 <<<<<<< HEAD
+<<<<<<< HEAD
 				0DB412F567CA0AC49827F7C5B052375B /* PBXTargetDependency */,
 				C73E4E0B721681B0A318A6DFB39136F8 /* PBXTargetDependency */,
 				19DC4BE4CB83407587A6F03A36D1245F /* PBXTargetDependency */,
 				3F1F8C1E72CEFC8FB85C42943B6DE751 /* PBXTargetDependency */,
+=======
+				A0E1623805B3FA43A357C51F4D1FD114 /* PBXTargetDependency */,
+				4C4E3179F6222A03F9941F0F35EA8722 /* PBXTargetDependency */,
+				E2F7B81E891A083FE7D05EB83120B445 /* PBXTargetDependency */,
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 				A0E1623805B3FA43A357C51F4D1FD114 /* PBXTargetDependency */,
 				4C4E3179F6222A03F9941F0F35EA8722 /* PBXTargetDependency */,
@@ -1880,7 +1993,11 @@
 			);
 			dependencies = (
 <<<<<<< HEAD
+<<<<<<< HEAD
 				463C9420342472B6389543EA7578A6E8 /* PBXTargetDependency */,
+=======
+				FA53DBA1942885E602FB444293B46EBC /* PBXTargetDependency */,
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 				FA53DBA1942885E602FB444293B46EBC /* PBXTargetDependency */,
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
@@ -1911,6 +2028,7 @@
 		FA5839E49E34E757533AEF998597A270 /* Pods-UMC_iOS_Ver_1 */ = {
 			isa = PBXNativeTarget;
 <<<<<<< HEAD
+<<<<<<< HEAD
 			buildConfigurationList = C92B4B5208D7564AD54AE539A48EB222 /* Build configuration list for PBXNativeTarget "Pods-UMC_iOS_Ver_1" */;
 			buildPhases = (
 				D5142D97B2DE445F749399CCAAD0E852 /* Headers */,
@@ -1918,22 +2036,33 @@
 				368D34FB9CFE7633AE5AFD53F78DF925 /* Frameworks */,
 				41B3CAD1E0F30E87F3BB010C68F32A14 /* Resources */,
 =======
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 			buildConfigurationList = F9C9671CA727088D1F222E5DF209407F /* Build configuration list for PBXNativeTarget "Pods-UMC_iOS_Ver_1" */;
 			buildPhases = (
 				97767B56859F2595C69B46B9A7F9B8E9 /* Headers */,
 				7EF132F36B002B9006A72DE168B7D8F8 /* Sources */,
 				A6ED60821EDE7C419090AEDFD77DBCA5 /* Frameworks */,
 				4C29EAE824C9EBFE27130CBF0599BF0B /* Resources */,
+<<<<<<< HEAD
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 			);
 			buildRules = (
 			);
 			dependencies = (
 <<<<<<< HEAD
+<<<<<<< HEAD
 				8C3DA68A7DAA9EBA8833D5E1FEE2D85D /* PBXTargetDependency */,
 				5A46DEB4040B08DAF5594E36F67C473C /* PBXTargetDependency */,
 				FA59865B0929ECBEC8BD4A297645E720 /* PBXTargetDependency */,
 				6D1BE53A280F11360168526755DF68FC /* PBXTargetDependency */,
+=======
+				608BA330397886DFB71902F3D8D3E2E6 /* PBXTargetDependency */,
+				F77FF20CEAB650C4B48A1B1B6E5F6D12 /* PBXTargetDependency */,
+				6AD68257A07B384C302D719F1439D687 /* PBXTargetDependency */,
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 				608BA330397886DFB71902F3D8D3E2E6 /* PBXTargetDependency */,
 				F77FF20CEAB650C4B48A1B1B6E5F6D12 /* PBXTargetDependency */,
@@ -1964,7 +2093,11 @@
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
 <<<<<<< HEAD
+<<<<<<< HEAD
 			productRefGroup = 1002C026C493A68A86BAA7613867F010 /* Products */;
+=======
+			productRefGroup = DD90D90C8918EA3AEB833C5532D83D04 /* Products */;
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 			productRefGroup = DD90D90C8918EA3AEB833C5532D83D04 /* Products */;
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
@@ -1975,7 +2108,10 @@
 				BED8F38B6D4A3AD6DFF85D18F9F09435 /* DLRadioButton */,
 				B490E7485944099E16C9CBD79119D1D4 /* IQKeyboardManagerSwift */,
 <<<<<<< HEAD
+<<<<<<< HEAD
 				0B967D7F8561D42493EE289EC8D450D1 /* lottie-ios */,
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 				FA5839E49E34E757533AEF998597A270 /* Pods-UMC_iOS_Ver_1 */,
@@ -1994,7 +2130,11 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 <<<<<<< HEAD
+<<<<<<< HEAD
 		41B3CAD1E0F30E87F3BB010C68F32A14 /* Resources */ = {
+=======
+		4C29EAE824C9EBFE27130CBF0599BF0B /* Resources */ = {
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 		4C29EAE824C9EBFE27130CBF0599BF0B /* Resources */ = {
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
@@ -2005,6 +2145,7 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 <<<<<<< HEAD
+<<<<<<< HEAD
 		4E0FD9ED40C81C684CE912FAADFD7B02 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2013,6 +2154,9 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		D1052C84DA11EE99513CE48C5FE9A1B1 /* Resources */ = {
+=======
+		53332039C413A7B6B29A8B098ED39D79 /* Resources */ = {
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 		53332039C413A7B6B29A8B098ED39D79 /* Resources */ = {
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
@@ -2046,6 +2190,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+<<<<<<< HEAD
 <<<<<<< HEAD
 		4CDC39762BB04C13F0A2C8F0DA7FF2AF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -2271,6 +2416,8 @@
 			files = (
 				93CCE4A335B0B48AB3AF193A97192557 /* Pods-UMC_iOS_Ver_1-dummy.m in Sources */,
 =======
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		5C659507D8623005E355B9BC47116CB3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2284,6 +2431,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				584256C10F77DF0758EC688B9AD4F224 /* Pods-UMC_iOS_Ver_1-dummy.m in Sources */,
+<<<<<<< HEAD
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2384,6 +2534,7 @@
 
 /* Begin PBXTargetDependency section */
 <<<<<<< HEAD
+<<<<<<< HEAD
 		0DB412F567CA0AC49827F7C5B052375B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Alamofire;
@@ -2438,6 +2589,8 @@
 			target = B490E7485944099E16C9CBD79119D1D4 /* IQKeyboardManagerSwift */;
 			targetProxy = 9E75A2DC1EA9A5F70F4BAA816A1042D6 /* PBXContainerItemProxy */;
 =======
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		4C4E3179F6222A03F9941F0F35EA8722 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = DLRadioButton;
@@ -2479,11 +2632,15 @@
 			name = "Pods-UMC_iOS_Ver_1";
 			target = FA5839E49E34E757533AEF998597A270 /* Pods-UMC_iOS_Ver_1 */;
 			targetProxy = 7F6BA22958DAC38A4864B6DF16A5408C /* PBXContainerItemProxy */;
+<<<<<<< HEAD
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+<<<<<<< HEAD
 <<<<<<< HEAD
 		0F05037BBB198A9A51CE701ED3739217 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -2523,6 +2680,8 @@
 			};
 			name = Release;
 		};
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		164CDCB2EF4E6CA141E118AD36FB9C54 /* Release */ = {
@@ -2566,7 +2725,11 @@
 		1AB09BC073DF050B1120B82E288A2BC9 /* Release */ = {
 			isa = XCBuildConfiguration;
 <<<<<<< HEAD
+<<<<<<< HEAD
 			baseConfigurationReference = 6F5D4DA1E7CC024B0973DAA7E0960FA1 /* DLRadioButton.release.xcconfig */;
+=======
+			baseConfigurationReference = F57330C5E972F6885294A66582F56D1B /* DLRadioButton.release.xcconfig */;
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 			baseConfigurationReference = F57330C5E972F6885294A66582F56D1B /* DLRadioButton.release.xcconfig */;
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
@@ -2605,7 +2768,11 @@
 		2DB280362A0C4923E2D4B3BD7317AC8E /* Debug */ = {
 			isa = XCBuildConfiguration;
 <<<<<<< HEAD
+<<<<<<< HEAD
 			baseConfigurationReference = 558CFD628F14AD6ABBD396F3FB31EB7B /* DLRadioButton.debug.xcconfig */;
+=======
+			baseConfigurationReference = 8D6011CCE7EEDE5B4FE55B83A5735595 /* DLRadioButton.debug.xcconfig */;
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 			baseConfigurationReference = 8D6011CCE7EEDE5B4FE55B83A5735595 /* DLRadioButton.debug.xcconfig */;
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
@@ -2640,6 +2807,7 @@
 			};
 			name = Debug;
 		};
+<<<<<<< HEAD
 <<<<<<< HEAD
 		441003401BE90A4DE1A7C6C7864D63DC /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -2678,6 +2846,8 @@
 			};
 			name = Debug;
 		};
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		446BA1B9A1F1F2F95D04E5F82EB1B0F4 /* Debug */ = {
@@ -2809,10 +2979,13 @@
 			name = Release;
 		};
 <<<<<<< HEAD
+<<<<<<< HEAD
 		880219FBBFBA4B703A46B5F770D59ADF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 722E4566150A002386FCFC6253779FBA /* Alamofire.debug.xcconfig */;
 =======
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		76BE8CD395751F42A77894CEC9E8669E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4773AE90FB8CB09C2B0805D13E5ED0C9 /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests.debug.xcconfig */;
@@ -2853,6 +3026,9 @@
 		880219FBBFBA4B703A46B5F770D59ADF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 125E89E2C2F7F46BC12490C845AF2006 /* Alamofire.debug.xcconfig */;
+<<<<<<< HEAD
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -2886,6 +3062,7 @@
 			};
 			name = Debug;
 		};
+<<<<<<< HEAD
 <<<<<<< HEAD
 		88965C88B52A1E709DE03D0B78AB9D06 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -2964,6 +3141,8 @@
 		};
 =======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		9AAD4ACDEEE75F61E3E969872C5E7C8F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AB974A9276A84DF5F98837293992A4E2 /* Pods-UMC_iOS_Ver_1Tests.debug.xcconfig */;
@@ -3004,7 +3183,11 @@
 		9D8C08F259B4E57381CFE8BC28467628 /* Release */ = {
 			isa = XCBuildConfiguration;
 <<<<<<< HEAD
+<<<<<<< HEAD
 			baseConfigurationReference = 16FD4707823B6037371BEC49DCE9CF2C /* IQKeyboardManagerSwift.release.xcconfig */;
+=======
+			baseConfigurationReference = 0CB8363561B0199FCDD0FA5EC62CD594 /* IQKeyboardManagerSwift.release.xcconfig */;
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 			baseConfigurationReference = 0CB8363561B0199FCDD0FA5EC62CD594 /* IQKeyboardManagerSwift.release.xcconfig */;
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
@@ -3041,16 +3224,22 @@
 			name = Release;
 		};
 <<<<<<< HEAD
+<<<<<<< HEAD
 		A091ADAE791305476A554F0C16E17318 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 9FA3B4D08E5B33F8B3773E8C659B7F72 /* lottie-ios.debug.xcconfig */;
 			buildSettings = {
 =======
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		A94896524136EB5CDECD3EBFDE74FC05 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C52613598B061B0EE36E1735C884513A /* Pods-UMC_iOS_Ver_1.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+<<<<<<< HEAD
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -3062,10 +3251,16 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 <<<<<<< HEAD
+<<<<<<< HEAD
 				GCC_PREFIX_HEADER = "Target Support Files/lottie-ios/lottie-ios-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/lottie-ios/lottie-ios-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+=======
+				INFOPLIST_FILE = "Target Support Files/Pods-UMC_iOS_Ver_1/Pods-UMC_iOS_Ver_1-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 				INFOPLIST_FILE = "Target Support Files/Pods-UMC_iOS_Ver_1/Pods-UMC_iOS_Ver_1-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -3076,6 +3271,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+<<<<<<< HEAD
 <<<<<<< HEAD
 				MODULEMAP_FILE = "Target Support Files/lottie-ios/lottie-ios.modulemap";
 				PRODUCT_MODULE_NAME = Lottie;
@@ -3095,6 +3291,8 @@
 			baseConfigurationReference = 98B1B27A310D93FD7110A4648FDFA09D /* lottie-ios.release.xcconfig */;
 			buildSettings = {
 =======
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-UMC_iOS_Ver_1/Pods-UMC_iOS_Ver_1.modulemap";
 				OTHER_LDFLAGS = "";
@@ -3116,6 +3314,9 @@
 			baseConfigurationReference = 08A2B6B3DF9CC9F9E0807F9AB1559024 /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+<<<<<<< HEAD
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -3127,10 +3328,16 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 <<<<<<< HEAD
+<<<<<<< HEAD
 				GCC_PREFIX_HEADER = "Target Support Files/lottie-ios/lottie-ios-prefix.pch";
 				INFOPLIST_FILE = "Target Support Files/lottie-ios/lottie-ios-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+=======
+				INFOPLIST_FILE = "Target Support Files/Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests/Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 				INFOPLIST_FILE = "Target Support Files/Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests/Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
@@ -3142,6 +3349,7 @@
 					"@loader_path/Frameworks",
 				);
 <<<<<<< HEAD
+<<<<<<< HEAD
 				MODULEMAP_FILE = "Target Support Files/lottie-ios/lottie-ios.modulemap";
 				PRODUCT_MODULE_NAME = Lottie;
 				PRODUCT_NAME = Lottie;
@@ -3150,6 +3358,8 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_VERSION = 5.5;
 =======
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests/Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests.modulemap";
 				OTHER_LDFLAGS = "";
@@ -3159,6 +3369,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+<<<<<<< HEAD
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -3170,7 +3383,11 @@
 		F0377F003E77F0F91AC8FEE0F297E927 /* Debug */ = {
 			isa = XCBuildConfiguration;
 <<<<<<< HEAD
+<<<<<<< HEAD
 			baseConfigurationReference = D4C1A7CE9AF17AFAB1B01170A59DC722 /* IQKeyboardManagerSwift.debug.xcconfig */;
+=======
+			baseConfigurationReference = D939B3BC7CF0E18081E67AB5539C9308 /* IQKeyboardManagerSwift.debug.xcconfig */;
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 =======
 			baseConfigurationReference = D939B3BC7CF0E18081E67AB5539C9308 /* IQKeyboardManagerSwift.debug.xcconfig */;
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
@@ -3206,10 +3423,13 @@
 			name = Debug;
 		};
 <<<<<<< HEAD
+<<<<<<< HEAD
 		F95E4C330E939A7027D8A4E361545DBB /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AC028A5916259F619BF624050CD36798 /* Alamofire.release.xcconfig */;
 =======
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		F34025F54E7548811E6C80113A4819B2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 8A891DD0341A920BB6A1BFBA9F9C82C8 /* Pods-UMC_iOS_Ver_1.debug.xcconfig */;
@@ -3250,6 +3470,9 @@
 		F95E4C330E939A7027D8A4E361545DBB /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 61FF0309E3393C26AEA96736C839A43A /* Alamofire.release.xcconfig */;
+<<<<<<< HEAD
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -3288,7 +3511,10 @@
 
 /* Begin XCConfigurationList section */
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		2F688885FBC6035FFDBCA411C4A77496 /* Build configuration list for PBXNativeTarget "Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -3298,6 +3524,9 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+<<<<<<< HEAD
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		42F76AA8E84D32E2DED70BBA35321CB1 /* Build configuration list for PBXNativeTarget "IQKeyboardManagerSwift" */ = {
 			isa = XCConfigurationList;
@@ -3345,6 +3574,7 @@
 			defaultConfigurationName = Release;
 		};
 <<<<<<< HEAD
+<<<<<<< HEAD
 		C92B4B5208D7564AD54AE539A48EB222 /* Build configuration list for PBXNativeTarget "Pods-UMC_iOS_Ver_1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -3369,11 +3599,16 @@
 				A091ADAE791305476A554F0C16E17318 /* Debug */,
 				B8BB367E4E239F0964C2CFCECBAB454D /* Release */,
 =======
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		F9C9671CA727088D1F222E5DF209407F /* Build configuration list for PBXNativeTarget "Pods-UMC_iOS_Ver_1" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F34025F54E7548811E6C80113A4819B2 /* Debug */,
 				A94896524136EB5CDECD3EBFDE74FC05 /* Release */,
+<<<<<<< HEAD
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
+=======
 >>>>>>> parent of a7db6f8 (init: 초기 업로드)
 			);
 			defaultConfigurationIsVisible = 0;
