@@ -106,6 +106,11 @@
 		89DCF50D2977060500CB2296 /* ScriptPracticeSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCF50C2977060500CB2296 /* ScriptPracticeSetViewController.swift */; };
 		89EACA0529878345003ACDD6 /* MyPageStorageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EACA0429878345003ACDD6 /* MyPageStorageTableViewCell.swift */; };
 		89EACA0A2987A12B003ACDD6 /* HPParallaxHeader in Frameworks */ = {isa = PBXBuildFile; productRef = 89EACA092987A12B003ACDD6 /* HPParallaxHeader */; };
+		89E0B03A29881C2E007F6993 /* CreateNewScriptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E0B03929881C2E007F6993 /* CreateNewScriptViewController.swift */; };
+		89E0B03C29881C46007F6993 /* ScriptNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E0B03B29881C46007F6993 /* ScriptNavigationViewController.swift */; };
+		89E0B03E29881C60007F6993 /* WriteScriptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E0B03D29881C60007F6993 /* WriteScriptViewController.swift */; };
+		89E0B04129881C86007F6993 /* CreateNewScriptCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E0B04029881C86007F6993 /* CreateNewScriptCell.swift */; };
+		89E0B04329881C97007F6993 /* ScriptListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E0B04229881C97007F6993 /* ScriptListTableViewCell.swift */; };
 		9419EEF196C59F8A276BC2C0 /* Pods_UMC_iOS_Ver_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B928E9BB947B94197FC9A1 /* Pods_UMC_iOS_Ver_1.framework */; };
 		9627E4EC12C0657B54F74B64 /* Pods_UMC_iOS_Ver_1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D71B72BC0CFA2711D70661A /* Pods_UMC_iOS_Ver_1Tests.framework */; };
 /* End PBXBuildFile section */
@@ -231,6 +236,11 @@
 		89DCF50A2977060000CB2296 /* ScriptPracticeSet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeSet.storyboard; sourceTree = "<group>"; };
 		89DCF50C2977060500CB2296 /* ScriptPracticeSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeSetViewController.swift; sourceTree = "<group>"; };
 		89EACA0429878345003ACDD6 /* MyPageStorageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageStorageTableViewCell.swift; sourceTree = "<group>"; };
+		89E0B03929881C2E007F6993 /* CreateNewScriptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewScriptViewController.swift; sourceTree = "<group>"; };
+		89E0B03B29881C46007F6993 /* ScriptNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptNavigationViewController.swift; sourceTree = "<group>"; };
+		89E0B03D29881C60007F6993 /* WriteScriptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteScriptViewController.swift; sourceTree = "<group>"; };
+		89E0B04029881C86007F6993 /* CreateNewScriptCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewScriptCell.swift; sourceTree = "<group>"; };
+		89E0B04229881C97007F6993 /* ScriptListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptListTableViewCell.swift; sourceTree = "<group>"; };
 		9605E6568465799CFD279686 /* Pods-UMC_iOS_Ver_1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC_iOS_Ver_1Tests.release.xcconfig"; path = "Target Support Files/Pods-UMC_iOS_Ver_1Tests/Pods-UMC_iOS_Ver_1Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A0DB99903F02E1B48D715375 /* Pods-UMC_iOS_Ver_1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC_iOS_Ver_1Tests.debug.xcconfig"; path = "Target Support Files/Pods-UMC_iOS_Ver_1Tests/Pods-UMC_iOS_Ver_1Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B6F6FA7EC2A2DF7ADD8C68E3 /* Pods_UMC_iOS_Ver_1_UMC_iOS_Ver_1UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UMC_iOS_Ver_1_UMC_iOS_Ver_1UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -481,6 +491,7 @@
 		5E32FC6129695CA20010A376 /* ScriptPractice */ = {
 			isa = PBXGroup;
 			children = (
+				89E0B03F29881C77007F6993 /* Cell */,
 				89C87D59297EAD6300723E08 /* ScriptPracticeRecordEnd */,
 				8932B505297E81390054D9A4 /* ScriptPracticeRecordRoading */,
 				896854B12975563800E70868 /* ScriptRecord */,
@@ -491,6 +502,9 @@
 				89DCF505297705C800CB2296 /* ScriptPracticeSet */,
 				5E32FC6229695CF20010A376 /* ScriptPractice.storyboard */,
 				5E32FC6829695DE90010A376 /* ScriptPracticeViewController.swift */,
+				89E0B03929881C2E007F6993 /* CreateNewScriptViewController.swift */,
+				89E0B03B29881C46007F6993 /* ScriptNavigationViewController.swift */,
+				89E0B03D29881C60007F6993 /* WriteScriptViewController.swift */,
 			);
 			path = ScriptPractice;
 			sourceTree = "<group>";
@@ -619,6 +633,15 @@
 				89EACA0429878345003ACDD6 /* MyPageStorageTableViewCell.swift */,
 				895820F92987E41600D95B18 /* MyPagePostTableViewCell.swift */,
 				895820FA2987E41600D95B18 /* MyPagePostTableViewCell.xib */,
+            );
+            path = Cell;
+            sourceTree = "<group>";
+        };
+		89E0B03F29881C77007F6993 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				89E0B04029881C86007F6993 /* CreateNewScriptCell.swift */,
+				89E0B04229881C97007F6993 /* ScriptListTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -906,7 +929,9 @@
 				5E32FC4D296957030010A376 /* UIColor.swift in Sources */,
 				218DA910297084B200D76C03 /* BestForumTableViewCell.swift in Sources */,
 				5E32FC4B296956EB0010A376 /* Date.swift in Sources */,
+				89E0B03E29881C60007F6993 /* WriteScriptViewController.swift in Sources */,
 				21A749BB2977AB4E00EBFE82 /* ViewControllerConstants.swift in Sources */,
+				89E0B04129881C86007F6993 /* CreateNewScriptCell.swift in Sources */,
 				5E32FC552969576A0010A376 /* UIViewController.swift in Sources */,
 				5E32FC57296957840010A376 /* UIImageView.swift in Sources */,
 				21D4B6E629791D3600D7B485 /* CustomAlertViewController.swift in Sources */,
@@ -929,6 +954,7 @@
 				8932B509297E81580054D9A4 /* ScriptPracticeRecordRoadingViewController.swift in Sources */,
 				89273C0D2977CAEF00208B6D /* ScriptPTViewController.swift in Sources */,
 				2174690F29828662006B7950 /* PostCommentDataModel.swift in Sources */,
+				89E0B03C29881C46007F6993 /* ScriptNavigationViewController.swift in Sources */,
 				5E32FC14296955910010A376 /* SceneDelegate.swift in Sources */,
 				89C87D5B297EAD7100723E08 /* ScriptPracticeRecordEndViewController.swift in Sources */,
 				5E32FC5B296957BB0010A376 /* UITextField.swift in Sources */,
@@ -946,6 +972,7 @@
 				895820F22987ACFA00D95B18 /* MyPageScrollViewController.swift in Sources */,
 				896F42E529869C4800677A05 /* MyPageStorageViewController.swift in Sources */,
 				21EB2F83297FD47600259C6D /* UserProfileTableViewCell.swift in Sources */,
+				89E0B04329881C97007F6993 /* ScriptListTableViewCell.swift in Sources */,
 				2133B7A5297419290037D85D /* AddPostViewController.swift in Sources */,
 				21348A1B297677F4002190E5 /* ReportViewController.swift in Sources */,
 				21A6B4A82980E70200F084F6 /* PostContentTableViewCell.swift in Sources */,
@@ -956,6 +983,7 @@
 				89DCF50D2977060500CB2296 /* ScriptPracticeSetViewController.swift in Sources */,
 				5E32FC6929695DE90010A376 /* ScriptPracticeViewController.swift in Sources */,
 				897C634B2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift in Sources */,
+				89E0B03A29881C2E007F6993 /* CreateNewScriptViewController.swift in Sources */,
 				5E32FC48296956A40010A376 /* IndicatorView.swift in Sources */,
 				897C634D2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift in Sources */,
 				5E32FC6B29695DF60010A376 /* InterviewPracticeViewController.swift in Sources */,
