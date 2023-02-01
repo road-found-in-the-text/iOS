@@ -77,8 +77,14 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="adA-qi-msS">
                                 <rect key="frame" x="0.0" y="739" width="375" height="49"/>
                                 <items>
+                                    <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="b4h-lt-VJp"/>
                                     <barButtonItem title="Item" image="ic_camera" id="YV3-3X-8xS"/>
-                                    <barButtonItem title="Item" image="ic_script_black" id="5YS-wx-rJ7"/>
+                                    <barButtonItem width="25" style="plain" systemItem="fixedSpace" id="o5b-b0-TIf"/>
+                                    <barButtonItem title="Item" image="ic_script_black" id="5YS-wx-rJ7">
+                                        <connections>
+                                            <segue destination="NHE-Pn-Bb4" kind="presentation" modalPresentationStyle="fullScreen" id="mxe-t1-J0e"/>
+                                        </connections>
+                                    </barButtonItem>
                                 </items>
                             </toolbar>
                         </subviews>
@@ -105,6 +111,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="-2.2167487684729066"/>
+        </scene>
+        <!--SelectScript-->
+        <scene sceneID="gsC-w2-kvE">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SelectScript" id="NHE-Pn-Bb4" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ioO-Zb-dPa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="829" y="39"/>
         </scene>
     </scenes>
     <resources>

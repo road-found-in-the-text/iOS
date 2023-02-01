@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SelectScript-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="SelectScript" title="SelectScript" id="Y6W-OH-hqX" customClass="SelectScriptViewController" customModule="UMC_iOS_Ver_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="83" translatesAutoresizingMaskIntoConstraints="NO" id="hTU-Ui-waa">
+                                <rect key="frame" x="20" y="47" width="335" height="38"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cUt-Ua-X08">
+                                        <rect key="frame" x="0.0" y="0.0" width="23" height="38"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="ic_delete"/>
+                                        <connections>
+                                            <action selector="backButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="OFo-5H-SY0"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="스크립트 선택" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YDV-dv-Uo2">
+                                        <rect key="frame" x="106" y="0.0" width="92.333333333333314" height="38"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="269-4r-KUp">
+                                        <rect key="frame" x="281.33333333333331" y="0.0" width="53.666666666666686" height="38"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="완료"/>
+                                        <connections>
+                                            <action selector="completeButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="N7x-CX-GVt"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TpF-uw-jIr">
+                                <rect key="frame" x="0.0" y="85" width="375" height="727"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="Pgd-WH-Jsk">
+                                        <rect key="frame" x="20" y="20" width="255" height="40"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Oj-xP-8CQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="74.333333333333329" height="40"/>
+                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="전체">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="viewSelectButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="7K4-Cf-uL5"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vCM-bW-n7L">
+                                                <rect key="frame" x="90.333333333333343" y="0.0" width="74.333333333333343" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="대본">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="viewSelectButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Hfs-1q-CCd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="84N-5x-F0L">
+                                                <rect key="frame" x="180.66666666666666" y="0.0" width="74.333333333333343" height="40"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="면접">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="17"/>
+                                                    <color key="baseForegroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="viewSelectButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="e6W-sC-kJQ"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="3sF-SW-ssP"/>
+                                        </constraints>
+                                    </stackView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스크립트 2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R4m-WQ-YJp">
+                                        <rect key="frame" x="20" y="80" width="65" height="18"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Sub4"/>
+                                <constraints>
+                                    <constraint firstItem="R4m-WQ-YJp" firstAttribute="top" secondItem="Pgd-WH-Jsk" secondAttribute="bottom" constant="20" id="24A-rj-2SL"/>
+                                    <constraint firstItem="Pgd-WH-Jsk" firstAttribute="top" secondItem="TpF-uw-jIr" secondAttribute="top" constant="20" id="M2Y-ZG-ftp"/>
+                                    <constraint firstAttribute="trailing" secondItem="Pgd-WH-Jsk" secondAttribute="trailing" constant="100" id="hnt-aY-udk"/>
+                                    <constraint firstItem="Pgd-WH-Jsk" firstAttribute="leading" secondItem="TpF-uw-jIr" secondAttribute="leading" constant="20" id="wze-qd-wrH"/>
+                                    <constraint firstItem="R4m-WQ-YJp" firstAttribute="leading" secondItem="TpF-uw-jIr" secondAttribute="leading" constant="20" id="xrJ-P7-9lj"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hTU-Ui-waa" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="7P1-bg-q92"/>
+                            <constraint firstItem="hTU-Ui-waa" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="9i7-qa-bue"/>
+                            <constraint firstItem="TpF-uw-jIr" firstAttribute="top" secondItem="hTU-Ui-waa" secondAttribute="bottom" id="A7K-VQ-Php"/>
+                            <constraint firstItem="TpF-uw-jIr" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Y6r-yf-0jy"/>
+                            <constraint firstAttribute="bottom" secondItem="TpF-uw-jIr" secondAttribute="bottom" id="l4d-KI-Acx"/>
+                            <constraint firstItem="TpF-uw-jIr" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="mE9-wc-Fxt"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="hTU-Ui-waa" secondAttribute="trailing" constant="20" id="x3l-9s-vqr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="entireButton" destination="9Oj-xP-8CQ" id="BUa-Oo-2mR"/>
+                        <outlet property="interviewButton" destination="84N-5x-F0L" id="mh5-3V-YO6"/>
+                        <outlet property="scriptButton" destination="vCM-bW-n7L" id="d56-K7-tKe"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="110.68702290076335" y="-2.1126760563380285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ic_delete" width="24" height="24"/>
+        <namedColor name="Sub4">
+            <color red="0.94117647058823528" green="0.96078431372549022" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

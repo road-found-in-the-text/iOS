@@ -81,7 +81,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     //셀 높이
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0 {
-            return 175
+            return 200
         } else {
             return 112
         }
