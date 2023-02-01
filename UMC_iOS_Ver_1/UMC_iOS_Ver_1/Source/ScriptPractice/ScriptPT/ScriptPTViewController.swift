@@ -16,7 +16,11 @@ class ScriptPTViewController: UIViewController {
     @IBOutlet var pauseButton: UIButton!
     @IBOutlet var stopButton: UIButton!
     
+<<<<<<< HEAD
     private var cellSize = CGSize()
+=======
+    private let cellSize = CGSize(width: 302, height: 140)
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
     private var minimumItemSpacing: CGFloat = 20
     private let cellIdentifier = "scriptPTcell"
     
@@ -34,7 +38,10 @@ class ScriptPTViewController: UIViewController {
     }
     
     func configureCollectionView() {
+<<<<<<< HEAD
         cellSize = CGSize(width: collectionView.frame.width - 37 * 2, height: collectionView.frame.height)
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
         let cellWidth: CGFloat = floor(cellSize.width)
         let insetX = (view.bounds.width - cellWidth) / 2.0
         
@@ -77,10 +84,15 @@ extension ScriptPTViewController {
         
         if isPaused {
             timer?.invalidate()
+<<<<<<< HEAD
             pauseButton.setImage(UIImage(named: "ic_play"), for: .normal)
         } else {
             timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerCallback), userInfo: nil, repeats: true)
             pauseButton.setImage(UIImage(named: "ic_pause"), for: .normal)
+=======
+        } else {
+            timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerCallback), userInfo: nil, repeats: true)
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
         }
     }
 }

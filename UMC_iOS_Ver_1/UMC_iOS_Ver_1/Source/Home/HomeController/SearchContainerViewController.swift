@@ -19,7 +19,10 @@ class SearchContainerViewController: UIViewController {
         contentsTableView.dataSource = self
     }
     
+<<<<<<< HEAD
     //검색 후 forumTableViewCell Xib 등록
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
     private func registerXib() {
         let forumCell = UINib(nibName: "ForumTableViewCell", bundle: nil)
         contentsTableView.register(forumCell, forCellReuseIdentifier: "ForumTableViewCell")

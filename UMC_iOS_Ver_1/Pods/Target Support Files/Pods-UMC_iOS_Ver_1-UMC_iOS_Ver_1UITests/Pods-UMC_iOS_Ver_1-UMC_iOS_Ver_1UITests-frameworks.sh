@@ -179,13 +179,19 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DLRadioButton/DLRadioButton.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework"
+<<<<<<< HEAD
   install_framework "${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework"
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DLRadioButton/DLRadioButton.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework"
+<<<<<<< HEAD
   install_framework "${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework"
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

@@ -1,3 +1,7 @@
 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<<<<<<< HEAD
 <path d="M5 3L19 12L5 21V3Z" fill="#52616A"/>
+=======
+<path d="M5 3L19 12L5 21V3Z" stroke="#1E2022" stroke-linecap="round" stroke-linejoin="round"/>
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 </svg>

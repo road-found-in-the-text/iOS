@@ -8,6 +8,7 @@
 import UIKit
 
 class PostViewController: UIViewController {
+<<<<<<< HEAD
     
     let maxImageTopHeight: CGFloat = 300
     let minImageTopHeight: CGFloat = 47
@@ -55,11 +56,21 @@ class PostViewController: UIViewController {
     }
     
     //신고하기 버튼 클릭
+=======
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(systemName: "exclamationmark.circle"), style: .plain, target: self, action: #selector(reportTapped))
+    }
+    
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
     @objc func reportTapped() {
         let reportStoryboard = UIStoryboard(name: Const.Storyboard.Name.report, bundle: nil)
         guard let reportVC = reportStoryboard.instantiateViewController(withIdentifier: Const.ViewController.identifier.report) as? ReportViewController else { return }
         present(reportVC, animated: true)
     }
+<<<<<<< HEAD
     
     @IBAction func commentButtonTapped(_ sender: UIButton) {
         guard let commentText = commentTextField.text else { return }
@@ -114,4 +125,7 @@ extension PostViewController: UITableViewDelegate, UITableViewDataSource, UIScro
         
         representativeImage.alpha = ratio
     }
+=======
+
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 }

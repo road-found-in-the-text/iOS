@@ -7,37 +7,61 @@
 		<key>Alamofire.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>2</integer>
+=======
+			<integer>4</integer>
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		</dict>
 		<key>DLRadioButton.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>0</integer>
+=======
+			<integer>1</integer>
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		</dict>
 		<key>IQKeyboardManagerSwift.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>1</integer>
+=======
+			<integer>2</integer>
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		</dict>
 		<key>Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>4</integer>
+=======
+			<integer>0</integer>
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		</dict>
 		<key>Pods-UMC_iOS_Ver_1.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>7</integer>
+=======
+			<integer>6</integer>
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		</dict>
 		<key>Pods-UMC_iOS_Ver_1Tests.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>6</integer>
 		</dict>
 		<key>lottie-ios.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>3</integer>
+=======
+			<integer>5</integer>
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
 		</dict>
 	</dict>
 </dict>

@@ -33,12 +33,20 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" title="글길" id="maL-Ek-c3f">
                         <rightBarButtonItems>
+<<<<<<< HEAD
                             <barButtonItem image="ic_addPost" id="jdX-0N-p94">
+=======
+                            <barButtonItem systemItem="add" id="jdX-0N-p94">
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
                                 <connections>
                                     <segue destination="ms0-06-jSs" kind="presentation" modalPresentationStyle="fullScreen" id="Cv3-Hq-fCi"/>
                                 </connections>
                             </barButtonItem>
+<<<<<<< HEAD
                             <barButtonItem image="ic_search" id="wr9-6R-snk">
+=======
+                            <barButtonItem systemItem="search" id="wr9-6R-snk">
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
                                 <connections>
                                     <segue destination="r5P-Bo-4mA" kind="show" id="lbC-1x-Khe"/>
                                 </connections>
@@ -95,9 +103,13 @@
         </scene>
     </scenes>
     <resources>
+<<<<<<< HEAD
         <image name="ic_addPost" width="24" height="24"/>
         <image name="ic_home_gray" width="24" height="24"/>
         <image name="ic_search" width="24" height="24"/>
+=======
+        <image name="ic_home_gray" width="24" height="24"/>
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

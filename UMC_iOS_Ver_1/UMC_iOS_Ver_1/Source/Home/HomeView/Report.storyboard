@@ -18,17 +18,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="WQ3-Uy-8ac">
+<<<<<<< HEAD
                                 <rect key="frame" x="16" y="47" width="202.33333333333334" height="38"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nKl-oe-zyg">
                                         <rect key="frame" x="0.0" y="0.0" width="40" height="38"/>
                                         <buttonConfiguration key="configuration" style="plain" image="ic_delete"/>
+=======
+                                <rect key="frame" x="16" y="47" width="202.33333333333334" height="32"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="close" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nKl-oe-zyg">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="32"/>
+                                        <buttonConfiguration key="configuration" style="plain"/>
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
                                         <connections>
                                             <action selector="backButtonTapped:" destination="k9g-fh-Exr" eventType="touchUpInside" id="M95-ae-0wi"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" horizontalCompressionResistancePriority="751" text="신고하기" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ufD-kU-QE4">
+<<<<<<< HEAD
                                         <rect key="frame" x="140" y="0.0" width="62.333333333333343" height="38"/>
+=======
+                                        <rect key="frame" x="140" y="0.0" width="62.333333333333343" height="32"/>
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -36,7 +48,11 @@
                                 </subviews>
                             </stackView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rek-LJ-UVA">
+<<<<<<< HEAD
                                 <rect key="frame" x="0.0" y="85" width="375" height="727"/>
+=======
+                                <rect key="frame" x="0.0" y="79" width="375" height="733"/>
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xcF-wV-1Ko">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="733"/>
@@ -392,7 +408,10 @@
         </scene>
     </scenes>
     <resources>
+<<<<<<< HEAD
         <image name="ic_delete" width="24" height="24"/>
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
         <namedColor name="Sub2">
             <color red="0.67843137254901964" green="0.70980392156862748" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

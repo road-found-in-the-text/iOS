@@ -12,7 +12,11 @@ class ScriptPracticeSetViewController: UIViewController {
     // MARK: - Properties
     @IBOutlet var collectionView: UICollectionView!
     
+<<<<<<< HEAD
     private var cellSize = CGSize()
+=======
+    private let cellSize = CGSize(width: 302, height: 140)
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
     private var minimumItemSpacing: CGFloat = 20
     private let cellIdentifier = "scriptPTcell"
     
@@ -22,6 +26,10 @@ class ScriptPracticeSetViewController: UIViewController {
         super.viewDidLoad()
 
         configureCollectionView()
+<<<<<<< HEAD
+=======
+        
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -31,7 +39,10 @@ class ScriptPracticeSetViewController: UIViewController {
     }
     
     func configureCollectionView() {
+<<<<<<< HEAD
         cellSize = CGSize(width: collectionView.frame.width - 37 * 2, height: collectionView.frame.height)
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
         let cellWidth: CGFloat = floor(cellSize.width)
         let insetX = (view.bounds.width - cellWidth) / 2.0
         

@@ -23,7 +23,11 @@
                                     <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYa-Jz-sxV">
                                         <rect key="frame" x="0.0" y="0.0" width="30.666666666666668" height="35"/>
                                         <state key="normal" title="Button"/>
+<<<<<<< HEAD
                                         <buttonConfiguration key="configuration" style="plain" image="ic_delete"/>
+=======
+                                        <buttonConfiguration key="configuration" style="plain" title="X"/>
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
                                         <connections>
                                             <action selector="backButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="jEJ-3N-flX"/>
                                         </connections>
@@ -74,7 +78,11 @@
                             <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="adA-qi-msS">
                                 <rect key="frame" x="0.0" y="739" width="375" height="49"/>
                                 <items>
+<<<<<<< HEAD
                                     <barButtonItem title="Item" image="ic_camera" id="YV3-3X-8xS"/>
+=======
+                                    <barButtonItem title="Item" image="camera" catalog="system" id="YV3-3X-8xS"/>
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
                                     <barButtonItem title="Item" image="ic_script_black" id="5YS-wx-rJ7"/>
                                 </items>
                             </toolbar>
@@ -106,8 +114,11 @@
     </scenes>
     <resources>
         <image name="camera" catalog="system" width="128" height="93"/>
+<<<<<<< HEAD
         <image name="ic_camera" width="24" height="24"/>
         <image name="ic_delete" width="24" height="24"/>
+=======
+>>>>>>> parent of a7db6f8 (init: 초기 업로드)
         <image name="ic_script_black" width="24" height="24"/>
         <namedColor name="Sub2">
             <color red="0.67843137254901964" green="0.70980392156862748" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
