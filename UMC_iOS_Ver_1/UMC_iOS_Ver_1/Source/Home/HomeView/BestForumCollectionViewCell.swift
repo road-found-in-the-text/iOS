@@ -8,7 +8,7 @@
 import UIKit
 
 class BestForumCollectionViewCell: UICollectionViewCell {
-    
+
     @IBOutlet weak var bestForumImage: UIImageView!
     @IBOutlet weak var bestForumTitleLabel: UILabel!
     @IBOutlet weak var numOfBestForumPhotosLabel: UILabel!
@@ -27,4 +27,5 @@ class BestForumCollectionViewCell: UICollectionViewCell {
         contentView.layer.cornerRadius = 10
         contentView.layer.masksToBounds = true
     }
+
 }
