@@ -16,21 +16,56 @@ class ScriptPTViewController: UIViewController {
     @IBOutlet var pauseButton: UIButton!
     @IBOutlet var stopButton: UIButton!
     
+    lazy var leftTimeLabel: UILabel = {
+        let label = UILabel()
+        label.text = "0분 남았어요"
+        label.font = .systemFont(ofSize: 14)
+        label.textColor = UIColor(named: "Sub1")
+        
+        return label
+    }()
+    
+    lazy var rightTimeLabel: UILabel = {
+        let label = UILabel()
+        label.text = "00:00"
+        label.font = .boldSystemFont(ofSize: 14)
+        
+        return label
+    }()
+    
     private var cellSize = CGSize()
     private var minimumItemSpacing: CGFloat = 20
     private let cellIdentifier = "scriptPTcell"
     
     private var timer: Timer?
     private var timerNumber = 60
+    private var time = 0
     private var isPaused = false
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        configureNavigationItem()
         configureCollectionView()
         styleButton()
         startTimer()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        timer?.invalidate()
+    }
+    
+    func configureNavigationItem() {
+        self.navigationItem.leftItemsSupplementBackButton = true
+
+        self.navigationController?.navigationBar.topItem?.title = ""
+        self.navigationItem.backButtonTitle = ""
+        
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem(customView: leftTimeLabel)
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(customView: rightTimeLabel)
     }
     
     func configureCollectionView() {
@@ -62,6 +97,12 @@ extension ScriptPTViewController {
     }
     
     @objc func timerCallback() {
+        self.leftTimeLabel.text = "\(timerNumber)분 남았어요."
+        self.rightTimeLabel.text = "00:\(time)"
+        
+        self.leftTimeLabel.sizeToFit()
+        self.rightTimeLabel.sizeToFit()
+
         print(timerNumber)
         
         if(timerNumber == 0) {
@@ -70,6 +111,7 @@ extension ScriptPTViewController {
         }
         
         timerNumber -= 1
+        time += 1
     }
     
     @IBAction func pressPauseButton(_ sender: UIButton) {
@@ -85,8 +127,6 @@ extension ScriptPTViewController {
     }
     
     @IBAction func stopButtonTapped(_ sender: UIButton) {
-        timer?.invalidate()
-        
         let storyboard = UIStoryboard(name: "ScriptPracticeRecord", bundle: nil)
         guard let nextViewController = storyboard.instantiateViewController(withIdentifier: "ScriptPracticeRecordViewController") as? ScriptPracticeRecordViewController else {
             assert(false)

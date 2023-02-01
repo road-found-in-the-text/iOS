@@ -33,7 +33,7 @@ class ScriptPracticeSetViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         
-        self.dismiss(animated: true)
+        self.dismiss(animated: false)
     }
     
     func configureCollectionView() {
