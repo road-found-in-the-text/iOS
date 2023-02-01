@@ -19,6 +19,9 @@ class ScriptEditTabmanViewController: TabmanViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+
+        configureNavigationItem()
+        
         setViewControllers()
 
         self.dataSource = self
@@ -45,6 +48,16 @@ class ScriptEditTabmanViewController: TabmanViewController {
         super.viewWillAppear(animated)
         
         reloadData()
+    }
+    
+    func configureNavigationItem() {
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(image: UIImage(named: "ic_chevron left"), style: .plain, target: nil, action: nil)
+        self.navigationItem.title = "대본"
+        self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "ic_more"), style: .plain, target: self, action: #selector(rightBarButtonItemTapped))
+    }
+    
+    @objc func rightBarButtonItemTapped() {
+        print("더보기")
     }
     
     func setViewControllers() {

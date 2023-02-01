@@ -363,7 +363,7 @@
                 <navigationController storyboardIdentifier="ScriptNavigationViewController" automaticallyAdjustsScrollViewInsets="NO" id="V0H-JM-c2b" customClass="ScriptNavigationViewController" customModule="UMC_iOS_Ver_1" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="대본연습" image="ic_script_gray" id="VGJ-UK-a31"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="f5o-DP-g6Z">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" backIndicatorImage="ic_chevron left" backIndicatorTransitionMaskImage="ic_chevron left" id="f5o-DP-g6Z">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -386,6 +386,7 @@
         <image name="btn_emoji" width="34" height="39"/>
         <image name="btn_image" width="34" height="39"/>
         <image name="btn_slash" width="23" height="39"/>
+        <image name="ic_chevron left" width="24" height="24"/>
         <image name="ic_more" width="24" height="24"/>
         <image name="ic_script_black" width="24" height="24"/>
         <image name="ic_script_gray" width="24" height="24"/>
