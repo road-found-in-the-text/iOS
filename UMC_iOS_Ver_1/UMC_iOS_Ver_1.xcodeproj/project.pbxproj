@@ -41,6 +41,8 @@
 		21D4B6E629791D3600D7B485 /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B6E529791D3600D7B485 /* CustomAlertViewController.swift */; };
 		21EB2F83297FD47600259C6D /* UserProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EB2F81297FD47600259C6D /* UserProfileTableViewCell.swift */; };
 		21EB2F84297FD47600259C6D /* UserProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21EB2F82297FD47600259C6D /* UserProfileTableViewCell.xib */; };
+		5E029436298A79DE001EDC43 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E029435298A79DE001EDC43 /* LoginViewController.swift */; };
+		5E029438298A7A10001EDC43 /* LoginPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E029437298A7A10001EDC43 /* LoginPage.storyboard */; };
 		5E32FC12296955910010A376 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32FC11296955910010A376 /* AppDelegate.swift */; };
 		5E32FC14296955910010A376 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32FC13296955910010A376 /* SceneDelegate.swift */; };
 		5E32FC16296955910010A376 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32FC15296955910010A376 /* HomeViewController.swift */; };
@@ -68,6 +70,8 @@
 		5E32FC6929695DE90010A376 /* ScriptPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32FC6829695DE90010A376 /* ScriptPracticeViewController.swift */; };
 		5E32FC6B29695DF60010A376 /* InterviewPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32FC6A29695DF60010A376 /* InterviewPracticeViewController.swift */; };
 		5E32FC6D29695DFF0010A376 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32FC6C29695DFF0010A376 /* MyPageViewController.swift */; };
+		5EE89E67298A87B900C03AE7 /* SignUpPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EE89E66298A87B900C03AE7 /* SignUpPage.storyboard */; };
+		5EE89E69298A880700C03AE7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE89E68298A880700C03AE7 /* SignUpViewController.swift */; };
 		6778D2355D99D72941DEBC63 /* Pods_UMC_iOS_Ver_1_UMC_iOS_Ver_1UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F6FA7EC2A2DF7ADD8C68E3 /* Pods_UMC_iOS_Ver_1_UMC_iOS_Ver_1UITests.framework */; };
 		89028EC2296C6B3800B28DB7 /* ScriptEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89028EC1296C6B3800B28DB7 /* ScriptEdit.storyboard */; };
 		89028EC4296C6B5900B28DB7 /* ScriptEditTabmanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89028EC3296C6B5900B28DB7 /* ScriptEditTabmanViewController.swift */; };
@@ -158,6 +162,8 @@
 		21EB2F81297FD47600259C6D /* UserProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileTableViewCell.swift; sourceTree = "<group>"; };
 		21EB2F82297FD47600259C6D /* UserProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserProfileTableViewCell.xib; sourceTree = "<group>"; };
 		49B928E9BB947B94197FC9A1 /* Pods_UMC_iOS_Ver_1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UMC_iOS_Ver_1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E029435298A79DE001EDC43 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5E029437298A7A10001EDC43 /* LoginPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginPage.storyboard; sourceTree = "<group>"; };
 		5E32FC0E296955910010A376 /* UMC_iOS_Ver_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UMC_iOS_Ver_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E32FC11296955910010A376 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E32FC13296955910010A376 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -190,6 +196,8 @@
 		5E32FC6A29695DF60010A376 /* InterviewPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewPracticeViewController.swift; sourceTree = "<group>"; };
 		5E32FC6C29695DFF0010A376 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		5E64DE603605238BE8969A94 /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests.debug.xcconfig"; path = "Target Support Files/Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests/Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5EE89E66298A87B900C03AE7 /* SignUpPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpPage.storyboard; sourceTree = "<group>"; };
+		5EE89E68298A880700C03AE7 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		89028EC1296C6B3800B28DB7 /* ScriptEdit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptEdit.storyboard; sourceTree = "<group>"; };
 		89028EC3296C6B5900B28DB7 /* ScriptEditTabmanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptEditTabmanViewController.swift; sourceTree = "<group>"; };
 		89273C052977A80100208B6D /* ScriptPTCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPTCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -322,6 +330,15 @@
 			path = HomeController;
 			sourceTree = "<group>";
 		};
+		5E029434298A79BD001EDC43 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				5E029435298A79DE001EDC43 /* LoginViewController.swift */,
+				5E029437298A7A10001EDC43 /* LoginPage.storyboard */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		5E32FC05296955910010A376 = {
 			isa = PBXGroup;
 			children = (
@@ -398,6 +415,8 @@
 		5E32FC43296956300010A376 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				5EE89E65298A86FF00C03AE7 /* SignUp */,
+				5E029434298A79BD001EDC43 /* Login */,
 				5E32FC5E296958F10010A376 /* Home */,
 				5E32FC6129695CA20010A376 /* ScriptPractice */,
 				5E32FC6029695C960010A376 /* InterviewPractice */,
@@ -477,6 +496,15 @@
 				89E0B03D29881C60007F6993 /* WriteScriptViewController.swift */,
 			);
 			path = ScriptPractice;
+			sourceTree = "<group>";
+		};
+		5EE89E65298A86FF00C03AE7 /* SignUp */ = {
+			isa = PBXGroup;
+			children = (
+				5EE89E66298A87B900C03AE7 /* SignUpPage.storyboard */,
+				5EE89E68298A880700C03AE7 /* SignUpViewController.swift */,
+			);
+			path = SignUp;
 			sourceTree = "<group>";
 		};
 		6525DFAAC211892E6BECA24A /* Pods */ = {
@@ -726,9 +754,11 @@
 				211E919C29741B8E00BD406C /* AddPost.storyboard in Resources */,
 				5E32FC6729695D060010A376 /* MyPage.storyboard in Resources */,
 				5E32FC1E296955930010A376 /* LaunchScreen.storyboard in Resources */,
+				5EE89E67298A87B900C03AE7 /* SignUpPage.storyboard in Resources */,
 				21A6B4B12980FA4B00F084F6 /* NumOfCommentsTableViewCell.xib in Resources */,
 				2195E0F0297672AA00203C49 /* Report.storyboard in Resources */,
 				896854B32975564200E70868 /* ScriptRecord.storyboard in Resources */,
+				5E029438298A7A10001EDC43 /* LoginPage.storyboard in Resources */,
 				89CD521E29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard in Resources */,
 				89273C0B2977CAE600208B6D /* ScriptPT.storyboard in Resources */,
 				5E32FC1B296955930010A376 /* Assets.xcassets in Resources */,
@@ -883,6 +913,7 @@
 				5E32FC552969576A0010A376 /* UIViewController.swift in Sources */,
 				5E32FC57296957840010A376 /* UIImageView.swift in Sources */,
 				21A6B4AC2980F76A00F084F6 /* NumofLikesTableViewCell.swift in Sources */,
+				5EE89E69298A880700C03AE7 /* SignUpViewController.swift in Sources */,
 				89CD522029744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift in Sources */,
 				21A6B4B02980FA4B00F084F6 /* NumOfCommentsTableViewCell.swift in Sources */,
 				5E32FC51296957350010A376 /* String.swift in Sources */,
@@ -912,6 +943,7 @@
 				21EB2F83297FD47600259C6D /* UserProfileTableViewCell.swift in Sources */,
 				89E0B04329881C97007F6993 /* ScriptListTableViewCell.swift in Sources */,
 				2133B7A5297419290037D85D /* AddPostViewController.swift in Sources */,
+				5E029436298A79DE001EDC43 /* LoginViewController.swift in Sources */,
 				21348A1B297677F4002190E5 /* ReportViewController.swift in Sources */,
 				21A6B4A82980E70200F084F6 /* PostContentTableViewCell.swift in Sources */,
 				210A9E8829714A660063972B /* SearchHistoryDataModel.swift in Sources */,
