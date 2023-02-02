@@ -22,8 +22,19 @@ class ScriptPracticeRecordEndViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        configureNavigationItem()
         configureAnimationView()
         styleButton()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.interactivePopGestureRecognizer?.isEnabled = true
+    }
+    
+    func configureNavigationItem() {
+        self.navigationItem.title = "기록 완료"
+        self.navigationItem.hidesBackButton = true
     }
     
     func configureAnimationView() {
@@ -40,5 +51,15 @@ class ScriptPracticeRecordEndViewController: UIViewController {
     func styleButton() {
         againButton.layer.cornerRadius = 8
         resultButton.layer.cornerRadius = 8
+    }
+    
+    @IBAction func bottomButtonTapped(_ sender: UIButton) {
+        for viewController in self.navigationController!.viewControllers as Array {
+            if let nextViewController = viewController as? ScriptEditTabmanViewController {
+                nextViewController.pageIndex = sender == againButton ? 1 : 2
+                print(nextViewController.pageIndex)
+                self.navigationController?.popToViewController(nextViewController, animated: true)
+            }
+        }
     }
 }

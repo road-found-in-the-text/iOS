@@ -72,6 +72,9 @@
                                                 <state key="normal" title="기록완료">
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="doneButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="Tua-Tt-hlG"/>
+                                                </connections>
                                             </button>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Y9P-4Y-hAb">
                                                 <rect key="frame" x="28" y="466.66666666666663" width="337" height="100"/>

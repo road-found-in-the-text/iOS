@@ -9,9 +9,15 @@ import UIKit
 
 import Lottie
 
+protocol ScriptPracticeRecordLoadingProtocol {
+    func didFinishLoading()
+}
+
 class ScriptPracticeRecordRoadingViewController: UIViewController {
     
     @IBOutlet var animationView: LottieAnimationView!
+    
+    var delegate: ScriptPracticeRecordLoadingProtocol?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,6 +27,12 @@ class ScriptPracticeRecordRoadingViewController: UIViewController {
         super.viewWillAppear(animated)
         
         configureAnimationView()
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+            self.dismiss(animated: false) {
+                self.delegate?.didFinishLoading()
+            }
+        }
     }
     
     func configureAnimationView() {

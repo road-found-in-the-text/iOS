@@ -40,6 +40,9 @@ class ScriptPracticeRecordResultViewController: UIViewController {
     }
     
     func style() {
+        self.navigationItem.title = "연습 기록"
+        self.navigationItem.hidesBackButton = true
+                                                                                          
         memoView.layer.cornerRadius = 8
         memoView.layer.borderColor = UIColor(named: "Sub4")?.cgColor
         memoView.layer.borderWidth = 1
@@ -110,6 +113,15 @@ class ScriptPracticeRecordResultViewController: UIViewController {
         
         
         resultChart.data = data
+    }
+    
+    @IBAction func doneButtonTapped(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "ScriptPracticeRecordEnd", bundle: nil)
+        guard let nextViewController = storyboard.instantiateViewController(withIdentifier: "ScriptPracticeRecordEndViewController") as? ScriptPracticeRecordEndViewController else {
+            assert(false)
+        }
+        
+        self.navigationController?.pushViewController(nextViewController, animated: true)
     }
 }
 

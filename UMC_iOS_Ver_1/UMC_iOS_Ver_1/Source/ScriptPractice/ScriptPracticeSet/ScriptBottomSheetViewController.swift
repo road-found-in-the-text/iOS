@@ -7,7 +7,13 @@
 
 import UIKit
 
+protocol ScriptBottomSheetDelegate: AnyObject {
+    func practiceStartButtonTapped()
+}
+
 class ScriptBottomSheetViewController: UIViewController {
+    
+    var delegate: ScriptBottomSheetDelegate?
     
     @IBOutlet var pickerView: UIPickerView!
     @IBOutlet var practiceStartButton: UIButton!
@@ -44,9 +50,14 @@ class ScriptBottomSheetViewController: UIViewController {
         secondLabel.textColor = .black
         pickerView.addSubview(secondLabel)
     }
+    
+    @IBAction func practiceStartButtonTapped(_ sender: UIButton) {
+        delegate?.practiceStartButtonTapped()
+    }
 
 }
 
+// MARK: - UIPickerView
 extension ScriptBottomSheetViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 2
