@@ -10,7 +10,7 @@ import DLRadioButton
 
 class ReportViewController: UIViewController {
     
-    static var reportContent: String?
+    static var reportContent: String?   //신고 내용
     private let textViewPlaceholder = "신고 사유를 입력해주세요."
     
     @IBOutlet weak var textCountLabel: UILabel!
@@ -62,6 +62,7 @@ class ReportViewController: UIViewController {
         etcReportTextView.isEditable = false
     }
     
+    //기타 버튼 클릭 시 textView 수정 가능하게 기능
     @objc func reportEtcButtonTap(_ sender:DLRadioButton) {
         etcReportTextView.isEditable = true
         etcReportTextView.isUserInteractionEnabled = true

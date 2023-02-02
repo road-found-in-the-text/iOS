@@ -15,9 +15,18 @@ class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        navigationBarTitle()
         registerXib()
         forumTableView.delegate = self
         forumTableView.dataSource = self
+    }
+    
+    func navigationBarTitle() {
+        let titleLabel = UILabel()
+        titleLabel.textColor = UIColor.black
+        titleLabel.text = "글길"
+        titleLabel.font = UIFont.systemFont(ofSize: 17, weight: .bold)
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: titleLabel)
     }
     
     //커스텀cell 등록
@@ -39,7 +48,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     //섹션 제목
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if section == 0 {
-            return "🔥 Best Forum"
+            return "🔥 BEST Forum"
         } else {
             return "Forum"
         }
@@ -72,7 +81,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     //셀 높이
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0 {
-            return 175
+            return 200
         } else {
             return 112
         }
@@ -87,6 +96,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
 }
 
 extension HomeViewController: CollectionViewCellDelegate {
+    //collectionView Cell 선택 시 post 화면으로 이동
     func collectionView(collectionViewCell: BestForumCollectionViewCell?, index: Int, didTappedInTableViewCell: BestForumTableViewCell) {
         let postStoryboard = UIStoryboard(name: Const.Storyboard.Name.post, bundle: nil)
         guard let postVC = postStoryboard.instantiateViewController(withIdentifier: Const.ViewController.identifier.post) as? PostViewController else { return }

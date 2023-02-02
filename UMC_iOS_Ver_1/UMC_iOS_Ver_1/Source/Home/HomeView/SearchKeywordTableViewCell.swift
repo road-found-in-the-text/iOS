@@ -7,6 +7,7 @@
 
 import UIKit
 
+//검색 기록 cell에 있는 button 클릭 할 때의 delegate
 protocol CellButtonTappedDelegate: AnyObject {
     func deleteButtonClicked(_ sender: UIButton)
 }

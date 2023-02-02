@@ -10,7 +10,8 @@ import UIKit
 class PostViewController: UIViewController {
     
     let maxImageTopHeight: CGFloat = 300
-    let minImageTopHeight: CGFloat = 47
+    let minImageTopHeight: CGFloat = 80
+    var lastRowInLastSection = 0
     
     @IBOutlet weak var representativeImage: UIView!
     @IBOutlet weak var postTableView: UITableView!
@@ -51,7 +52,7 @@ class PostViewController: UIViewController {
     func initPostTableView() {
         postTableView.delegate = self
         postTableView.dataSource = self
-        postTableView.contentInset = .init(top: 321, left: 0, bottom: 0, right: 0)
+        postTableView.contentInset = .init(top: 310, left: 0, bottom: 0, right: 0)
     }
     
     //신고하기 버튼 클릭
@@ -66,6 +67,10 @@ class PostViewController: UIViewController {
         let task = PostCommentDataModel(comment: commentText)
         postCommentData.append(task)
         postTableView.reloadData()
+        DispatchQueue.main.async {
+            let indexPath = IndexPath(row: postCommentData.count - 1, section: 4)
+            self.postTableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
+        }       //댓글 추가시 tableView bottom으로 이동
     }
 }
 
@@ -112,6 +117,6 @@ extension PostViewController: UITableViewDelegate, UITableViewDataSource, UIScro
         let y: CGFloat = -scrollView.contentOffset.y
         let ratio = y / (maxImageTopHeight - minImageTopHeight)
         
-        representativeImage.alpha = ratio
+        representativeImage.alpha = ratio - 0.3
     }
 }

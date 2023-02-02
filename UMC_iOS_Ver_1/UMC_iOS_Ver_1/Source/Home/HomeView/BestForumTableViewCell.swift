@@ -7,6 +7,7 @@
 
 import UIKit
 
+//tableViewCell 안에 있는 collectionViewCell 클릭하기 위한 delegate
 protocol CollectionViewCellDelegate: AnyObject {
     func collectionView(collectionViewCell: BestForumCollectionViewCell?, index: Int, didTappedInTableViewCell: BestForumTableViewCell)
 }
