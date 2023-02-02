@@ -78,7 +78,11 @@
                                 <rect key="frame" x="0.0" y="739" width="375" height="49"/>
                                 <items>
                                     <barButtonItem width="20" style="plain" systemItem="fixedSpace" id="b4h-lt-VJp"/>
-                                    <barButtonItem title="Item" image="ic_camera" id="YV3-3X-8xS"/>
+                                    <barButtonItem title="Item" image="ic_camera" id="YV3-3X-8xS">
+                                        <connections>
+                                            <action selector="addImageToScriptBtnTapped:" destination="Y6W-OH-hqX" id="DDm-ZX-koo"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem width="25" style="plain" systemItem="fixedSpace" id="o5b-b0-TIf"/>
                                     <barButtonItem title="Item" image="ic_script_black" id="5YS-wx-rJ7">
                                         <connections>
