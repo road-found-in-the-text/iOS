@@ -48,7 +48,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     //섹션 제목
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         if section == 0 {
-            return "🔥 Best Forum"
+            return "🔥 BEST Forum"
         } else {
             return "Forum"
         }
