@@ -28,7 +28,11 @@
 		<key>UMC_iOS_Ver_1.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
+<<<<<<< HEAD
+			<integer>7</integer>
+=======
 			<integer>5</integer>
+>>>>>>> develop
 		</dict>
 	</dict>
 </dict>
