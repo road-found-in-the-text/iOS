@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MyPageStorageTableHeaderView" customModule="UMC_iOS_Ver_1" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="80"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vJE-9D-V2G">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="80"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="VSn-D6-vfv">
+                            <rect key="frame" x="16" y="12" width="211" height="34"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ue-KX-rIg">
+                                    <rect key="frame" x="0.0" y="0.0" width="65" height="34"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="65" id="LA2-LS-TSt"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="전체">
+                                        <color key="titleColor" name="Sub1"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="categoryButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="abW-Gq-yRH"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQY-EU-kQf">
+                                    <rect key="frame" x="73" y="0.0" width="65" height="34"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="65" id="hNS-Z9-QKo"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="대본">
+                                        <color key="titleColor" name="Sub1"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="categoryButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="rVH-zf-fpA"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6R4-lr-EPc">
+                                    <rect key="frame" x="146" y="0.0" width="65" height="34"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="65" id="Q99-QH-Oon"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="면접">
+                                        <color key="titleColor" name="Sub1"/>
+                                    </state>
+                                    <connections>
+                                        <action selector="categoryButtonTapped:" destination="iN0-l3-epB" eventType="touchUpInside" id="k5d-NC-wYU"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="34" id="uLi-dl-AmI"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="2pm-Jt-qLK">
+                            <rect key="frame" x="16.000000000000004" y="60" width="37.333333333333343" height="17"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="전체" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWF-qh-xje">
+                                    <rect key="frame" x="0.0" y="0.0" width="24.333333333333332" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" name="Sub1"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mHx-n9-Quc">
+                                    <rect key="frame" x="28.333333333333336" y="0.0" width="9" height="17"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                    <color key="textColor" name="Sub1"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" name="Sub4"/>
+                    <constraints>
+                        <constraint firstItem="VSn-D6-vfv" firstAttribute="top" secondItem="vJE-9D-V2G" secondAttribute="top" constant="12" id="Fri-x2-X2S"/>
+                        <constraint firstItem="2pm-Jt-qLK" firstAttribute="leading" secondItem="vJE-9D-V2G" secondAttribute="leading" constant="16" id="UK4-WF-Sye"/>
+                        <constraint firstItem="VSn-D6-vfv" firstAttribute="leading" secondItem="vJE-9D-V2G" secondAttribute="leading" constant="16" id="gFW-rl-SHY"/>
+                        <constraint firstItem="2pm-Jt-qLK" firstAttribute="top" secondItem="VSn-D6-vfv" secondAttribute="bottom" constant="14" id="hlq-rf-QEH"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="vJE-9D-V2G" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="51A-Ab-4QD"/>
+                <constraint firstAttribute="trailing" secondItem="vJE-9D-V2G" secondAttribute="trailing" id="f0b-xM-lrR"/>
+                <constraint firstItem="vJE-9D-V2G" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="i4I-7M-cvb"/>
+                <constraint firstAttribute="bottom" secondItem="vJE-9D-V2G" secondAttribute="bottom" id="pZt-Fg-gBe"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="selectedCategoryLabel" destination="iWF-qh-xje" id="8rW-ic-x8o"/>
+                <outlet property="selectedCellAmountLabel" destination="mHx-n9-Quc" id="GMa-wc-uMj"/>
+                <outletCollection property="categoryButtons" destination="7Ue-KX-rIg" collectionClass="NSMutableArray" id="GZy-Yh-fyZ"/>
+                <outletCollection property="categoryButtons" destination="aQY-EU-kQf" collectionClass="NSMutableArray" id="BJE-ZI-asL"/>
+                <outletCollection property="categoryButtons" destination="6R4-lr-EPc" collectionClass="NSMutableArray" id="Jpg-gb-nX0"/>
+            </connections>
+            <point key="canvasLocation" x="29.770992366412212" y="-252.11267605633805"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="Sub1">
+            <color red="0.32156862745098042" green="0.38039215686274508" blue="0.41568627450980394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Sub4">
+            <color red="0.94117647058823528" green="0.96078431372549022" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
