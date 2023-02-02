@@ -19,6 +19,9 @@ class HomeViewController: UIViewController {
         registerXib()
         forumTableView.delegate = self
         forumTableView.dataSource = self
+        if #available(iOS 15, *) {
+            forumTableView.sectionHeaderTopPadding = 0
+        }
     }
     
     func navigationBarTitle() {
@@ -45,13 +48,32 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         return 2
     }
     
-    //섹션 제목
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    //custom section header 만들기
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = UIView()
+        let label = UILabel()
+        if section == 0 { label.text = "🔥 BEST Forum" } else { label.text = "Forum" }
+        label.font = .boldSystemFont(ofSize: 23)
+        label.frame = CGRect(x: 20, y: 20, width: 250, height: 20)
+        view.addSubview(label)
+        view.backgroundColor = .white
+        return view
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         if section == 0 {
-            return "🔥 BEST Forum"
-        } else {
-            return "Forum"
-        }
+            let view = UIView()
+            view.backgroundColor = UIColor(named: "Sub4")
+            return view
+        } else { return nil }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 60
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 5
     }
     
     //섹션 안의 셀 개수
