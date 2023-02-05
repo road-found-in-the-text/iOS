@@ -28,7 +28,7 @@ class BestForumTableViewCell: UITableViewCell, UICollectionViewDelegate {
     //collectionView 레이아웃
     private func collectionViewFlowLayout() {
         let flowLayout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        flowLayout.itemSize = CGSize(width: 185, height: 175)
+        flowLayout.itemSize = CGSize(width: 170, height: 150)
         collectionView.collectionViewLayout = flowLayout
         flowLayout.scrollDirection = .horizontal
     }

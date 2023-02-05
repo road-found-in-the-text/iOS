@@ -11,29 +11,30 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="BestForumCollectionViewCell" id="gTV-IL-0wX" customClass="BestForumCollectionViewCell" customModule="UMC_iOS_Ver_1" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="185" height="175"/>
+            <rect key="frame" x="0.0" y="0.0" width="185" height="158"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="185" height="175"/>
+                <rect key="frame" x="0.0" y="0.0" width="185" height="158"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ilP-Rb-FxP">
-                        <rect key="frame" x="0.0" y="0.0" width="185" height="175"/>
+                        <rect key="frame" x="0.0" y="0.0" width="185" height="158"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="figure.soccer" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="G8B-TG-fIu">
                                 <rect key="frame" x="0.0" y="-0.3333333333333286" width="185" height="101"/>
+                                <color key="backgroundColor" red="0.55901892009999998" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="FV2-81-7at"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Best Forum1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nhN-jz-jJ3">
-                                <rect key="frame" x="5" y="125" width="175" height="18"/>
+                                <rect key="frame" x="5" y="110" width="175" height="18"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" alignment="firstBaseline" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="S2F-uz-XWr">
-                                <rect key="frame" x="5" y="148" width="98" height="12"/>
+                                <rect key="frame" x="5" y="133" width="98" height="12"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="UpM-gY-7hL">
                                         <rect key="frame" x="0.0" y="0.0" width="32.333333333333336" height="12"/>
@@ -94,14 +95,13 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="S2F-uz-XWr" secondAttribute="bottom" constant="15" id="1Mj-a3-jCJ"/>
                             <constraint firstItem="G8B-TG-fIu" firstAttribute="top" secondItem="ilP-Rb-FxP" secondAttribute="top" id="Cto-rl-MWQ"/>
                             <constraint firstItem="G8B-TG-fIu" firstAttribute="leading" secondItem="ilP-Rb-FxP" secondAttribute="leading" id="KQ0-uh-SaL"/>
                             <constraint firstItem="S2F-uz-XWr" firstAttribute="leading" secondItem="ilP-Rb-FxP" secondAttribute="leading" constant="5" id="YW1-PR-kPh"/>
                             <constraint firstAttribute="trailing" secondItem="S2F-uz-XWr" secondAttribute="trailing" constant="82" id="dMb-nY-TZi"/>
                             <constraint firstAttribute="trailing" secondItem="G8B-TG-fIu" secondAttribute="trailing" id="ftf-WU-XQa"/>
                             <constraint firstAttribute="trailing" secondItem="nhN-jz-jJ3" secondAttribute="trailing" constant="5" id="ocK-df-fCc"/>
-                            <constraint firstItem="nhN-jz-jJ3" firstAttribute="top" secondItem="G8B-TG-fIu" secondAttribute="bottom" constant="25" id="pnJ-9U-bvL"/>
+                            <constraint firstItem="nhN-jz-jJ3" firstAttribute="top" secondItem="G8B-TG-fIu" secondAttribute="bottom" constant="10" id="pnJ-9U-bvL"/>
                             <constraint firstItem="S2F-uz-XWr" firstAttribute="top" secondItem="nhN-jz-jJ3" secondAttribute="bottom" constant="5" id="puF-Rh-XXu"/>
                             <constraint firstItem="nhN-jz-jJ3" firstAttribute="leading" secondItem="ilP-Rb-FxP" secondAttribute="leading" constant="5" id="vpm-iD-yb5"/>
                         </constraints>
@@ -115,7 +115,7 @@
                 <constraint firstAttribute="trailing" secondItem="ilP-Rb-FxP" secondAttribute="trailing" id="a8y-Tp-fDH"/>
                 <constraint firstAttribute="bottom" secondItem="ilP-Rb-FxP" secondAttribute="bottom" id="h2s-cG-4MY"/>
             </constraints>
-            <size key="customSize" width="185" height="175"/>
+            <size key="customSize" width="185" height="158"/>
             <connections>
                 <outlet property="bestForumImage" destination="G8B-TG-fIu" id="hoK-3C-R5d"/>
                 <outlet property="bestForumTitleLabel" destination="nhN-jz-jJ3" id="ioA-gK-R1k"/>
@@ -123,7 +123,7 @@
                 <outlet property="numOfBestForumLikesLabel" destination="Www-pb-njv" id="Q4X-tC-eNz"/>
                 <outlet property="numOfBestForumPhotosLabel" destination="J1J-BG-s7V" id="JE9-4j-Tce"/>
             </connections>
-            <point key="canvasLocation" x="95.419847328244273" y="60.91549295774648"/>
+            <point key="canvasLocation" x="95.419847328244273" y="54.929577464788736"/>
         </collectionViewCell>
     </objects>
     <resources>
