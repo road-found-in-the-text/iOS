@@ -21,7 +21,7 @@ class BestForumTableViewCell: UITableViewCell, UICollectionViewDelegate {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        collectionView.contentInset = .init(top: 0, left: 20, bottom: 0, right: 0)  //collectionview cell 처음 왼쪽 여백 주기
+        collectionView.contentInset = .init(top: 0, left: 15, bottom: 0, right: 0)  //collectionview cell 처음 왼쪽 여백 주기
         
         registerXib()
         registerDelegate()
