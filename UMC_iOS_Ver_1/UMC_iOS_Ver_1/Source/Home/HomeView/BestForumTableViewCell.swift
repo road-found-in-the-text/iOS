@@ -20,6 +20,9 @@ class BestForumTableViewCell: UITableViewCell, UICollectionViewDelegate {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        collectionView.contentInset = .init(top: 0, left: 20, bottom: 0, right: 0)  //collectionview cell 처음 왼쪽 여백 주기
+        
         registerXib()
         registerDelegate()
         collectionViewFlowLayout()
@@ -28,7 +31,7 @@ class BestForumTableViewCell: UITableViewCell, UICollectionViewDelegate {
     //collectionView 레이아웃
     private func collectionViewFlowLayout() {
         let flowLayout: UICollectionViewFlowLayout = UICollectionViewFlowLayout()
-        flowLayout.itemSize = CGSize(width: 170, height: 150)
+        flowLayout.itemSize = CGSize(width: 150, height: 153)
         collectionView.collectionViewLayout = flowLayout
         flowLayout.scrollDirection = .horizontal
     }
