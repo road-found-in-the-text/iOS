@@ -109,6 +109,8 @@
 		898B50392990CB5300D40E69 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898B50382990CB5300D40E69 /* SettingTableViewCell.swift */; };
 		898B503B2990D1A800D40E69 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898B503A2990D1A800D40E69 /* AlarmViewController.swift */; };
 		898B503D2990D29800D40E69 /* AlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898B503C2990D29800D40E69 /* AlarmTableViewCell.swift */; };
+		898B503F2990D7F900D40E69 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898B503E2990D7F900D40E69 /* LanguageViewController.swift */; };
+		898B50412990D8C900D40E69 /* LanguageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898B50402990D8C900D40E69 /* LanguageTableViewCell.swift */; };
 		89C31EE2296DB73D00CBF249 /* Tabman in Frameworks */ = {isa = PBXBuildFile; productRef = 89C31EE1296DB73D00CBF249 /* Tabman */; };
 		89C31EE5296DBDD000CBF249 /* ScriptPracticeRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89C31EE4296DBDD000CBF249 /* ScriptPracticeRecord.storyboard */; };
 		89C31EE7296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C31EE6296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift */; };
@@ -258,6 +260,8 @@
 		898B50382990CB5300D40E69 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
 		898B503A2990D1A800D40E69 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
 		898B503C2990D29800D40E69 /* AlarmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmTableViewCell.swift; sourceTree = "<group>"; };
+		898B503E2990D7F900D40E69 /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
+		898B50402990D8C900D40E69 /* LanguageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageTableViewCell.swift; sourceTree = "<group>"; };
 		89C31EE4296DBDD000CBF249 /* ScriptPracticeRecord.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeRecord.storyboard; sourceTree = "<group>"; };
 		89C31EE6296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeRecordViewController.swift; sourceTree = "<group>"; };
 		89C31EE8296DD8CB00CBF249 /* ImageLabelBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLabelBarButton.swift; sourceTree = "<group>"; };
@@ -647,6 +651,7 @@
 				898B502E2990A1BD00D40E69 /* Setting.storyboard */,
 				898B50302990A1CB00D40E69 /* SettingViewController.swift */,
 				898B503A2990D1A800D40E69 /* AlarmViewController.swift */,
+				898B503E2990D7F900D40E69 /* LanguageViewController.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -665,6 +670,7 @@
 			children = (
 				898B50382990CB5300D40E69 /* SettingTableViewCell.swift */,
 				898B503C2990D29800D40E69 /* AlarmTableViewCell.swift */,
+				898B50402990D8C900D40E69 /* LanguageTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -1020,6 +1026,7 @@
 				89E0B03E29881C60007F6993 /* WriteScriptViewController.swift in Sources */,
 				21A749BB2977AB4E00EBFE82 /* ViewControllerConstants.swift in Sources */,
 				89E0B04129881C86007F6993 /* CreateNewScriptCell.swift in Sources */,
+				898B503F2990D7F900D40E69 /* LanguageViewController.swift in Sources */,
 				5E32FC552969576A0010A376 /* UIViewController.swift in Sources */,
 				5E32FC57296957840010A376 /* UIImageView.swift in Sources */,
 				21D4B6E629791D3600D7B485 /* CustomAlertViewController.swift in Sources */,
@@ -1075,6 +1082,7 @@
 				210A9E8829714A660063972B /* SearchHistoryDataModel.swift in Sources */,
 				895820F42987D79D00D95B18 /* MyPageMyPostViewController.swift in Sources */,
 				210A9E8D29714B100063972B /* SearchKeywordTableViewCell.swift in Sources */,
+				898B50412990D8C900D40E69 /* LanguageTableViewCell.swift in Sources */,
 				89DCF50D2977060500CB2296 /* ScriptPracticeSetViewController.swift in Sources */,
 				5E32FC6929695DE90010A376 /* ScriptPracticeViewController.swift in Sources */,
 				897C634B2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift in Sources */,

@@ -103,10 +103,10 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let alarmViewController = storyboard?.instantiateViewController(withIdentifier: "AlarmViewController") as? AlarmViewController else {
+        guard let languageViewController = storyboard?.instantiateViewController(withIdentifier: "LanguageViewController") as? LanguageViewController else {
             assert(false)
         }
-        navigationController?.pushViewController(alarmViewController, animated: true)
+        navigationController?.pushViewController(languageViewController, animated: true)
     }
     
     
