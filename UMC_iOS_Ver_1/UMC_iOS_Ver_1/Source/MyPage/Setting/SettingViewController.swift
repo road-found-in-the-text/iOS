@@ -19,6 +19,8 @@ class SettingViewController: UIViewController {
         ["이용약관", "개인정보 처리방침"],
         ["비밀번호 변경", "로그아웃", "계정탈퇴"]
     ]
+    private var nextViewControllers = [[UIViewController]]()
+    
     private let sectionHeaderIdentifier = "SectionHeader"
     private let cellIdentifier = "SettingCell"
 
@@ -36,6 +38,14 @@ class SettingViewController: UIViewController {
     func configureTableView() {
         let sectionHeader = UINib(nibName: "SettingHeaderView", bundle: nil)
         tableView.register(sectionHeader, forHeaderFooterViewReuseIdentifier: sectionHeaderIdentifier)
+    }
+    
+    func setNextViewControllers() {
+        guard let alarmViewController = storyboard?.instantiateViewController(withIdentifier: "AlarmViewController") as? AlarmViewController else {
+            assert(false)
+        }
+        
+//        nextViewControllers.append(alarmViewController)
     }
 
 }
@@ -90,6 +100,13 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 5
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let alarmViewController = storyboard?.instantiateViewController(withIdentifier: "AlarmViewController") as? AlarmViewController else {
+            assert(false)
+        }
+        navigationController?.pushViewController(alarmViewController, animated: true)
     }
     
     
