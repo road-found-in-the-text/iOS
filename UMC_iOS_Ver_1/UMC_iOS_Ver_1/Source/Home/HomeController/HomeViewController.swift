@@ -98,6 +98,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             return bestForumcell
         case 1:
             guard let forumCell = tableView.dequeueReusableCell(withIdentifier: "ForumTableViewCell", for: indexPath) as? ForumTableViewCell else { return UITableViewCell() }
+            forumCell.selectionStyle = .none
             return forumCell
         default:
             return UITableViewCell()

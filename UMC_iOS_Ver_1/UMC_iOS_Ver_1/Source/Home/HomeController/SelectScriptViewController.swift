@@ -78,7 +78,18 @@ extension SelectScriptViewController: UITableViewDelegate, UITableViewDataSource
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let scriptCheckCell = tableView.dequeueReusableCell(withIdentifier: "ScriptCheckTableViewCell") as? ScriptCheckTableViewCell else { return UITableViewCell() }
+        scriptCheckCell.selectionStyle = .none
+        
         guard let interviewCheckCell = tableView.dequeueReusableCell(withIdentifier: "InterviewCheckTableViewCell") as? InterviewCheckTableViewCell else { return UITableViewCell() }
         return scriptCheckCell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let selectScripCell = tableView.cellForRow(at: indexPath) as? ScriptCheckTableViewCell else { return }
+        if selectScripCell.checkBox.image == UIImage(named: "ic_CheckBox_UnSelected") {
+            selectScripCell.checkBox.image = UIImage(named: "ic_check square")
+        } else {
+            selectScripCell.checkBox.image = UIImage(named: "ic_CheckBox_UnSelected")
+        }
     }
 }

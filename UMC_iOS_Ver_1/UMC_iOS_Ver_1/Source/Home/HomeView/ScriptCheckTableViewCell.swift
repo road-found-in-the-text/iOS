@@ -9,6 +9,8 @@ import UIKit
 
 class ScriptCheckTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var checkBox: UIImageView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

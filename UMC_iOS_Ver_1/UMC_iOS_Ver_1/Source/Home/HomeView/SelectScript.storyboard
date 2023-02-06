@@ -156,6 +156,9 @@
                                                         <constraint firstAttribute="trailingMargin" secondItem="ByF-Zt-Q05" secondAttribute="trailing" constant="8" id="wrK-h5-a1V"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
+                                                <connections>
+                                                    <outlet property="checkBox" destination="esi-sE-z1D" id="VVB-MN-TC6"/>
+                                                </connections>
                                             </tableViewCell>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="InterviewCheckCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="InterviewCheckTableViewCell" id="4WG-Pe-NaW" customClass="InterviewCheckTableViewCell" customModule="UMC_iOS_Ver_1" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="202.33332824707031" width="375" height="152.33332824707031"/>
