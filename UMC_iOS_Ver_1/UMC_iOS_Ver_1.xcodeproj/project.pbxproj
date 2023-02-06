@@ -90,14 +90,18 @@
 		895820FE2987FBFA00D95B18 /* MyPageMyCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895820FD2987FBFA00D95B18 /* MyPageMyCommentViewController.swift */; };
 		896854B32975564200E70868 /* ScriptRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896854B22975564200E70868 /* ScriptRecord.storyboard */; };
 		896854B52975565400E70868 /* ScriptRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896854B42975565400E70868 /* ScriptRecordViewController.swift */; };
-		8971E9EA29890ED200DF6ACD /* PracticeQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971E9E929890ED200DF6ACD /* PracticeQuestion.swift */; };
 		896F42E529869C4800677A05 /* MyPageStorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F42E429869C4800677A05 /* MyPageStorageViewController.swift */; };
 		896F42E829869F7B00677A05 /* MyPageStorageTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 896F42E729869F7B00677A05 /* MyPageStorageTableHeaderView.xib */; };
 		896F42EA29869FB100677A05 /* MyPageStorageTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F42E929869FB100677A05 /* MyPageStorageTableHeaderView.swift */; };
+		8971E9EA29890ED200DF6ACD /* PracticeQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971E9E929890ED200DF6ACD /* PracticeQuestion.swift */; };
 		897C634B2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C634A2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift */; };
 		897C634D2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C634C2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift */; };
 		897C634F2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C634E2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift */; };
 		897C63512976BA6900CCF25F /* ScriptRecordMemoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C63502976BA6900CCF25F /* ScriptRecordMemoCollectionViewCell.swift */; };
+		898B502629907E6C00D40E69 /* UserPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898B502529907E6C00D40E69 /* UserPageViewController.swift */; };
+		898B502829907E8300D40E69 /* UserPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 898B502729907E8300D40E69 /* UserPage.storyboard */; };
+		898B502A2990849B00D40E69 /* UserPageSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898B50292990849B00D40E69 /* UserPageSectionHeaderView.swift */; };
+		898B502C299084BD00D40E69 /* UserPageSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 898B502B299084BD00D40E69 /* UserPageSectionHeaderView.xib */; };
 		89C31EE2296DB73D00CBF249 /* Tabman in Frameworks */ = {isa = PBXBuildFile; productRef = 89C31EE1296DB73D00CBF249 /* Tabman */; };
 		89C31EE5296DBDD000CBF249 /* ScriptPracticeRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89C31EE4296DBDD000CBF249 /* ScriptPracticeRecord.storyboard */; };
 		89C31EE7296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C31EE6296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift */; };
@@ -109,13 +113,13 @@
 		89CD522029744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD521F29744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift */; };
 		89DCF50B2977060000CB2296 /* ScriptPracticeSet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89DCF50A2977060000CB2296 /* ScriptPracticeSet.storyboard */; };
 		89DCF50D2977060500CB2296 /* ScriptPracticeSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCF50C2977060500CB2296 /* ScriptPracticeSetViewController.swift */; };
-		89EACA0529878345003ACDD6 /* MyPageStorageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EACA0429878345003ACDD6 /* MyPageStorageTableViewCell.swift */; };
-		89EACA0A2987A12B003ACDD6 /* HPParallaxHeader in Frameworks */ = {isa = PBXBuildFile; productRef = 89EACA092987A12B003ACDD6 /* HPParallaxHeader */; };
 		89E0B03A29881C2E007F6993 /* CreateNewScriptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E0B03929881C2E007F6993 /* CreateNewScriptViewController.swift */; };
 		89E0B03C29881C46007F6993 /* ScriptNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E0B03B29881C46007F6993 /* ScriptNavigationViewController.swift */; };
 		89E0B03E29881C60007F6993 /* WriteScriptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E0B03D29881C60007F6993 /* WriteScriptViewController.swift */; };
 		89E0B04129881C86007F6993 /* CreateNewScriptCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E0B04029881C86007F6993 /* CreateNewScriptCell.swift */; };
 		89E0B04329881C97007F6993 /* ScriptListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E0B04229881C97007F6993 /* ScriptListTableViewCell.swift */; };
+		89EACA0529878345003ACDD6 /* MyPageStorageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EACA0429878345003ACDD6 /* MyPageStorageTableViewCell.swift */; };
+		89EACA0A2987A12B003ACDD6 /* HPParallaxHeader in Frameworks */ = {isa = PBXBuildFile; productRef = 89EACA092987A12B003ACDD6 /* HPParallaxHeader */; };
 		9419EEF196C59F8A276BC2C0 /* Pods_UMC_iOS_Ver_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B928E9BB947B94197FC9A1 /* Pods_UMC_iOS_Ver_1.framework */; };
 		9627E4EC12C0657B54F74B64 /* Pods_UMC_iOS_Ver_1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D71B72BC0CFA2711D70661A /* Pods_UMC_iOS_Ver_1Tests.framework */; };
 /* End PBXBuildFile section */
@@ -228,14 +232,18 @@
 		895820FD2987FBFA00D95B18 /* MyPageMyCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageMyCommentViewController.swift; sourceTree = "<group>"; };
 		896854B22975564200E70868 /* ScriptRecord.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptRecord.storyboard; sourceTree = "<group>"; };
 		896854B42975565400E70868 /* ScriptRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordViewController.swift; sourceTree = "<group>"; };
-		8971E9E929890ED200DF6ACD /* PracticeQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeQuestion.swift; sourceTree = "<group>"; };
 		896F42E429869C4800677A05 /* MyPageStorageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageStorageViewController.swift; sourceTree = "<group>"; };
 		896F42E729869F7B00677A05 /* MyPageStorageTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPageStorageTableHeaderView.xib; sourceTree = "<group>"; };
 		896F42E929869FB100677A05 /* MyPageStorageTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageStorageTableHeaderView.swift; sourceTree = "<group>"; };
+		8971E9E929890ED200DF6ACD /* PracticeQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeQuestion.swift; sourceTree = "<group>"; };
 		897C634A2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordCollectionReusableView.swift; sourceTree = "<group>"; };
 		897C634C2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordResultCollectionViewCell.swift; sourceTree = "<group>"; };
 		897C634E2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordChartCollectionViewCell.swift; sourceTree = "<group>"; };
 		897C63502976BA6900CCF25F /* ScriptRecordMemoCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordMemoCollectionViewCell.swift; sourceTree = "<group>"; };
+		898B502529907E6C00D40E69 /* UserPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPageViewController.swift; sourceTree = "<group>"; };
+		898B502729907E8300D40E69 /* UserPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserPage.storyboard; sourceTree = "<group>"; };
+		898B50292990849B00D40E69 /* UserPageSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPageSectionHeaderView.swift; sourceTree = "<group>"; };
+		898B502B299084BD00D40E69 /* UserPageSectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserPageSectionHeaderView.xib; sourceTree = "<group>"; };
 		89C31EE4296DBDD000CBF249 /* ScriptPracticeRecord.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeRecord.storyboard; sourceTree = "<group>"; };
 		89C31EE6296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeRecordViewController.swift; sourceTree = "<group>"; };
 		89C31EE8296DD8CB00CBF249 /* ImageLabelBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLabelBarButton.swift; sourceTree = "<group>"; };
@@ -245,12 +253,12 @@
 		89CD521F29744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeRecordResultViewController.swift; sourceTree = "<group>"; };
 		89DCF50A2977060000CB2296 /* ScriptPracticeSet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeSet.storyboard; sourceTree = "<group>"; };
 		89DCF50C2977060500CB2296 /* ScriptPracticeSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeSetViewController.swift; sourceTree = "<group>"; };
-		89EACA0429878345003ACDD6 /* MyPageStorageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageStorageTableViewCell.swift; sourceTree = "<group>"; };
 		89E0B03929881C2E007F6993 /* CreateNewScriptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewScriptViewController.swift; sourceTree = "<group>"; };
 		89E0B03B29881C46007F6993 /* ScriptNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptNavigationViewController.swift; sourceTree = "<group>"; };
 		89E0B03D29881C60007F6993 /* WriteScriptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteScriptViewController.swift; sourceTree = "<group>"; };
 		89E0B04029881C86007F6993 /* CreateNewScriptCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewScriptCell.swift; sourceTree = "<group>"; };
 		89E0B04229881C97007F6993 /* ScriptListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptListTableViewCell.swift; sourceTree = "<group>"; };
+		89EACA0429878345003ACDD6 /* MyPageStorageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageStorageTableViewCell.swift; sourceTree = "<group>"; };
 		9605E6568465799CFD279686 /* Pods-UMC_iOS_Ver_1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC_iOS_Ver_1Tests.release.xcconfig"; path = "Target Support Files/Pods-UMC_iOS_Ver_1Tests/Pods-UMC_iOS_Ver_1Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A0DB99903F02E1B48D715375 /* Pods-UMC_iOS_Ver_1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC_iOS_Ver_1Tests.debug.xcconfig"; path = "Target Support Files/Pods-UMC_iOS_Ver_1Tests/Pods-UMC_iOS_Ver_1Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B6F6FA7EC2A2DF7ADD8C68E3 /* Pods_UMC_iOS_Ver_1_UMC_iOS_Ver_1UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UMC_iOS_Ver_1_UMC_iOS_Ver_1UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -489,6 +497,8 @@
 				896F42E429869C4800677A05 /* MyPageStorageViewController.swift */,
 				895820F32987D79D00D95B18 /* MyPageMyPostViewController.swift */,
 				895820FD2987FBFA00D95B18 /* MyPageMyCommentViewController.swift */,
+				898B502729907E8300D40E69 /* UserPage.storyboard */,
+				898B502529907E6C00D40E69 /* UserPageViewController.swift */,
 			);
 			path = MyPage;
 			sourceTree = "<group>";
@@ -582,14 +592,6 @@
 			path = ScriptRecord;
 			sourceTree = "<group>";
 		};
-		8971E9E829890E7400DF6ACD /* Entity */ = {
-			isa = PBXGroup;
-			children = (
-				8971E9E929890ED200DF6ACD /* PracticeQuestion.swift */,
-			);
-			path = Entity;
-            sourceTree = "<group>";
-        };
 		896F42E629869F6100677A05 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -597,8 +599,18 @@
 				896F42E929869FB100677A05 /* MyPageStorageTableHeaderView.swift */,
 				895820EF2987A8D600D95B18 /* MyPageProfileView.xib */,
 				895820ED2987A8CC00D95B18 /* MyPageProfileView.swift */,
+				898B502B299084BD00D40E69 /* UserPageSectionHeaderView.xib */,
+				898B50292990849B00D40E69 /* UserPageSectionHeaderView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		8971E9E829890E7400DF6ACD /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				8971E9E929890ED200DF6ACD /* PracticeQuestion.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		897C63492976B7E700CCF25F /* Cell */ = {
@@ -650,21 +662,21 @@
 			path = ScriptPracticeSet;
 			sourceTree = "<group>";
 		};
+		89E0B03F29881C77007F6993 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				89E0B04029881C86007F6993 /* CreateNewScriptCell.swift */,
+				89E0B04229881C97007F6993 /* ScriptListTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		89EACA032987832D003ACDD6 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
 				89EACA0429878345003ACDD6 /* MyPageStorageTableViewCell.swift */,
 				895820F92987E41600D95B18 /* MyPagePostTableViewCell.swift */,
 				895820FA2987E41600D95B18 /* MyPagePostTableViewCell.xib */,
-            );
-            path = Cell;
-            sourceTree = "<group>";
-        };
-		89E0B03F29881C77007F6993 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				89E0B04029881C86007F6993 /* CreateNewScriptCell.swift */,
-				89E0B04229881C97007F6993 /* ScriptListTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -788,6 +800,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				898B502829907E8300D40E69 /* UserPage.storyboard in Resources */,
 				896F42E829869F7B00677A05 /* MyPageStorageTableHeaderView.xib in Resources */,
 				218DA90D297084B200D76C03 /* ForumTableViewCell.xib in Resources */,
 				21D4B6E429791A8200D7B485 /* ReportAlert.storyboard in Resources */,
@@ -810,6 +823,7 @@
 				89CD521E29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard in Resources */,
 				89273C0B2977CAE600208B6D /* ScriptPT.storyboard in Resources */,
 				5E32FC1B296955930010A376 /* Assets.xcassets in Resources */,
+				898B502C299084BD00D40E69 /* UserPageSectionHeaderView.xib in Resources */,
 				210A9E8429713D9B0063972B /* Search.storyboard in Resources */,
 				5E32FC6529695CFC0010A376 /* InterviewPractice.storyboard in Resources */,
 				895820FC2987E41600D95B18 /* MyPagePostTableViewCell.xib in Resources */,
@@ -981,6 +995,7 @@
 				8932B509297E81580054D9A4 /* ScriptPracticeRecordRoadingViewController.swift in Sources */,
 				89273C0D2977CAEF00208B6D /* ScriptPTViewController.swift in Sources */,
 				2174690F29828662006B7950 /* PostCommentDataModel.swift in Sources */,
+				898B502629907E6C00D40E69 /* UserPageViewController.swift in Sources */,
 				89E0B03C29881C46007F6993 /* ScriptNavigationViewController.swift in Sources */,
 				5E32FC14296955910010A376 /* SceneDelegate.swift in Sources */,
 				21D1B40E29879A0300CDBE05 /* NestedCommentTableViewCell.swift in Sources */,
@@ -996,6 +1011,7 @@
 				896F42EA29869FB100677A05 /* MyPageStorageTableHeaderView.swift in Sources */,
 				218DA9052970847F00D76C03 /* BestForumCollectionViewCell.swift in Sources */,
 				21A6B4B42980FED300F084F6 /* PostCommentsTableViewCell.swift in Sources */,
+				898B502A2990849B00D40E69 /* UserPageSectionHeaderView.swift in Sources */,
 				5E32FC6929695DE90010A376 /* ScriptPracticeViewController.swift in Sources */,
 				895820F22987ACFA00D95B18 /* MyPageScrollViewController.swift in Sources */,
 				896F42E529869C4800677A05 /* MyPageStorageViewController.swift in Sources */,
