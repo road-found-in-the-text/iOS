@@ -22,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             appearance.configureWithOpaqueBackground()
             appearance.setBackIndicatorImage(UIImage(named: "ic_chevron left"), transitionMaskImage: UIImage(named: "ic_chevron left"))
             appearance.shadowColor = .clear
-                        appearance.shadowImage = UIImage()
+            appearance.shadowImage = UIImage()
             UINavigationBar.appearance().standardAppearance = appearance
             UINavigationBar.appearance().scrollEdgeAppearance = appearance
         }
