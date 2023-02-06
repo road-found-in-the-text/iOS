@@ -9,6 +9,7 @@ import UIKit
 
 class SettingHeaderView: UITableViewHeaderFooterView {
     
+    @IBOutlet var separatorView: UIView!
     @IBOutlet var titleLabel: UILabel!
 
 }

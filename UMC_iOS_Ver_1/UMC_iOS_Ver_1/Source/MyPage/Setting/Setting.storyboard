@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,9 +17,54 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="mdd-Nd-MK3">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mdd-Nd-MK3">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="SettingCell" rowHeight="52" id="g1N-F6-8dR" customClass="SettingTableViewCell" customModule="UMC_iOS_Ver_1" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="55.333332061767578" width="393" height="52"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="g1N-F6-8dR" id="CrL-wN-cLW">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="52"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yV7-rs-vPw">
+                                                    <rect key="frame" x="15.999999999999996" y="16.333333333333336" width="39.666666666666657" height="19.333333333333336"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ocd-sN-13E">
+                                                    <rect key="frame" x="337" y="16" width="40" height="20"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" name="Sub1"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_Detail" translatesAutoresizingMaskIntoConstraints="NO" id="G5k-qQ-caO">
+                                                    <rect key="frame" x="353" y="14" width="24" height="24"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="24" id="3Gq-o5-cG0"/>
+                                                        <constraint firstAttribute="height" constant="24" id="PU5-bP-MD9"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="yV7-rs-vPw" firstAttribute="centerY" secondItem="CrL-wN-cLW" secondAttribute="centerY" id="2MM-uA-BmO"/>
+                                                <constraint firstAttribute="trailing" secondItem="G5k-qQ-caO" secondAttribute="trailing" constant="16" id="4xH-NS-a6o"/>
+                                                <constraint firstItem="yV7-rs-vPw" firstAttribute="leading" secondItem="CrL-wN-cLW" secondAttribute="leading" constant="16" id="X0w-0Z-ubZ"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ocd-sN-13E" secondAttribute="trailing" constant="16" id="YeG-D9-2fV"/>
+                                                <constraint firstItem="G5k-qQ-caO" firstAttribute="centerY" secondItem="CrL-wN-cLW" secondAttribute="centerY" id="kK0-fk-Xcx"/>
+                                                <constraint firstItem="Ocd-sN-13E" firstAttribute="centerY" secondItem="CrL-wN-cLW" secondAttribute="centerY" id="xjA-qw-sqP"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="chevronImageView" destination="G5k-qQ-caO" id="FnB-qp-Sjs"/>
+                                            <outlet property="emailLabel" destination="Ocd-sN-13E" id="bRv-xn-6Qx"/>
+                                            <outlet property="titleLabel" destination="yV7-rs-vPw" id="YnI-yy-GuF"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="Y6W-OH-hqX" id="zl0-gn-a5q"/>
                                     <outlet property="delegate" destination="Y6W-OH-hqX" id="uNA-ct-jN1"/>
@@ -40,10 +86,14 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="57" y="-2"/>
+            <point key="canvasLocation" x="55.725190839694655" y="-2.1126760563380285"/>
         </scene>
     </scenes>
     <resources>
+        <image name="ic_Detail" width="24" height="24"/>
+        <namedColor name="Sub1">
+            <color red="0.32156862745098042" green="0.38039215686274508" blue="0.41568627450980394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
