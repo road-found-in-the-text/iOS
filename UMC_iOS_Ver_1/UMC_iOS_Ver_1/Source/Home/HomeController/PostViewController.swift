@@ -13,14 +13,20 @@ class PostViewController: UIViewController {
     let minImageTopHeight: CGFloat = 80
     var lastRowInLastSection = 0
     
-    @IBOutlet weak var representativeImage: UIView!
+    @IBOutlet weak var topImage: UIView!
     @IBOutlet weak var postTableView: UITableView!
     @IBOutlet weak var commentTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.title = "Forum"
+        navigationController?.navigationBar.topItem?.title = ""         //back 버튼 title 없애기
+        self.navigationController?.navigationBar.tintColor = .white     //navigationbar item 색깔 변경
+       
+        
+        
         initPostTableView()
-        transparentNavigationBar()
         registerXib()
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "ic_more"), style: .plain, target: self, action: #selector(reportTapped))     //네이게이션바 오른쪽 버튼 생성
@@ -38,14 +44,6 @@ class PostViewController: UIViewController {
         postTableView.register(numOfCommentsCell, forCellReuseIdentifier: "NumOfCommentsTableViewCell")
         let postCommetnsCell = UINib(nibName: "PostCommentsTableViewCell", bundle: nil)
         postTableView.register(postCommetnsCell, forCellReuseIdentifier: "PostCommentsTableViewCell")
-    }
-    
-    //navigationBar 투명하게 하기
-    func transparentNavigationBar() {
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.isTranslucent = true
-        self.navigationController?.navigationBar.backgroundColor = .clear
     }
     
     //tableView 초기 설정
@@ -117,6 +115,6 @@ extension PostViewController: UITableViewDelegate, UITableViewDataSource, UIScro
         let y: CGFloat = -scrollView.contentOffset.y
         let ratio = y / (maxImageTopHeight - minImageTopHeight)
         
-        representativeImage.alpha = ratio - 0.3
+        topImage.alpha = ratio - 0.3
     }
 }

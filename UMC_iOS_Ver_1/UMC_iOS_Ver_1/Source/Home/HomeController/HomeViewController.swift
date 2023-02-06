@@ -26,9 +26,13 @@ class HomeViewController: UIViewController {
     
     func navigationBarTitle() {
         let titleLabel = UILabel()
-        titleLabel.textColor = UIColor.black
-        titleLabel.text = "글길"
-        titleLabel.font = UIFont.systemFont(ofSize: 17, weight: .bold)
+        let originalString = ""
+        let attachment = NSTextAttachment()
+        attachment.image = UIImage(named: "title2")
+        let attachmentString = NSAttributedString(attachment: attachment)
+        let contentString = NSMutableAttributedString(string: originalString)
+        contentString.append(attachmentString)
+        titleLabel.attributedText = contentString
         self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: titleLabel)
     }
     
