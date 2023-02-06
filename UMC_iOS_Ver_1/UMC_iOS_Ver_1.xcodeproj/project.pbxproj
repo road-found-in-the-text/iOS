@@ -30,6 +30,8 @@
 		2195E0F0297672AA00203C49 /* Report.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2195E0EF297672AA00203C49 /* Report.storyboard */; };
 		2196C3882988F53700EFC282 /* SelectScript.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2196C3872988F53700EFC282 /* SelectScript.storyboard */; };
 		2196C38A2988F55A00EFC282 /* SelectScriptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2196C3892988F55A00EFC282 /* SelectScriptViewController.swift */; };
+		21995FF42991067100533F33 /* ScriptCheckTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21995FF32991067100533F33 /* ScriptCheckTableViewCell.swift */; };
+		21995FF62991067D00533F33 /* InterviewCheckTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21995FF52991067D00533F33 /* InterviewCheckTableViewCell.swift */; };
 		21A6B4A82980E70200F084F6 /* PostContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6B4A62980E70200F084F6 /* PostContentTableViewCell.swift */; };
 		21A6B4A92980E70200F084F6 /* PostContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21A6B4A72980E70200F084F6 /* PostContentTableViewCell.xib */; };
 		21A6B4AC2980F76A00F084F6 /* NumofLikesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6B4AA2980F76A00F084F6 /* NumofLikesTableViewCell.swift */; };
@@ -90,10 +92,10 @@
 		895820FE2987FBFA00D95B18 /* MyPageMyCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895820FD2987FBFA00D95B18 /* MyPageMyCommentViewController.swift */; };
 		896854B32975564200E70868 /* ScriptRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896854B22975564200E70868 /* ScriptRecord.storyboard */; };
 		896854B52975565400E70868 /* ScriptRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896854B42975565400E70868 /* ScriptRecordViewController.swift */; };
-		8971E9EA29890ED200DF6ACD /* PracticeQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971E9E929890ED200DF6ACD /* PracticeQuestion.swift */; };
 		896F42E529869C4800677A05 /* MyPageStorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F42E429869C4800677A05 /* MyPageStorageViewController.swift */; };
 		896F42E829869F7B00677A05 /* MyPageStorageTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 896F42E729869F7B00677A05 /* MyPageStorageTableHeaderView.xib */; };
 		896F42EA29869FB100677A05 /* MyPageStorageTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F42E929869FB100677A05 /* MyPageStorageTableHeaderView.swift */; };
+		8971E9EA29890ED200DF6ACD /* PracticeQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971E9E929890ED200DF6ACD /* PracticeQuestion.swift */; };
 		897C634B2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C634A2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift */; };
 		897C634D2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C634C2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift */; };
 		897C634F2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C634E2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift */; };
@@ -109,13 +111,13 @@
 		89CD522029744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD521F29744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift */; };
 		89DCF50B2977060000CB2296 /* ScriptPracticeSet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89DCF50A2977060000CB2296 /* ScriptPracticeSet.storyboard */; };
 		89DCF50D2977060500CB2296 /* ScriptPracticeSetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89DCF50C2977060500CB2296 /* ScriptPracticeSetViewController.swift */; };
-		89EACA0529878345003ACDD6 /* MyPageStorageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EACA0429878345003ACDD6 /* MyPageStorageTableViewCell.swift */; };
-		89EACA0A2987A12B003ACDD6 /* HPParallaxHeader in Frameworks */ = {isa = PBXBuildFile; productRef = 89EACA092987A12B003ACDD6 /* HPParallaxHeader */; };
 		89E0B03A29881C2E007F6993 /* CreateNewScriptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E0B03929881C2E007F6993 /* CreateNewScriptViewController.swift */; };
 		89E0B03C29881C46007F6993 /* ScriptNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E0B03B29881C46007F6993 /* ScriptNavigationViewController.swift */; };
 		89E0B03E29881C60007F6993 /* WriteScriptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E0B03D29881C60007F6993 /* WriteScriptViewController.swift */; };
 		89E0B04129881C86007F6993 /* CreateNewScriptCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E0B04029881C86007F6993 /* CreateNewScriptCell.swift */; };
 		89E0B04329881C97007F6993 /* ScriptListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E0B04229881C97007F6993 /* ScriptListTableViewCell.swift */; };
+		89EACA0529878345003ACDD6 /* MyPageStorageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EACA0429878345003ACDD6 /* MyPageStorageTableViewCell.swift */; };
+		89EACA0A2987A12B003ACDD6 /* HPParallaxHeader in Frameworks */ = {isa = PBXBuildFile; productRef = 89EACA092987A12B003ACDD6 /* HPParallaxHeader */; };
 		9419EEF196C59F8A276BC2C0 /* Pods_UMC_iOS_Ver_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B928E9BB947B94197FC9A1 /* Pods_UMC_iOS_Ver_1.framework */; };
 		9627E4EC12C0657B54F74B64 /* Pods_UMC_iOS_Ver_1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D71B72BC0CFA2711D70661A /* Pods_UMC_iOS_Ver_1Tests.framework */; };
 /* End PBXBuildFile section */
@@ -163,6 +165,8 @@
 		2195E0EF297672AA00203C49 /* Report.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Report.storyboard; sourceTree = "<group>"; };
 		2196C3872988F53700EFC282 /* SelectScript.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectScript.storyboard; sourceTree = "<group>"; };
 		2196C3892988F55A00EFC282 /* SelectScriptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectScriptViewController.swift; sourceTree = "<group>"; };
+		21995FF32991067100533F33 /* ScriptCheckTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptCheckTableViewCell.swift; sourceTree = "<group>"; };
+		21995FF52991067D00533F33 /* InterviewCheckTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewCheckTableViewCell.swift; sourceTree = "<group>"; };
 		21A6B4A62980E70200F084F6 /* PostContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostContentTableViewCell.swift; sourceTree = "<group>"; };
 		21A6B4A72980E70200F084F6 /* PostContentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostContentTableViewCell.xib; sourceTree = "<group>"; };
 		21A6B4AA2980F76A00F084F6 /* NumofLikesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumofLikesTableViewCell.swift; sourceTree = "<group>"; };
@@ -228,10 +232,10 @@
 		895820FD2987FBFA00D95B18 /* MyPageMyCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageMyCommentViewController.swift; sourceTree = "<group>"; };
 		896854B22975564200E70868 /* ScriptRecord.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptRecord.storyboard; sourceTree = "<group>"; };
 		896854B42975565400E70868 /* ScriptRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordViewController.swift; sourceTree = "<group>"; };
-		8971E9E929890ED200DF6ACD /* PracticeQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeQuestion.swift; sourceTree = "<group>"; };
 		896F42E429869C4800677A05 /* MyPageStorageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageStorageViewController.swift; sourceTree = "<group>"; };
 		896F42E729869F7B00677A05 /* MyPageStorageTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPageStorageTableHeaderView.xib; sourceTree = "<group>"; };
 		896F42E929869FB100677A05 /* MyPageStorageTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageStorageTableHeaderView.swift; sourceTree = "<group>"; };
+		8971E9E929890ED200DF6ACD /* PracticeQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeQuestion.swift; sourceTree = "<group>"; };
 		897C634A2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordCollectionReusableView.swift; sourceTree = "<group>"; };
 		897C634C2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordResultCollectionViewCell.swift; sourceTree = "<group>"; };
 		897C634E2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordChartCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -245,12 +249,12 @@
 		89CD521F29744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeRecordResultViewController.swift; sourceTree = "<group>"; };
 		89DCF50A2977060000CB2296 /* ScriptPracticeSet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeSet.storyboard; sourceTree = "<group>"; };
 		89DCF50C2977060500CB2296 /* ScriptPracticeSetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeSetViewController.swift; sourceTree = "<group>"; };
-		89EACA0429878345003ACDD6 /* MyPageStorageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageStorageTableViewCell.swift; sourceTree = "<group>"; };
 		89E0B03929881C2E007F6993 /* CreateNewScriptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewScriptViewController.swift; sourceTree = "<group>"; };
 		89E0B03B29881C46007F6993 /* ScriptNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptNavigationViewController.swift; sourceTree = "<group>"; };
 		89E0B03D29881C60007F6993 /* WriteScriptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteScriptViewController.swift; sourceTree = "<group>"; };
 		89E0B04029881C86007F6993 /* CreateNewScriptCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewScriptCell.swift; sourceTree = "<group>"; };
 		89E0B04229881C97007F6993 /* ScriptListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptListTableViewCell.swift; sourceTree = "<group>"; };
+		89EACA0429878345003ACDD6 /* MyPageStorageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageStorageTableViewCell.swift; sourceTree = "<group>"; };
 		9605E6568465799CFD279686 /* Pods-UMC_iOS_Ver_1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC_iOS_Ver_1Tests.release.xcconfig"; path = "Target Support Files/Pods-UMC_iOS_Ver_1Tests/Pods-UMC_iOS_Ver_1Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A0DB99903F02E1B48D715375 /* Pods-UMC_iOS_Ver_1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC_iOS_Ver_1Tests.debug.xcconfig"; path = "Target Support Files/Pods-UMC_iOS_Ver_1Tests/Pods-UMC_iOS_Ver_1Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B6F6FA7EC2A2DF7ADD8C68E3 /* Pods_UMC_iOS_Ver_1_UMC_iOS_Ver_1UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UMC_iOS_Ver_1_UMC_iOS_Ver_1UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -317,10 +321,10 @@
 				216023A329708131009DA16E /* Home.storyboard */,
 				210A9E8329713D9B0063972B /* Search.storyboard */,
 				211E919B29741B8E00BD406C /* AddPost.storyboard */,
+				2196C3872988F53700EFC282 /* SelectScript.storyboard */,
 				2138123F2977A58700EC7B26 /* Post.storyboard */,
 				2195E0EF297672AA00203C49 /* Report.storyboard */,
 				21D4B6E329791A8200D7B485 /* ReportAlert.storyboard */,
-				2196C3872988F53700EFC282 /* SelectScript.storyboard */,
 				218DA9032970847F00D76C03 /* BestForumCollectionViewCell.swift */,
 				218DA9042970847F00D76C03 /* BestForumCollectionViewCell.xib */,
 				218DA90C297084B200D76C03 /* BestForumTableViewCell.swift */,
@@ -341,6 +345,8 @@
 				21A6B4B32980FED300F084F6 /* PostCommentsTableViewCell.xib */,
 				21D1B40C29879A0300CDBE05 /* NestedCommentTableViewCell.swift */,
 				21D1B40D29879A0300CDBE05 /* NestedCommentTableViewCell.xib */,
+				21995FF32991067100533F33 /* ScriptCheckTableViewCell.swift */,
+				21995FF52991067D00533F33 /* InterviewCheckTableViewCell.swift */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -582,14 +588,6 @@
 			path = ScriptRecord;
 			sourceTree = "<group>";
 		};
-		8971E9E829890E7400DF6ACD /* Entity */ = {
-			isa = PBXGroup;
-			children = (
-				8971E9E929890ED200DF6ACD /* PracticeQuestion.swift */,
-			);
-			path = Entity;
-            sourceTree = "<group>";
-        };
 		896F42E629869F6100677A05 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -599,6 +597,14 @@
 				895820ED2987A8CC00D95B18 /* MyPageProfileView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		8971E9E829890E7400DF6ACD /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				8971E9E929890ED200DF6ACD /* PracticeQuestion.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		897C63492976B7E700CCF25F /* Cell */ = {
@@ -650,21 +656,21 @@
 			path = ScriptPracticeSet;
 			sourceTree = "<group>";
 		};
+		89E0B03F29881C77007F6993 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				89E0B04029881C86007F6993 /* CreateNewScriptCell.swift */,
+				89E0B04229881C97007F6993 /* ScriptListTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		89EACA032987832D003ACDD6 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
 				89EACA0429878345003ACDD6 /* MyPageStorageTableViewCell.swift */,
 				895820F92987E41600D95B18 /* MyPagePostTableViewCell.swift */,
 				895820FA2987E41600D95B18 /* MyPagePostTableViewCell.xib */,
-            );
-            path = Cell;
-            sourceTree = "<group>";
-        };
-		89E0B03F29881C77007F6993 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				89E0B04029881C86007F6993 /* CreateNewScriptCell.swift */,
-				89E0B04229881C97007F6993 /* ScriptListTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -967,6 +973,7 @@
 				21A6B4AC2980F76A00F084F6 /* NumofLikesTableViewCell.swift in Sources */,
 				89CD522029744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift in Sources */,
 				21A6B4B02980FA4B00F084F6 /* NumOfCommentsTableViewCell.swift in Sources */,
+				21995FF62991067D00533F33 /* InterviewCheckTableViewCell.swift in Sources */,
 				5E32FC51296957350010A376 /* String.swift in Sources */,
 				897C634F2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift in Sources */,
 				89273C062977A80100208B6D /* ScriptPTCollectionViewCell.swift in Sources */,
@@ -999,6 +1006,7 @@
 				5E32FC6929695DE90010A376 /* ScriptPracticeViewController.swift in Sources */,
 				895820F22987ACFA00D95B18 /* MyPageScrollViewController.swift in Sources */,
 				896F42E529869C4800677A05 /* MyPageStorageViewController.swift in Sources */,
+				21995FF42991067100533F33 /* ScriptCheckTableViewCell.swift in Sources */,
 				21EB2F83297FD47600259C6D /* UserProfileTableViewCell.swift in Sources */,
 				89E0B04329881C97007F6993 /* ScriptListTableViewCell.swift in Sources */,
 				2133B7A5297419290037D85D /* AddPostViewController.swift in Sources */,
