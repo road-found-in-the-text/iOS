@@ -102,6 +102,8 @@
 		898B502829907E8300D40E69 /* UserPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 898B502729907E8300D40E69 /* UserPage.storyboard */; };
 		898B502A2990849B00D40E69 /* UserPageSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898B50292990849B00D40E69 /* UserPageSectionHeaderView.swift */; };
 		898B502C299084BD00D40E69 /* UserPageSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 898B502B299084BD00D40E69 /* UserPageSectionHeaderView.xib */; };
+		898B502F2990A1BD00D40E69 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 898B502E2990A1BD00D40E69 /* Setting.storyboard */; };
+		898B50312990A1CB00D40E69 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898B50302990A1CB00D40E69 /* SettingViewController.swift */; };
 		89C31EE2296DB73D00CBF249 /* Tabman in Frameworks */ = {isa = PBXBuildFile; productRef = 89C31EE1296DB73D00CBF249 /* Tabman */; };
 		89C31EE5296DBDD000CBF249 /* ScriptPracticeRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89C31EE4296DBDD000CBF249 /* ScriptPracticeRecord.storyboard */; };
 		89C31EE7296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C31EE6296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift */; };
@@ -244,6 +246,8 @@
 		898B502729907E8300D40E69 /* UserPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UserPage.storyboard; sourceTree = "<group>"; };
 		898B50292990849B00D40E69 /* UserPageSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPageSectionHeaderView.swift; sourceTree = "<group>"; };
 		898B502B299084BD00D40E69 /* UserPageSectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserPageSectionHeaderView.xib; sourceTree = "<group>"; };
+		898B502E2990A1BD00D40E69 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		898B50302990A1CB00D40E69 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		89C31EE4296DBDD000CBF249 /* ScriptPracticeRecord.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeRecord.storyboard; sourceTree = "<group>"; };
 		89C31EE6296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeRecordViewController.swift; sourceTree = "<group>"; };
 		89C31EE8296DD8CB00CBF249 /* ImageLabelBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLabelBarButton.swift; sourceTree = "<group>"; };
@@ -489,6 +493,7 @@
 		5E32FC5F29695C7A0010A376 /* MyPage */ = {
 			isa = PBXGroup;
 			children = (
+				898B502D2990A17E00D40E69 /* Setting */,
 				89EACA032987832D003ACDD6 /* Cell */,
 				896F42E629869F6100677A05 /* View */,
 				5E32FC6629695D060010A376 /* MyPage.storyboard */,
@@ -622,6 +627,15 @@
 				897C63502976BA6900CCF25F /* ScriptRecordMemoCollectionViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		898B502D2990A17E00D40E69 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				898B502E2990A1BD00D40E69 /* Setting.storyboard */,
+				898B50302990A1CB00D40E69 /* SettingViewController.swift */,
+			);
+			path = Setting;
 			sourceTree = "<group>";
 		};
 		89C31EE3296DBDC300CBF249 /* ScriptPracticeRecord */ = {
@@ -825,6 +839,7 @@
 				5E32FC1B296955930010A376 /* Assets.xcassets in Resources */,
 				898B502C299084BD00D40E69 /* UserPageSectionHeaderView.xib in Resources */,
 				210A9E8429713D9B0063972B /* Search.storyboard in Resources */,
+				898B502F2990A1BD00D40E69 /* Setting.storyboard in Resources */,
 				5E32FC6529695CFC0010A376 /* InterviewPractice.storyboard in Resources */,
 				895820FC2987E41600D95B18 /* MyPagePostTableViewCell.xib in Resources */,
 				21A6B4AD2980F76A00F084F6 /* NumofLikesTableViewCell.xib in Resources */,
@@ -998,6 +1013,7 @@
 				898B502629907E6C00D40E69 /* UserPageViewController.swift in Sources */,
 				89E0B03C29881C46007F6993 /* ScriptNavigationViewController.swift in Sources */,
 				5E32FC14296955910010A376 /* SceneDelegate.swift in Sources */,
+				898B50312990A1CB00D40E69 /* SettingViewController.swift in Sources */,
 				21D1B40E29879A0300CDBE05 /* NestedCommentTableViewCell.swift in Sources */,
 				89C87D5B297EAD7100723E08 /* ScriptPracticeRecordEndViewController.swift in Sources */,
 				5E32FC5B296957BB0010A376 /* UITextField.swift in Sources */,
