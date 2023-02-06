@@ -17,6 +17,15 @@ class LanguageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        configureNavigationBar()
+        configureTableView()
+    }
+    
+    func configureNavigationBar() {
+        navigationItem.title = "언어"
+    }
+    
+    func configureTableView() {
         tableView.separatorColor = UIColor(named: "Sub4")
     }
 }

@@ -33,6 +33,7 @@ class SettingViewController: UIViewController {
     
     func configureNavigationBar() {
         self.navigationItem.title = "설정"
+        self.navigationItem.backButtonTitle = ""
     }
     
     func configureTableView() {
