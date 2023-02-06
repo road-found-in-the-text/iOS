@@ -72,6 +72,8 @@
 		5E32FC6D29695DFF0010A376 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32FC6C29695DFF0010A376 /* MyPageViewController.swift */; };
 		5EE89E67298A87B900C03AE7 /* SignUpPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EE89E66298A87B900C03AE7 /* SignUpPage.storyboard */; };
 		5EE89E69298A880700C03AE7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE89E68298A880700C03AE7 /* SignUpViewController.swift */; };
+		5EE89E6C298ABB1200C03AE7 /* FindPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE89E6B298ABB1200C03AE7 /* FindPasswordViewController.swift */; };
+		5EE89E70298ABBF900C03AE7 /* FindPasswordPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EE89E6F298ABBF900C03AE7 /* FindPasswordPage.storyboard */; };
 		6778D2355D99D72941DEBC63 /* Pods_UMC_iOS_Ver_1_UMC_iOS_Ver_1UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B6F6FA7EC2A2DF7ADD8C68E3 /* Pods_UMC_iOS_Ver_1_UMC_iOS_Ver_1UITests.framework */; };
 		89028EC2296C6B3800B28DB7 /* ScriptEdit.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89028EC1296C6B3800B28DB7 /* ScriptEdit.storyboard */; };
 		89028EC4296C6B5900B28DB7 /* ScriptEditTabmanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89028EC3296C6B5900B28DB7 /* ScriptEditTabmanViewController.swift */; };
@@ -198,6 +200,8 @@
 		5E64DE603605238BE8969A94 /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests.debug.xcconfig"; path = "Target Support Files/Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests/Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5EE89E66298A87B900C03AE7 /* SignUpPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpPage.storyboard; sourceTree = "<group>"; };
 		5EE89E68298A880700C03AE7 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		5EE89E6B298ABB1200C03AE7 /* FindPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPasswordViewController.swift; sourceTree = "<group>"; };
+		5EE89E6F298ABBF900C03AE7 /* FindPasswordPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = FindPasswordPage.storyboard; sourceTree = "<group>"; };
 		89028EC1296C6B3800B28DB7 /* ScriptEdit.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptEdit.storyboard; sourceTree = "<group>"; };
 		89028EC3296C6B5900B28DB7 /* ScriptEditTabmanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptEditTabmanViewController.swift; sourceTree = "<group>"; };
 		89273C052977A80100208B6D /* ScriptPTCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPTCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -415,6 +419,7 @@
 		5E32FC43296956300010A376 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				5EE89E6A298A959C00C03AE7 /* FindPassword */,
 				5EE89E65298A86FF00C03AE7 /* SignUp */,
 				5E029434298A79BD001EDC43 /* Login */,
 				5E32FC5E296958F10010A376 /* Home */,
@@ -505,6 +510,15 @@
 				5EE89E68298A880700C03AE7 /* SignUpViewController.swift */,
 			);
 			path = SignUp;
+			sourceTree = "<group>";
+		};
+		5EE89E6A298A959C00C03AE7 /* FindPassword */ = {
+			isa = PBXGroup;
+			children = (
+				5EE89E6B298ABB1200C03AE7 /* FindPasswordViewController.swift */,
+				5EE89E6F298ABBF900C03AE7 /* FindPasswordPage.storyboard */,
+			);
+			path = FindPassword;
 			sourceTree = "<group>";
 		};
 		6525DFAAC211892E6BECA24A /* Pods */ = {
@@ -743,6 +757,7 @@
 				218DA90D297084B200D76C03 /* ForumTableViewCell.xib in Resources */,
 				21D4B6E429791A8200D7B485 /* ReportAlert.storyboard in Resources */,
 				210A9E8E29714B100063972B /* SearchKeywordTableViewCell.xib in Resources */,
+				5EE89E70298ABBF900C03AE7 /* FindPasswordPage.storyboard in Resources */,
 				218DA90E297084B200D76C03 /* BestForumTableViewCell.xib in Resources */,
 				21A6B4B52980FED300F084F6 /* PostCommentsTableViewCell.xib in Resources */,
 				216023A429708131009DA16E /* Home.storyboard in Resources */,
@@ -926,6 +941,7 @@
 				210A9E8A29714A8A0063972B /* SearchContainerViewController.swift in Sources */,
 				218DA90F297084B200D76C03 /* ForumTableViewCell.swift in Sources */,
 				8932B509297E81580054D9A4 /* ScriptPracticeRecordRoadingViewController.swift in Sources */,
+				5EE89E6C298ABB1200C03AE7 /* FindPasswordViewController.swift in Sources */,
 				89273C0D2977CAEF00208B6D /* ScriptPTViewController.swift in Sources */,
 				2174690F29828662006B7950 /* PostCommentDataModel.swift in Sources */,
 				89E0B03C29881C46007F6993 /* ScriptNavigationViewController.swift in Sources */,

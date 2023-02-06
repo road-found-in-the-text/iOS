@@ -3,10 +3,16 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="IBMPlexSansKR-Medium.ttf">
+            <string>IBMPlexSansKR-Medium</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Sign Up View Controller-->
         <scene sceneID="s0d-6b-0kx">
@@ -24,21 +30,225 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ajo-Ly-MJP">
+                                <rect key="frame" x="16" y="198" width="361" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="JoF-97-iek"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="이메일 주소" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DXE-kM-5J4">
+                                <rect key="frame" x="24" y="177" width="65" height="17"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="14"/>
+                                <color key="textColor" name="Sub1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pff-QC-dEY">
+                                <rect key="frame" x="16" y="289" width="361" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="uV8-qK-kwa"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCa-Wk-PpY">
+                                <rect key="frame" x="24" y="268" width="49" height="17"/>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Medium" family="Apple SD Gothic Neo" pointSize="14"/>
+                                <color key="textColor" name="Sub1"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Db-II-RHd">
+                                <rect key="frame" x="327" y="291" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="Ht0-ej-eYc"/>
+                                    <constraint firstAttribute="width" constant="44" id="PFq-F3-qjW"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="ic_eye off" title=""/>
+                                <connections>
+                                    <action selector="didTapShowPasswordTxtField:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="T7i-ru-pha"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_check" translatesAutoresizingMaskIntoConstraints="NO" id="7Os-B6-xJT">
+                                <rect key="frame" x="16" y="339" width="18" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="18" id="VAE-lb-jpl"/>
+                                    <constraint firstAttribute="height" constant="18" id="yif-0y-XYB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8자 이상 16자 이하" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PdR-Qc-zXR">
+                                <rect key="frame" x="35.999999999999993" y="339" width="92.333333333333314" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="xpA-rU-W4U"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="IBMPlexSansKR-Medium" family="IBM Plex Sans KR" pointSize="12"/>
+                                <color key="textColor" red="0.63921570780000003" green="0.66274511810000003" blue="0.68627452850000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_check" translatesAutoresizingMaskIntoConstraints="NO" id="p4E-6g-Qoh">
+                                <rect key="frame" x="134.33333333333334" y="339" width="18" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="18" id="gsb-xZ-czx"/>
+                                    <constraint firstAttribute="height" constant="18" id="u3I-Ws-xPF"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="숫자 포함" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lIm-Ts-R1D">
+                                <rect key="frame" x="154.33333333333334" y="339" width="45" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="tcE-OR-u2i"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="IBMPlexSansKR-Medium" family="IBM Plex Sans KR" pointSize="12"/>
+                                <color key="textColor" red="0.63921570780000003" green="0.66274511810000003" blue="0.68627452850000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_check" translatesAutoresizingMaskIntoConstraints="NO" id="l6d-QG-iAI">
+                                <rect key="frame" x="205.33333333333334" y="339" width="18" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="IX1-vv-IHR"/>
+                                    <constraint firstAttribute="width" constant="18" id="aRt-nh-tXO"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="특수문자 포함" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xAu-Y9-7ow">
+                                <rect key="frame" x="225.33333333333334" y="339" width="65.666666666666657" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="lGu-AI-FaP"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="IBMPlexSansKR-Medium" family="IBM Plex Sans KR" pointSize="12"/>
+                                <color key="textColor" red="0.63921570780000003" green="0.66274511810000003" blue="0.68627452850000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UUo-BM-AQJ">
+                                <rect key="frame" x="16" y="478" width="361" height="54"/>
+                                <color key="backgroundColor" red="0.93725490570000003" green="0.94509804249999996" blue="0.9529411793" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="54" id="PyB-mv-Kvu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="16"/>
+                                <color key="tintColor" name="Sub4"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="회원가입">
+                                    <color key="titleColor" name="Sub2"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2mq-Er-oU7">
+                                <rect key="frame" x="16" y="370" width="361" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="MSQ-aR-dFl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AppleSDGothicNeo-Bold" family="Apple SD Gothic Neo" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_check" translatesAutoresizingMaskIntoConstraints="NO" id="ksf-eF-VRg">
+                                <rect key="frame" x="16" y="420" width="18" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="18" id="WL0-VY-9dc"/>
+                                    <constraint firstAttribute="height" constant="18" id="zUT-Qs-ftS"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="비밀번호 일치" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cBW-sG-crQ">
+                                <rect key="frame" x="36.000000000000007" y="420" width="65.666666666666686" height="18"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="18" id="gCr-md-vSi"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="IBMPlexSansKR-Medium" family="IBM Plex Sans KR" pointSize="12"/>
+                                <color key="textColor" red="0.63921570780000003" green="0.66274511810000003" blue="0.68627452850000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MrI-GT-kHy">
+                                <rect key="frame" x="327" y="371" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="7EG-nG-XlP"/>
+                                    <constraint firstAttribute="height" constant="44" id="Y63-rq-8Ht"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="ic_eye off" title=""/>
+                                <connections>
+                                    <action selector="didTapShowCheckPasswordTxtField:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="vAT-ev-ZMJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="MrI-GT-kHy" firstAttribute="top" secondItem="Pff-QC-dEY" secondAttribute="bottom" constant="36" id="0ab-cD-Oha"/>
+                            <constraint firstItem="7Os-B6-xJT" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="2Ni-Hl-Xqa"/>
+                            <constraint firstItem="UUo-BM-AQJ" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="2hj-iC-oDD"/>
+                            <constraint firstItem="PdR-Qc-zXR" firstAttribute="top" secondItem="Pff-QC-dEY" secondAttribute="bottom" constant="4" id="2mf-xh-nsW"/>
+                            <constraint firstItem="l6d-QG-iAI" firstAttribute="top" secondItem="Pff-QC-dEY" secondAttribute="bottom" constant="4" id="36B-88-MSx"/>
+                            <constraint firstItem="xAu-Y9-7ow" firstAttribute="leading" secondItem="l6d-QG-iAI" secondAttribute="trailing" constant="2" id="6KV-fe-0si"/>
+                            <constraint firstItem="p4E-6g-Qoh" firstAttribute="top" secondItem="Pff-QC-dEY" secondAttribute="bottom" constant="4" id="7BV-3e-P6h"/>
+                            <constraint firstItem="DXE-kM-5J4" firstAttribute="top" secondItem="Bdp-os-1uR" secondAttribute="bottom" constant="30" id="8lQ-mj-fxu"/>
+                            <constraint firstItem="PdR-Qc-zXR" firstAttribute="leading" secondItem="7Os-B6-xJT" secondAttribute="trailing" constant="2" id="8pJ-ew-TBc"/>
+                            <constraint firstItem="lIm-Ts-R1D" firstAttribute="leading" secondItem="p4E-6g-Qoh" secondAttribute="trailing" constant="2" id="DHw-gx-qzN"/>
                             <constraint firstItem="Bdp-os-1uR" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="DUI-Vn-jDq"/>
+                            <constraint firstItem="Pff-QC-dEY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="FOz-58-9RP"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Pff-QC-dEY" secondAttribute="trailing" constant="16" id="GOW-bW-nYf"/>
                             <constraint firstItem="Bdp-os-1uR" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="40" id="HcW-Mr-Ygn"/>
+                            <constraint firstItem="7Os-B6-xJT" firstAttribute="top" secondItem="Pff-QC-dEY" secondAttribute="bottom" constant="4" id="Hyw-07-97P"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="UUo-BM-AQJ" secondAttribute="trailing" constant="16" id="Iey-BT-vr7"/>
+                            <constraint firstItem="xAu-Y9-7ow" firstAttribute="top" secondItem="Pff-QC-dEY" secondAttribute="bottom" constant="4" id="Jxw-15-cZ8"/>
+                            <constraint firstItem="ksf-eF-VRg" firstAttribute="top" secondItem="2mq-Er-oU7" secondAttribute="bottom" constant="4" id="LIq-nO-7L9"/>
+                            <constraint firstItem="Ajo-Ly-MJP" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="O61-Oe-hyh"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="9Db-II-RHd" secondAttribute="trailing" constant="22" id="WLF-ie-tdJ"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Ajo-Ly-MJP" secondAttribute="trailing" constant="16" id="YB9-VI-HWx"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="MrI-GT-kHy" secondAttribute="trailing" constant="22" id="Z9p-qo-bo4"/>
+                            <constraint firstItem="kCa-Wk-PpY" firstAttribute="top" secondItem="Ajo-Ly-MJP" secondAttribute="bottom" constant="24" id="ZTs-oV-brk"/>
+                            <constraint firstItem="2mq-Er-oU7" firstAttribute="top" secondItem="7Os-B6-xJT" secondAttribute="bottom" constant="13" id="c7w-Y7-1oT"/>
+                            <constraint firstItem="cBW-sG-crQ" firstAttribute="top" secondItem="2mq-Er-oU7" secondAttribute="bottom" constant="4" id="cLL-L7-4Rj"/>
+                            <constraint firstItem="lIm-Ts-R1D" firstAttribute="top" secondItem="Pff-QC-dEY" secondAttribute="bottom" constant="4" id="caT-jq-FJg"/>
+                            <constraint firstItem="2mq-Er-oU7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="hzq-Ul-n5z"/>
+                            <constraint firstItem="l6d-QG-iAI" firstAttribute="leading" secondItem="lIm-Ts-R1D" secondAttribute="trailing" constant="6" id="jc5-Oy-bjC"/>
+                            <constraint firstItem="Ajo-Ly-MJP" firstAttribute="top" secondItem="DXE-kM-5J4" secondAttribute="bottom" constant="4" id="kV2-9c-suw"/>
+                            <constraint firstItem="UUo-BM-AQJ" firstAttribute="top" secondItem="ksf-eF-VRg" secondAttribute="bottom" constant="40" id="lCJ-Cd-EY3"/>
+                            <constraint firstItem="Pff-QC-dEY" firstAttribute="top" secondItem="kCa-Wk-PpY" secondAttribute="bottom" constant="4" id="mGR-IS-xn4"/>
+                            <constraint firstItem="kCa-Wk-PpY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="nWn-fo-R7N"/>
+                            <constraint firstItem="ksf-eF-VRg" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="p66-JO-0cg"/>
+                            <constraint firstItem="9Db-II-RHd" firstAttribute="top" secondItem="Ajo-Ly-MJP" secondAttribute="bottom" constant="47" id="sra-vh-79U"/>
+                            <constraint firstItem="cBW-sG-crQ" firstAttribute="leading" secondItem="ksf-eF-VRg" secondAttribute="trailing" constant="2" id="uQY-a2-Wee"/>
+                            <constraint firstItem="DXE-kM-5J4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="vSi-Xs-6Hm"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="2mq-Er-oU7" secondAttribute="trailing" constant="16" id="vou-eR-whf"/>
+                            <constraint firstItem="p4E-6g-Qoh" firstAttribute="leading" secondItem="PdR-Qc-zXR" secondAttribute="trailing" constant="6" id="wSS-mm-tLz"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="checkImgMark" destination="l6d-QG-iAI" id="cok-mH-P0k"/>
+                        <outlet property="checkImgNum" destination="p4E-6g-Qoh" id="c7H-WA-ycN"/>
+                        <outlet property="checkImgRange" destination="7Os-B6-xJT" id="KfC-C0-NDU"/>
+                        <outlet property="checkLabelMark" destination="xAu-Y9-7ow" id="be3-Yg-MAg"/>
+                        <outlet property="checkLabelNum" destination="lIm-Ts-R1D" id="TJa-nh-56b"/>
+                        <outlet property="checkLabelRange" destination="PdR-Qc-zXR" id="PlC-eH-1QR"/>
+                        <outlet property="checkPasswordTextField" destination="2mq-Er-oU7" id="Y7A-3M-kAs"/>
+                        <outlet property="emailTextField" destination="Ajo-Ly-MJP" id="TDa-9E-MjI"/>
+                        <outlet property="isHiddenCheckPasswordBtn" destination="MrI-GT-kHy" id="KGn-B2-Krq"/>
+                        <outlet property="isHiddenPasswordBtn" destination="9Db-II-RHd" id="ViP-yH-BRq"/>
+                        <outlet property="isSamePasswordImg" destination="ksf-eF-VRg" id="w27-Qy-bNR"/>
+                        <outlet property="isSamePasswordLabel" destination="cBW-sG-crQ" id="igJ-yq-n8w"/>
+                        <outlet property="passwordTextField" destination="Pff-QC-dEY" id="hDV-aF-9fO"/>
+                        <outlet property="signupBtn" destination="UUo-BM-AQJ" id="Lm3-tz-oko"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="130.53435114503816" y="-34.507042253521128"/>
         </scene>
     </scenes>
+    <color key="tintColor" systemColor="labelColor"/>
     <resources>
+        <image name="ic_check" width="24" height="24"/>
+        <image name="ic_eye off" width="18" height="18"/>
+        <namedColor name="Sub1">
+            <color red="0.32156862745098042" green="0.38039215686274508" blue="0.41568627450980394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Sub2">
+            <color red="0.67843137254901964" green="0.70980392156862748" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Sub4">
+            <color red="0.94117647058823528" green="0.96078431372549022" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

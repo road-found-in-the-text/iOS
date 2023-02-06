@@ -127,6 +127,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="8AL-k2-lQB"/>
+                    <connections>
+                        <outlet property="appleLoginBtn" destination="Veh-Dv-Xdy" id="Qj1-8B-zRu"/>
+                        <outlet property="kakaoLoginBtn" destination="MsU-le-jaG" id="87q-K3-uoN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

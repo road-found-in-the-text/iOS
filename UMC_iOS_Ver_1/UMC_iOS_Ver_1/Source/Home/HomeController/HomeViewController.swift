@@ -12,8 +12,20 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var forumTableView: UITableView!
     
+    override func viewWillAppear(_ animated: Bool) {
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let storyboard = UIStoryboard(name: "LoginPage", bundle: nil)
+        guard let vc = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController else { return }
+
+        let newNavController = UINavigationController(rootViewController: vc)
+        newNavController.modalPresentationStyle = .fullScreen
+        self.present(newNavController, animated: false, completion: nil)
+        
         
         registerXib()
         forumTableView.delegate = self
@@ -93,3 +105,5 @@ extension HomeViewController: CollectionViewCellDelegate {
         self.navigationController?.pushViewController(postVC, animated: true)
     }
 }
+
+

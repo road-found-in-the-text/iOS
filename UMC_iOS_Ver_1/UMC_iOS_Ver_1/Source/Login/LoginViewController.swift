@@ -9,6 +9,9 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var kakaoLoginBtn: UIButton!
+    
+    @IBOutlet weak var appleLoginBtn: UIButton!
     
     @IBAction func didTapSignupWithEmail(_ sender: Any) {
         
@@ -22,7 +25,10 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        kakaoLoginBtn.layer.cornerRadius = 8
+        appleLoginBtn.layer.cornerRadius = 8
     }
     
 
 }
+
