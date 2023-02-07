@@ -19,6 +19,8 @@ class BestForumCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        bestForumImage.layer.cornerRadius = 10
+        
         //Cell에 그림자 효과
         layer.masksToBounds = false
         layer.shadowOpacity = 0.3

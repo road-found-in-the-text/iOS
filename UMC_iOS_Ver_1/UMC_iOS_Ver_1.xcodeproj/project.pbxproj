@@ -30,6 +30,8 @@
 		2195E0F0297672AA00203C49 /* Report.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2195E0EF297672AA00203C49 /* Report.storyboard */; };
 		2196C3882988F53700EFC282 /* SelectScript.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2196C3872988F53700EFC282 /* SelectScript.storyboard */; };
 		2196C38A2988F55A00EFC282 /* SelectScriptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2196C3892988F55A00EFC282 /* SelectScriptViewController.swift */; };
+		21995FF42991067100533F33 /* ScriptCheckTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21995FF32991067100533F33 /* ScriptCheckTableViewCell.swift */; };
+		21995FF62991067D00533F33 /* InterviewCheckTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21995FF52991067D00533F33 /* InterviewCheckTableViewCell.swift */; };
 		21A6B4A82980E70200F084F6 /* PostContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6B4A62980E70200F084F6 /* PostContentTableViewCell.swift */; };
 		21A6B4A92980E70200F084F6 /* PostContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21A6B4A72980E70200F084F6 /* PostContentTableViewCell.xib */; };
 		21A6B4AC2980F76A00F084F6 /* NumofLikesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6B4AA2980F76A00F084F6 /* NumofLikesTableViewCell.swift */; };
@@ -167,6 +169,8 @@
 		2195E0EF297672AA00203C49 /* Report.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Report.storyboard; sourceTree = "<group>"; };
 		2196C3872988F53700EFC282 /* SelectScript.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectScript.storyboard; sourceTree = "<group>"; };
 		2196C3892988F55A00EFC282 /* SelectScriptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectScriptViewController.swift; sourceTree = "<group>"; };
+		21995FF32991067100533F33 /* ScriptCheckTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptCheckTableViewCell.swift; sourceTree = "<group>"; };
+		21995FF52991067D00533F33 /* InterviewCheckTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewCheckTableViewCell.swift; sourceTree = "<group>"; };
 		21A6B4A62980E70200F084F6 /* PostContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostContentTableViewCell.swift; sourceTree = "<group>"; };
 		21A6B4A72980E70200F084F6 /* PostContentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostContentTableViewCell.xib; sourceTree = "<group>"; };
 		21A6B4AA2980F76A00F084F6 /* NumofLikesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumofLikesTableViewCell.swift; sourceTree = "<group>"; };
@@ -325,10 +329,10 @@
 				216023A329708131009DA16E /* Home.storyboard */,
 				210A9E8329713D9B0063972B /* Search.storyboard */,
 				211E919B29741B8E00BD406C /* AddPost.storyboard */,
+				2196C3872988F53700EFC282 /* SelectScript.storyboard */,
 				2138123F2977A58700EC7B26 /* Post.storyboard */,
 				2195E0EF297672AA00203C49 /* Report.storyboard */,
 				21D4B6E329791A8200D7B485 /* ReportAlert.storyboard */,
-				2196C3872988F53700EFC282 /* SelectScript.storyboard */,
 				218DA9032970847F00D76C03 /* BestForumCollectionViewCell.swift */,
 				218DA9042970847F00D76C03 /* BestForumCollectionViewCell.xib */,
 				218DA90C297084B200D76C03 /* BestForumTableViewCell.swift */,
@@ -349,6 +353,8 @@
 				21A6B4B32980FED300F084F6 /* PostCommentsTableViewCell.xib */,
 				21D1B40C29879A0300CDBE05 /* NestedCommentTableViewCell.swift */,
 				21D1B40D29879A0300CDBE05 /* NestedCommentTableViewCell.xib */,
+				21995FF32991067100533F33 /* ScriptCheckTableViewCell.swift */,
+				21995FF52991067D00533F33 /* InterviewCheckTableViewCell.swift */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -981,6 +987,7 @@
 				21A6B4AC2980F76A00F084F6 /* NumofLikesTableViewCell.swift in Sources */,
 				89CD522029744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift in Sources */,
 				21A6B4B02980FA4B00F084F6 /* NumOfCommentsTableViewCell.swift in Sources */,
+				21995FF62991067D00533F33 /* InterviewCheckTableViewCell.swift in Sources */,
 				5E32FC51296957350010A376 /* String.swift in Sources */,
 				897C634F2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift in Sources */,
 				89273C062977A80100208B6D /* ScriptPTCollectionViewCell.swift in Sources */,
@@ -1015,6 +1022,7 @@
 				5E32FC6929695DE90010A376 /* ScriptPracticeViewController.swift in Sources */,
 				895820F22987ACFA00D95B18 /* MyPageScrollViewController.swift in Sources */,
 				896F42E529869C4800677A05 /* MyPageStorageViewController.swift in Sources */,
+				21995FF42991067100533F33 /* ScriptCheckTableViewCell.swift in Sources */,
 				21EB2F83297FD47600259C6D /* UserProfileTableViewCell.swift in Sources */,
 				89E0B04329881C97007F6993 /* ScriptListTableViewCell.swift in Sources */,
 				2133B7A5297419290037D85D /* AddPostViewController.swift in Sources */,

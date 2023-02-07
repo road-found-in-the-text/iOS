@@ -19,13 +19,20 @@ class HomeViewController: UIViewController {
         registerXib()
         forumTableView.delegate = self
         forumTableView.dataSource = self
+        if #available(iOS 15, *) {
+            forumTableView.sectionHeaderTopPadding = 0
+        }
     }
     
     func navigationBarTitle() {
         let titleLabel = UILabel()
-        titleLabel.textColor = UIColor.black
-        titleLabel.text = "글길"
-        titleLabel.font = UIFont.systemFont(ofSize: 17, weight: .bold)
+        let originalString = ""
+        let attachment = NSTextAttachment()
+        attachment.image = UIImage(named: "title2")
+        let attachmentString = NSAttributedString(attachment: attachment)
+        let contentString = NSMutableAttributedString(string: originalString)
+        contentString.append(attachmentString)
+        titleLabel.attributedText = contentString
         self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: titleLabel)
     }
     
@@ -45,13 +52,32 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         return 2
     }
     
-    //섹션 제목
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+    //custom section header 만들기
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = UIView()
+        let label = UILabel()
+        if section == 0 { label.text = "🔥 BEST Forum" } else { label.text = "Forum" }
+        label.font = .boldSystemFont(ofSize: 23)
+        label.frame = CGRect(x: 20, y: 20, width: 250, height: 20)
+        view.addSubview(label)
+        view.backgroundColor = .white
+        return view
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         if section == 0 {
-            return "🔥 BEST Forum"
-        } else {
-            return "Forum"
-        }
+            let view = UIView()
+            view.backgroundColor = UIColor(named: "Sub4")
+            return view
+        } else { return nil }
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50
+    }
+    
+    func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
+        return 5
     }
     
     //섹션 안의 셀 개수
@@ -72,6 +98,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             return bestForumcell
         case 1:
             guard let forumCell = tableView.dequeueReusableCell(withIdentifier: "ForumTableViewCell", for: indexPath) as? ForumTableViewCell else { return UITableViewCell() }
+            forumCell.selectionStyle = .none
             return forumCell
         default:
             return UITableViewCell()
@@ -81,9 +108,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     //셀 높이
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0 {
-            return 200
+            return 180
         } else {
-            return 112
+            return 140
         }
     }
     
