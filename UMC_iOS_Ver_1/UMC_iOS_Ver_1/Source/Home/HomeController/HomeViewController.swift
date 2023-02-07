@@ -24,6 +24,9 @@ class HomeViewController: UIViewController {
         }
     }
     
+    // MARK: - navigationBar 설정
+    
+    //제목 label에 이미지 붙여넣기
     func navigationBarTitle() {
         let titleLabel = UILabel()
         let originalString = ""
@@ -36,6 +39,8 @@ class HomeViewController: UIViewController {
         self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: titleLabel)
     }
     
+    // MARK: - Cell 설정
+    
     //커스텀cell 등록
     private func registerXib() {
         let forumCell = UINib(nibName: "ForumTableViewCell", bundle: nil)
@@ -45,6 +50,7 @@ class HomeViewController: UIViewController {
     }
 }
 
+// MARK: - tableView 설정
 
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     //섹션 개수
@@ -121,6 +127,8 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         self.navigationController?.pushViewController(postVC, animated: true)
     }
 }
+
+// MARK: - collectionView Cell 선택 시 행동에 관한 설정
 
 extension HomeViewController: CollectionViewCellDelegate {
     //collectionView Cell 선택 시 post 화면으로 이동

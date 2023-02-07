@@ -34,6 +34,8 @@ class ReportViewController: UIViewController {
         setReportButton()
     }
     
+    // MARK: - 신고 내용 목록 설정
+    
     //report 체크 버튼 기본 설정
     func setReportButton() {
         reportOptionButton1.setTitle("낚시/놀람/도배", for: .normal)
@@ -52,11 +54,6 @@ class ReportViewController: UIViewController {
         reportOptionButton7.addTarget(self, action: #selector(reportEtcButtonTap(_:)), for: .touchUpInside)
     }
     
-    //화면 클릭시 키보드 내리기
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-    }
-    
     @objc func reportOptionButtonTap(_ sender:DLRadioButton) {
         ReportViewController.reportContent = sender.currentTitle!
         etcReportTextView.isEditable = false
@@ -68,25 +65,14 @@ class ReportViewController: UIViewController {
         etcReportTextView.isUserInteractionEnabled = true
     }
     
-    //textView 글자 수 update
-    func updateMemoTextCountLabel(length: Int) {
-        let fullText = "\(length) / 80"
-        let attributedString = NSMutableAttributedString(string: fullText)
-        let range = (fullText as NSString).range(of: String(length))
-        attributedString.addAttribute(.foregroundColor, value: UIColor.systemBlue, range: range)
-        textCountLabel.attributedText = attributedString
+    // MARK: - 키보드 설정
+    
+    //화면 클릭시 키보드 내리기
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
-    //textView 테두리 설정
-    func settingTextView() {
-        etcReportTextView.layer.borderWidth = 0.3
-        etcReportTextView.layer.borderColor = UIColor.black.cgColor
-        etcReportTextView.layer.cornerRadius = 10
-    }
-    
-    @IBAction func backButtonTapped(_ sender: UIButton) {
-        dismiss(animated: true)
-    }
+    // MARK: - 신고하기 버튼 클릭 시 alert 창
     
     func reportAlert() {
         let alert = UIAlertController(title: "신고하시겠습니까?", message: nil, preferredStyle: .alert)
@@ -109,10 +95,30 @@ class ReportViewController: UIViewController {
         reportAlert()
     }
     
-    
+    @IBAction func backButtonTapped(_ sender: UIButton) {
+        dismiss(animated: true)
+    }
 }
 
+// MARK: - TextView 글자 수 제한 설정
+
 extension ReportViewController: UITextViewDelegate {
+    //textView 글자 수 update
+    func updateMemoTextCountLabel(length: Int) {
+        let fullText = "\(length) / 80"
+        let attributedString = NSMutableAttributedString(string: fullText)
+        let range = (fullText as NSString).range(of: String(length))
+        attributedString.addAttribute(.foregroundColor, value: UIColor.systemBlue, range: range)
+        textCountLabel.attributedText = attributedString
+    }
+    
+    //textView 테두리 설정
+    func settingTextView() {
+        etcReportTextView.layer.borderWidth = 0.3
+        etcReportTextView.layer.borderColor = UIColor.black.cgColor
+        etcReportTextView.layer.cornerRadius = 10
+    }
+    
     func textViewDidBeginEditing(_ textView: UITextView) {
         if textView.text == textViewPlaceholder {
             textView.text = nil

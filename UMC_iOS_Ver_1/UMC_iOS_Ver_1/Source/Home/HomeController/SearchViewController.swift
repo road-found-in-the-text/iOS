@@ -17,16 +17,21 @@ class SearchViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         self.title = "검색"   //search화면 title 설정
         navigationController?.navigationBar.topItem?.title = "" //돌아가기 버튼 글자 없게
         self.navigationController?.navigationBar.tintColor = .black
         
         registerXib()
+        
         searchHistoryTableView.delegate = self
         searchHistoryTableView.dataSource = self
         self.searchBar.delegate = self
+        
         addSearchHistoryToTableView()
     }
+    
+    // MARK: - 키보드 내리기
     
     //화면 터치시 키보드 내림
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -38,10 +43,14 @@ class SearchViewController: UIViewController {
         self.view.endEditing(true)
     }
     
+    // MARK: - cell 등록
+    
     func registerXib() {
         let searchHistoryCell = UINib(nibName: "SearchKeywordTableViewCell", bundle: nil)
         searchHistoryTableView.register(searchHistoryCell, forCellReuseIdentifier: "SearchKeywordTableViewCell")
     }
+    
+    // MARK: - 최근 검색 기록 구현
     
     //검색 기록 userdefaults에 저장
     func addSearchHistoryToUserDefaults() {
@@ -75,6 +84,8 @@ class SearchViewController: UIViewController {
         searchHistoryTableView.reloadData()
     }
     
+    // MARK: - 모두 삭제 버튼 액션
+    
     @IBAction func deleteAllButtonTapped(_ sender: UIButton) {
         if let bundleID = Bundle.main.bundleIdentifier {
             UserDefaults.standard.removePersistentDomain(forName: bundleID)
@@ -83,6 +94,8 @@ class SearchViewController: UIViewController {
         searchHistoryTableView.reloadData()
     }
 }
+
+// MARK: - tableView 설정
 
 extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -98,6 +111,8 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
         return searchHistoryCell
     }
 }
+
+// MARK: - SearchBar 설정
 
 extension SearchViewController: UISearchBarDelegate {
     //search 버튼 누르면 실행
@@ -120,6 +135,8 @@ extension SearchViewController: UISearchBarDelegate {
         return true
     }
 }
+
+// MARK: - Cell 삭제 버튼 클릭 시 각각의 cell 삭제
 
 extension SearchViewController: CellButtonTappedDelegate {
     //deleteButton 클릭된 cell의 indexpath.row 알아낸 후 그 cell의 값들 삭제

@@ -15,6 +15,7 @@ class SearchContainerViewController: UIViewController {
         super.viewDidLoad()
         
         registerXib()
+        
         contentsTableView.delegate = self
         contentsTableView.dataSource = self
     }
@@ -25,6 +26,8 @@ class SearchContainerViewController: UIViewController {
         contentsTableView.register(forumCell, forCellReuseIdentifier: "ForumTableViewCell")
     }
 }
+
+// MARK: - tableView 설정
 
 extension SearchContainerViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

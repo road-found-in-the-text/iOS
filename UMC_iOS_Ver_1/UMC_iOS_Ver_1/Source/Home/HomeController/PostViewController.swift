@@ -46,8 +46,9 @@ class PostViewController: UIViewController {
         
         navigationController?.navigationBar.standardAppearance.backgroundColor = .white
         navigationController?.navigationBar.scrollEdgeAppearance?.backgroundColor = .white
-        
     }
+    
+    // MARK: - Cell 설정
     
     //custom cell 등록
     func registerXib() {
@@ -63,12 +64,7 @@ class PostViewController: UIViewController {
         postTableView.register(postCommetnsCell, forCellReuseIdentifier: "PostCommentsTableViewCell")
     }
     
-    //tableView 초기 설정
-    func initPostTableView() {
-        postTableView.delegate = self
-        postTableView.dataSource = self
-        postTableView.contentInset = .init(top: 270, left: 0, bottom: 0, right: 0)
-    }
+    // MARK: - 버튼 클릭 시
     
     //신고하기 버튼 클릭
     @objc func reportTapped() {
@@ -89,7 +85,16 @@ class PostViewController: UIViewController {
     }
 }
 
+// MARK: - post tableView 및 scrollView 설정
+
 extension PostViewController: UITableViewDelegate, UITableViewDataSource, UIScrollViewDelegate {
+    //tableView 초기 설정
+    func initPostTableView() {
+        postTableView.delegate = self
+        postTableView.dataSource = self
+        postTableView.contentInset = .init(top: 270, left: 0, bottom: 0, right: 0)
+    }
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 5
     }
@@ -135,6 +140,8 @@ extension PostViewController: UITableViewDelegate, UITableViewDataSource, UIScro
         topImage.alpha = ratio - 0.3
     }
 }
+
+// MARK: - textField 설정
 
 //textField 글자 수 감지해서 버튼 활성화
 extension PostViewController: UITextFieldDelegate {
