@@ -30,6 +30,8 @@
 		2195E0F0297672AA00203C49 /* Report.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2195E0EF297672AA00203C49 /* Report.storyboard */; };
 		2196C3882988F53700EFC282 /* SelectScript.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2196C3872988F53700EFC282 /* SelectScript.storyboard */; };
 		2196C38A2988F55A00EFC282 /* SelectScriptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2196C3892988F55A00EFC282 /* SelectScriptViewController.swift */; };
+		21995FF42991067100533F33 /* ScriptCheckTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21995FF32991067100533F33 /* ScriptCheckTableViewCell.swift */; };
+		21995FF62991067D00533F33 /* InterviewCheckTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21995FF52991067D00533F33 /* InterviewCheckTableViewCell.swift */; };
 		21A6B4A82980E70200F084F6 /* PostContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6B4A62980E70200F084F6 /* PostContentTableViewCell.swift */; };
 		21A6B4A92980E70200F084F6 /* PostContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21A6B4A72980E70200F084F6 /* PostContentTableViewCell.xib */; };
 		21A6B4AC2980F76A00F084F6 /* NumofLikesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6B4AA2980F76A00F084F6 /* NumofLikesTableViewCell.swift */; };
@@ -104,6 +106,15 @@
 		898B502C299084BD00D40E69 /* UserPageSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 898B502B299084BD00D40E69 /* UserPageSectionHeaderView.xib */; };
 		898B50442990F2F700D40E69 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898B50432990F2F700D40E69 /* NotificationViewController.swift */; };
 		898B50462990F74D00D40E69 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898B50452990F74D00D40E69 /* NotificationTableViewCell.swift */; };
+		898B502F2990A1BD00D40E69 /* Setting.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 898B502E2990A1BD00D40E69 /* Setting.storyboard */; };
+		898B50312990A1CB00D40E69 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898B50302990A1CB00D40E69 /* SettingViewController.swift */; };
+		898B50342990B7AC00D40E69 /* SettingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898B50332990B7AC00D40E69 /* SettingHeaderView.swift */; };
+		898B50362990B7B400D40E69 /* SettingHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 898B50352990B7B400D40E69 /* SettingHeaderView.xib */; };
+		898B50392990CB5300D40E69 /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898B50382990CB5300D40E69 /* SettingTableViewCell.swift */; };
+		898B503B2990D1A800D40E69 /* AlarmViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898B503A2990D1A800D40E69 /* AlarmViewController.swift */; };
+		898B503D2990D29800D40E69 /* AlarmTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898B503C2990D29800D40E69 /* AlarmTableViewCell.swift */; };
+		898B503F2990D7F900D40E69 /* LanguageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898B503E2990D7F900D40E69 /* LanguageViewController.swift */; };
+		898B50412990D8C900D40E69 /* LanguageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898B50402990D8C900D40E69 /* LanguageTableViewCell.swift */; };
 		89C31EE2296DB73D00CBF249 /* Tabman in Frameworks */ = {isa = PBXBuildFile; productRef = 89C31EE1296DB73D00CBF249 /* Tabman */; };
 		89C31EE5296DBDD000CBF249 /* ScriptPracticeRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89C31EE4296DBDD000CBF249 /* ScriptPracticeRecord.storyboard */; };
 		89C31EE7296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C31EE6296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift */; };
@@ -169,6 +180,8 @@
 		2195E0EF297672AA00203C49 /* Report.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Report.storyboard; sourceTree = "<group>"; };
 		2196C3872988F53700EFC282 /* SelectScript.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectScript.storyboard; sourceTree = "<group>"; };
 		2196C3892988F55A00EFC282 /* SelectScriptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectScriptViewController.swift; sourceTree = "<group>"; };
+		21995FF32991067100533F33 /* ScriptCheckTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptCheckTableViewCell.swift; sourceTree = "<group>"; };
+		21995FF52991067D00533F33 /* InterviewCheckTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewCheckTableViewCell.swift; sourceTree = "<group>"; };
 		21A6B4A62980E70200F084F6 /* PostContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostContentTableViewCell.swift; sourceTree = "<group>"; };
 		21A6B4A72980E70200F084F6 /* PostContentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostContentTableViewCell.xib; sourceTree = "<group>"; };
 		21A6B4AA2980F76A00F084F6 /* NumofLikesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumofLikesTableViewCell.swift; sourceTree = "<group>"; };
@@ -248,6 +261,15 @@
 		898B502B299084BD00D40E69 /* UserPageSectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserPageSectionHeaderView.xib; sourceTree = "<group>"; };
 		898B50432990F2F700D40E69 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		898B50452990F74D00D40E69 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		898B502E2990A1BD00D40E69 /* Setting.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Setting.storyboard; sourceTree = "<group>"; };
+		898B50302990A1CB00D40E69 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		898B50332990B7AC00D40E69 /* SettingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingHeaderView.swift; sourceTree = "<group>"; };
+		898B50352990B7B400D40E69 /* SettingHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingHeaderView.xib; sourceTree = "<group>"; };
+		898B50382990CB5300D40E69 /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		898B503A2990D1A800D40E69 /* AlarmViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmViewController.swift; sourceTree = "<group>"; };
+		898B503C2990D29800D40E69 /* AlarmTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlarmTableViewCell.swift; sourceTree = "<group>"; };
+		898B503E2990D7F900D40E69 /* LanguageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageViewController.swift; sourceTree = "<group>"; };
+		898B50402990D8C900D40E69 /* LanguageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageTableViewCell.swift; sourceTree = "<group>"; };
 		89C31EE4296DBDD000CBF249 /* ScriptPracticeRecord.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeRecord.storyboard; sourceTree = "<group>"; };
 		89C31EE6296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeRecordViewController.swift; sourceTree = "<group>"; };
 		89C31EE8296DD8CB00CBF249 /* ImageLabelBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLabelBarButton.swift; sourceTree = "<group>"; };
@@ -329,10 +351,10 @@
 				216023A329708131009DA16E /* Home.storyboard */,
 				210A9E8329713D9B0063972B /* Search.storyboard */,
 				211E919B29741B8E00BD406C /* AddPost.storyboard */,
+				2196C3872988F53700EFC282 /* SelectScript.storyboard */,
 				2138123F2977A58700EC7B26 /* Post.storyboard */,
 				2195E0EF297672AA00203C49 /* Report.storyboard */,
 				21D4B6E329791A8200D7B485 /* ReportAlert.storyboard */,
-				2196C3872988F53700EFC282 /* SelectScript.storyboard */,
 				218DA9032970847F00D76C03 /* BestForumCollectionViewCell.swift */,
 				218DA9042970847F00D76C03 /* BestForumCollectionViewCell.xib */,
 				218DA90C297084B200D76C03 /* BestForumTableViewCell.swift */,
@@ -353,6 +375,8 @@
 				21A6B4B32980FED300F084F6 /* PostCommentsTableViewCell.xib */,
 				21D1B40C29879A0300CDBE05 /* NestedCommentTableViewCell.swift */,
 				21D1B40D29879A0300CDBE05 /* NestedCommentTableViewCell.xib */,
+				21995FF32991067100533F33 /* ScriptCheckTableViewCell.swift */,
+				21995FF52991067D00533F33 /* InterviewCheckTableViewCell.swift */,
 			);
 			path = HomeView;
 			sourceTree = "<group>";
@@ -493,6 +517,7 @@
 		5E32FC5F29695C7A0010A376 /* MyPage */ = {
 			isa = PBXGroup;
 			children = (
+				898B502D2990A17E00D40E69 /* Setting */,
 				89EACA032987832D003ACDD6 /* Cell */,
 				896F42E629869F6100677A05 /* View */,
 				5E32FC6629695D060010A376 /* MyPage.storyboard */,
@@ -625,6 +650,38 @@
 				897C634C2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift */,
 				897C634E2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift */,
 				897C63502976BA6900CCF25F /* ScriptRecordMemoCollectionViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		898B502D2990A17E00D40E69 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				898B50372990C42200D40E69 /* Cell */,
+				898B50322990B79200D40E69 /* View */,
+				898B502E2990A1BD00D40E69 /* Setting.storyboard */,
+				898B50302990A1CB00D40E69 /* SettingViewController.swift */,
+				898B503A2990D1A800D40E69 /* AlarmViewController.swift */,
+				898B503E2990D7F900D40E69 /* LanguageViewController.swift */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		898B50322990B79200D40E69 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				898B50332990B7AC00D40E69 /* SettingHeaderView.swift */,
+				898B50352990B7B400D40E69 /* SettingHeaderView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		898B50372990C42200D40E69 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				898B50382990CB5300D40E69 /* SettingTableViewCell.swift */,
+				898B503C2990D29800D40E69 /* AlarmTableViewCell.swift */,
+				898B50402990D8C900D40E69 /* LanguageTableViewCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -831,10 +888,12 @@
 				5E32FC1B296955930010A376 /* Assets.xcassets in Resources */,
 				898B502C299084BD00D40E69 /* UserPageSectionHeaderView.xib in Resources */,
 				210A9E8429713D9B0063972B /* Search.storyboard in Resources */,
+				898B502F2990A1BD00D40E69 /* Setting.storyboard in Resources */,
 				5E32FC6529695CFC0010A376 /* InterviewPractice.storyboard in Resources */,
 				895820FC2987E41600D95B18 /* MyPagePostTableViewCell.xib in Resources */,
 				21A6B4AD2980F76A00F084F6 /* NumofLikesTableViewCell.xib in Resources */,
 				218DA9062970847F00D76C03 /* BestForumCollectionViewCell.xib in Resources */,
+				898B50362990B7B400D40E69 /* SettingHeaderView.xib in Resources */,
 				89C87D5D297EAD7500723E08 /* ScriptPracticeRecordEnd.storyboard in Resources */,
 				2196C3882988F53700EFC282 /* SelectScript.storyboard in Resources */,
 				8932B507297E814F0054D9A4 /* ScriptPracticeRecordRoading.storyboard in Resources */,
@@ -972,21 +1031,25 @@
 				5E32FC16296955910010A376 /* HomeViewController.swift in Sources */,
 				5E32FC6D29695DFF0010A376 /* MyPageViewController.swift in Sources */,
 				5E32FC4D296957030010A376 /* UIColor.swift in Sources */,
+				898B503D2990D29800D40E69 /* AlarmTableViewCell.swift in Sources */,
 				218DA910297084B200D76C03 /* BestForumTableViewCell.swift in Sources */,
 				8971E9EA29890ED200DF6ACD /* PracticeQuestion.swift in Sources */,
 				5E32FC4B296956EB0010A376 /* Date.swift in Sources */,
 				89E0B03E29881C60007F6993 /* WriteScriptViewController.swift in Sources */,
 				21A749BB2977AB4E00EBFE82 /* ViewControllerConstants.swift in Sources */,
 				89E0B04129881C86007F6993 /* CreateNewScriptCell.swift in Sources */,
+				898B503F2990D7F900D40E69 /* LanguageViewController.swift in Sources */,
 				5E32FC552969576A0010A376 /* UIViewController.swift in Sources */,
 				5E32FC57296957840010A376 /* UIImageView.swift in Sources */,
 				21D4B6E629791D3600D7B485 /* CustomAlertViewController.swift in Sources */,
 				896854B52975565400E70868 /* ScriptRecordViewController.swift in Sources */,
 				5E32FC552969576A0010A376 /* UIViewController.swift in Sources */,
+				898B503B2990D1A800D40E69 /* AlarmViewController.swift in Sources */,
 				5E32FC57296957840010A376 /* UIImageView.swift in Sources */,
 				21A6B4AC2980F76A00F084F6 /* NumofLikesTableViewCell.swift in Sources */,
 				89CD522029744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift in Sources */,
 				21A6B4B02980FA4B00F084F6 /* NumOfCommentsTableViewCell.swift in Sources */,
+				21995FF62991067D00533F33 /* InterviewCheckTableViewCell.swift in Sources */,
 				5E32FC51296957350010A376 /* String.swift in Sources */,
 				897C634F2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift in Sources */,
 				89273C062977A80100208B6D /* ScriptPTCollectionViewCell.swift in Sources */,
@@ -1005,6 +1068,7 @@
 				89E0B03C29881C46007F6993 /* ScriptNavigationViewController.swift in Sources */,
 				5E32FC14296955910010A376 /* SceneDelegate.swift in Sources */,
 				898B50442990F2F700D40E69 /* NotificationViewController.swift in Sources */,
+				898B50312990A1CB00D40E69 /* SettingViewController.swift in Sources */,
 				21D1B40E29879A0300CDBE05 /* NestedCommentTableViewCell.swift in Sources */,
 				89C87D5B297EAD7100723E08 /* ScriptPracticeRecordEndViewController.swift in Sources */,
 				5E32FC5B296957BB0010A376 /* UITextField.swift in Sources */,
@@ -1014,6 +1078,7 @@
 				89C31EE9296DD8CB00CBF249 /* ImageLabelBarButton.swift in Sources */,
 				897C63512976BA6900CCF25F /* ScriptRecordMemoCollectionViewCell.swift in Sources */,
 				898B50462990F74D00D40E69 /* NotificationTableViewCell.swift in Sources */,
+				898B50392990CB5300D40E69 /* SettingTableViewCell.swift in Sources */,
 				5E32FC45296956470010A376 /* Constant.swift in Sources */,
 				895820FB2987E41600D95B18 /* MyPagePostTableViewCell.swift in Sources */,
 				896F42EA29869FB100677A05 /* MyPageStorageTableHeaderView.swift in Sources */,
@@ -1023,6 +1088,7 @@
 				5E32FC6929695DE90010A376 /* ScriptPracticeViewController.swift in Sources */,
 				895820F22987ACFA00D95B18 /* MyPageScrollViewController.swift in Sources */,
 				896F42E529869C4800677A05 /* MyPageStorageViewController.swift in Sources */,
+				21995FF42991067100533F33 /* ScriptCheckTableViewCell.swift in Sources */,
 				21EB2F83297FD47600259C6D /* UserProfileTableViewCell.swift in Sources */,
 				89E0B04329881C97007F6993 /* ScriptListTableViewCell.swift in Sources */,
 				2133B7A5297419290037D85D /* AddPostViewController.swift in Sources */,
@@ -1032,6 +1098,7 @@
 				210A9E8829714A660063972B /* SearchHistoryDataModel.swift in Sources */,
 				895820F42987D79D00D95B18 /* MyPageMyPostViewController.swift in Sources */,
 				210A9E8D29714B100063972B /* SearchKeywordTableViewCell.swift in Sources */,
+				898B50412990D8C900D40E69 /* LanguageTableViewCell.swift in Sources */,
 				89DCF50D2977060500CB2296 /* ScriptPracticeSetViewController.swift in Sources */,
 				5E32FC6929695DE90010A376 /* ScriptPracticeViewController.swift in Sources */,
 				897C634B2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift in Sources */,
@@ -1042,6 +1109,7 @@
 				218DA908297084A700D76C03 /* BestForumDataModel.swift in Sources */,
 				5E32FC4F296957170010A376 /* CustomSegmentedControl.swift in Sources */,
 				89028EC4296C6B5900B28DB7 /* ScriptEditTabmanViewController.swift in Sources */,
+				898B50342990B7AC00D40E69 /* SettingHeaderView.swift in Sources */,
 				89C31EE7296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift in Sources */,
 				5E32FC5D296957CE0010A376 /* CustomTextField.swift in Sources */,
 				213812422977A5A800EC7B26 /* PostViewController.swift in Sources */,

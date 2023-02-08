@@ -15,12 +15,35 @@ class AddPostViewController: UIViewController {
     var distinctionImage: Int?  //이미지가 메인사진이냐 게시글 사진이냐를 구별, 0이면 메인사진, 1이면 게시글 사진, 2면 카메라로 찍은 사진
     
     @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var titleTextField: UITextField!
+    @IBOutlet weak var titleTrailing: NSLayoutConstraint!
+    @IBOutlet weak var titleLeading: NSLayoutConstraint!
+    @IBOutlet weak var contentLabelLeading: NSLayoutConstraint!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        titleLeading.constant = 20
+        titleTrailing.constant = 20
+        contentLabelLeading.constant = 20
+        
+        textFieldLayer()
+        
         imagePicker.delegate = self
         tapImageView()
+    }
+    
+    //textField 밑줄 모양으로 만들기
+    func textFieldLayer() {
+        titleTextField.borderStyle = .none
+        let border = CALayer()
+        let width = CGFloat(1.0)
+        border.borderColor = UIColor.black.cgColor
+        border.frame = CGRect(x: 0, y: titleTextField.frame.size.height - width, width: titleTextField.frame.size.width, height: titleTextField.frame.size.height)
+        border.borderWidth = width
+        titleTextField.layer.addSublayer(border)
+        titleTextField.layer.masksToBounds = true
     }
     
     //imageView 클릭 시 실행

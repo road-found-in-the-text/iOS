@@ -267,17 +267,17 @@
                                                 </subviews>
                                             </stackView>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TO8-yj-TVQ">
-                                                <rect key="frame" x="10" y="453" width="355" height="120"/>
+                                                <rect key="frame" x="30" y="453" width="315" height="120"/>
                                                 <subviews>
                                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="신고 사유를 입력해주세요." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Bqu-je-iJs">
-                                                        <rect key="frame" x="0.0" y="0.0" width="355" height="120"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="315" height="120"/>
                                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                                         <color key="textColor" name="Sub2"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
                                                     </textView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(0/80)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vdz-Ce-xse">
-                                                        <rect key="frame" x="295" y="97" width="60" height="21"/>
+                                                        <rect key="frame" x="255" y="97" width="60" height="21"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="21" id="2Cu-oO-wxk"/>
                                                             <constraint firstAttribute="width" constant="60" id="VqP-1g-gS3"/>
@@ -321,7 +321,7 @@
                                             <constraint firstItem="E9K-D5-Ass" firstAttribute="leading" secondItem="xcF-wV-1Ko" secondAttribute="leading" constant="30" id="47O-U1-DgU"/>
                                             <constraint firstAttribute="height" priority="250" constant="733" id="5Rq-ze-hXG"/>
                                             <constraint firstAttribute="trailing" secondItem="aBQ-aF-7av" secondAttribute="trailing" constant="10" id="B40-aw-qxc"/>
-                                            <constraint firstAttribute="trailing" secondItem="TO8-yj-TVQ" secondAttribute="trailing" constant="10" id="Ehy-Ng-X6e"/>
+                                            <constraint firstAttribute="trailing" secondItem="TO8-yj-TVQ" secondAttribute="trailing" constant="30" id="Ehy-Ng-X6e"/>
                                             <constraint firstAttribute="trailing" secondItem="vv3-dn-did" secondAttribute="trailing" constant="10" id="G9d-Lb-iVO"/>
                                             <constraint firstAttribute="trailing" secondItem="0Zs-hc-AQb" secondAttribute="trailing" constant="10" id="Gjg-8X-2qe"/>
                                             <constraint firstAttribute="trailing" secondItem="Rd9-Qc-AmE" secondAttribute="trailing" constant="10" id="Hqf-Oh-nSG"/>
@@ -336,7 +336,7 @@
                                             <constraint firstItem="JW7-qw-cOa" firstAttribute="top" secondItem="aBQ-aF-7av" secondAttribute="bottom" constant="10" id="cVH-mk-vJe"/>
                                             <constraint firstAttribute="trailing" secondItem="ORm-wA-sgt" secondAttribute="trailing" constant="14" id="cdx-12-Itq"/>
                                             <constraint firstItem="0Zs-hc-AQb" firstAttribute="leading" secondItem="xcF-wV-1Ko" secondAttribute="leading" constant="25" id="fL5-FV-35n"/>
-                                            <constraint firstItem="TO8-yj-TVQ" firstAttribute="leading" secondItem="xcF-wV-1Ko" secondAttribute="leading" constant="10" id="ftB-kE-Qe6"/>
+                                            <constraint firstItem="TO8-yj-TVQ" firstAttribute="leading" secondItem="xcF-wV-1Ko" secondAttribute="leading" constant="30" id="ftB-kE-Qe6"/>
                                             <constraint firstItem="JW7-qw-cOa" firstAttribute="leading" secondItem="xcF-wV-1Ko" secondAttribute="leading" constant="30" id="gf0-aH-j4a"/>
                                             <constraint firstItem="ORm-wA-sgt" firstAttribute="top" secondItem="0Zs-hc-AQb" secondAttribute="bottom" constant="5" id="hKC-So-pED"/>
                                             <constraint firstItem="92x-sh-88a" firstAttribute="top" secondItem="E9K-D5-Ass" secondAttribute="bottom" constant="10" id="i7D-lB-ehM"/>

@@ -50,19 +50,42 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S1t-8S-LV4">
                                 <rect key="frame" x="0.0" y="82" width="375" height="657"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JuA-0x-awZ">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="JuA-0x-awZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="314"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="camera" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="vHI-JD-vMT">
-                                                <rect key="frame" x="0.0" y="1" width="375" height="197.66666666666666"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seletImage" translatesAutoresizingMaskIntoConstraints="NO" id="vHI-JD-vMT">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
                                                 <color key="backgroundColor" name="Sub2"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="200" id="or5-gJ-Sma"/>
                                                 </constraints>
                                             </imageView>
+                                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="제목을 입력하세요." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e0o-8C-1oH">
+                                                <rect key="frame" x="0.0" y="225" width="375" height="42"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="42" id="chY-Ip-tqE"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내용" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aQm-Ww-scM">
+                                                <rect key="frame" x="0.0" y="292" width="375" height="22"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="22" id="hpu-IY-wrk"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <constraints>
+                                            <constraint firstItem="vHI-JD-vMT" firstAttribute="top" secondItem="JuA-0x-awZ" secondAttribute="top" id="If7-D3-t5Z"/>
+                                            <constraint firstAttribute="trailing" secondItem="e0o-8C-1oH" secondAttribute="trailing" id="NyV-4m-CzI"/>
                                             <constraint firstAttribute="height" priority="250" constant="654" id="TQD-A9-Ihn"/>
+                                            <constraint firstItem="e0o-8C-1oH" firstAttribute="leading" secondItem="JuA-0x-awZ" secondAttribute="leading" id="Ujv-x2-dfP"/>
+                                            <constraint firstItem="aQm-Ww-scM" firstAttribute="leading" secondItem="JuA-0x-awZ" secondAttribute="leading" id="Wdu-kJ-1uL"/>
+                                            <constraint firstAttribute="trailing" secondItem="vHI-JD-vMT" secondAttribute="trailing" id="dz7-bd-Kuv"/>
+                                            <constraint firstItem="vHI-JD-vMT" firstAttribute="leading" secondItem="JuA-0x-awZ" secondAttribute="leading" id="vyg-bS-8D9"/>
                                         </constraints>
                                     </stackView>
                                 </subviews>
@@ -96,9 +119,9 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="adA-qi-msS" secondAttribute="bottom" constant="24" id="658-zQ-EBK"/>
-                            <constraint firstItem="adA-qi-msS" firstAttribute="top" secondItem="S1t-8S-LV4" secondAttribute="bottom" id="7tx-gu-ngy"/>
                             <constraint firstItem="RPk-YU-b1h" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="JIQ-ga-tNc"/>
                             <constraint firstItem="adA-qi-msS" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="RMi-Ii-GDM"/>
+                            <constraint firstItem="adA-qi-msS" firstAttribute="top" secondItem="S1t-8S-LV4" secondAttribute="bottom" id="VlB-ct-bo7"/>
                             <constraint firstAttribute="trailing" secondItem="adA-qi-msS" secondAttribute="trailing" id="Wxi-bi-wBd"/>
                             <constraint firstItem="RPk-YU-b1h" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="YBa-2B-RPh"/>
                             <constraint firstItem="S1t-8S-LV4" firstAttribute="top" secondItem="RPk-YU-b1h" secondAttribute="bottom" id="ZAd-G9-IXO"/>
@@ -109,7 +132,11 @@
                     </view>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="contentLabelLeading" destination="Wdu-kJ-1uL" id="S7K-DW-KZZ"/>
                         <outlet property="imageView" destination="vHI-JD-vMT" id="bhb-ew-J6V"/>
+                        <outlet property="titleLeading" destination="Ujv-x2-dfP" id="uhl-Jd-Nqd"/>
+                        <outlet property="titleTextField" destination="e0o-8C-1oH" id="Vi9-8a-4fc"/>
+                        <outlet property="titleTrailing" destination="NyV-4m-CzI" id="uJl-tW-HNq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -126,10 +153,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="camera" catalog="system" width="128" height="93"/>
         <image name="ic_camera" width="24" height="24"/>
         <image name="ic_delete" width="24" height="24"/>
         <image name="ic_script_black" width="24" height="24"/>
+        <image name="seletImage" width="77" height="46"/>
         <namedColor name="Sub2">
             <color red="0.67843137254901964" green="0.70980392156862748" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

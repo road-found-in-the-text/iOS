@@ -23,6 +23,8 @@ class MyPageScrollViewController: HPScrollViewController {
     }
     
     func configureNavigationBar() {
+        self.navigationItem.backButtonTitle = ""
+        
         let notificationBarButtonItem = UIBarButtonItem(image: UIImage(named: "ic_bell"), style: .plain, target: self, action: #selector(notificationBarButtonItemTapped))
         let settingBarButtonItem = UIBarButtonItem(image: UIImage(named: "ic_settings"), style: .plain, target: self, action: #selector(settingBarButtonItemTapped))
         
@@ -41,7 +43,11 @@ class MyPageScrollViewController: HPScrollViewController {
     }
     
     @objc func settingBarButtonItemTapped() {
-        print("설정창")
+        let storyboard = UIStoryboard(name: "Setting", bundle: nil)
+        guard let nextViewController = storyboard.instantiateViewController(withIdentifier: "SettingViewController") as? SettingViewController else {
+            assert(false)
+        }
+        self.navigationController?.pushViewController(nextViewController, animated: true)
     }
 
 }

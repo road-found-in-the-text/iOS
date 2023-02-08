@@ -11,19 +11,42 @@ class PostViewController: UIViewController {
     
     let maxImageTopHeight: CGFloat = 300
     let minImageTopHeight: CGFloat = 80
-    var lastRowInLastSection = 0
     
-    @IBOutlet weak var representativeImage: UIView!
+    @IBOutlet weak var commentButton: UIButton!
+    @IBOutlet weak var topImage: UIView!
     @IBOutlet weak var postTableView: UITableView!
     @IBOutlet weak var commentTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        commentTextField.delegate = self
+        
         initPostTableView()
-        transparentNavigationBar()
         registerXib()
         
+        //초기 버튼 테두리 설정
+        commentButton.layer.borderWidth = 1
+        commentButton.layer.cornerRadius = 17
+        commentButton.layer.borderColor = UIColor(named: "Sub2")?.cgColor
+        
+        self.title = "Forum"
+        navigationController?.navigationBar.topItem?.title = ""         //back 버튼 title 없애기
+        self.navigationController?.navigationBar.tintColor = .black     //navigationbar item 색깔 변경
+        
+        //navigationBar 투명해지기
+        navigationController?.navigationBar.standardAppearance.backgroundColor = .clear
+        navigationController?.navigationBar.scrollEdgeAppearance?.backgroundColor = .clear
+        
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "ic_more"), style: .plain, target: self, action: #selector(reportTapped))     //네이게이션바 오른쪽 버튼 생성
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        
+        navigationController?.navigationBar.standardAppearance.backgroundColor = .white
+        navigationController?.navigationBar.scrollEdgeAppearance?.backgroundColor = .white
+        
     }
     
     //custom cell 등록
@@ -40,19 +63,11 @@ class PostViewController: UIViewController {
         postTableView.register(postCommetnsCell, forCellReuseIdentifier: "PostCommentsTableViewCell")
     }
     
-    //navigationBar 투명하게 하기
-    func transparentNavigationBar() {
-        self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
-        self.navigationController?.navigationBar.shadowImage = UIImage()
-        self.navigationController?.navigationBar.isTranslucent = true
-        self.navigationController?.navigationBar.backgroundColor = .clear
-    }
-    
     //tableView 초기 설정
     func initPostTableView() {
         postTableView.delegate = self
         postTableView.dataSource = self
-        postTableView.contentInset = .init(top: 310, left: 0, bottom: 0, right: 0)
+        postTableView.contentInset = .init(top: 270, left: 0, bottom: 0, right: 0)
     }
     
     //신고하기 버튼 클릭
@@ -117,6 +132,24 @@ extension PostViewController: UITableViewDelegate, UITableViewDataSource, UIScro
         let y: CGFloat = -scrollView.contentOffset.y
         let ratio = y / (maxImageTopHeight - minImageTopHeight)
         
-        representativeImage.alpha = ratio - 0.3
+        topImage.alpha = ratio - 0.3
+    }
+}
+
+//textField 글자 수 감지해서 버튼 활성화
+extension PostViewController: UITextFieldDelegate {
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        if range.location == 0 && range.length != 0 {
+            commentButton.layer.borderWidth = 1
+            commentButton.layer.cornerRadius = 17
+            commentButton.layer.borderColor = UIColor(named: "Sub2")?.cgColor
+            self.commentButton.isEnabled = false
+        } else {
+            commentButton.layer.borderWidth = 1
+            commentButton.layer.cornerRadius = 17
+            commentButton.layer.borderColor = UIColor.tintColor.cgColor
+            self.commentButton.isEnabled = true
+        }
+        return true
     }
 }

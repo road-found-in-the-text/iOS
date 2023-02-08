@@ -88,11 +88,25 @@ class ReportViewController: UIViewController {
         dismiss(animated: true)
     }
     
+    func reportAlert() {
+        let alert = UIAlertController(title: "신고하시겠습니까?", message: nil, preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "신고", style: .default) { action in
+            guard let reportContent = ReportViewController.reportContent else { return }
+            print(reportContent)
+        }
+        let cancelAction = UIAlertAction(title: "취소", style: .cancel)
+        alert.addAction(alertAction)
+        alert.addAction(cancelAction)
+        present(alert, animated: true)
+    }
+    
     //신고하기 버튼 클릭 시 팝업 창 띄우기
     @IBAction func reportButtonTapped(_ sender: Any) {
-        let alertStoryboard = UIStoryboard(name: Const.Storyboard.Name.reportAlert, bundle: nil)
-        guard let alertVC = alertStoryboard.instantiateViewController(withIdentifier: Const.ViewController.identifier.reportAlert) as? CustomAlertViewController else { return }
-        present(alertVC, animated: false)
+        //Custom alert 창 띄우기
+//        let alertStoryboard = UIStoryboard(name: Const.Storyboard.Name.reportAlert, bundle: nil)
+//        guard let alertVC = alertStoryboard.instantiateViewController(withIdentifier: Const.ViewController.identifier.reportAlert) as? CustomAlertViewController else { return }
+//        present(alertVC, animated: false)
+        reportAlert()
     }
     
     

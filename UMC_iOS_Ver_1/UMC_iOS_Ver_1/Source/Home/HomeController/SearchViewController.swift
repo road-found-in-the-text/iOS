@@ -19,6 +19,7 @@ class SearchViewController: UIViewController {
         super.viewDidLoad()
         self.title = "검색"   //search화면 title 설정
         navigationController?.navigationBar.topItem?.title = "" //돌아가기 버튼 글자 없게
+        self.navigationController?.navigationBar.tintColor = .black
         
         registerXib()
         searchHistoryTableView.delegate = self
