@@ -35,7 +35,11 @@ class MyPageScrollViewController: HPScrollViewController {
     }
     
     @objc func notificationBarButtonItemTapped() {
-        print("알림창")
+        guard let nextViewController = storyboard?.instantiateViewController(withIdentifier: "NotificationViewController") as? NotificationViewController else {
+            return
+        }
+        
+        self.navigationController?.pushViewController(nextViewController, animated: true)
     }
     
     @objc func settingBarButtonItemTapped() {
