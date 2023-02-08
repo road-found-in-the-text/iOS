@@ -15,14 +15,23 @@ class NotificationViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        navigationItem.title = "알림"
         
+        configureNavigationBar()
+        configureTableView()
+    }
+    
+    func configureNavigationBar() {
+        navigationItem.title = "알림"
+    }
+    
+    func configureTableView() {
         self.tableView.rowHeight  = UITableView.automaticDimension
         self.tableView.estimatedRowHeight = 88
+        self.tableView.separatorColor = UIColor(named: "Sub4")
     }
 }
 
+// MARK: - UITableView
 extension NotificationViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 5
