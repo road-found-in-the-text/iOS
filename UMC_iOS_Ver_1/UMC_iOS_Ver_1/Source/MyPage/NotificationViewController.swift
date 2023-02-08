@@ -17,9 +17,9 @@ class NotificationViewController: UIViewController {
         super.viewDidLoad()
 
         navigationItem.title = "알림"
-        // TODO: - tableview 높이 동적 조절
-//        self.tableView.rowHeight  = UITableView.automaticDimension
-//        self.tableView.estimatedRowHeight = 88
+        
+        self.tableView.rowHeight  = UITableView.automaticDimension
+        self.tableView.estimatedRowHeight = 88
     }
 }
 
@@ -33,15 +33,11 @@ extension NotificationViewController: UITableViewDelegate, UITableViewDataSource
             assert(false)
         }
         
-        if indexPath.row % 2 == 0 {
-            cell.commentLabel.isHidden = true
-        }
-        
         return cell
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 110
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
     }
     
 }

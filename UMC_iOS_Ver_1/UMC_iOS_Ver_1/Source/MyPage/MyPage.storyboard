@@ -300,11 +300,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="DI9-AZ-Y8M">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="DI9-AZ-Y8M">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="NotificationCell" rowHeight="106" id="vcQ-Sn-ORB" customClass="NotificationTableViewCell" customModule="UMC_iOS_Ver_1" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="NotificationCell" rowHeight="106" id="vcQ-Sn-ORB" customClass="NotificationTableViewCell" customModule="UMC_iOS_Ver_1" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="393" height="106"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vcQ-Sn-ORB" id="Jbo-Lc-gbp">
@@ -327,13 +328,13 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="Apu-76-B0t">
                                                     <rect key="frame" x="68" y="31.333333333333329" width="301" height="36"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="알림" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwa-ab-fvY">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="알림" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lwa-ab-fvY">
                                                             <rect key="frame" x="0.0" y="0.0" width="301" height="17"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <color key="textColor" name="Sub1"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="답글 내용" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FN4-Wj-Xbu">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="답글 내용" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FN4-Wj-Xbu">
                                                             <rect key="frame" x="0.0" y="19.000000000000004" width="301" height="16.999999999999996"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                                             <color key="textColor" name="Sub1"/>
@@ -357,6 +358,7 @@
                                                 <constraint firstItem="fUj-rJ-cRg" firstAttribute="leading" secondItem="jOF-Lg-OLW" secondAttribute="trailing" constant="8" id="Mbx-bE-Y49"/>
                                                 <constraint firstItem="fUj-rJ-cRg" firstAttribute="top" secondItem="Jbo-Lc-gbp" secondAttribute="top" constant="8" id="NYT-rB-EAQ"/>
                                                 <constraint firstItem="qPo-NF-ttn" firstAttribute="leading" secondItem="Apu-76-B0t" secondAttribute="leading" id="UG3-3z-09D"/>
+                                                <constraint firstItem="qPo-NF-ttn" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Apu-76-B0t" secondAttribute="bottom" constant="2" id="aoU-7H-AbW"/>
                                                 <constraint firstItem="Apu-76-B0t" firstAttribute="leading" secondItem="jOF-Lg-OLW" secondAttribute="trailing" constant="8" id="xO9-LA-bnu"/>
                                             </constraints>
                                         </tableViewCellContentView>
