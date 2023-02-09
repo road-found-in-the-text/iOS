@@ -78,8 +78,10 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
         } else if indexPath.section == 4 {
             if indexPath.row == 1 {
                 cell.titleLabel.textColor = .systemBlue
+                cell.chevronImageView.isHidden = true
             } else if indexPath.row == 2 {
                 cell.titleLabel.textColor = .systemRed
+                cell.chevronImageView.isHidden = true
             }
         }
         
@@ -90,10 +92,8 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
         guard let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: sectionHeaderIdentifier) as? SettingHeaderView else {
             return UIView()
         }
-        if section == 0 {
-            header.separatorView.isHidden = true
-        }
-        
+
+        header.separatorView.isHidden = section == 0 ? true : false
         header.titleLabel.text = sectionTitle[section]
         
         return header

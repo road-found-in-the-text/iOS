@@ -19,11 +19,13 @@ class SettingTableViewCell: UITableViewCell {
         emailLabel.isHidden = true
         chevronImageView.setImageColor(color: UIColor(named: "Sub2") ?? UIColor())
     }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        
+        titleLabel.textColor = .black
+        emailLabel.isHidden = true
+        chevronImageView.isHidden = false
     }
 
 }
