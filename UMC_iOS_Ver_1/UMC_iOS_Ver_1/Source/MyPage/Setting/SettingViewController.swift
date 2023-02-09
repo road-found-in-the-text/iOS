@@ -46,6 +46,10 @@ class SettingViewController: UIViewController {
             assert(false)
         }
         
+        guard let profileViewController = storyboard?.instantiateViewController(withIdentifier: "ProfileEditViewController") as? ProfileEditViewController else {
+            assert(false)
+        }
+        
 //        nextViewControllers.append(alarmViewController)
     }
 
@@ -104,10 +108,10 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let languageViewController = storyboard?.instantiateViewController(withIdentifier: "LanguageViewController") as? LanguageViewController else {
+        guard let profileViewController = storyboard?.instantiateViewController(withIdentifier: "ProfileEditViewController") as? ProfileEditViewController else {
             assert(false)
         }
-        navigationController?.pushViewController(languageViewController, animated: true)
+        navigationController?.pushViewController(profileViewController, animated: true)
     }
     
     
