@@ -19,9 +19,35 @@ class ProfileEditViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        nicknameTextField.addTarget(self, action: #selector(nicknameTextFieldDidChange), for: .editingChanged)
         bioTextView.delegate = self
         self.dismissKeyboardWhenTappedAround()
+        
+        configureNavigationBar()
         style()
+    }
+    
+    @objc func nicknameTextFieldDidChange() {
+        setDoneButtonStatus()
+    }
+    
+    func configureNavigationBar() {
+        navigationItem.title = "프로필 수정"
+        
+        let doneButton = UIBarButtonItem(title: "완료", style: .plain, target: self, action: #selector(doneButtonTapped))
+        doneButton.setTitleTextAttributes([NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14)], for: .normal)
+        doneButton.setTitleTextAttributes([NSAttributedString.Key.font: UIFont.systemFont(ofSize: 14)], for: .disabled)
+        doneButton.isEnabled = false
+        navigationItem.rightBarButtonItem = doneButton
+    }
+    
+    @objc func doneButtonTapped() {
+        print("완료")
+    }
+    
+    func setDoneButtonStatus() {
+        let isEnabled = (nicknameTextField.text?.isExists ?? false) && bioTextView.text.isExists
+        navigationItem.rightBarButtonItem?.isEnabled = isEnabled
     }
 
     func style() {
@@ -41,7 +67,6 @@ class ProfileEditViewController: UIViewController {
     }
     
     func updateBioTextCountLabel(length: Int) {
-        
         let fullText = "\(length) / 150"
 
         let attributedString = NSMutableAttributedString(string: fullText)
@@ -69,6 +94,7 @@ extension ProfileEditViewController: UITextViewDelegate {
     }
     
     func textViewDidChange(_ textView: UITextView) {
+        setDoneButtonStatus()
         updateBioTextCountLabel(length: textView.text.count)
     }
 }

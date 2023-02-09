@@ -298,7 +298,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="a4a-Gt-Jmb">
                                 <rect key="frame" x="16" y="362" width="361" height="145"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="자기소개" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Owv-HW-QlP">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="Owv-HW-QlP">
                                         <rect key="frame" x="10" y="13" width="341" height="100"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="textColor" name="Main"/>
