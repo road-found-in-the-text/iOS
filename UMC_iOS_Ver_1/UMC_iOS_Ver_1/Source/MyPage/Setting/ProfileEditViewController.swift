@@ -19,6 +19,7 @@ class ProfileEditViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        bioTextView.delegate = self
         self.dismissKeyboardWhenTappedAround()
         style()
     }
@@ -47,5 +48,27 @@ class ProfileEditViewController: UIViewController {
         let range = (fullText as NSString).range(of: String(length))
         attributedString.addAttribute(.foregroundColor, value: UIColor.systemBlue, range: range)
         bioTextCoundLabel.attributedText = attributedString
+    }
+}
+
+// MARK: - UITextView
+extension ProfileEditViewController: UITextViewDelegate {
+    func textViewDidEndEditing(_ textView: UITextView) {
+        if textView.text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty {
+//            textView.text = memoTextViewPlaceholder
+//            textView.textColor = UIColor(named: "Main")
+            updateBioTextCountLabel(length: 0)
+        }
+    }
+    
+    func textView(_ textView: UITextView, shouldChangeTextIn range: NSRange, replacementText text: String) -> Bool {
+        let textLength = textView.text.count + text.count
+        let isAtLimit = textLength <= 150
+        
+        return isAtLimit
+    }
+    
+    func textViewDidChange(_ textView: UITextView) {
+        updateBioTextCountLabel(length: textView.text.count)
     }
 }
