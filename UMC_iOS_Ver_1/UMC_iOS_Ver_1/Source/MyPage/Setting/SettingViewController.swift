@@ -50,6 +50,10 @@ class SettingViewController: UIViewController {
             assert(false)
         }
         
+        guard let proposalViewController = storyboard?.instantiateViewController(withIdentifier: "ProposalViewController") as? ProposalViewController else {
+            assert(false)
+        }
+        
 //        nextViewControllers.append(alarmViewController)
     }
 
@@ -108,10 +112,10 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let profileViewController = storyboard?.instantiateViewController(withIdentifier: "ProfileEditViewController") as? ProfileEditViewController else {
+        guard let proposalViewController = storyboard?.instantiateViewController(withIdentifier: "ProposalViewController") as? ProposalViewController else {
             assert(false)
         }
-        navigationController?.pushViewController(profileViewController, animated: true)
+        navigationController?.pushViewController(proposalViewController, animated: true)
     }
     
     
