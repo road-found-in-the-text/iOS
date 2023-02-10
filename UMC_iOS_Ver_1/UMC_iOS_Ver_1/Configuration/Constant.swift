@@ -9,6 +9,6 @@ import Foundation
 
 //통신에 필요한 static 상수들
 struct Constant {
-    static let BASE_URL = "https://gateway.easytask.co.kr"
-    static var JWT = " "
+    static let BASE_URL = "https://api.road-found-in-the-text-server.com"
+    static var memberId = "1"
 }

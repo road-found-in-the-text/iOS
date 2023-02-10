@@ -12,6 +12,8 @@ class ScriptPracticeSetViewController: UIViewController {
     // MARK: - Properties
     @IBOutlet var collectionView: UICollectionView!
     
+    var script: Script?
+    
     private var cellSize = CGSize()
     private var minimumItemSpacing: CGFloat = 20
     private let cellIdentifier = "scriptPTcell"
@@ -86,13 +88,22 @@ extension ScriptPracticeSetViewController: ScriptBottomSheetDelegate {
 // MARK: - UICollectionView
 extension ScriptPracticeSetViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return script?.paragraphList.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as? ScriptPTCollectionViewCell else {
             assert(false)
         }
+        
+        guard let paragraph = script?.paragraphList[indexPath.row] else {
+            assert(false)
+        }
+        
+        let paragraphNumber = String(indexPath.row + 1)
+        
+        cell.titleLabel.text = "\(paragraphNumber.addZero) \(paragraph.title)"
+        cell.contentLabel.text = paragraph.contents
         
         return cell
     }

@@ -39,6 +39,8 @@ class ScriptEditTabmanViewController: TabmanViewController {
         bar.indicator.tintColor = .black
         
         addBar(bar, dataSource: self, at: .top)
+        
+        ScriptEditDataManager().fetchScriptById(id: 1, delegate: self)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -82,6 +84,16 @@ class ScriptEditTabmanViewController: TabmanViewController {
 
 }
 
+// MARK: - Networking
+extension ScriptEditTabmanViewController: ScriptEditDelegate {
+    func didFetchScriptById(result: Script) {
+        if let vc = viewControllers[1] as? ScriptPracticeSetViewController {
+            vc.script = result
+        }
+    }
+}
+
+// MARK: - Tabman
 extension ScriptEditTabmanViewController: PageboyViewControllerDataSource, TMBarDataSource {
 
     func numberOfViewControllers(in pageboyViewController: PageboyViewController) -> Int {
