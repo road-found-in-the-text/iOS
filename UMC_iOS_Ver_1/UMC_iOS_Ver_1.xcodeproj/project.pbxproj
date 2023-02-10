@@ -97,6 +97,8 @@
 		896F42EA29869FB100677A05 /* MyPageStorageTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F42E929869FB100677A05 /* MyPageStorageTableHeaderView.swift */; };
 		8971E9EA29890ED200DF6ACD /* PracticeQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971E9E929890ED200DF6ACD /* PracticeQuestion.swift */; };
 		8979B24229962A7D00D80D83 /* TermsOfUseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8979B24129962A7D00D80D83 /* TermsOfUseViewController.swift */; };
+		8979B245299636C300D80D83 /* Markdown in Frameworks */ = {isa = PBXBuildFile; productRef = 8979B244299636C300D80D83 /* Markdown */; };
+		8979B247299636E100D80D83 /* Markdownosaur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8979B246299636E100D80D83 /* Markdownosaur.swift */; };
 		897C634B2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C634A2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift */; };
 		897C634D2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C634C2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift */; };
 		897C634F2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C634E2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift */; };
@@ -255,6 +257,7 @@
 		896F42E929869FB100677A05 /* MyPageStorageTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageStorageTableHeaderView.swift; sourceTree = "<group>"; };
 		8971E9E929890ED200DF6ACD /* PracticeQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeQuestion.swift; sourceTree = "<group>"; };
 		8979B24129962A7D00D80D83 /* TermsOfUseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfUseViewController.swift; sourceTree = "<group>"; };
+		8979B246299636E100D80D83 /* Markdownosaur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Markdownosaur.swift; sourceTree = "<group>"; };
 		897C634A2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordCollectionReusableView.swift; sourceTree = "<group>"; };
 		897C634C2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordResultCollectionViewCell.swift; sourceTree = "<group>"; };
 		897C634E2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordChartCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -306,6 +309,7 @@
 				9419EEF196C59F8A276BC2C0 /* Pods_UMC_iOS_Ver_1.framework in Frameworks */,
 				89C31EE2296DB73D00CBF249 /* Tabman in Frameworks */,
 				89EACA0A2987A12B003ACDD6 /* HPParallaxHeader in Frameworks */,
+				8979B245299636C300D80D83 /* Markdown in Frameworks */,
 				89CD521B29744C1300E1F424 /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +475,7 @@
 				5E32FC47296956A40010A376 /* IndicatorView.swift */,
 				89C31EE8296DD8CB00CBF249 /* ImageLabelBarButton.swift */,
 				5E32FC49296956D70010A376 /* Extension */,
+				8979B246299636E100D80D83 /* Markdownosaur.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -775,6 +780,7 @@
 				89C31EE1296DB73D00CBF249 /* Tabman */,
 				89CD521A29744C1300E1F424 /* Charts */,
 				89EACA092987A12B003ACDD6 /* HPParallaxHeader */,
+				8979B244299636C300D80D83 /* Markdown */,
 			);
 			productName = UMC_iOS_Ver_1;
 			productReference = 5E32FC0E296955910010A376 /* UMC_iOS_Ver_1.app */;
@@ -855,6 +861,7 @@
 				89C31EE0296DB73D00CBF249 /* XCRemoteSwiftPackageReference "Tabman" */,
 				89CD521929744C1300E1F424 /* XCRemoteSwiftPackageReference "Charts" */,
 				89EACA082987A12B003ACDD6 /* XCRemoteSwiftPackageReference "HPParallaxHeader" */,
+				8979B243299636C300D80D83 /* XCRemoteSwiftPackageReference "swift-markdown" */,
 			);
 			productRefGroup = 5E32FC0F296955910010A376 /* Products */;
 			projectDirPath = "";
@@ -1058,6 +1065,7 @@
 				5E32FC57296957840010A376 /* UIImageView.swift in Sources */,
 				21A6B4AC2980F76A00F084F6 /* NumofLikesTableViewCell.swift in Sources */,
 				89CD522029744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift in Sources */,
+				8979B247299636E100D80D83 /* Markdownosaur.swift in Sources */,
 				21A6B4B02980FA4B00F084F6 /* NumOfCommentsTableViewCell.swift in Sources */,
 				21995FF62991067D00533F33 /* InterviewCheckTableViewCell.swift in Sources */,
 				5E32FC51296957350010A376 /* String.swift in Sources */,
@@ -1474,6 +1482,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		8979B243299636C300D80D83 /* XCRemoteSwiftPackageReference "swift-markdown" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-markdown";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		89C31EE0296DB73D00CBF249 /* XCRemoteSwiftPackageReference "Tabman" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/uias/Tabman";
@@ -1501,6 +1517,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8979B244299636C300D80D83 /* Markdown */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8979B243299636C300D80D83 /* XCRemoteSwiftPackageReference "swift-markdown" */;
+			productName = Markdown;
+		};
 		89C31EE1296DB73D00CBF249 /* Tabman */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 89C31EE0296DB73D00CBF249 /* XCRemoteSwiftPackageReference "Tabman" */;
