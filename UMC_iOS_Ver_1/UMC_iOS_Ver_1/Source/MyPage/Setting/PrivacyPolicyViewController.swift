@@ -136,7 +136,7 @@ class PrivacyPolicyViewController: UIViewController {
     }
     
     func style() {
-        navigationItem.title = "이용약관"
+        navigationItem.title = "개인정보 처리방침"
         
         outView.layer.borderColor = UIColor(named: "Sub3")?.cgColor
         outView.layer.borderWidth = 1

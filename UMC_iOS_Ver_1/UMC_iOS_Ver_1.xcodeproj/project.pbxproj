@@ -84,6 +84,11 @@
 		8932B507297E814F0054D9A4 /* ScriptPracticeRecordRoading.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8932B506297E814F0054D9A4 /* ScriptPracticeRecordRoading.storyboard */; };
 		8932B509297E81580054D9A4 /* ScriptPracticeRecordRoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8932B508297E81580054D9A4 /* ScriptPracticeRecordRoadingViewController.swift */; };
 		894BED6629963D4F008D38E0 /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894BED6529963D4F008D38E0 /* PrivacyPolicyViewController.swift */; };
+		894BED6829963FB0008D38E0 /* RankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894BED6729963FB0008D38E0 /* RankViewController.swift */; };
+		894BED6A29964110008D38E0 /* RankHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 894BED6929964110008D38E0 /* RankHeaderView.xib */; };
+		894BED6C2996411B008D38E0 /* RankHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894BED6B2996411B008D38E0 /* RankHeaderView.swift */; };
+		894BED6E2996441F008D38E0 /* RankSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894BED6D2996441F008D38E0 /* RankSectionHeaderView.swift */; };
+		894BED702996442F008D38E0 /* RankSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 894BED6F2996442F008D38E0 /* RankSectionHeaderView.xib */; };
 		895820EE2987A8CC00D95B18 /* MyPageProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895820ED2987A8CC00D95B18 /* MyPageProfileView.swift */; };
 		895820F02987A8D600D95B18 /* MyPageProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 895820EF2987A8D600D95B18 /* MyPageProfileView.xib */; };
 		895820F22987ACFA00D95B18 /* MyPageScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895820F12987ACFA00D95B18 /* MyPageScrollViewController.swift */; };
@@ -245,6 +250,11 @@
 		8932B506297E814F0054D9A4 /* ScriptPracticeRecordRoading.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeRecordRoading.storyboard; sourceTree = "<group>"; };
 		8932B508297E81580054D9A4 /* ScriptPracticeRecordRoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeRecordRoadingViewController.swift; sourceTree = "<group>"; };
 		894BED6529963D4F008D38E0 /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
+		894BED6729963FB0008D38E0 /* RankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankViewController.swift; sourceTree = "<group>"; };
+		894BED6929964110008D38E0 /* RankHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankHeaderView.xib; sourceTree = "<group>"; };
+		894BED6B2996411B008D38E0 /* RankHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankHeaderView.swift; sourceTree = "<group>"; };
+		894BED6D2996441F008D38E0 /* RankSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankSectionHeaderView.swift; sourceTree = "<group>"; };
+		894BED6F2996442F008D38E0 /* RankSectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankSectionHeaderView.xib; sourceTree = "<group>"; };
 		895820ED2987A8CC00D95B18 /* MyPageProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageProfileView.swift; sourceTree = "<group>"; };
 		895820EF2987A8D600D95B18 /* MyPageProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPageProfileView.xib; sourceTree = "<group>"; };
 		895820F12987ACFA00D95B18 /* MyPageScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageScrollViewController.swift; sourceTree = "<group>"; };
@@ -680,6 +690,7 @@
 				89AF34E829959C20007A1197 /* ProposalViewController.swift */,
 				8979B24129962A7D00D80D83 /* TermsOfUseViewController.swift */,
 				894BED6529963D4F008D38E0 /* PrivacyPolicyViewController.swift */,
+				894BED6729963FB0008D38E0 /* RankViewController.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -687,8 +698,12 @@
 		898B50322990B79200D40E69 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				898B50332990B7AC00D40E69 /* SettingHeaderView.swift */,
 				898B50352990B7B400D40E69 /* SettingHeaderView.xib */,
+				898B50332990B7AC00D40E69 /* SettingHeaderView.swift */,
+				894BED6929964110008D38E0 /* RankHeaderView.xib */,
+				894BED6B2996411B008D38E0 /* RankHeaderView.swift */,
+				894BED6F2996442F008D38E0 /* RankSectionHeaderView.xib */,
+				894BED6D2996441F008D38E0 /* RankSectionHeaderView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -887,7 +902,9 @@
 				218DA90D297084B200D76C03 /* ForumTableViewCell.xib in Resources */,
 				21D4B6E429791A8200D7B485 /* ReportAlert.storyboard in Resources */,
 				210A9E8E29714B100063972B /* SearchKeywordTableViewCell.xib in Resources */,
+				894BED6A29964110008D38E0 /* RankHeaderView.xib in Resources */,
 				218DA90E297084B200D76C03 /* BestForumTableViewCell.xib in Resources */,
+				894BED702996442F008D38E0 /* RankSectionHeaderView.xib in Resources */,
 				21A6B4B52980FED300F084F6 /* PostCommentsTableViewCell.xib in Resources */,
 				216023A429708131009DA16E /* Home.storyboard in Resources */,
 				89028EC2296C6B3800B28DB7 /* ScriptEdit.storyboard in Resources */,
@@ -1097,6 +1114,7 @@
 				210A9E8629713DC00063972B /* SearchViewController.swift in Sources */,
 				5E32FC592969579B0010A376 /* UIFont.swift in Sources */,
 				895820FE2987FBFA00D95B18 /* MyPageMyCommentViewController.swift in Sources */,
+				894BED6E2996441F008D38E0 /* RankSectionHeaderView.swift in Sources */,
 				89C31EE9296DD8CB00CBF249 /* ImageLabelBarButton.swift in Sources */,
 				897C63512976BA6900CCF25F /* ScriptRecordMemoCollectionViewCell.swift in Sources */,
 				898B50462990F74D00D40E69 /* NotificationTableViewCell.swift in Sources */,
@@ -1105,6 +1123,8 @@
 				895820FB2987E41600D95B18 /* MyPagePostTableViewCell.swift in Sources */,
 				896F42EA29869FB100677A05 /* MyPageStorageTableHeaderView.swift in Sources */,
 				218DA9052970847F00D76C03 /* BestForumCollectionViewCell.swift in Sources */,
+				894BED6829963FB0008D38E0 /* RankViewController.swift in Sources */,
+				894BED6C2996411B008D38E0 /* RankHeaderView.swift in Sources */,
 				21A6B4B42980FED300F084F6 /* PostCommentsTableViewCell.swift in Sources */,
 				898B502A2990849B00D40E69 /* UserPageSectionHeaderView.swift in Sources */,
 				5E32FC6929695DE90010A376 /* ScriptPracticeViewController.swift in Sources */,

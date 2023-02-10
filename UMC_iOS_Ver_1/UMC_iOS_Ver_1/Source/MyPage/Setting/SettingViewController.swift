@@ -62,6 +62,10 @@ class SettingViewController: UIViewController {
             assert(false)
         }
         
+        guard let rankViewController = storyboard?.instantiateViewController(withIdentifier: "RankViewController") as? RankViewController else {
+            assert(false)
+        }
+        
 //        nextViewControllers.append(alarmViewController)
     }
 
@@ -120,10 +124,10 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let privacyPolicyViewController = storyboard?.instantiateViewController(withIdentifier: "PrivacyPolicyViewController") as? PrivacyPolicyViewController else {
+        guard let rankViewController = storyboard?.instantiateViewController(withIdentifier: "RankViewController") as? RankViewController else {
             assert(false)
         }
-        navigationController?.pushViewController(privacyPolicyViewController, animated: true)
+        navigationController?.pushViewController(rankViewController, animated: true)
     }
     
     

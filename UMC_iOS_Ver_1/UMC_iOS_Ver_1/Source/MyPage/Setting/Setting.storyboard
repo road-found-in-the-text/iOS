@@ -658,6 +658,40 @@
             </objects>
             <point key="canvasLocation" x="5283" y="-2"/>
         </scene>
+        <!--Rank View Controller-->
+        <scene sceneID="OXC-XC-mub">
+            <objects>
+                <viewController storyboardIdentifier="RankViewController" id="9BE-pB-q4z" customClass="RankViewController" customModule="UMC_iOS_Ver_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GAx-Io-LcI">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xOJ-7b-J9x">
+                                <rect key="frame" x="0.0" y="59" width="393" height="759"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="9BE-pB-q4z" id="hp3-V0-jZT"/>
+                                    <outlet property="delegate" destination="9BE-pB-q4z" id="xty-MZ-5yt"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="jCO-yn-2l9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jCO-yn-2l9" firstAttribute="trailing" secondItem="xOJ-7b-J9x" secondAttribute="trailing" id="JOl-ak-ii2"/>
+                            <constraint firstItem="xOJ-7b-J9x" firstAttribute="leading" secondItem="jCO-yn-2l9" secondAttribute="leading" id="VUy-XQ-4bE"/>
+                            <constraint firstItem="jCO-yn-2l9" firstAttribute="bottom" secondItem="xOJ-7b-J9x" secondAttribute="bottom" id="eAy-iw-alb"/>
+                            <constraint firstItem="xOJ-7b-J9x" firstAttribute="top" secondItem="jCO-yn-2l9" secondAttribute="top" id="qRM-ju-F9Z"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="xOJ-7b-J9x" id="Tca-zS-xiU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rAG-Cu-Ipt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6205" y="-2"/>
+        </scene>
     </scenes>
     <resources>
         <image name="Profile Image" width="2134" height="2134"/>
