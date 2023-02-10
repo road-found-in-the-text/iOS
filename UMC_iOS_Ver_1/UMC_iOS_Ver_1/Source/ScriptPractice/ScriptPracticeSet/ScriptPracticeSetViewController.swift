@@ -46,6 +46,7 @@ class ScriptPracticeSetViewController: UIViewController {
         collectionView.contentInset = UIEdgeInsets(top: 0, left: insetX, bottom: 0, right: insetX)
     }
     
+// MARK: - Bottom Sheet
     private func presentModal() {
         guard let detailViewController = self.storyboard?.instantiateViewController(withIdentifier: "ScriptBottomSheetViewController") as? ScriptBottomSheetViewController else {
             return
@@ -81,6 +82,9 @@ extension ScriptPracticeSetViewController: ScriptBottomSheetDelegate {
         guard let nextViewController = storyboard.instantiateViewController(withIdentifier: "ScriptPTViewController") as? ScriptPTViewController else {
             assert(false)
         }
+        
+        nextViewController.script = self.script
+        
         self.navigationController?.pushViewController(nextViewController, animated: true)
     }
 }

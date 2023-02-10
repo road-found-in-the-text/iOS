@@ -33,6 +33,8 @@ class ScriptPTViewController: UIViewController {
         return label
     }()
     
+    var script: Script?
+    
     private var cellSize = CGSize()
     private var minimumItemSpacing: CGFloat = 20
     private let cellIdentifier = "scriptPTcell"
@@ -45,6 +47,8 @@ class ScriptPTViewController: UIViewController {
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        titleLabel.text = script?.title
 
         configureNavigationItem()
         configureCollectionView()
@@ -58,6 +62,7 @@ class ScriptPTViewController: UIViewController {
         timer?.invalidate()
     }
     
+    // MARK: - Style
     func configureNavigationItem() {
         self.navigationItem.leftItemsSupplementBackButton = true
 
@@ -139,13 +144,22 @@ extension ScriptPTViewController {
 // MARK: - UICollectionView
 extension ScriptPTViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return script?.paragraphList.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as? ScriptPTCollectionViewCell else {
             assert(false)
         }
+        
+        guard let paragraph = script?.paragraphList[indexPath.row] else {
+            assert(false)
+        }
+        
+        let paragraphNumber = String(indexPath.row + 1)
+        
+        cell.titleLabel.text = "\(paragraphNumber.addZero) \(paragraph.title)"
+        cell.contentLabel.text = paragraph.contents
         
         return cell
     }
