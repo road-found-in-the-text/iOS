@@ -96,6 +96,7 @@
 		896F42E829869F7B00677A05 /* MyPageStorageTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 896F42E729869F7B00677A05 /* MyPageStorageTableHeaderView.xib */; };
 		896F42EA29869FB100677A05 /* MyPageStorageTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F42E929869FB100677A05 /* MyPageStorageTableHeaderView.swift */; };
 		8971E9EA29890ED200DF6ACD /* PracticeQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971E9E929890ED200DF6ACD /* PracticeQuestion.swift */; };
+		8979B24229962A7D00D80D83 /* TermsOfUseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8979B24129962A7D00D80D83 /* TermsOfUseViewController.swift */; };
 		897C634B2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C634A2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift */; };
 		897C634D2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C634C2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift */; };
 		897C634F2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C634E2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift */; };
@@ -253,6 +254,7 @@
 		896F42E729869F7B00677A05 /* MyPageStorageTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPageStorageTableHeaderView.xib; sourceTree = "<group>"; };
 		896F42E929869FB100677A05 /* MyPageStorageTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageStorageTableHeaderView.swift; sourceTree = "<group>"; };
 		8971E9E929890ED200DF6ACD /* PracticeQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeQuestion.swift; sourceTree = "<group>"; };
+		8979B24129962A7D00D80D83 /* TermsOfUseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfUseViewController.swift; sourceTree = "<group>"; };
 		897C634A2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordCollectionReusableView.swift; sourceTree = "<group>"; };
 		897C634C2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordResultCollectionViewCell.swift; sourceTree = "<group>"; };
 		897C634E2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordChartCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -669,6 +671,7 @@
 				898B503E2990D7F900D40E69 /* LanguageViewController.swift */,
 				89AF34E629958F5C007A1197 /* ProfileEditViewController.swift */,
 				89AF34E829959C20007A1197 /* ProposalViewController.swift */,
+				8979B24129962A7D00D80D83 /* TermsOfUseViewController.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -1111,6 +1114,7 @@
 				5E32FC6929695DE90010A376 /* ScriptPracticeViewController.swift in Sources */,
 				897C634B2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift in Sources */,
 				89E0B03A29881C2E007F6993 /* CreateNewScriptViewController.swift in Sources */,
+				8979B24229962A7D00D80D83 /* TermsOfUseViewController.swift in Sources */,
 				5E32FC48296956A40010A376 /* IndicatorView.swift in Sources */,
 				897C634D2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift in Sources */,
 				5E32FC6B29695DF60010A376 /* InterviewPracticeViewController.swift in Sources */,

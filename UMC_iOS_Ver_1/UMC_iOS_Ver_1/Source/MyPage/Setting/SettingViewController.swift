@@ -54,6 +54,10 @@ class SettingViewController: UIViewController {
             assert(false)
         }
         
+        guard let termsOfUseViewController = storyboard?.instantiateViewController(withIdentifier: "TermsOfUseViewController") as? TermsOfUseViewController else {
+            assert(false)
+        }
+        
 //        nextViewControllers.append(alarmViewController)
     }
 
@@ -112,10 +116,10 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let proposalViewController = storyboard?.instantiateViewController(withIdentifier: "ProposalViewController") as? ProposalViewController else {
+        guard let termsOfUseViewController = storyboard?.instantiateViewController(withIdentifier: "TermsOfUseViewController") as? TermsOfUseViewController else {
             assert(false)
         }
-        navigationController?.pushViewController(proposalViewController, animated: true)
+        navigationController?.pushViewController(termsOfUseViewController, animated: true)
     }
     
     
