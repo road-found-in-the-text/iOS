@@ -58,6 +58,10 @@ class SettingViewController: UIViewController {
             assert(false)
         }
         
+        guard let privacyPolicyViewController = storyboard?.instantiateViewController(withIdentifier: "PrivacyPolicyViewController") as? PrivacyPolicyViewController else {
+            assert(false)
+        }
+        
 //        nextViewControllers.append(alarmViewController)
     }
 
@@ -116,10 +120,10 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let termsOfUseViewController = storyboard?.instantiateViewController(withIdentifier: "TermsOfUseViewController") as? TermsOfUseViewController else {
+        guard let privacyPolicyViewController = storyboard?.instantiateViewController(withIdentifier: "PrivacyPolicyViewController") as? PrivacyPolicyViewController else {
             assert(false)
         }
-        navigationController?.pushViewController(termsOfUseViewController, animated: true)
+        navigationController?.pushViewController(privacyPolicyViewController, animated: true)
     }
     
     

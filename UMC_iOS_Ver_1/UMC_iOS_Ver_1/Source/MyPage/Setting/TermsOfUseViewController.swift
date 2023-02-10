@@ -265,6 +265,8 @@ class TermsOfUseViewController: UIViewController {
     }
     
     func style() {
+        navigationItem.title = "이용약관"
+        
         outView.layer.borderColor = UIColor(named: "Sub3")?.cgColor
         outView.layer.borderWidth = 1
         outView.layer.cornerRadius = 16
