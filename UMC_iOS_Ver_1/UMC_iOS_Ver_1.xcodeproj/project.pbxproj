@@ -89,6 +89,7 @@
 		894BED6C2996411B008D38E0 /* RankHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894BED6B2996411B008D38E0 /* RankHeaderView.swift */; };
 		894BED6E2996441F008D38E0 /* RankSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894BED6D2996441F008D38E0 /* RankSectionHeaderView.swift */; };
 		894BED702996442F008D38E0 /* RankSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 894BED6F2996442F008D38E0 /* RankSectionHeaderView.xib */; };
+		894BED72299648CE008D38E0 /* RankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894BED71299648CE008D38E0 /* RankTableViewCell.swift */; };
 		895820EE2987A8CC00D95B18 /* MyPageProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895820ED2987A8CC00D95B18 /* MyPageProfileView.swift */; };
 		895820F02987A8D600D95B18 /* MyPageProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 895820EF2987A8D600D95B18 /* MyPageProfileView.xib */; };
 		895820F22987ACFA00D95B18 /* MyPageScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895820F12987ACFA00D95B18 /* MyPageScrollViewController.swift */; };
@@ -255,6 +256,7 @@
 		894BED6B2996411B008D38E0 /* RankHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankHeaderView.swift; sourceTree = "<group>"; };
 		894BED6D2996441F008D38E0 /* RankSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankSectionHeaderView.swift; sourceTree = "<group>"; };
 		894BED6F2996442F008D38E0 /* RankSectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankSectionHeaderView.xib; sourceTree = "<group>"; };
+		894BED71299648CE008D38E0 /* RankTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankTableViewCell.swift; sourceTree = "<group>"; };
 		895820ED2987A8CC00D95B18 /* MyPageProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageProfileView.swift; sourceTree = "<group>"; };
 		895820EF2987A8D600D95B18 /* MyPageProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPageProfileView.xib; sourceTree = "<group>"; };
 		895820F12987ACFA00D95B18 /* MyPageScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageScrollViewController.swift; sourceTree = "<group>"; };
@@ -704,6 +706,7 @@
 				894BED6B2996411B008D38E0 /* RankHeaderView.swift */,
 				894BED6F2996442F008D38E0 /* RankSectionHeaderView.xib */,
 				894BED6D2996441F008D38E0 /* RankSectionHeaderView.swift */,
+				894BED71299648CE008D38E0 /* RankTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1099,6 +1102,7 @@
 				210A9E8A29714A8A0063972B /* SearchContainerViewController.swift in Sources */,
 				218DA90F297084B200D76C03 /* ForumTableViewCell.swift in Sources */,
 				2196C38A2988F55A00EFC282 /* SelectScriptViewController.swift in Sources */,
+				894BED72299648CE008D38E0 /* RankTableViewCell.swift in Sources */,
 				8932B509297E81580054D9A4 /* ScriptPracticeRecordRoadingViewController.swift in Sources */,
 				89273C0D2977CAEF00208B6D /* ScriptPTViewController.swift in Sources */,
 				2174690F29828662006B7950 /* PostCommentDataModel.swift in Sources */,

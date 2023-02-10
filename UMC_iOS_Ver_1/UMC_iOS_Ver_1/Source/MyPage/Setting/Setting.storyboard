@@ -666,9 +666,63 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xOJ-7b-J9x">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="xOJ-7b-J9x">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="RankCell" rowHeight="50" id="2BY-NS-lFP" customClass="RankTableViewCell" customModule="UMC_iOS_Ver_1" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="50" width="393" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2BY-NS-lFP" id="Xw1-4N-rxf">
+                                            <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rank Bronze" translatesAutoresizingMaskIntoConstraints="NO" id="E8f-sq-X9A">
+                                                    <rect key="frame" x="24" y="11" width="28" height="28"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="28" id="EdH-uZ-5nf"/>
+                                                        <constraint firstAttribute="width" constant="28" id="ejk-wg-nOT"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="등급" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8KI-8I-a7d">
+                                                    <rect key="frame" x="68" y="16.666666666666668" width="24.666666666666671" height="17.000000000000004"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                    <color key="textColor" name="Main"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="스크립트 0개 이상" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RRY-CX-PDS">
+                                                    <rect key="frame" x="250" y="16.666666666666668" width="113" height="17.000000000000004"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <color key="textColor" name="Sub1"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="내 등급" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bw5-ZE-d4a">
+                                                    <rect key="frame" x="100.66666666666667" y="17" width="38.000000000000014" height="16"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                                                    <color key="textColor" systemColor="systemBlueColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="RRY-CX-PDS" firstAttribute="centerY" secondItem="Xw1-4N-rxf" secondAttribute="centerY" id="5RT-8y-vJZ"/>
+                                                <constraint firstItem="8KI-8I-a7d" firstAttribute="leading" secondItem="E8f-sq-X9A" secondAttribute="trailing" constant="16" id="9st-dg-icN"/>
+                                                <constraint firstItem="RRY-CX-PDS" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Xw1-4N-rxf" secondAttribute="leading" constant="250" id="AEe-UY-RVC"/>
+                                                <constraint firstItem="Bw5-ZE-d4a" firstAttribute="centerY" secondItem="Xw1-4N-rxf" secondAttribute="centerY" id="G2z-2c-NaS"/>
+                                                <constraint firstItem="E8f-sq-X9A" firstAttribute="leading" secondItem="Xw1-4N-rxf" secondAttribute="leading" constant="24" id="NWX-Rn-OMc"/>
+                                                <constraint firstItem="Bw5-ZE-d4a" firstAttribute="leading" secondItem="8KI-8I-a7d" secondAttribute="trailing" constant="8" id="NhC-Sk-Ldo"/>
+                                                <constraint firstAttribute="trailing" secondItem="RRY-CX-PDS" secondAttribute="trailing" constant="30" id="Qf0-9a-7zn"/>
+                                                <constraint firstItem="8KI-8I-a7d" firstAttribute="centerY" secondItem="Xw1-4N-rxf" secondAttribute="centerY" id="eZH-fB-6cB"/>
+                                                <constraint firstItem="E8f-sq-X9A" firstAttribute="centerY" secondItem="Xw1-4N-rxf" secondAttribute="centerY" id="qk4-oJ-eV9"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="myRankLabel" destination="Bw5-ZE-d4a" id="A3i-Jl-Am1"/>
+                                            <outlet property="rankImageView" destination="E8f-sq-X9A" id="HeW-vc-pay"/>
+                                            <outlet property="rankLabel" destination="8KI-8I-a7d" id="KIX-ZW-XTp"/>
+                                            <outlet property="scriptCountLabel" destination="RRY-CX-PDS" id="jP7-3h-NWw"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="9BE-pB-q4z" id="hp3-V0-jZT"/>
                                     <outlet property="delegate" destination="9BE-pB-q4z" id="xty-MZ-5yt"/>
@@ -690,11 +744,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rAG-Cu-Ipt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6205" y="-2"/>
+            <point key="canvasLocation" x="6203.8167938931292" y="-2.1126760563380285"/>
         </scene>
     </scenes>
     <resources>
         <image name="Profile Image" width="2134" height="2134"/>
+        <image name="Rank Bronze" width="512" height="512"/>
         <image name="ic_Detail" width="24" height="24"/>
         <image name="ic_check" width="24" height="24"/>
         <namedColor name="Main">
