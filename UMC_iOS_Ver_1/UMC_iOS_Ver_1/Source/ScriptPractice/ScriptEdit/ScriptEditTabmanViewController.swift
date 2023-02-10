@@ -12,6 +12,8 @@ import Pageboy
 
 class ScriptEditTabmanViewController: TabmanViewController {
     
+    var scriptTitle = ""
+    
     private var viewControllers = [UIViewController()]
     private let barButtonTitle = ["편집", "연습", "기록"]
     var pageIndex = 0
@@ -40,6 +42,7 @@ class ScriptEditTabmanViewController: TabmanViewController {
         
         addBar(bar, dataSource: self, at: .top)
         
+        // TODO: id 이전 화면에서 받아오는 걸로 수정해야 함!!!!
         ScriptEditDataManager().fetchScriptById(id: 1, delegate: self)
     }
     
@@ -51,7 +54,7 @@ class ScriptEditTabmanViewController: TabmanViewController {
     }
     
     func configureNavigationItem() {
-        self.navigationItem.title = "대본"
+        self.navigationItem.title = scriptTitle
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "ic_more"), style: .plain, target: self, action: #selector(rightBarButtonItemTapped))
     }
     
@@ -87,6 +90,9 @@ class ScriptEditTabmanViewController: TabmanViewController {
 // MARK: - Networking
 extension ScriptEditTabmanViewController: ScriptEditDelegate {
     func didFetchScriptById(result: Script) {
+        scriptTitle = result.title
+        self.navigationItem.title = scriptTitle
+        
         if let vc = viewControllers[1] as? ScriptPracticeSetViewController {
             vc.script = result
         }
