@@ -87,6 +87,15 @@ class ScriptPTViewController: UIViewController {
         stopButton.layer.cornerRadius = 8
     }
     
+    func pushNextViewController() {
+        let storyboard = UIStoryboard(name: "ScriptPracticeRecord", bundle: nil)
+        guard let nextViewController = storyboard.instantiateViewController(withIdentifier: "ScriptPracticeRecordViewController") as? ScriptPracticeRecordViewController else {
+            assert(false)
+        }
+        
+        self.navigationController?.pushViewController(nextViewController, animated: true)
+    }
+    
 }
 
 // MARK: - Timer
@@ -107,6 +116,7 @@ extension ScriptPTViewController {
         if(practiceTime == 0) {
             timer?.invalidate()
             timer = nil
+            pushNextViewController()
         }
         
         practiceTime -= 1
@@ -132,6 +142,7 @@ extension ScriptPTViewController {
         self.rightTimeLabel.sizeToFit()
     }
     
+// MARK: - IBAction
     @IBAction func pressPauseButton(_ sender: UIButton) {
         isPaused.toggle()
         
@@ -145,12 +156,7 @@ extension ScriptPTViewController {
     }
     
     @IBAction func stopButtonTapped(_ sender: UIButton) {
-        let storyboard = UIStoryboard(name: "ScriptPracticeRecord", bundle: nil)
-        guard let nextViewController = storyboard.instantiateViewController(withIdentifier: "ScriptPracticeRecordViewController") as? ScriptPracticeRecordViewController else {
-            assert(false)
-        }
-        
-        self.navigationController?.pushViewController(nextViewController, animated: true)
+        pushNextViewController()
     }
 }
 
