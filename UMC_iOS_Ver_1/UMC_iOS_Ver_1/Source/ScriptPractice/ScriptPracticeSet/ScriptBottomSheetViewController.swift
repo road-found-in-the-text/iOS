@@ -8,7 +8,7 @@
 import UIKit
 
 protocol ScriptBottomSheetDelegate: AnyObject {
-    func practiceStartButtonTapped()
+    func practiceStartButtonTapped(practiceTime: Int)
 }
 
 class ScriptBottomSheetViewController: UIViewController {
@@ -20,6 +20,8 @@ class ScriptBottomSheetViewController: UIViewController {
     
     let minute = [Int](0...59).map{ String($0) }
     let second = [Int](0...59).map{ String($0) }
+    
+    var selectedTime = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -52,7 +54,11 @@ class ScriptBottomSheetViewController: UIViewController {
     }
     
     @IBAction func practiceStartButtonTapped(_ sender: UIButton) {
-        delegate?.practiceStartButtonTapped()
+        let minute = pickerView.selectedRow(inComponent: 0)
+        let second = pickerView.selectedRow(inComponent: 1)
+        let practiceTime = minute * 60 + second
+        
+        delegate?.practiceStartButtonTapped(practiceTime: practiceTime)
     }
 
 }

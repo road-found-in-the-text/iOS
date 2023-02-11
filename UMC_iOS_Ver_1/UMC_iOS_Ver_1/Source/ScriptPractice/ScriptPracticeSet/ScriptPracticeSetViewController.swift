@@ -74,8 +74,9 @@ class ScriptPracticeSetViewController: UIViewController {
 
 }
 
+// MARK: - ScriptBottomSheetDelegate
 extension ScriptPracticeSetViewController: ScriptBottomSheetDelegate {
-    func practiceStartButtonTapped() {
+    func practiceStartButtonTapped(practiceTime: Int) {
         self.dismiss(animated: true)
         
         let storyboard = UIStoryboard(name: "ScriptPT", bundle: nil)
@@ -84,6 +85,7 @@ extension ScriptPracticeSetViewController: ScriptBottomSheetDelegate {
         }
         
         nextViewController.script = self.script
+        nextViewController.practiceTime = practiceTime
         
         self.navigationController?.pushViewController(nextViewController, animated: true)
     }

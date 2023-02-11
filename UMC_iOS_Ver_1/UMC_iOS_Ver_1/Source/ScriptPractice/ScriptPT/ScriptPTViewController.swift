@@ -29,6 +29,7 @@ class ScriptPTViewController: UIViewController {
         let label = UILabel()
         label.text = "00:00"
         label.font = .boldSystemFont(ofSize: 14)
+        label.textColor = UIColor(named: "Sub1")
         
         return label
     }()
@@ -40,8 +41,8 @@ class ScriptPTViewController: UIViewController {
     private let cellIdentifier = "scriptPTcell"
     
     private var timer: Timer?
-    private var timerNumber = 60
-    private var time = 0
+    var practiceTime = 0
+    var elapsedTime = 0
     private var isPaused = false
     
     // MARK: - Lifecycle
@@ -94,29 +95,41 @@ extension ScriptPTViewController {
         if timer != nil && timer!.isValid {
             timer!.invalidate()
         }
-        
-        timerNumber = 10 // 타이머 시간 설정
-        
+                
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerCallback), userInfo: nil, repeats: true)
 
     }
     
     @objc func timerCallback() {
-        self.leftTimeLabel.text = "\(timerNumber)분 남았어요."
-        self.rightTimeLabel.text = "00:\(time)"
+        setLeftTimeLabel()
+        setRightTimeLabel()
         
-        self.leftTimeLabel.sizeToFit()
-        self.rightTimeLabel.sizeToFit()
-
-        print(timerNumber)
-        
-        if(timerNumber == 0) {
+        if(practiceTime == 0) {
             timer?.invalidate()
             timer = nil
         }
         
-        timerNumber -= 1
-        time += 1
+        practiceTime -= 1
+        elapsedTime += 1
+    }
+    
+    func setLeftTimeLabel() {
+        let remainingMinute = practiceTime / 60
+        if remainingMinute > 0 {
+            self.leftTimeLabel.text = "\(remainingMinute)분 남았어요."
+        } else {
+            self.leftTimeLabel.text = "\(practiceTime)초 남았어요."
+            self.leftTimeLabel.textColor = .systemRed
+        }
+        self.leftTimeLabel.sizeToFit()
+    }
+    
+    func setRightTimeLabel() {
+        let minute = String(elapsedTime / 60).addZero
+        let second = String(elapsedTime % 60).addZero
+        
+        self.rightTimeLabel.text = "\(minute):\(second)"
+        self.rightTimeLabel.sizeToFit()
     }
     
     @IBAction func pressPauseButton(_ sender: UIButton) {
