@@ -21,12 +21,12 @@ class ScriptRecordViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        ScriptRecordIdDataManager().fetchScriptRecordById(scriptId: 1, delegate: self)
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
+        ScriptRecordIdDataManager().fetchScriptRecordById(scriptId: 1, delegate: self)
     }
 
 }
