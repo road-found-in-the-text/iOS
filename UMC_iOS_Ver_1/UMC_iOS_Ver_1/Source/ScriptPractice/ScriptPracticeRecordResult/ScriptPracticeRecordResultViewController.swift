@@ -126,7 +126,7 @@ class ScriptPracticeRecordResultViewController: UIViewController {
     }
     
     @IBAction func doneButtonTapped(_ sender: UIButton) {
-        if memoTextView.text.isExists {
+        if memoTextView.text.isExists && memoTextView.text != memoTextViewPlaceholder {
             ScriptPracticeRecordResultDataManager().postScriptRecordMemo(scriptId: 1, memo: memoTextView.text, delegate: self)
         } else {
             pushNextViewController()
