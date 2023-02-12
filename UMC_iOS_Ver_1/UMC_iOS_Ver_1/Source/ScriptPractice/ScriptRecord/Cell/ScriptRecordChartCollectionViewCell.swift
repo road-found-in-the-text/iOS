@@ -12,7 +12,7 @@ import Charts
 class ScriptRecordChartCollectionViewCell: UICollectionViewCell {
     @IBOutlet var resultChart: RadarChartView!
     
-    private let resultChartLabels = ["분석력", "논리력", "전문성", "전달력", "창의력"]
+    private let resultChartLabels = ["분석력", "논리력", "창의력", "전달력", "전문성"]
 
     
     override func awakeFromNib() {

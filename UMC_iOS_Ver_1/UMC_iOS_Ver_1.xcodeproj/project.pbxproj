@@ -81,6 +81,8 @@
 		89273C082977B6DF00208B6D /* ScriptBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89273C072977B6DF00208B6D /* ScriptBottomSheetViewController.swift */; };
 		89273C0B2977CAE600208B6D /* ScriptPT.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89273C0A2977CAE600208B6D /* ScriptPT.storyboard */; };
 		89273C0D2977CAEF00208B6D /* ScriptPTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89273C0C2977CAEF00208B6D /* ScriptPTViewController.swift */; };
+		892C8F06299919310032A377 /* ScriptPracticeRecordResultDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892C8F05299919310032A377 /* ScriptPracticeRecordResultDataManager.swift */; };
+		892C8F08299919F40032A377 /* ScriptRecordMemoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892C8F07299919F40032A377 /* ScriptRecordMemoResponse.swift */; };
 		8932B507297E814F0054D9A4 /* ScriptPracticeRecordRoading.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8932B506297E814F0054D9A4 /* ScriptPracticeRecordRoading.storyboard */; };
 		8932B509297E81580054D9A4 /* ScriptPracticeRecordRoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8932B508297E81580054D9A4 /* ScriptPracticeRecordRoadingViewController.swift */; };
 		894BED6629963D4F008D38E0 /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894BED6529963D4F008D38E0 /* PrivacyPolicyViewController.swift */; };
@@ -252,6 +254,8 @@
 		89273C072977B6DF00208B6D /* ScriptBottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptBottomSheetViewController.swift; sourceTree = "<group>"; };
 		89273C0A2977CAE600208B6D /* ScriptPT.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPT.storyboard; sourceTree = "<group>"; };
 		89273C0C2977CAEF00208B6D /* ScriptPTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPTViewController.swift; sourceTree = "<group>"; };
+		892C8F05299919310032A377 /* ScriptPracticeRecordResultDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeRecordResultDataManager.swift; sourceTree = "<group>"; };
+		892C8F07299919F40032A377 /* ScriptRecordMemoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordMemoResponse.swift; sourceTree = "<group>"; };
 		8932B506297E814F0054D9A4 /* ScriptPracticeRecordRoading.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeRecordRoading.storyboard; sourceTree = "<group>"; };
 		8932B508297E81580054D9A4 /* ScriptPracticeRecordRoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeRecordRoadingViewController.swift; sourceTree = "<group>"; };
 		894BED6529963D4F008D38E0 /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
@@ -676,6 +680,7 @@
 				8971E9E929890ED200DF6ACD /* PracticeQuestion.swift */,
 				89B0D7ED299681C10049087A /* Script.swift */,
 				89C3C9F32998C6EC0072BDFE /* ScriptRecordResponse.swift */,
+				892C8F07299919F40032A377 /* ScriptRecordMemoResponse.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -756,6 +761,7 @@
 			children = (
 				89CD521D29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard */,
 				89CD521F29744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift */,
+				892C8F05299919310032A377 /* ScriptPracticeRecordResultDataManager.swift */,
 			);
 			path = ScriptPracticeRecordResult;
 			sourceTree = "<group>";
@@ -1087,6 +1093,7 @@
 				218DA910297084B200D76C03 /* BestForumTableViewCell.swift in Sources */,
 				8971E9EA29890ED200DF6ACD /* PracticeQuestion.swift in Sources */,
 				5E32FC4B296956EB0010A376 /* Date.swift in Sources */,
+				892C8F06299919310032A377 /* ScriptPracticeRecordResultDataManager.swift in Sources */,
 				89E0B03E29881C60007F6993 /* WriteScriptViewController.swift in Sources */,
 				21A749BB2977AB4E00EBFE82 /* ViewControllerConstants.swift in Sources */,
 				89E0B04129881C86007F6993 /* CreateNewScriptCell.swift in Sources */,
@@ -1152,6 +1159,7 @@
 				21EB2F83297FD47600259C6D /* UserProfileTableViewCell.swift in Sources */,
 				89E0B04329881C97007F6993 /* ScriptListTableViewCell.swift in Sources */,
 				2133B7A5297419290037D85D /* AddPostViewController.swift in Sources */,
+				892C8F08299919F40032A377 /* ScriptRecordMemoResponse.swift in Sources */,
 				89B0D7EE299681C10049087A /* Script.swift in Sources */,
 				21348A1B297677F4002190E5 /* ReportViewController.swift in Sources */,
 				21A6B4A82980E70200F084F6 /* PostContentTableViewCell.swift in Sources */,
