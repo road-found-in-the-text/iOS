@@ -24,7 +24,7 @@ class ScriptPracticeRecordResultViewController: UIViewController {
     
     @IBOutlet var doneButton: UIButton!
     
-    var answers: PracticeAnswer?
+    var result: ScriptRecordData?
     
     private let resultChartLabels = ["분석력", "논리력", "전문성", "전달력", "창의력"]
     private let memoTextViewPlaceholder = "내용을 입력해주세요."
@@ -44,6 +44,10 @@ class ScriptPracticeRecordResultViewController: UIViewController {
     func style() {
         self.navigationItem.title = "연습 기록"
         self.navigationItem.hidesBackButton = true
+        
+        titleLabel.text = "와우! \(result?.resultCount ?? 0)번째 연습이네요!"
+        subtitleLabel.text = "\(result?.resultCount ?? 0)번째 연습 결과를 분석해보았어요."
+
                                                                                           
         memoView.layer.cornerRadius = 8
         memoView.layer.borderColor = UIColor(named: "Sub4")?.cgColor
@@ -65,6 +69,10 @@ class ScriptPracticeRecordResultViewController: UIViewController {
     }
     
     func configureResultChart() {
+        guard let result = result else {
+            assert(false)
+        }
+        
         let backgroundDataSet = RadarChartDataSet(
             entries: [
                 RadarChartDataEntry(value: 5.0),
@@ -77,11 +85,11 @@ class ScriptPracticeRecordResultViewController: UIViewController {
         
         let dataSet = RadarChartDataSet(
             entries: [
-                RadarChartDataEntry(value: 4.0),
-                RadarChartDataEntry(value: 3.0),
-                RadarChartDataEntry(value: 4.0),
-                RadarChartDataEntry(value: 5.0),
-                RadarChartDataEntry(value: 3.0),
+                RadarChartDataEntry(value: result.score1),
+                RadarChartDataEntry(value: result.score2),
+                RadarChartDataEntry(value: result.score3),
+                RadarChartDataEntry(value: result.score4),
+                RadarChartDataEntry(value: result.score5),
             ]
         )
         

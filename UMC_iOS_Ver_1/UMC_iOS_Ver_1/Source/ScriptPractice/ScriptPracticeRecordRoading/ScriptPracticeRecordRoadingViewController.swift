@@ -10,7 +10,7 @@ import UIKit
 import Lottie
 
 protocol ScriptPracticeRecordLoadingProtocol {
-    func didFinishLoading()
+    func didFinishLoading(result: ScriptRecordData)
 }
 
 class ScriptPracticeRecordRoadingViewController: UIViewController {
@@ -62,7 +62,7 @@ class ScriptPracticeRecordRoadingViewController: UIViewController {
 extension ScriptPracticeRecordRoadingViewController: ScriptRecordPostDelegate {
     func didPostScriptRecord(result: ScriptRecordData) {
         self.dismiss(animated: false) {
-            self.delegate?.didFinishLoading()
+            self.delegate?.didFinishLoading(result: result)
         }
     }
 }

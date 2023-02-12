@@ -240,11 +240,14 @@ class ScriptPracticeRecordViewController: UIViewController {
 }
 
 extension ScriptPracticeRecordViewController: ScriptPracticeRecordLoadingProtocol {
-    func didFinishLoading() {
+    func didFinishLoading(result: ScriptRecordData) {
         let storyboard = UIStoryboard(name: "ScriptPracticeRecordResult", bundle: nil)
         guard let nextViewController = storyboard.instantiateViewController(withIdentifier: "ScriptPracticeRecordResultViewController") as? ScriptPracticeRecordResultViewController else {
             assert(false)
         }
+        
+        nextViewController.result = result
+        
         self.navigationController?.pushViewController(nextViewController, animated: true)
     }
 }
