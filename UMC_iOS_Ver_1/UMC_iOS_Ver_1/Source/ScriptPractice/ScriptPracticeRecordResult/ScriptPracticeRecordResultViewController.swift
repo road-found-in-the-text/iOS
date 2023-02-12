@@ -24,6 +24,8 @@ class ScriptPracticeRecordResultViewController: UIViewController {
     
     @IBOutlet var doneButton: UIButton!
     
+    var answers: PracticeAnswer?
+    
     private let resultChartLabels = ["분석력", "논리력", "전문성", "전달력", "창의력"]
     private let memoTextViewPlaceholder = "내용을 입력해주세요."
 

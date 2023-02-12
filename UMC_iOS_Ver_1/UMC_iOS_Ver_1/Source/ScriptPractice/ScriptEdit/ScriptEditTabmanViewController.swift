@@ -44,6 +44,7 @@ class ScriptEditTabmanViewController: TabmanViewController {
         
         // TODO: id 이전 화면에서 받아오는 걸로 수정해야 함!!!!
         ScriptEditDataManager().fetchScriptById(id: 1, delegate: self)
+        UserDefaults().set(1, forKey: "currentScript")
     }
     
     override func viewWillAppear(_ animated: Bool) {

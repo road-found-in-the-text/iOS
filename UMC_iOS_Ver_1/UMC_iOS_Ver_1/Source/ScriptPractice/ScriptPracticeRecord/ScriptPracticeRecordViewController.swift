@@ -31,6 +31,8 @@ class ScriptPracticeRecordViewController: UIViewController {
         PracticeQuestion(title: "전문성", firstQuestion: "발표 내용이 다른 학습자의 학습에 도움이 되었는가?", secondQuestion: "청중의 수준에 맞는 내용을 설명하였는가?")
     ]
     
+    var elapsedTime: Int?
+    
     var currentQuestionNumber = 1
     var selectedAnswer = Array(repeating: PracticeAnswer(), count: 5)
     
@@ -140,6 +142,9 @@ class ScriptPracticeRecordViewController: UIViewController {
         guard let loadingViewController = storyboard.instantiateViewController(withIdentifier: "ScriptPracticeRecordRoadingViewController") as? ScriptPracticeRecordRoadingViewController else {
             assert(false)
         }
+        
+        loadingViewController.elapsedTime = elapsedTime
+        loadingViewController.answer = selectedAnswer
         loadingViewController.modalPresentationStyle = .fullScreen
         loadingViewController.delegate = self
         
@@ -209,23 +214,28 @@ class ScriptPracticeRecordViewController: UIViewController {
     }
     
     @IBAction func nextButtonTapped(_ sender: UIButton) {
-//        if currentQuestionNumber < questions.count {
-//            guard let firstSelectedAnswerIndex = firstSelectedAnswerIndex, let secondSelectedAnswerIndex = secondSelectedAnswerIndex else {
-//                print("선택좀")
-//                return
-//            }
-//            selectedAnswer[currentQuestionNumber-1].firstAnswer = firstSelectedAnswerIndex + 1
-//            selectedAnswer[currentQuestionNumber-1].secondAnswer = secondSelectedAnswerIndex + 1
-//
-//            currentQuestionNumber += 1
-//
-//            updateSkipButtonTitle()
-//            updateQuestionContent()
-//            updateSelectedAnswer()
-//        } else {
-//            presentLoadingViewController()
-//        }
-        presentLoadingViewController()
+        if currentQuestionNumber < questions.count {
+            guard let firstSelectedAnswerIndex = firstSelectedAnswerIndex, let secondSelectedAnswerIndex = secondSelectedAnswerIndex else {
+                return
+            }
+            selectedAnswer[currentQuestionNumber-1].firstAnswer = firstSelectedAnswerIndex + 1
+            selectedAnswer[currentQuestionNumber-1].secondAnswer = secondSelectedAnswerIndex + 1
+
+            currentQuestionNumber += 1
+
+            updateSkipButtonTitle()
+            updateQuestionContent()
+            updateSelectedAnswer()
+        } else {
+            guard let firstSelectedAnswerIndex = firstSelectedAnswerIndex, let secondSelectedAnswerIndex = secondSelectedAnswerIndex else {
+                return
+            }
+            
+            selectedAnswer[currentQuestionNumber-1].firstAnswer = firstSelectedAnswerIndex + 1
+            selectedAnswer[currentQuestionNumber-1].secondAnswer = secondSelectedAnswerIndex + 1
+
+            presentLoadingViewController()
+        }
     }
 }
 
