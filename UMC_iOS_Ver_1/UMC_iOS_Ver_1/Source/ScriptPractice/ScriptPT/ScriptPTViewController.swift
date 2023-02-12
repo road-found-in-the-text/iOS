@@ -29,22 +29,27 @@ class ScriptPTViewController: UIViewController {
         let label = UILabel()
         label.text = "00:00"
         label.font = .boldSystemFont(ofSize: 14)
+        label.textColor = UIColor(named: "Sub1")
         
         return label
     }()
+    
+    var script: Script?
     
     private var cellSize = CGSize()
     private var minimumItemSpacing: CGFloat = 20
     private let cellIdentifier = "scriptPTcell"
     
     private var timer: Timer?
-    private var timerNumber = 60
-    private var time = 0
+    var practiceTime = 0
+    var elapsedTime = 0
     private var isPaused = false
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        titleLabel.text = script?.title
 
         configureNavigationItem()
         configureCollectionView()
@@ -58,6 +63,7 @@ class ScriptPTViewController: UIViewController {
         timer?.invalidate()
     }
     
+    // MARK: - Style
     func configureNavigationItem() {
         self.navigationItem.leftItemsSupplementBackButton = true
 
@@ -81,6 +87,17 @@ class ScriptPTViewController: UIViewController {
         stopButton.layer.cornerRadius = 8
     }
     
+    func pushNextViewController() {
+        let storyboard = UIStoryboard(name: "ScriptPracticeRecord", bundle: nil)
+        guard let nextViewController = storyboard.instantiateViewController(withIdentifier: "ScriptPracticeRecordViewController") as? ScriptPracticeRecordViewController else {
+            assert(false)
+        }
+        
+        nextViewController.elapsedTime = elapsedTime
+        
+        self.navigationController?.pushViewController(nextViewController, animated: true)
+    }
+    
 }
 
 // MARK: - Timer
@@ -89,31 +106,45 @@ extension ScriptPTViewController {
         if timer != nil && timer!.isValid {
             timer!.invalidate()
         }
-        
-        timerNumber = 10 // 타이머 시간 설정
-        
+                
         timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerCallback), userInfo: nil, repeats: true)
 
     }
     
     @objc func timerCallback() {
-        self.leftTimeLabel.text = "\(timerNumber)분 남았어요."
-        self.rightTimeLabel.text = "00:\(time)"
+        setLeftTimeLabel()
+        setRightTimeLabel()
         
-        self.leftTimeLabel.sizeToFit()
-        self.rightTimeLabel.sizeToFit()
-
-        print(timerNumber)
-        
-        if(timerNumber == 0) {
+        if(practiceTime == 0) {
             timer?.invalidate()
             timer = nil
+            pushNextViewController()
         }
         
-        timerNumber -= 1
-        time += 1
+        practiceTime -= 1
+        elapsedTime += 1
     }
     
+    func setLeftTimeLabel() {
+        let remainingMinute = practiceTime / 60
+        if remainingMinute > 0 {
+            self.leftTimeLabel.text = "\(remainingMinute)분 남았어요."
+        } else {
+            self.leftTimeLabel.text = "\(practiceTime)초 남았어요."
+            self.leftTimeLabel.textColor = .systemRed
+        }
+        self.leftTimeLabel.sizeToFit()
+    }
+    
+    func setRightTimeLabel() {
+        let minute = String(elapsedTime / 60).addZero
+        let second = String(elapsedTime % 60).addZero
+        
+        self.rightTimeLabel.text = "\(minute):\(second)"
+        self.rightTimeLabel.sizeToFit()
+    }
+    
+// MARK: - IBAction
     @IBAction func pressPauseButton(_ sender: UIButton) {
         isPaused.toggle()
         
@@ -127,25 +158,29 @@ extension ScriptPTViewController {
     }
     
     @IBAction func stopButtonTapped(_ sender: UIButton) {
-        let storyboard = UIStoryboard(name: "ScriptPracticeRecord", bundle: nil)
-        guard let nextViewController = storyboard.instantiateViewController(withIdentifier: "ScriptPracticeRecordViewController") as? ScriptPracticeRecordViewController else {
-            assert(false)
-        }
-        
-        self.navigationController?.pushViewController(nextViewController, animated: true)
+        pushNextViewController()
     }
 }
 
 // MARK: - UICollectionView
 extension ScriptPTViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return script?.paragraphList.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as? ScriptPTCollectionViewCell else {
             assert(false)
         }
+        
+        guard let paragraph = script?.paragraphList[indexPath.row] else {
+            assert(false)
+        }
+        
+        let paragraphNumber = String(indexPath.row + 1)
+        
+        cell.titleLabel.text = "\(paragraphNumber.addZero) \(paragraph.title)"
+        cell.contentLabel.text = paragraph.contents
         
         return cell
     }
