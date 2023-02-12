@@ -12,6 +12,8 @@ class ScriptPracticeSetViewController: UIViewController {
     // MARK: - Properties
     @IBOutlet var collectionView: UICollectionView!
     
+    var script: Script?
+    
     private var cellSize = CGSize()
     private var minimumItemSpacing: CGFloat = 20
     private let cellIdentifier = "scriptPTcell"
@@ -44,6 +46,7 @@ class ScriptPracticeSetViewController: UIViewController {
         collectionView.contentInset = UIEdgeInsets(top: 0, left: insetX, bottom: 0, right: insetX)
     }
     
+// MARK: - Bottom Sheet
     private func presentModal() {
         guard let detailViewController = self.storyboard?.instantiateViewController(withIdentifier: "ScriptBottomSheetViewController") as? ScriptBottomSheetViewController else {
             return
@@ -71,14 +74,19 @@ class ScriptPracticeSetViewController: UIViewController {
 
 }
 
+// MARK: - ScriptBottomSheetDelegate
 extension ScriptPracticeSetViewController: ScriptBottomSheetDelegate {
-    func practiceStartButtonTapped() {
+    func practiceStartButtonTapped(practiceTime: Int) {
         self.dismiss(animated: true)
         
         let storyboard = UIStoryboard(name: "ScriptPT", bundle: nil)
         guard let nextViewController = storyboard.instantiateViewController(withIdentifier: "ScriptPTViewController") as? ScriptPTViewController else {
             assert(false)
         }
+        
+        nextViewController.script = self.script
+        nextViewController.practiceTime = practiceTime
+        
         self.navigationController?.pushViewController(nextViewController, animated: true)
     }
 }
@@ -86,13 +94,22 @@ extension ScriptPracticeSetViewController: ScriptBottomSheetDelegate {
 // MARK: - UICollectionView
 extension ScriptPracticeSetViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return script?.paragraphList.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier, for: indexPath) as? ScriptPTCollectionViewCell else {
             assert(false)
         }
+        
+        guard let paragraph = script?.paragraphList[indexPath.row] else {
+            assert(false)
+        }
+        
+        let paragraphNumber = String(indexPath.row + 1)
+        
+        cell.titleLabel.text = "\(paragraphNumber.addZero) \(paragraph.title)"
+        cell.contentLabel.text = paragraph.contents
         
         return cell
     }

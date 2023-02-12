@@ -127,10 +127,14 @@
 		898B50462990F74D00D40E69 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898B50452990F74D00D40E69 /* NotificationTableViewCell.swift */; };
 		89AF34E729958F5C007A1197 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF34E629958F5C007A1197 /* ProfileEditViewController.swift */; };
 		89AF34E929959C20007A1197 /* ProposalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF34E829959C20007A1197 /* ProposalViewController.swift */; };
+		89B0D7EE299681C10049087A /* Script.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B0D7ED299681C10049087A /* Script.swift */; };
+		89B0D7F0299683F30049087A /* ScriptEditDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B0D7EF299683F30049087A /* ScriptEditDataManager.swift */; };
 		89C31EE2296DB73D00CBF249 /* Tabman in Frameworks */ = {isa = PBXBuildFile; productRef = 89C31EE1296DB73D00CBF249 /* Tabman */; };
 		89C31EE5296DBDD000CBF249 /* ScriptPracticeRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89C31EE4296DBDD000CBF249 /* ScriptPracticeRecord.storyboard */; };
 		89C31EE7296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C31EE6296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift */; };
 		89C31EE9296DD8CB00CBF249 /* ImageLabelBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C31EE8296DD8CB00CBF249 /* ImageLabelBarButton.swift */; };
+		89C3C9F22998C37A0072BDFE /* ScriptRecordDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C3C9F12998C37A0072BDFE /* ScriptRecordDataManager.swift */; };
+		89C3C9F42998C6EC0072BDFE /* ScriptRecordResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C3C9F32998C6EC0072BDFE /* ScriptRecordResponse.swift */; };
 		89C87D5B297EAD7100723E08 /* ScriptPracticeRecordEndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C87D5A297EAD7100723E08 /* ScriptPracticeRecordEndViewController.swift */; };
 		89C87D5D297EAD7500723E08 /* ScriptPracticeRecordEnd.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89C87D5C297EAD7500723E08 /* ScriptPracticeRecordEnd.storyboard */; };
 		89CD521B29744C1300E1F424 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 89CD521A29744C1300E1F424 /* Charts */; };
@@ -293,9 +297,13 @@
 		898B50452990F74D00D40E69 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
 		89AF34E629958F5C007A1197 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
 		89AF34E829959C20007A1197 /* ProposalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProposalViewController.swift; sourceTree = "<group>"; };
+		89B0D7ED299681C10049087A /* Script.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Script.swift; sourceTree = "<group>"; };
+		89B0D7EF299683F30049087A /* ScriptEditDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptEditDataManager.swift; sourceTree = "<group>"; };
 		89C31EE4296DBDD000CBF249 /* ScriptPracticeRecord.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeRecord.storyboard; sourceTree = "<group>"; };
 		89C31EE6296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeRecordViewController.swift; sourceTree = "<group>"; };
 		89C31EE8296DD8CB00CBF249 /* ImageLabelBarButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLabelBarButton.swift; sourceTree = "<group>"; };
+		89C3C9F12998C37A0072BDFE /* ScriptRecordDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordDataManager.swift; sourceTree = "<group>"; };
+		89C3C9F32998C6EC0072BDFE /* ScriptRecordResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordResponse.swift; sourceTree = "<group>"; };
 		89C87D5A297EAD7100723E08 /* ScriptPracticeRecordEndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeRecordEndViewController.swift; sourceTree = "<group>"; };
 		89C87D5C297EAD7500723E08 /* ScriptPracticeRecordEnd.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeRecordEnd.storyboard; sourceTree = "<group>"; };
 		89CD521D29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeRecordResult.storyboard; sourceTree = "<group>"; };
@@ -607,6 +615,7 @@
 			children = (
 				89028EC1296C6B3800B28DB7 /* ScriptEdit.storyboard */,
 				89028EC3296C6B5900B28DB7 /* ScriptEditTabmanViewController.swift */,
+				89B0D7EF299683F30049087A /* ScriptEditDataManager.swift */,
 			);
 			path = ScriptEdit;
 			sourceTree = "<group>";
@@ -633,6 +642,7 @@
 			children = (
 				8932B506297E814F0054D9A4 /* ScriptPracticeRecordRoading.storyboard */,
 				8932B508297E81580054D9A4 /* ScriptPracticeRecordRoadingViewController.swift */,
+				89C3C9F12998C37A0072BDFE /* ScriptRecordDataManager.swift */,
 			);
 			path = ScriptPracticeRecordRoading;
 			sourceTree = "<group>";
@@ -664,6 +674,8 @@
 			isa = PBXGroup;
 			children = (
 				8971E9E929890ED200DF6ACD /* PracticeQuestion.swift */,
+				89B0D7ED299681C10049087A /* Script.swift */,
+				89C3C9F32998C6EC0072BDFE /* ScriptRecordResponse.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -1105,6 +1117,7 @@
 				894BED72299648CE008D38E0 /* RankTableViewCell.swift in Sources */,
 				8932B509297E81580054D9A4 /* ScriptPracticeRecordRoadingViewController.swift in Sources */,
 				89273C0D2977CAEF00208B6D /* ScriptPTViewController.swift in Sources */,
+				89B0D7F0299683F30049087A /* ScriptEditDataManager.swift in Sources */,
 				2174690F29828662006B7950 /* PostCommentDataModel.swift in Sources */,
 				89AF34E729958F5C007A1197 /* ProfileEditViewController.swift in Sources */,
 				898B502629907E6C00D40E69 /* UserPageViewController.swift in Sources */,
@@ -1121,6 +1134,7 @@
 				894BED6E2996441F008D38E0 /* RankSectionHeaderView.swift in Sources */,
 				89C31EE9296DD8CB00CBF249 /* ImageLabelBarButton.swift in Sources */,
 				897C63512976BA6900CCF25F /* ScriptRecordMemoCollectionViewCell.swift in Sources */,
+				89C3C9F42998C6EC0072BDFE /* ScriptRecordResponse.swift in Sources */,
 				898B50462990F74D00D40E69 /* NotificationTableViewCell.swift in Sources */,
 				898B50392990CB5300D40E69 /* SettingTableViewCell.swift in Sources */,
 				5E32FC45296956470010A376 /* Constant.swift in Sources */,
@@ -1138,8 +1152,10 @@
 				21EB2F83297FD47600259C6D /* UserProfileTableViewCell.swift in Sources */,
 				89E0B04329881C97007F6993 /* ScriptListTableViewCell.swift in Sources */,
 				2133B7A5297419290037D85D /* AddPostViewController.swift in Sources */,
+				89B0D7EE299681C10049087A /* Script.swift in Sources */,
 				21348A1B297677F4002190E5 /* ReportViewController.swift in Sources */,
 				21A6B4A82980E70200F084F6 /* PostContentTableViewCell.swift in Sources */,
+				89C3C9F22998C37A0072BDFE /* ScriptRecordDataManager.swift in Sources */,
 				89EACA0529878345003ACDD6 /* MyPageStorageTableViewCell.swift in Sources */,
 				210A9E8829714A660063972B /* SearchHistoryDataModel.swift in Sources */,
 				895820F42987D79D00D95B18 /* MyPageMyPostViewController.swift in Sources */,

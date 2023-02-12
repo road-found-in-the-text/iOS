@@ -10,7 +10,7 @@ import UIKit
 import Lottie
 
 protocol ScriptPracticeRecordLoadingProtocol {
-    func didFinishLoading()
+    func didFinishLoading(result: ScriptRecordData)
 }
 
 class ScriptPracticeRecordRoadingViewController: UIViewController {
@@ -18,6 +18,9 @@ class ScriptPracticeRecordRoadingViewController: UIViewController {
     @IBOutlet var animationView: LottieAnimationView!
     
     var delegate: ScriptPracticeRecordLoadingProtocol?
+    
+    var elapsedTime: Int?
+    var answer: [PracticeAnswer]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,11 +31,19 @@ class ScriptPracticeRecordRoadingViewController: UIViewController {
         
         configureAnimationView()
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
-            self.dismiss(animated: false) {
-                self.delegate?.didFinishLoading()
-            }
+        guard let elapsedTime = elapsedTime, let answer = answer else {
+            assert(false)
         }
+        
+        let parameters = ScriptRecordDataManager().setPostScriptParameters(elapsedTime: elapsedTime, answer: answer)
+        
+        ScriptRecordDataManager().postScriptRecord(scriptId: 1, parameters: parameters, delegate: self)
+        
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+//            self.dismiss(animated: false) {
+//                self.delegate?.didFinishLoading()
+//            }
+//        }
     }
     
     func configureAnimationView() {
@@ -46,4 +57,12 @@ class ScriptPracticeRecordRoadingViewController: UIViewController {
         animationView.addSubview(customAnimationView)
     }
 
+}
+
+extension ScriptPracticeRecordRoadingViewController: ScriptRecordPostDelegate {
+    func didPostScriptRecord(result: ScriptRecordData) {
+        self.dismiss(animated: false) {
+            self.delegate?.didFinishLoading(result: result)
+        }
+    }
 }
