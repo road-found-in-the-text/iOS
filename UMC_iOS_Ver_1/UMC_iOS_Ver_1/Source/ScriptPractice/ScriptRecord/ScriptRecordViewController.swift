@@ -164,6 +164,7 @@ extension ScriptRecordViewController: UICollectionViewDelegate, UICollectionView
             case 2:
                 header.titleLabel.text = "메모"
                 header.subtitleLabel.text = "완벽한 연습을 위한 한 마디"
+                header.subtitleLabel.isHidden = false
             default:
                 assert(false)
             }
