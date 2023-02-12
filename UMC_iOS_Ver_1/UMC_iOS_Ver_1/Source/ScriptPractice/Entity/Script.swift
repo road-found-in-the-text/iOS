@@ -13,12 +13,12 @@ struct Script: Codable {
     let scriptId: Int
     let title: String
     let contents: String
-    let paragraphList: [Paragraph]
+    let paragraphList: [ScriptParagraph]
     let createdDate: String
     let modifiedDate: String
 }
 
-struct Paragraph: Codable {
+struct ScriptParagraph: Codable {
     let createdDate: String
     let modifiedDate: String
     let paragraphId: Int

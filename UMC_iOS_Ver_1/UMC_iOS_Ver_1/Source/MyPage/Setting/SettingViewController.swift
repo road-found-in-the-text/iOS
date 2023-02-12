@@ -46,6 +46,26 @@ class SettingViewController: UIViewController {
             assert(false)
         }
         
+        guard let profileViewController = storyboard?.instantiateViewController(withIdentifier: "ProfileEditViewController") as? ProfileEditViewController else {
+            assert(false)
+        }
+        
+        guard let proposalViewController = storyboard?.instantiateViewController(withIdentifier: "ProposalViewController") as? ProposalViewController else {
+            assert(false)
+        }
+        
+        guard let termsOfUseViewController = storyboard?.instantiateViewController(withIdentifier: "TermsOfUseViewController") as? TermsOfUseViewController else {
+            assert(false)
+        }
+        
+        guard let privacyPolicyViewController = storyboard?.instantiateViewController(withIdentifier: "PrivacyPolicyViewController") as? PrivacyPolicyViewController else {
+            assert(false)
+        }
+        
+        guard let rankViewController = storyboard?.instantiateViewController(withIdentifier: "RankViewController") as? RankViewController else {
+            assert(false)
+        }
+        
 //        nextViewControllers.append(alarmViewController)
     }
 
@@ -70,8 +90,10 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
         } else if indexPath.section == 4 {
             if indexPath.row == 1 {
                 cell.titleLabel.textColor = .systemBlue
+                cell.chevronImageView.isHidden = true
             } else if indexPath.row == 2 {
                 cell.titleLabel.textColor = .systemRed
+                cell.chevronImageView.isHidden = true
             }
         }
         
@@ -82,10 +104,8 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
         guard let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: sectionHeaderIdentifier) as? SettingHeaderView else {
             return UIView()
         }
-        if section == 0 {
-            header.separatorView.isHidden = true
-        }
-        
+
+        header.separatorView.isHidden = section == 0 ? true : false
         header.titleLabel.text = sectionTitle[section]
         
         return header
@@ -104,10 +124,10 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let languageViewController = storyboard?.instantiateViewController(withIdentifier: "LanguageViewController") as? LanguageViewController else {
+        guard let rankViewController = storyboard?.instantiateViewController(withIdentifier: "RankViewController") as? RankViewController else {
             assert(false)
         }
-        navigationController?.pushViewController(languageViewController, animated: true)
+        navigationController?.pushViewController(rankViewController, animated: true)
     }
     
     

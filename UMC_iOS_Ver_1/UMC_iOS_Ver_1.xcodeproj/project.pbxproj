@@ -83,6 +83,13 @@
 		89273C0D2977CAEF00208B6D /* ScriptPTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89273C0C2977CAEF00208B6D /* ScriptPTViewController.swift */; };
 		8932B507297E814F0054D9A4 /* ScriptPracticeRecordRoading.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8932B506297E814F0054D9A4 /* ScriptPracticeRecordRoading.storyboard */; };
 		8932B509297E81580054D9A4 /* ScriptPracticeRecordRoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8932B508297E81580054D9A4 /* ScriptPracticeRecordRoadingViewController.swift */; };
+		894BED6629963D4F008D38E0 /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894BED6529963D4F008D38E0 /* PrivacyPolicyViewController.swift */; };
+		894BED6829963FB0008D38E0 /* RankViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894BED6729963FB0008D38E0 /* RankViewController.swift */; };
+		894BED6A29964110008D38E0 /* RankHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 894BED6929964110008D38E0 /* RankHeaderView.xib */; };
+		894BED6C2996411B008D38E0 /* RankHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894BED6B2996411B008D38E0 /* RankHeaderView.swift */; };
+		894BED6E2996441F008D38E0 /* RankSectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894BED6D2996441F008D38E0 /* RankSectionHeaderView.swift */; };
+		894BED702996442F008D38E0 /* RankSectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 894BED6F2996442F008D38E0 /* RankSectionHeaderView.xib */; };
+		894BED72299648CE008D38E0 /* RankTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894BED71299648CE008D38E0 /* RankTableViewCell.swift */; };
 		895820EE2987A8CC00D95B18 /* MyPageProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895820ED2987A8CC00D95B18 /* MyPageProfileView.swift */; };
 		895820F02987A8D600D95B18 /* MyPageProfileView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 895820EF2987A8D600D95B18 /* MyPageProfileView.xib */; };
 		895820F22987ACFA00D95B18 /* MyPageScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895820F12987ACFA00D95B18 /* MyPageScrollViewController.swift */; };
@@ -96,6 +103,9 @@
 		896F42E829869F7B00677A05 /* MyPageStorageTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 896F42E729869F7B00677A05 /* MyPageStorageTableHeaderView.xib */; };
 		896F42EA29869FB100677A05 /* MyPageStorageTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F42E929869FB100677A05 /* MyPageStorageTableHeaderView.swift */; };
 		8971E9EA29890ED200DF6ACD /* PracticeQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971E9E929890ED200DF6ACD /* PracticeQuestion.swift */; };
+		8979B24229962A7D00D80D83 /* TermsOfUseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8979B24129962A7D00D80D83 /* TermsOfUseViewController.swift */; };
+		8979B245299636C300D80D83 /* Markdown in Frameworks */ = {isa = PBXBuildFile; productRef = 8979B244299636C300D80D83 /* Markdown */; };
+		8979B247299636E100D80D83 /* Markdownosaur.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8979B246299636E100D80D83 /* Markdownosaur.swift */; };
 		897C634B2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C634A2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift */; };
 		897C634D2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C634C2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift */; };
 		897C634F2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897C634E2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift */; };
@@ -115,6 +125,8 @@
 		898B50412990D8C900D40E69 /* LanguageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898B50402990D8C900D40E69 /* LanguageTableViewCell.swift */; };
 		898B50442990F2F700D40E69 /* NotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898B50432990F2F700D40E69 /* NotificationViewController.swift */; };
 		898B50462990F74D00D40E69 /* NotificationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898B50452990F74D00D40E69 /* NotificationTableViewCell.swift */; };
+		89AF34E729958F5C007A1197 /* ProfileEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF34E629958F5C007A1197 /* ProfileEditViewController.swift */; };
+		89AF34E929959C20007A1197 /* ProposalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89AF34E829959C20007A1197 /* ProposalViewController.swift */; };
 		89B0D7EE299681C10049087A /* Script.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B0D7ED299681C10049087A /* Script.swift */; };
 		89B0D7F0299683F30049087A /* ScriptEditDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89B0D7EF299683F30049087A /* ScriptEditDataManager.swift */; };
 		89C31EE2296DB73D00CBF249 /* Tabman in Frameworks */ = {isa = PBXBuildFile; productRef = 89C31EE1296DB73D00CBF249 /* Tabman */; };
@@ -242,6 +254,13 @@
 		89273C0C2977CAEF00208B6D /* ScriptPTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPTViewController.swift; sourceTree = "<group>"; };
 		8932B506297E814F0054D9A4 /* ScriptPracticeRecordRoading.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeRecordRoading.storyboard; sourceTree = "<group>"; };
 		8932B508297E81580054D9A4 /* ScriptPracticeRecordRoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeRecordRoadingViewController.swift; sourceTree = "<group>"; };
+		894BED6529963D4F008D38E0 /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
+		894BED6729963FB0008D38E0 /* RankViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankViewController.swift; sourceTree = "<group>"; };
+		894BED6929964110008D38E0 /* RankHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankHeaderView.xib; sourceTree = "<group>"; };
+		894BED6B2996411B008D38E0 /* RankHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankHeaderView.swift; sourceTree = "<group>"; };
+		894BED6D2996441F008D38E0 /* RankSectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankSectionHeaderView.swift; sourceTree = "<group>"; };
+		894BED6F2996442F008D38E0 /* RankSectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RankSectionHeaderView.xib; sourceTree = "<group>"; };
+		894BED71299648CE008D38E0 /* RankTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankTableViewCell.swift; sourceTree = "<group>"; };
 		895820ED2987A8CC00D95B18 /* MyPageProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageProfileView.swift; sourceTree = "<group>"; };
 		895820EF2987A8D600D95B18 /* MyPageProfileView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPageProfileView.xib; sourceTree = "<group>"; };
 		895820F12987ACFA00D95B18 /* MyPageScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageScrollViewController.swift; sourceTree = "<group>"; };
@@ -255,6 +274,8 @@
 		896F42E729869F7B00677A05 /* MyPageStorageTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPageStorageTableHeaderView.xib; sourceTree = "<group>"; };
 		896F42E929869FB100677A05 /* MyPageStorageTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageStorageTableHeaderView.swift; sourceTree = "<group>"; };
 		8971E9E929890ED200DF6ACD /* PracticeQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeQuestion.swift; sourceTree = "<group>"; };
+		8979B24129962A7D00D80D83 /* TermsOfUseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfUseViewController.swift; sourceTree = "<group>"; };
+		8979B246299636E100D80D83 /* Markdownosaur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Markdownosaur.swift; sourceTree = "<group>"; };
 		897C634A2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordCollectionReusableView.swift; sourceTree = "<group>"; };
 		897C634C2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordResultCollectionViewCell.swift; sourceTree = "<group>"; };
 		897C634E2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordChartCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -274,6 +295,8 @@
 		898B50402990D8C900D40E69 /* LanguageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanguageTableViewCell.swift; sourceTree = "<group>"; };
 		898B50432990F2F700D40E69 /* NotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationViewController.swift; sourceTree = "<group>"; };
 		898B50452990F74D00D40E69 /* NotificationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTableViewCell.swift; sourceTree = "<group>"; };
+		89AF34E629958F5C007A1197 /* ProfileEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileEditViewController.swift; sourceTree = "<group>"; };
+		89AF34E829959C20007A1197 /* ProposalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProposalViewController.swift; sourceTree = "<group>"; };
 		89B0D7ED299681C10049087A /* Script.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Script.swift; sourceTree = "<group>"; };
 		89B0D7EF299683F30049087A /* ScriptEditDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptEditDataManager.swift; sourceTree = "<group>"; };
 		89C31EE4296DBDD000CBF249 /* ScriptPracticeRecord.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeRecord.storyboard; sourceTree = "<group>"; };
@@ -308,6 +331,7 @@
 				9419EEF196C59F8A276BC2C0 /* Pods_UMC_iOS_Ver_1.framework in Frameworks */,
 				89C31EE2296DB73D00CBF249 /* Tabman in Frameworks */,
 				89EACA0A2987A12B003ACDD6 /* HPParallaxHeader in Frameworks */,
+				8979B245299636C300D80D83 /* Markdown in Frameworks */,
 				89CD521B29744C1300E1F424 /* Charts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -473,6 +497,7 @@
 				5E32FC47296956A40010A376 /* IndicatorView.swift */,
 				89C31EE8296DD8CB00CBF249 /* ImageLabelBarButton.swift */,
 				5E32FC49296956D70010A376 /* Extension */,
+				8979B246299636E100D80D83 /* Markdownosaur.swift */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -675,6 +700,11 @@
 				898B50302990A1CB00D40E69 /* SettingViewController.swift */,
 				898B503A2990D1A800D40E69 /* AlarmViewController.swift */,
 				898B503E2990D7F900D40E69 /* LanguageViewController.swift */,
+				89AF34E629958F5C007A1197 /* ProfileEditViewController.swift */,
+				89AF34E829959C20007A1197 /* ProposalViewController.swift */,
+				8979B24129962A7D00D80D83 /* TermsOfUseViewController.swift */,
+				894BED6529963D4F008D38E0 /* PrivacyPolicyViewController.swift */,
+				894BED6729963FB0008D38E0 /* RankViewController.swift */,
 			);
 			path = Setting;
 			sourceTree = "<group>";
@@ -682,8 +712,13 @@
 		898B50322990B79200D40E69 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				898B50332990B7AC00D40E69 /* SettingHeaderView.swift */,
 				898B50352990B7B400D40E69 /* SettingHeaderView.xib */,
+				898B50332990B7AC00D40E69 /* SettingHeaderView.swift */,
+				894BED6929964110008D38E0 /* RankHeaderView.xib */,
+				894BED6B2996411B008D38E0 /* RankHeaderView.swift */,
+				894BED6F2996442F008D38E0 /* RankSectionHeaderView.xib */,
+				894BED6D2996441F008D38E0 /* RankSectionHeaderView.swift */,
+				894BED71299648CE008D38E0 /* RankTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -778,6 +813,7 @@
 				89C31EE1296DB73D00CBF249 /* Tabman */,
 				89CD521A29744C1300E1F424 /* Charts */,
 				89EACA092987A12B003ACDD6 /* HPParallaxHeader */,
+				8979B244299636C300D80D83 /* Markdown */,
 			);
 			productName = UMC_iOS_Ver_1;
 			productReference = 5E32FC0E296955910010A376 /* UMC_iOS_Ver_1.app */;
@@ -858,6 +894,7 @@
 				89C31EE0296DB73D00CBF249 /* XCRemoteSwiftPackageReference "Tabman" */,
 				89CD521929744C1300E1F424 /* XCRemoteSwiftPackageReference "Charts" */,
 				89EACA082987A12B003ACDD6 /* XCRemoteSwiftPackageReference "HPParallaxHeader" */,
+				8979B243299636C300D80D83 /* XCRemoteSwiftPackageReference "swift-markdown" */,
 			);
 			productRefGroup = 5E32FC0F296955910010A376 /* Products */;
 			projectDirPath = "";
@@ -880,7 +917,9 @@
 				218DA90D297084B200D76C03 /* ForumTableViewCell.xib in Resources */,
 				21D4B6E429791A8200D7B485 /* ReportAlert.storyboard in Resources */,
 				210A9E8E29714B100063972B /* SearchKeywordTableViewCell.xib in Resources */,
+				894BED6A29964110008D38E0 /* RankHeaderView.xib in Resources */,
 				218DA90E297084B200D76C03 /* BestForumTableViewCell.xib in Resources */,
+				894BED702996442F008D38E0 /* RankSectionHeaderView.xib in Resources */,
 				21A6B4B52980FED300F084F6 /* PostCommentsTableViewCell.xib in Resources */,
 				216023A429708131009DA16E /* Home.storyboard in Resources */,
 				89028EC2296C6B3800B28DB7 /* ScriptEdit.storyboard in Resources */,
@@ -1040,6 +1079,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				89AF34E929959C20007A1197 /* ProposalViewController.swift in Sources */,
 				5E32FC16296955910010A376 /* HomeViewController.swift in Sources */,
 				5E32FC6D29695DFF0010A376 /* MyPageViewController.swift in Sources */,
 				5E32FC4D296957030010A376 /* UIColor.swift in Sources */,
@@ -1060,6 +1100,7 @@
 				5E32FC57296957840010A376 /* UIImageView.swift in Sources */,
 				21A6B4AC2980F76A00F084F6 /* NumofLikesTableViewCell.swift in Sources */,
 				89CD522029744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift in Sources */,
+				8979B247299636E100D80D83 /* Markdownosaur.swift in Sources */,
 				21A6B4B02980FA4B00F084F6 /* NumOfCommentsTableViewCell.swift in Sources */,
 				21995FF62991067D00533F33 /* InterviewCheckTableViewCell.swift in Sources */,
 				5E32FC51296957350010A376 /* String.swift in Sources */,
@@ -1073,10 +1114,12 @@
 				210A9E8A29714A8A0063972B /* SearchContainerViewController.swift in Sources */,
 				218DA90F297084B200D76C03 /* ForumTableViewCell.swift in Sources */,
 				2196C38A2988F55A00EFC282 /* SelectScriptViewController.swift in Sources */,
+				894BED72299648CE008D38E0 /* RankTableViewCell.swift in Sources */,
 				8932B509297E81580054D9A4 /* ScriptPracticeRecordRoadingViewController.swift in Sources */,
 				89273C0D2977CAEF00208B6D /* ScriptPTViewController.swift in Sources */,
 				89B0D7F0299683F30049087A /* ScriptEditDataManager.swift in Sources */,
 				2174690F29828662006B7950 /* PostCommentDataModel.swift in Sources */,
+				89AF34E729958F5C007A1197 /* ProfileEditViewController.swift in Sources */,
 				898B502629907E6C00D40E69 /* UserPageViewController.swift in Sources */,
 				89E0B03C29881C46007F6993 /* ScriptNavigationViewController.swift in Sources */,
 				5E32FC14296955910010A376 /* SceneDelegate.swift in Sources */,
@@ -1088,6 +1131,7 @@
 				210A9E8629713DC00063972B /* SearchViewController.swift in Sources */,
 				5E32FC592969579B0010A376 /* UIFont.swift in Sources */,
 				895820FE2987FBFA00D95B18 /* MyPageMyCommentViewController.swift in Sources */,
+				894BED6E2996441F008D38E0 /* RankSectionHeaderView.swift in Sources */,
 				89C31EE9296DD8CB00CBF249 /* ImageLabelBarButton.swift in Sources */,
 				897C63512976BA6900CCF25F /* ScriptRecordMemoCollectionViewCell.swift in Sources */,
 				89C3C9F42998C6EC0072BDFE /* ScriptRecordResponse.swift in Sources */,
@@ -1097,6 +1141,8 @@
 				895820FB2987E41600D95B18 /* MyPagePostTableViewCell.swift in Sources */,
 				896F42EA29869FB100677A05 /* MyPageStorageTableHeaderView.swift in Sources */,
 				218DA9052970847F00D76C03 /* BestForumCollectionViewCell.swift in Sources */,
+				894BED6829963FB0008D38E0 /* RankViewController.swift in Sources */,
+				894BED6C2996411B008D38E0 /* RankHeaderView.swift in Sources */,
 				21A6B4B42980FED300F084F6 /* PostCommentsTableViewCell.swift in Sources */,
 				898B502A2990849B00D40E69 /* UserPageSectionHeaderView.swift in Sources */,
 				5E32FC6929695DE90010A376 /* ScriptPracticeViewController.swift in Sources */,
@@ -1119,6 +1165,7 @@
 				5E32FC6929695DE90010A376 /* ScriptPracticeViewController.swift in Sources */,
 				897C634B2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift in Sources */,
 				89E0B03A29881C2E007F6993 /* CreateNewScriptViewController.swift in Sources */,
+				8979B24229962A7D00D80D83 /* TermsOfUseViewController.swift in Sources */,
 				5E32FC48296956A40010A376 /* IndicatorView.swift in Sources */,
 				897C634D2976B88E00CCF25F /* ScriptRecordResultCollectionViewCell.swift in Sources */,
 				5E32FC6B29695DF60010A376 /* InterviewPracticeViewController.swift in Sources */,
@@ -1127,6 +1174,7 @@
 				89028EC4296C6B5900B28DB7 /* ScriptEditTabmanViewController.swift in Sources */,
 				898B50342990B7AC00D40E69 /* SettingHeaderView.swift in Sources */,
 				89C31EE7296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift in Sources */,
+				894BED6629963D4F008D38E0 /* PrivacyPolicyViewController.swift in Sources */,
 				5E32FC5D296957CE0010A376 /* CustomTextField.swift in Sources */,
 				213812422977A5A800EC7B26 /* PostViewController.swift in Sources */,
 			);
@@ -1478,6 +1526,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		8979B243299636C300D80D83 /* XCRemoteSwiftPackageReference "swift-markdown" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-markdown";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
 		89C31EE0296DB73D00CBF249 /* XCRemoteSwiftPackageReference "Tabman" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/uias/Tabman";
@@ -1505,6 +1561,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		8979B244299636C300D80D83 /* Markdown */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8979B243299636C300D80D83 /* XCRemoteSwiftPackageReference "swift-markdown" */;
+			productName = Markdown;
+		};
 		89C31EE1296DB73D00CBF249 /* Tabman */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 89C31EE0296DB73D00CBF249 /* XCRemoteSwiftPackageReference "Tabman" */;
