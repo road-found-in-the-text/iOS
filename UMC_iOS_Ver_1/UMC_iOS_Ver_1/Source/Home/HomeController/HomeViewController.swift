@@ -6,14 +6,19 @@
 //
 
 import UIKit
+import Alamofire
 
 class HomeViewController: UIViewController {
-
+    
+    var totalPage = 0
+    var numOfPage = 1
     
     @IBOutlet weak var forumTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        getForumData()
         
         navigationBarTitle()
         registerXib()
@@ -91,7 +96,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         if section == 0 {
             return 1
         } else {
-            return 10
+            return forumData.count
         }
     }
     
@@ -104,7 +109,17 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             return bestForumcell
         case 1:
             guard let forumCell = tableView.dequeueReusableCell(withIdentifier: "ForumTableViewCell", for: indexPath) as? ForumTableViewCell else { return UITableViewCell() }
+            
             forumCell.selectionStyle = .none
+            
+            let forumData = forumData[indexPath.row]
+            let uploadTime = toDate(uploadTime: forumData.createDate)
+            forumCell.forumTitleLabel.text = forumData.title
+            forumCell.numOfForumLikesLabel.text = "\(forumData.likeNum)"
+            forumCell.numOfForumPhotosLabel.text = "\(forumData.imageVideoNum)"
+            forumCell.numOfForumCommentsLabel.text = "\(forumData.commentNum)"
+            forumCell.forumNickNameAndUploadTime.text = "\(forumData.writer) · \(timeInterval(uploadTime: uploadTime!))"
+            
             return forumCell
         default:
             return UITableViewCell()
@@ -136,5 +151,52 @@ extension HomeViewController: CollectionViewCellDelegate {
         let postStoryboard = UIStoryboard(name: Const.Storyboard.Name.post, bundle: nil)
         guard let postVC = postStoryboard.instantiateViewController(withIdentifier: Const.ViewController.identifier.post) as? PostViewController else { return }
         self.navigationController?.pushViewController(postVC, animated: true)
+    }
+}
+
+// MARK: - 네트워킹
+
+extension HomeViewController {
+    func getForumData() {
+        let url = "https://api.road-found-in-the-text-server.com/forum?page=\(numOfPage)"
+        
+        AF.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: ["Content-Type":"application/json", "Accept":"application/json"])
+            .validate(statusCode: 200..<300)
+            .responseDecodable(of: ForumDataModel.self) { response in
+                switch response.result {
+                case .success(let data):
+                    forumData.append(contentsOf: data.data)
+                    self.totalPage = data.totalPage
+                    self.numOfPage += 1
+                    self.forumTableView.reloadData()
+                    if self.numOfPage <= self.totalPage {
+                        self.getForumData()
+                    }
+                case .failure(let error):
+                    print(error.localizedDescription)
+                }
+            }
+    }
+}
+
+// MARK: - 시간 계산
+
+extension HomeViewController {
+    func timeInterval(uploadTime: Date) -> String {
+        let formatter = RelativeDateTimeFormatter()
+        formatter.locale = Locale(identifier: "ko_KR")
+        formatter.dateTimeStyle = .named
+        
+        let now = Date()
+        
+        return formatter.localizedString(for: uploadTime, relativeTo: now)
+    }
+    
+    func toDate(uploadTime: String) -> Date? { //"yyyy-MM-dd HH:mm:ss"
+        let dateFormatter = DateFormatter()
+        dateFormatter.locale = Locale(identifier: "en_US_POSIX")
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+        let date = dateFormatter.date(from: uploadTime)
+        return date
     }
 }

@@ -42,4 +42,11 @@ extension SearchContainerViewController: UITableViewDelegate, UITableViewDataSou
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 140
     }
+    
+    //셀 선택 시 화면이동
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let postStoryboard = UIStoryboard(name: Const.Storyboard.Name.post, bundle: nil)
+        guard let postVC = postStoryboard.instantiateViewController(withIdentifier: Const.ViewController.identifier.post) as? PostViewController else { return }
+        self.navigationController?.pushViewController(postVC, animated: true)
+    }
 }

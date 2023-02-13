@@ -7,21 +7,60 @@
 
 import Foundation
 
-struct BestForumDataModel {
-    let bestForumImage: String
-    let bestForumTitle: String
-    let numOfBestForumPhotos: String
-    let numOfBestForumComments: String
-    let numOfBestForumLikes: String
+struct BestForumDataModel: Codable {
+    let code: Int
+    let data: [BestForumData]
+    let isSuccess: Bool
+    let message: String
 }
 
-extension BestForumDataModel {
-    static var bestForumData = [
-        BestForumDataModel(bestForumImage: "figure.soccer", bestForumTitle: "Best Forum", numOfBestForumPhotos: "1234", numOfBestForumComments: "1234", numOfBestForumLikes: "1234"),
-        BestForumDataModel(bestForumImage: "figure.soccer", bestForumTitle: "Best Forum", numOfBestForumPhotos: "1234", numOfBestForumComments: "1234", numOfBestForumLikes: "1234"),
-        BestForumDataModel(bestForumImage: "figure.soccer", bestForumTitle: "Best Forum", numOfBestForumPhotos: "1234", numOfBestForumComments: "1234", numOfBestForumLikes: "1234"),
-        BestForumDataModel(bestForumImage: "figure.soccer", bestForumTitle: "Best Forum", numOfBestForumPhotos: "1234", numOfBestForumComments: "1234", numOfBestForumLikes: "1234"),
-        BestForumDataModel(bestForumImage: "figure.soccer", bestForumTitle: "Best Forum", numOfBestForumPhotos: "1234", numOfBestForumComments: "1234", numOfBestForumLikes: "1234"),
-        BestForumDataModel(bestForumImage: "figure.soccer", bestForumTitle: "Best Forum", numOfBestForumPhotos: "1234", numOfBestForumComments: "1234", numOfBestForumLikes: "1234"),
-    ]
+struct BestForumData: Codable {
+    let comment: String
+    let commentNum: Int
+    let createDate: String
+    let forumID: Int
+    let forumImageURL: [String]?
+    let imageVideoNum: Int
+    let bestForuminterviewIDSToRequests: [BestForumInterviewIDSToRequest]
+    let interviewNum, likeNum: Int
+    let bestForumscriptIDToRequests: [BestForumScriptIDToRequest]
+    let scriptNum: Int
+    let title, updateDate: String
+    let userID: Int
+    let writer: String
+
+    enum CodingKeys: String, CodingKey {
+        case comment
+        case commentNum = "comment_num"
+        case createDate
+        case forumID = "forumId"
+        case forumImageURL = "forumImage_url"
+        case imageVideoNum = "image_video_num"
+        case bestForuminterviewIDSToRequests = "interviewIdsToRequests"
+        case interviewNum = "interview_num"
+        case likeNum = "like_num"
+        case bestForumscriptIDToRequests = "scriptIdToRequests"
+        case scriptNum = "script_num"
+        case title, updateDate
+        case userID = "userId"
+        case writer
+    }
 }
+
+struct BestForumInterviewIDSToRequest: Codable {
+    let interviewID: Int
+
+    enum CodingKeys: String, CodingKey {
+        case interviewID = "interview_id"
+    }
+}
+
+struct BestForumScriptIDToRequest: Codable {
+    let scriptID: Int
+
+    enum CodingKeys: String, CodingKey {
+        case scriptID = "script_id"
+    }
+}
+
+var bestForumData: [BestForumData] = []
