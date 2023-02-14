@@ -122,6 +122,9 @@
             <connections>
                 <outlet property="bestForumImage" destination="G8B-TG-fIu" id="hoK-3C-R5d"/>
                 <outlet property="bestForumTitleLabel" destination="nhN-jz-jJ3" id="ioA-gK-R1k"/>
+                <outlet property="numOfBestForumCommentsLabel" destination="RgB-b8-YDq" id="e6w-SC-rdq"/>
+                <outlet property="numOfBestForumLikesLabel" destination="FMr-V8-arx" id="CZB-f4-tNw"/>
+                <outlet property="numOfBestForumPhotosLabel" destination="YJ6-IV-8xm" id="Qlm-UH-Zec"/>
             </connections>
             <point key="canvasLocation" x="95.419847328244273" y="54.929577464788736"/>
         </collectionViewCell>

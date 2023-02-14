@@ -32,6 +32,7 @@
 		2196C38A2988F55A00EFC282 /* SelectScriptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2196C3892988F55A00EFC282 /* SelectScriptViewController.swift */; };
 		21995FF42991067100533F33 /* ScriptCheckTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21995FF32991067100533F33 /* ScriptCheckTableViewCell.swift */; };
 		21995FF62991067D00533F33 /* InterviewCheckTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21995FF52991067D00533F33 /* InterviewCheckTableViewCell.swift */; };
+		21A2E3C9299789B800613F55 /* ForumDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A2E3C8299789B800613F55 /* ForumDataModel.swift */; };
 		21A6B4A82980E70200F084F6 /* PostContentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6B4A62980E70200F084F6 /* PostContentTableViewCell.swift */; };
 		21A6B4A92980E70200F084F6 /* PostContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21A6B4A72980E70200F084F6 /* PostContentTableViewCell.xib */; };
 		21A6B4AC2980F76A00F084F6 /* NumofLikesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21A6B4AA2980F76A00F084F6 /* NumofLikesTableViewCell.swift */; };
@@ -47,6 +48,7 @@
 		21D4B6E629791D3600D7B485 /* CustomAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21D4B6E529791D3600D7B485 /* CustomAlertViewController.swift */; };
 		21EB2F83297FD47600259C6D /* UserProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21EB2F81297FD47600259C6D /* UserProfileTableViewCell.swift */; };
 		21EB2F84297FD47600259C6D /* UserProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 21EB2F82297FD47600259C6D /* UserProfileTableViewCell.xib */; };
+		21F4111B299B6B6000182D5A /* NetWorkingData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21F4111A299B6B6000182D5A /* NetWorkingData.swift */; };
 		5E32FC12296955910010A376 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32FC11296955910010A376 /* AppDelegate.swift */; };
 		5E32FC14296955910010A376 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32FC13296955910010A376 /* SceneDelegate.swift */; };
 		5E32FC16296955910010A376 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32FC15296955910010A376 /* HomeViewController.swift */; };
@@ -198,6 +200,7 @@
 		2196C3892988F55A00EFC282 /* SelectScriptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectScriptViewController.swift; sourceTree = "<group>"; };
 		21995FF32991067100533F33 /* ScriptCheckTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptCheckTableViewCell.swift; sourceTree = "<group>"; };
 		21995FF52991067D00533F33 /* InterviewCheckTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewCheckTableViewCell.swift; sourceTree = "<group>"; };
+		21A2E3C8299789B800613F55 /* ForumDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForumDataModel.swift; sourceTree = "<group>"; };
 		21A6B4A62980E70200F084F6 /* PostContentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostContentTableViewCell.swift; sourceTree = "<group>"; };
 		21A6B4A72980E70200F084F6 /* PostContentTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostContentTableViewCell.xib; sourceTree = "<group>"; };
 		21A6B4AA2980F76A00F084F6 /* NumofLikesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumofLikesTableViewCell.swift; sourceTree = "<group>"; };
@@ -213,6 +216,7 @@
 		21D4B6E529791D3600D7B485 /* CustomAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertViewController.swift; sourceTree = "<group>"; };
 		21EB2F81297FD47600259C6D /* UserProfileTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileTableViewCell.swift; sourceTree = "<group>"; };
 		21EB2F82297FD47600259C6D /* UserProfileTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserProfileTableViewCell.xib; sourceTree = "<group>"; };
+		21F4111A299B6B6000182D5A /* NetWorkingData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetWorkingData.swift; sourceTree = "<group>"; };
 		49B928E9BB947B94197FC9A1 /* Pods_UMC_iOS_Ver_1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UMC_iOS_Ver_1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E32FC0E296955910010A376 /* UMC_iOS_Ver_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UMC_iOS_Ver_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E32FC11296955910010A376 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -370,8 +374,10 @@
 			children = (
 				21A749BA2977AB4E00EBFE82 /* ViewControllerConstants.swift */,
 				218DA907297084A700D76C03 /* BestForumDataModel.swift */,
+				21A2E3C8299789B800613F55 /* ForumDataModel.swift */,
 				210A9E8729714A660063972B /* SearchHistoryDataModel.swift */,
 				2174690E29828662006B7950 /* PostCommentDataModel.swift */,
+				21F4111A299B6B6000182D5A /* NetWorkingData.swift */,
 			);
 			path = HomeModel;
 			sourceTree = "<group>";
@@ -1112,6 +1118,7 @@
 				5E32FC12296955910010A376 /* AppDelegate.swift in Sources */,
 				5E32FC532969574E0010A376 /* UIButton.swift in Sources */,
 				210A9E8A29714A8A0063972B /* SearchContainerViewController.swift in Sources */,
+				21A2E3C9299789B800613F55 /* ForumDataModel.swift in Sources */,
 				218DA90F297084B200D76C03 /* ForumTableViewCell.swift in Sources */,
 				2196C38A2988F55A00EFC282 /* SelectScriptViewController.swift in Sources */,
 				894BED72299648CE008D38E0 /* RankTableViewCell.swift in Sources */,
@@ -1151,6 +1158,7 @@
 				21995FF42991067100533F33 /* ScriptCheckTableViewCell.swift in Sources */,
 				21EB2F83297FD47600259C6D /* UserProfileTableViewCell.swift in Sources */,
 				89E0B04329881C97007F6993 /* ScriptListTableViewCell.swift in Sources */,
+				21F4111B299B6B6000182D5A /* NetWorkingData.swift in Sources */,
 				2133B7A5297419290037D85D /* AddPostViewController.swift in Sources */,
 				89B0D7EE299681C10049087A /* Script.swift in Sources */,
 				21348A1B297677F4002190E5 /* ReportViewController.swift in Sources */,

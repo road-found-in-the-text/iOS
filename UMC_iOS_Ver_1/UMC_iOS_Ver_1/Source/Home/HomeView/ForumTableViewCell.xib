@@ -118,6 +118,9 @@
                 <outlet property="forumContentLabel" destination="SIy-Lc-QMw" id="pRA-mn-4lF"/>
                 <outlet property="forumNickNameAndUploadTime" destination="iQS-y7-ymh" id="t8j-dx-Eyf"/>
                 <outlet property="forumTitleLabel" destination="M2s-NK-T06" id="Bs6-Yb-yRA"/>
+                <outlet property="numOfForumCommentsLabel" destination="zfP-M1-8R6" id="k39-Qv-TUg"/>
+                <outlet property="numOfForumLikesLabel" destination="opa-me-ivi" id="nkq-rT-Gjg"/>
+                <outlet property="numOfForumPhotosLabel" destination="4Ys-w5-BUg" id="ogy-If-su3"/>
             </connections>
             <point key="canvasLocation" x="162.59541984732823" y="45.774647887323944"/>
         </tableViewCell>

@@ -31,8 +31,11 @@ class AddPostViewController: UIViewController {
         textFieldLayer()
         
         imagePicker.delegate = self
+        
         tapImageView()
     }
+    
+    // MARK: - textField 설정
     
     //textField 밑줄 모양으로 만들기
     func textFieldLayer() {
@@ -46,7 +49,9 @@ class AddPostViewController: UIViewController {
         titleTextField.layer.masksToBounds = true
     }
     
-    //imageView 클릭 시 실행
+    // MARK: - 사진에 관한 설정
+    
+    //topImageView 클릭 시 실행
     func tapImageView() {
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(addTopImage))
         imageView.addGestureRecognizer(tapGesture)
@@ -65,12 +70,6 @@ class AddPostViewController: UIViewController {
         checkAlbumPermission()
     }
     
-    //게시글에 카메라로 찍은 사진 추가
-    func addContentImageByCamera() {
-        distinctionImage = 2
-        checkCameraPermission()
-    }
-    
     //사진 갤러리 열기 및 이미지 자르기
     func openPhoto() {
         imagePicker.sourceType = .photoLibrary
@@ -78,12 +77,22 @@ class AddPostViewController: UIViewController {
         present(imagePicker, animated: true)
     }
     
+    // MARK: - 카메라에 관한 설정
+    
     //카메라 열기
     func openCamera() {
         imagePicker.sourceType = .camera
         imagePicker.allowsEditing = true
         present(imagePicker, animated: true)
     }
+    
+    //게시글에 카메라로 찍은 사진 추가
+    func addContentImageByCamera() {
+        distinctionImage = 2
+        checkCameraPermission()
+    }
+    
+    // MARK: - 접근 권한
     
     //사진 접근 권한
     func checkAlbumPermission() {
@@ -152,6 +161,8 @@ class AddPostViewController: UIViewController {
         }
     }
     
+    // MARK: - TapBar 카메라 버튼 alert 기능
+    
     //post content에 사진 추가하는 alert 기능
     func addImageAlert() {
         let alert = UIAlertController(title: nil, message: nil, preferredStyle: .actionSheet)
@@ -168,6 +179,8 @@ class AddPostViewController: UIViewController {
         present(alert, animated: true)
     }
     
+    // MARK: - 버튼 액션
+    
     //뒤로가기 버튼
     @IBAction func backButtonTapped(_ sender: UIButton) {
         dismiss(animated: true)
@@ -181,6 +194,8 @@ class AddPostViewController: UIViewController {
         addImageAlert()
     }
 }
+
+// MARK: - imagePicker 설정
 
 extension AddPostViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
     //사진 갤러리에서 사진 선택 완료 시 실행

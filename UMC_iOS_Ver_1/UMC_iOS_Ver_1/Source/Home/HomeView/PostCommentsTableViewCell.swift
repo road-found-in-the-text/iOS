@@ -16,6 +16,7 @@ class PostCommentsTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
+        //userProfile 사진 원 모양으로 하기
         commentUserProfile.layer.cornerRadius = commentUserProfile.frame.width / 2
         commentUserProfile.clipsToBounds = true
     }

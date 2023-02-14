@@ -19,10 +19,13 @@ class SelectScriptViewController: UIViewController {
         
         selectScriptTableView.delegate = self
         selectScriptTableView.dataSource = self
+        
         selectScriptTableView.separatorStyle = .none
         
         roundCornerButton()
     }
+    
+    // MARK: - 스크립트 분류 버튼 설정
     
     func roundCornerButton() {
         entireButton.layer.cornerRadius = 20
@@ -70,6 +73,8 @@ class SelectScriptViewController: UIViewController {
         dismiss(animated: true)
     }
 }
+
+// MARK: - 스크립트 목록 tableView 설정
 
 extension SelectScriptViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
