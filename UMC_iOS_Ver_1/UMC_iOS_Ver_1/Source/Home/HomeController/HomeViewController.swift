@@ -8,17 +8,19 @@
 import UIKit
 import Alamofire
 
+protocol ForumDataDelegate {
+    var url: String { get }
+    func getForumData()
+}
+
 class HomeViewController: UIViewController {
     
-    var totalPage = 0
-    var numOfPage = 1
+    let netWorkingData = NetWorkingData.shared
     
     @IBOutlet weak var forumTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        getForumData()
         
         navigationBarTitle()
         registerXib()
@@ -27,6 +29,12 @@ class HomeViewController: UIViewController {
         if #available(iOS 15, *) {
             forumTableView.sectionHeaderTopPadding = 0
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        getForumData()
     }
     
     // MARK: - navigationBar 설정
@@ -113,12 +121,12 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
             forumCell.selectionStyle = .none
             
             let forumData = forumData[indexPath.row]
-            let uploadTime = toDate(uploadTime: forumData.createDate)
+            let uploadTime = HomeViewController.toDate(uploadTime: forumData.createDate)
             forumCell.forumTitleLabel.text = forumData.title
             forumCell.numOfForumLikesLabel.text = "\(forumData.likeNum)"
             forumCell.numOfForumPhotosLabel.text = "\(forumData.imageVideoNum)"
             forumCell.numOfForumCommentsLabel.text = "\(forumData.commentNum)"
-            forumCell.forumNickNameAndUploadTime.text = "\(forumData.writer) · \(timeInterval(uploadTime: uploadTime!))"
+            forumCell.forumNickNameAndUploadTime.text = "\(forumData.writer) · \(HomeViewController.timeInterval(uploadTime: uploadTime!))"
             
             return forumCell
         default:
@@ -156,9 +164,13 @@ extension HomeViewController: CollectionViewCellDelegate {
 
 // MARK: - 네트워킹
 
-extension HomeViewController {
+extension HomeViewController: ForumDataDelegate {
+    var url: String {
+        return netWorkingData.basicURL + "/forum?page=\(netWorkingData.numOfPage)"
+    }
+    
     func getForumData() {
-        let url = "https://api.road-found-in-the-text-server.com/forum?page=\(numOfPage)"
+        netWorkingData.numOfPage = 1
         
         AF.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: ["Content-Type":"application/json", "Accept":"application/json"])
             .validate(statusCode: 200..<300)
@@ -166,10 +178,10 @@ extension HomeViewController {
                 switch response.result {
                 case .success(let data):
                     forumData.append(contentsOf: data.data)
-                    self.totalPage = data.totalPage
-                    self.numOfPage += 1
+                    self.netWorkingData.totalPage = data.totalPage
+                    self.netWorkingData.numOfPage += 1
                     self.forumTableView.reloadData()
-                    if self.numOfPage <= self.totalPage {
+                    if self.netWorkingData.numOfPage <= self.netWorkingData.totalPage {
                         self.getForumData()
                     }
                 case .failure(let error):
@@ -179,10 +191,10 @@ extension HomeViewController {
     }
 }
 
-// MARK: - 시간 계산
+// MARK: - 업로드 시간 계산
 
 extension HomeViewController {
-    func timeInterval(uploadTime: Date) -> String {
+    static func timeInterval(uploadTime: Date) -> String {
         let formatter = RelativeDateTimeFormatter()
         formatter.locale = Locale(identifier: "ko_KR")
         formatter.dateTimeStyle = .named
@@ -192,7 +204,7 @@ extension HomeViewController {
         return formatter.localizedString(for: uploadTime, relativeTo: now)
     }
     
-    func toDate(uploadTime: String) -> Date? { //"yyyy-MM-dd HH:mm:ss"
+    static func toDate(uploadTime: String) -> Date? { //"yyyy-MM-dd HH:mm:ss"
         let dateFormatter = DateFormatter()
         dateFormatter.locale = Locale(identifier: "en_US_POSIX")
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"

@@ -6,8 +6,15 @@
 //
 
 import UIKit
+import Alamofire
 
 class SearchViewController: UIViewController {
+    
+    let netWorkingData = NetWorkingData.shared
+    
+    var searchContainerVC = SearchContainerViewController()
+    
+    static var searchKeyword: String?
     
     @IBOutlet weak var recentSearchKeyword: UILabel!
     @IBOutlet weak var deleteAllButton: UIButton!
@@ -84,6 +91,15 @@ class SearchViewController: UIViewController {
         searchHistoryTableView.reloadData()
     }
     
+    // MARK: - 검색에 따른 UI 변화
+    
+    func setUI(hide: Bool) {
+        self.recentSearchKeyword.isHidden = hide
+        self.deleteAllButton.isHidden = hide
+        self.searchHistoryTableView.isHidden = hide
+        self.searchForumTableView.isHidden = !hide
+    }
+    
     // MARK: - 모두 삭제 버튼 액션
     
     @IBAction func deleteAllButtonTapped(_ sender: UIButton) {
@@ -110,6 +126,11 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
         
         return searchHistoryCell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        getForumData()
+        setUI(hide: true)
+    }
 }
 
 // MARK: - SearchBar 설정
@@ -117,20 +138,16 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
 extension SearchViewController: UISearchBarDelegate {
     //search 버튼 누르면 실행
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
-        self.recentSearchKeyword.isHidden = true
-        self.deleteAllButton.isHidden = true
-        self.searchHistoryTableView.isHidden = true
-        self.searchForumTableView.isHidden = false
         searchBar.resignFirstResponder()   //서치바 키보드 내리기
         addSearchHistoryToUserDefaults()
+        SearchViewController.searchKeyword = searchBar.text
+        getForumData()
+        setUI(hide: true)
     }
     
     //searchBar 누르면 실행
     func searchBarShouldBeginEditing(_ searchBar: UISearchBar) -> Bool {
-        self.recentSearchKeyword.isHidden = false
-        self.deleteAllButton.isHidden = false
-        self.searchHistoryTableView.isHidden = false
-        self.searchForumTableView.isHidden = true
+        setUI(hide: false)
         addSearchHistoryToTableView()
         return true
     }
@@ -148,5 +165,37 @@ extension SearchViewController: CellButtonTappedDelegate {
         searchHistoryTableView.beginUpdates()
         searchHistoryTableView.deleteRows(at: [IndexPath(row: indexpath.row, section: 0)], with: .none)
         searchHistoryTableView.endUpdates()
+    }
+}
+
+// MARK: - 네트워킹
+
+extension SearchViewController: ForumDataDelegate {
+    var url: String {
+        return netWorkingData.basicURL + "/forum/search?q=\(SearchViewController.searchKeyword ?? "")&page=\(netWorkingData.numOfPage)"
+    }
+    
+    func getForumData() {
+        
+        print("hp")
+        netWorkingData.numOfPage = 1
+        
+        AF.request(url, method: .get)
+            .validate(statusCode: 200..<300)
+            .responseDecodable(of: ForumDataModel.self) { response in
+                switch response.result {
+                case .success(let data):
+                    forumData.append(contentsOf: data.data)
+                    self.netWorkingData.totalPage = data.totalPage
+                    self.netWorkingData.numOfPage += 1
+                    self.searchContainerVC.contentsTableView?.reloadData()
+                    print("hi")
+                    if self.netWorkingData.numOfPage <= self.netWorkingData.totalPage {
+                        self.getForumData()
+                    }
+                case .failure(let error):
+                    print(error.localizedDescription)
+                }
+            }
     }
 }
