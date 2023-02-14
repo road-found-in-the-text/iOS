@@ -101,6 +101,9 @@
                                 <state key="normal" title="이메일로 로그인">
                                     <color key="titleColor" name="Sub1"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapLoginWithEmail:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="DgI-8W-JlV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>

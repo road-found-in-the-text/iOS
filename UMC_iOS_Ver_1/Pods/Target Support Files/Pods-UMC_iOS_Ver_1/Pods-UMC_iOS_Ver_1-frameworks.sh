@@ -179,13 +179,33 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DLRadioButton/DLRadioButton.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/KakaoSDKAuth/KakaoSDKAuth.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/KakaoSDKCommon/KakaoSDKCommon.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/KakaoSDKNavi/KakaoSDKNavi.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/KakaoSDKShare/KakaoSDKShare.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/KakaoSDKStory/KakaoSDKStory.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/KakaoSDKTalk/KakaoSDKTalk.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/KakaoSDKTemplate/KakaoSDKTemplate.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/KakaoSDKUser/KakaoSDKUser.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/KakaoSDKFriend/KakaoSDKFriend.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/DLRadioButton/DLRadioButton.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/KakaoSDKAuth/KakaoSDKAuth.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/KakaoSDKCommon/KakaoSDKCommon.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/KakaoSDKNavi/KakaoSDKNavi.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/KakaoSDKShare/KakaoSDKShare.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/KakaoSDKStory/KakaoSDKStory.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/KakaoSDKTalk/KakaoSDKTalk.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/KakaoSDKTemplate/KakaoSDKTemplate.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/KakaoSDKUser/KakaoSDKUser.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/SwiftKeychainWrapper/SwiftKeychainWrapper.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework"
+  install_framework "${PODS_XCFRAMEWORKS_BUILD_DIR}/KakaoSDKFriend/KakaoSDKFriend.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

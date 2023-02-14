@@ -6,9 +6,13 @@
 //
 
 import Foundation
+import SwiftKeychainWrapper
+
 
 //통신에 필요한 static 상수들
 struct Constant {
     static let BASE_URL = "https://api.road-found-in-the-text-server.com"
-    static var JWT = " "
+    //static var JWT = " " ->
+
+    static var MemberID = " "
 }

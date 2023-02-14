@@ -2,27 +2,86 @@ PODS:
   - Alamofire (5.6.2)
   - DLRadioButton (1.4.12)
   - IQKeyboardManagerSwift (6.5.10)
+  - KakaoSDK (2.11.1):
+    - KakaoSDKAuth (= 2.11.1)
+    - KakaoSDKCommon (= 2.11.1)
+    - KakaoSDKFriend (= 2.11.1)
+    - KakaoSDKNavi (= 2.11.1)
+    - KakaoSDKShare (= 2.11.1)
+    - KakaoSDKStory (= 2.11.1)
+    - KakaoSDKTalk (= 2.11.1)
+    - KakaoSDKTemplate (= 2.11.1)
+    - KakaoSDKUser (= 2.11.1)
+  - KakaoSDKAuth (2.11.1):
+    - KakaoSDKCommon (= 2.11.1)
+  - KakaoSDKCommon (2.11.1):
+    - KakaoSDKCommon/Common (= 2.11.1)
+    - KakaoSDKCommon/Network (= 2.11.1)
+  - KakaoSDKCommon/Common (2.11.1)
+  - KakaoSDKCommon/Network (2.11.1):
+    - Alamofire (~> 5.1)
+    - KakaoSDKCommon/Common (= 2.11.1)
+  - KakaoSDKFriend (2.11.1):
+    - KakaoSDKUser (= 2.11.1)
+  - KakaoSDKNavi (2.11.1):
+    - KakaoSDKCommon/Common (= 2.11.1)
+  - KakaoSDKShare (2.11.1):
+    - KakaoSDKCommon (= 2.11.1)
+    - KakaoSDKTemplate (= 2.11.1)
+  - KakaoSDKStory (2.11.1):
+    - KakaoSDKUser (= 2.11.1)
+  - KakaoSDKTalk (2.11.1):
+    - KakaoSDKTemplate (= 2.11.1)
+    - KakaoSDKUser (= 2.11.1)
+  - KakaoSDKTemplate (2.11.1):
+    - KakaoSDKCommon/Common (= 2.11.1)
+  - KakaoSDKUser (2.11.1):
+    - KakaoSDKAuth (= 2.11.1)
   - lottie-ios (4.1.2)
+  - SwiftKeychainWrapper (4.0.1)
 
 DEPENDENCIES:
-  - Alamofire
   - DLRadioButton (~> 1.4)
   - IQKeyboardManagerSwift
+  - KakaoSDK
   - lottie-ios
+  - SwiftKeychainWrapper
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - DLRadioButton
     - IQKeyboardManagerSwift
+    - KakaoSDK
+    - KakaoSDKAuth
+    - KakaoSDKCommon
+    - KakaoSDKFriend
+    - KakaoSDKNavi
+    - KakaoSDKShare
+    - KakaoSDKStory
+    - KakaoSDKTalk
+    - KakaoSDKTemplate
+    - KakaoSDKUser
     - lottie-ios
+    - SwiftKeychainWrapper
 
 SPEC CHECKSUMS:
   Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
   DLRadioButton: d7c4e225ed0e8013cef7be61455230c7557ad7c1
   IQKeyboardManagerSwift: 52962c76ab33532f15ad9f3ff4e5715eda5335bb
+  KakaoSDK: ab3e070e19afb7218d6897b53c4b44d65a574005
+  KakaoSDKAuth: bb2dfa7be30daa8403c9cfc8001aa6fde7a5b779
+  KakaoSDKCommon: 555e1bb46595b842ded01cf7888cc17bbae4e113
+  KakaoSDKFriend: 51b432245bfd77006df4594efd6cb606c8970e86
+  KakaoSDKNavi: 695360dc4a673c1fc4e893c6afe9922e0accc8bd
+  KakaoSDKShare: 9752730ce3339536f9d7812eb70eccb87643e9a6
+  KakaoSDKStory: 0ea94b212c07579c12f2a4c64722667cef6ace84
+  KakaoSDKTalk: 504872e5b49e5ff104c65e37d54d2a8f04c606d3
+  KakaoSDKTemplate: f8ee0b33f649e436c1aaf2a3a6bd6aa3dcae2451
+  KakaoSDKUser: 08c0a4f40bebdebdf948a9e3d0e44ed5c2754f99
   lottie-ios: b3846a9fa8ca1a1a3bebfa256ebe8b6fd4aaaaad
+  SwiftKeychainWrapper: 807ba1d63c33a7d0613288512399cd1eda1e470c
 
-PODFILE CHECKSUM: b7f31d02d32749b925bd70b5f611788d711e9122
+PODFILE CHECKSUM: 7efdbbb6da724caaba0630be4cb19084be20e8a8
 
 COCOAPODS: 1.11.3

@@ -70,6 +70,15 @@
 		5E32FC6929695DE90010A376 /* ScriptPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32FC6829695DE90010A376 /* ScriptPracticeViewController.swift */; };
 		5E32FC6B29695DF60010A376 /* InterviewPracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32FC6A29695DF60010A376 /* InterviewPracticeViewController.swift */; };
 		5E32FC6D29695DFF0010A376 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E32FC6C29695DFF0010A376 /* MyPageViewController.swift */; };
+		5EBD26A429966BAF00D36BBC /* NormalSignupResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBD26A329966BAF00D36BBC /* NormalSignupResponse.swift */; };
+		5EBD26A72996745800D36BBC /* LoginWithEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBD26A62996745800D36BBC /* LoginWithEmailViewController.swift */; };
+		5EBD26A92996747A00D36BBC /* LoginWithEmail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EBD26A82996747A00D36BBC /* LoginWithEmail.storyboard */; };
+		5EBD26AF299A5A8900D36BBC /* SetNickNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBD26AE299A5A8900D36BBC /* SetNickNameViewController.swift */; };
+		5EBD26B1299A5A9C00D36BBC /* SetNickName.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EBD26B0299A5A9C00D36BBC /* SetNickName.storyboard */; };
+		5EBD26B4299B3D8600D36BBC /* SetNickNameResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBD26B3299B3D8600D36BBC /* SetNickNameResponse.swift */; };
+		5EBD26B7299B401400D36BBC /* Subscription.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EBD26B6299B401400D36BBC /* Subscription.storyboard */; };
+		5EBD26B9299BA09B00D36BBC /* SubscriptionAgreementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBD26B8299BA09B00D36BBC /* SubscriptionAgreementViewController.swift */; };
+		5EBD26BB299BAC7F00D36BBC /* SubscriptionPersonalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EBD26BA299BAC7F00D36BBC /* SubscriptionPersonalViewController.swift */; };
 		5EE89E67298A87B900C03AE7 /* SignUpPage.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EE89E66298A87B900C03AE7 /* SignUpPage.storyboard */; };
 		5EE89E69298A880700C03AE7 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE89E68298A880700C03AE7 /* SignUpViewController.swift */; };
 		5EE89E6C298ABB1200C03AE7 /* FindPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE89E6B298ABB1200C03AE7 /* FindPasswordViewController.swift */; };
@@ -198,6 +207,15 @@
 		5E32FC6A29695DF60010A376 /* InterviewPracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewPracticeViewController.swift; sourceTree = "<group>"; };
 		5E32FC6C29695DFF0010A376 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		5E64DE603605238BE8969A94 /* Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests.debug.xcconfig"; path = "Target Support Files/Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests/Pods-UMC_iOS_Ver_1-UMC_iOS_Ver_1UITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5EBD26A329966BAF00D36BBC /* NormalSignupResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NormalSignupResponse.swift; sourceTree = "<group>"; };
+		5EBD26A62996745800D36BBC /* LoginWithEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWithEmailViewController.swift; sourceTree = "<group>"; };
+		5EBD26A82996747A00D36BBC /* LoginWithEmail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginWithEmail.storyboard; sourceTree = "<group>"; };
+		5EBD26AE299A5A8900D36BBC /* SetNickNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNickNameViewController.swift; sourceTree = "<group>"; };
+		5EBD26B0299A5A9C00D36BBC /* SetNickName.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SetNickName.storyboard; sourceTree = "<group>"; };
+		5EBD26B3299B3D8600D36BBC /* SetNickNameResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetNickNameResponse.swift; sourceTree = "<group>"; };
+		5EBD26B6299B401400D36BBC /* Subscription.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Subscription.storyboard; sourceTree = "<group>"; };
+		5EBD26B8299BA09B00D36BBC /* SubscriptionAgreementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionAgreementViewController.swift; sourceTree = "<group>"; };
+		5EBD26BA299BAC7F00D36BBC /* SubscriptionPersonalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionPersonalViewController.swift; sourceTree = "<group>"; };
 		5EE89E66298A87B900C03AE7 /* SignUpPage.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpPage.storyboard; sourceTree = "<group>"; };
 		5EE89E68298A880700C03AE7 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		5EE89E6B298ABB1200C03AE7 /* FindPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindPasswordViewController.swift; sourceTree = "<group>"; };
@@ -337,8 +355,8 @@
 		5E029434298A79BD001EDC43 /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				5E029435298A79DE001EDC43 /* LoginViewController.swift */,
 				5E029437298A7A10001EDC43 /* LoginPage.storyboard */,
+				5E029435298A79DE001EDC43 /* LoginViewController.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -419,6 +437,9 @@
 		5E32FC43296956300010A376 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				5EBD26B5299B400000D36BBC /* Subscription */,
+				5EBD26AD299A5A4100D36BBC /* SetNickName */,
+				5EBD26A52996741900D36BBC /* LoginWithEmail */,
 				5EE89E6A298A959C00C03AE7 /* FindPassword */,
 				5EE89E65298A86FF00C03AE7 /* SignUp */,
 				5E029434298A79BD001EDC43 /* Login */,
@@ -503,9 +524,55 @@
 			path = ScriptPractice;
 			sourceTree = "<group>";
 		};
+		5EBD26A229966B9A00D36BBC /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				5EBD26A329966BAF00D36BBC /* NormalSignupResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		5EBD26A52996741900D36BBC /* LoginWithEmail */ = {
+			isa = PBXGroup;
+			children = (
+				5EBD26A62996745800D36BBC /* LoginWithEmailViewController.swift */,
+				5EBD26A82996747A00D36BBC /* LoginWithEmail.storyboard */,
+			);
+			path = LoginWithEmail;
+			sourceTree = "<group>";
+		};
+		5EBD26AD299A5A4100D36BBC /* SetNickName */ = {
+			isa = PBXGroup;
+			children = (
+				5EBD26B2299B3D6E00D36BBC /* Response */,
+				5EBD26AE299A5A8900D36BBC /* SetNickNameViewController.swift */,
+				5EBD26B0299A5A9C00D36BBC /* SetNickName.storyboard */,
+			);
+			path = SetNickName;
+			sourceTree = "<group>";
+		};
+		5EBD26B2299B3D6E00D36BBC /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				5EBD26B3299B3D8600D36BBC /* SetNickNameResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		5EBD26B5299B400000D36BBC /* Subscription */ = {
+			isa = PBXGroup;
+			children = (
+				5EBD26B6299B401400D36BBC /* Subscription.storyboard */,
+				5EBD26BA299BAC7F00D36BBC /* SubscriptionPersonalViewController.swift */,
+				5EBD26B8299BA09B00D36BBC /* SubscriptionAgreementViewController.swift */,
+			);
+			path = Subscription;
+			sourceTree = "<group>";
+		};
 		5EE89E65298A86FF00C03AE7 /* SignUp */ = {
 			isa = PBXGroup;
 			children = (
+				5EBD26A229966B9A00D36BBC /* Response */,
 				5EE89E66298A87B900C03AE7 /* SignUpPage.storyboard */,
 				5EE89E68298A880700C03AE7 /* SignUpViewController.swift */,
 			);
@@ -758,6 +825,8 @@
 				21D4B6E429791A8200D7B485 /* ReportAlert.storyboard in Resources */,
 				210A9E8E29714B100063972B /* SearchKeywordTableViewCell.xib in Resources */,
 				5EE89E70298ABBF900C03AE7 /* FindPasswordPage.storyboard in Resources */,
+				5EBD26B7299B401400D36BBC /* Subscription.storyboard in Resources */,
+				5EBD26A92996747A00D36BBC /* LoginWithEmail.storyboard in Resources */,
 				218DA90E297084B200D76C03 /* BestForumTableViewCell.xib in Resources */,
 				21A6B4B52980FED300F084F6 /* PostCommentsTableViewCell.xib in Resources */,
 				216023A429708131009DA16E /* Home.storyboard in Resources */,
@@ -772,6 +841,7 @@
 				5EE89E67298A87B900C03AE7 /* SignUpPage.storyboard in Resources */,
 				21A6B4B12980FA4B00F084F6 /* NumOfCommentsTableViewCell.xib in Resources */,
 				2195E0F0297672AA00203C49 /* Report.storyboard in Resources */,
+				5EBD26B1299A5A9C00D36BBC /* SetNickName.storyboard in Resources */,
 				896854B32975564200E70868 /* ScriptRecord.storyboard in Resources */,
 				5E029438298A7A10001EDC43 /* LoginPage.storyboard in Resources */,
 				89CD521E29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard in Resources */,
@@ -920,6 +990,7 @@
 				5E32FC4B296956EB0010A376 /* Date.swift in Sources */,
 				89E0B03E29881C60007F6993 /* WriteScriptViewController.swift in Sources */,
 				21A749BB2977AB4E00EBFE82 /* ViewControllerConstants.swift in Sources */,
+				5EBD26AF299A5A8900D36BBC /* SetNickNameViewController.swift in Sources */,
 				89E0B04129881C86007F6993 /* CreateNewScriptCell.swift in Sources */,
 				5E32FC552969576A0010A376 /* UIViewController.swift in Sources */,
 				5E32FC57296957840010A376 /* UIImageView.swift in Sources */,
@@ -946,7 +1017,9 @@
 				2174690F29828662006B7950 /* PostCommentDataModel.swift in Sources */,
 				89E0B03C29881C46007F6993 /* ScriptNavigationViewController.swift in Sources */,
 				5E32FC14296955910010A376 /* SceneDelegate.swift in Sources */,
+				5EBD26A72996745800D36BBC /* LoginWithEmailViewController.swift in Sources */,
 				89C87D5B297EAD7100723E08 /* ScriptPracticeRecordEndViewController.swift in Sources */,
+				5EBD26B9299BA09B00D36BBC /* SubscriptionAgreementViewController.swift in Sources */,
 				5E32FC5B296957BB0010A376 /* UITextField.swift in Sources */,
 				210A9E8629713DC00063972B /* SearchViewController.swift in Sources */,
 				5E32FC592969579B0010A376 /* UIFont.swift in Sources */,
@@ -964,6 +1037,7 @@
 				21A6B4A82980E70200F084F6 /* PostContentTableViewCell.swift in Sources */,
 				210A9E8829714A660063972B /* SearchHistoryDataModel.swift in Sources */,
 				210A9E8D29714B100063972B /* SearchKeywordTableViewCell.swift in Sources */,
+				5EBD26A429966BAF00D36BBC /* NormalSignupResponse.swift in Sources */,
 				89DCF50D2977060500CB2296 /* ScriptPracticeSetViewController.swift in Sources */,
 				5E32FC6929695DE90010A376 /* ScriptPracticeViewController.swift in Sources */,
 				897C634B2976B81C00CCF25F /* ScriptRecordCollectionReusableView.swift in Sources */,
@@ -975,8 +1049,10 @@
 				5E32FC4F296957170010A376 /* CustomSegmentedControl.swift in Sources */,
 				89028EC4296C6B5900B28DB7 /* ScriptEditTabmanViewController.swift in Sources */,
 				89C31EE7296DBDD900CBF249 /* ScriptPracticeRecordViewController.swift in Sources */,
+				5EBD26B4299B3D8600D36BBC /* SetNickNameResponse.swift in Sources */,
 				5E32FC5D296957CE0010A376 /* CustomTextField.swift in Sources */,
 				213812422977A5A800EC7B26 /* PostViewController.swift in Sources */,
+				5EBD26BB299BAC7F00D36BBC /* SubscriptionPersonalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

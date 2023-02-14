@@ -130,6 +130,9 @@
                                 <state key="normal" title="회원가입">
                                     <color key="titleColor" name="Sub2"/>
                                 </state>
+                                <connections>
+                                    <action selector="didTapCertificationBtn:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="6aE-2Z-eQW"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2mq-Er-oU7">
                                 <rect key="frame" x="16" y="370" width="361" height="46"/>
@@ -167,6 +170,13 @@
                                     <action selector="didTapShowCheckPasswordTxtField:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="vAT-ev-ZMJ"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_alert triangle" translatesAutoresizingMaskIntoConstraints="NO" id="LyG-Ou-BTQ">
+                                <rect key="frame" x="327" y="199" width="44" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="44" id="E6q-Pg-LSl"/>
+                                    <constraint firstAttribute="height" constant="44" id="eOF-jp-1Ui"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -197,6 +207,7 @@
                             <constraint firstItem="2mq-Er-oU7" firstAttribute="top" secondItem="7Os-B6-xJT" secondAttribute="bottom" constant="13" id="c7w-Y7-1oT"/>
                             <constraint firstItem="cBW-sG-crQ" firstAttribute="top" secondItem="2mq-Er-oU7" secondAttribute="bottom" constant="4" id="cLL-L7-4Rj"/>
                             <constraint firstItem="lIm-Ts-R1D" firstAttribute="top" secondItem="Pff-QC-dEY" secondAttribute="bottom" constant="4" id="caT-jq-FJg"/>
+                            <constraint firstItem="LyG-Ou-BTQ" firstAttribute="top" secondItem="Ajo-Ly-MJP" secondAttribute="top" constant="1" id="fGx-Mq-ZsE"/>
                             <constraint firstItem="2mq-Er-oU7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="hzq-Ul-n5z"/>
                             <constraint firstItem="l6d-QG-iAI" firstAttribute="leading" secondItem="lIm-Ts-R1D" secondAttribute="trailing" constant="6" id="jc5-Oy-bjC"/>
                             <constraint firstItem="Ajo-Ly-MJP" firstAttribute="top" secondItem="DXE-kM-5J4" secondAttribute="bottom" constant="4" id="kV2-9c-suw"/>
@@ -209,9 +220,11 @@
                             <constraint firstItem="DXE-kM-5J4" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="24" id="vSi-Xs-6Hm"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="2mq-Er-oU7" secondAttribute="trailing" constant="16" id="vou-eR-whf"/>
                             <constraint firstItem="p4E-6g-Qoh" firstAttribute="leading" secondItem="PdR-Qc-zXR" secondAttribute="trailing" constant="6" id="wSS-mm-tLz"/>
+                            <constraint firstItem="Ajo-Ly-MJP" firstAttribute="trailing" secondItem="LyG-Ou-BTQ" secondAttribute="trailing" constant="6" id="zfQ-MA-CBI"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="alertImgView" destination="LyG-Ou-BTQ" id="cjn-le-qo2"/>
                         <outlet property="checkImgMark" destination="l6d-QG-iAI" id="cok-mH-P0k"/>
                         <outlet property="checkImgNum" destination="p4E-6g-Qoh" id="c7H-WA-ycN"/>
                         <outlet property="checkImgRange" destination="7Os-B6-xJT" id="KfC-C0-NDU"/>
@@ -219,6 +232,7 @@
                         <outlet property="checkLabelNum" destination="lIm-Ts-R1D" id="TJa-nh-56b"/>
                         <outlet property="checkLabelRange" destination="PdR-Qc-zXR" id="PlC-eH-1QR"/>
                         <outlet property="checkPasswordTextField" destination="2mq-Er-oU7" id="Y7A-3M-kAs"/>
+                        <outlet property="emailAddressLabel" destination="DXE-kM-5J4" id="aJI-sS-sJd"/>
                         <outlet property="emailTextField" destination="Ajo-Ly-MJP" id="TDa-9E-MjI"/>
                         <outlet property="isHiddenCheckPasswordBtn" destination="MrI-GT-kHy" id="KGn-B2-Krq"/>
                         <outlet property="isHiddenPasswordBtn" destination="9Db-II-RHd" id="ViP-yH-BRq"/>
@@ -235,6 +249,7 @@
     </scenes>
     <color key="tintColor" systemColor="labelColor"/>
     <resources>
+        <image name="ic_alert triangle" width="18" height="18"/>
         <image name="ic_check" width="24" height="24"/>
         <image name="ic_eye off" width="18" height="18"/>
         <namedColor name="Sub1">

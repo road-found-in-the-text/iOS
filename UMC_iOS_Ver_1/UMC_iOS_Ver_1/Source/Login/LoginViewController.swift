@@ -22,6 +22,19 @@ class LoginViewController: UIViewController {
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
+    @IBAction func didTapLoginWithEmail(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Subscription", bundle: nil)
+        
+        guard let vc = storyboard.instantiateViewController(withIdentifier: "SubscriptionPersonalViewController") as? SubscriptionPersonalViewController else { return }
+        
+        self.navigationController?.pushViewController(vc, animated: true)
+//        let storyboard = UIStoryboard(name: "LoginWithEmail", bundle: nil)
+//
+//        guard let vc = storyboard.instantiateViewController(withIdentifier: "LoginWithEmailViewController") as? LoginWithEmailViewController else { return }
+//
+//        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         

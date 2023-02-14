@@ -7,6 +7,9 @@
 
 import UIKit
 
+import Alamofire
+import SwiftKeychainWrapper
+
 class SignUpViewController: UIViewController {
 
     @IBOutlet weak var signupBtn: UIButton!
@@ -19,6 +22,10 @@ class SignUpViewController: UIViewController {
     
     @IBOutlet weak var isHiddenPasswordBtn: UIButton! //패스워드 보임 설정 버튼
     @IBOutlet weak var isHiddenCheckPasswordBtn: UIButton!//패스워드확인 보임 설정 버튼
+    
+    @IBOutlet weak var alertImgView: UIImageView!
+    
+    @IBOutlet weak var emailAddressLabel: UILabel!
     
     //비밀번호 성립 조건을 위한 정규식들 -> 길이, 숫자포함, 특수문자포함 순
     let regexForRange = "^(?=.*).{8,16}$"
@@ -148,6 +155,10 @@ class SignUpViewController: UIViewController {
     }
 
     
+    @IBAction func didTapSignUpBtn(_ sender: Any) {
+        sendCertificationCodeToEmail()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
           
@@ -200,6 +211,8 @@ class SignUpViewController: UIViewController {
         
         //화면 어딘가를 눌렀을때 키보드 내리기
         dismissKeyboardWhenTappedAround()
+        
+        alertImgView.isHidden = true
     }
     
 }
@@ -294,14 +307,17 @@ extension SignUpViewController: UITextFieldDelegate{
             }
         }
         else{
+            
             textField.text = ""
-
-            textField.layer.borderColor = UIColor(hex: 0x52616A).cgColor
             textField.textColor = UIColor(hex: 0xADB5BD)
             if textField.textColor == UIColor(hex: 0xADB5BD) {
                 textField.text = nil
                 textField.textColor = UIColor.black
                 
+            }
+            
+            if textField.layer.borderColor != UIColor(hex: 0xFF3B30).cgColor{
+                textField.layer.borderColor = UIColor(hex: 0x52616A).cgColor
             }
         }
         
@@ -331,7 +347,11 @@ extension SignUpViewController: UITextFieldDelegate{
                 textField.text = "abc@email.com"
                 textField.textColor = UIColor(hex: 0xD3D7DC)
           }
-            textField.layer.borderColor = UIColor(hex: 0xEFF1F3).cgColor
+            
+            if textField.layer.borderColor != UIColor(hex: 0xFF3B30).cgColor{
+                textField.layer.borderColor = UIColor(hex: 0xEFF1F3).cgColor
+            }
+            
         }
 
     }
@@ -361,28 +381,17 @@ extension SignUpViewController: UITextFieldDelegate{
 
 
 extension SignUpViewController{
+    
     func sendCertificationCodeToEmail(){
         let url = "\(Constant.BASE_URL)/members/signup"
 
-        let email = KeychainWrapper.standard.string(forKey: "appleEmail")
-
-        let username = KeychainWrapper.standard.string(forKey: "userAppleID")
-
-        let signupPurpose = UserDefaults.standard.integer(forKey: "signupPurpose")
-
-        let marketing = UserDefaults.standard.string(forKey: "marketing")
-
-        let agreementCheck = UserDefaults.standard.string(forKey: "agreementCheck")
-
+        let email = emailTextField.text ?? ""
+        
+        let pw = checkPasswordTextField.text ?? ""
 
         let bodyData : Parameters = [
-            "email" : email ?? " ",
-            "username" : username ?? " ",
-            "signupPurpose" : signupPurpose,
-            "referralCode" : " ",
-            "marketing" : marketing ?? "",
-            "agreementCheck" : agreementCheck ?? "",
-            "isApple" : true
+            "email": email,
+            "pw": pw
 
         ]
 
@@ -392,35 +401,40 @@ extension SignUpViewController{
                    method: .post,
                    parameters: bodyData,
                    encoding: JSONEncoding.default,
-                   headers: nil).responseDecodable(of: SignupAppleCompleteResponse.self){
+                   headers: nil).responseDecodable(of: NormalSignupResponse.self){
                 response in
 
                 switch response.result {
 
                 case .success(let response):
                     print("SUCCESS>> signUpNormalPriv Response \(response) ")
+                    
+                    if response.code == 1000 {
+                        //키체인에 UserID 저장
+                        KeychainWrapper.standard.set(response.data?.memberID ?? 0, forKey: "MemberID")
 
-                    //키체인에 UserID 저장
-                    KeychainWrapper.standard.set(response.id ?? 0, forKey: "UserID")
+                        //키체인에 JWT 저장
+                        KeychainWrapper.standard.set(response.data?.jwt ?? "" , forKey: "JWT")
 
-                    //키체인에 RefreshToken 저장
-                    KeychainWrapper.standard.set(response.refreshToken ?? "" , forKey: "RefreshToken")
-
-                    //키체인에 AccessToken 저장
-                    KeychainWrapper.standard.set(response.accessToken ?? "" , forKey: "AccessToken")
-
-                    //혹시 같은 기기내에서 아이디 두번 만들수도 있으니 isAutoLogin값 false로 바꿔줌
-                    UserDefaults.standard.set(false, forKey: "isAutoLogin")
-
-                    //회원가입 완료 페이지로 이동
-                    let storyboard = UIStoryboard(name: "Welcome", bundle: nil)
-
-                    guard let vc = storyboard.instantiateViewController(withIdentifier: "WelcomeViewController") as? WelcomeViewController else{ return }
-
-                    vc.modalPresentationStyle = .fullScreen
-
-                    self.present(vc, animated: true)
-
+                        //혹시 같은 기기내에서 아이디 두번 만들수도 있으니 isAutoLogin값 false로 바꿔줌
+                        UserDefaults.standard.set(false, forKey: "isAutoLogin")
+                        
+                        let storyboard = UIStoryboard(name: "SetNickName", bundle: nil)
+                        
+                        guard let vc = storyboard.instantiateViewController(withIdentifier: "SetNickNameViewController") as? SetNickNameViewController else { return }
+                        
+                        self.navigationController?.pushViewController(vc, animated: true)
+                        
+                        
+                    }
+                    else{
+                        self.emailAddressLabel.textColor = UIColor(hex: 0xFF3B30)
+                        self.emailAddressLabel.text = "이미 가입된 이메일입니다."
+                        
+                        self.emailTextField.layer.borderColor = UIColor(hex: 0xFF3B30).cgColor
+                    }
+                    
+                
 
                 case .failure(let error):
                     print("DEBUG>> signUpNormalPriv Error : \(error.localizedDescription)")
