@@ -6,19 +6,30 @@
 //
 
 import UIKit
+import Alamofire
+import Kingfisher
 
 class PostViewController: UIViewController {
+    
+    let netWorkingData = NetWorkingData.shared
     
     let maxImageTopHeight: CGFloat = 300
     let minImageTopHeight: CGFloat = 80
     
+    @IBOutlet weak var topImage: UIImageView!
     @IBOutlet weak var commentButton: UIButton!
-    @IBOutlet weak var topImage: UIView!
+    @IBOutlet weak var topView: UIView!
     @IBOutlet weak var postTableView: UITableView!
     @IBOutlet weak var commentTextField: UITextField!
+    @IBOutlet weak var postTitleLabel: UILabel!
+    @IBOutlet weak var uploadTimeLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        postCommentData = []
+        
+        getPostData()
         
         commentTextField.delegate = self
         
@@ -34,11 +45,15 @@ class PostViewController: UIViewController {
         navigationController?.navigationBar.topItem?.title = ""         //back 버튼 title 없애기
         self.navigationController?.navigationBar.tintColor = .black     //navigationbar item 색깔 변경
         
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "ic_more"), style: .plain, target: self, action: #selector(reportTapped))     //네이게이션바 오른쪽 버튼 생성
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
         //navigationBar 투명해지기
         navigationController?.navigationBar.standardAppearance.backgroundColor = .clear
         navigationController?.navigationBar.scrollEdgeAppearance?.backgroundColor = .clear
-        
-        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "ic_more"), style: .plain, target: self, action: #selector(reportTapped))     //네이게이션바 오른쪽 버튼 생성
     }
     
     override func viewWillDisappear(_ animated: Bool) {
@@ -75,7 +90,7 @@ class PostViewController: UIViewController {
     
     @IBAction func commentButtonTapped(_ sender: UIButton) {
         guard let commentText = commentTextField.text else { return }
-        let task = PostCommentDataModel(comment: commentText)
+        let task = commentText
         postCommentData.append(task)
         postTableView.reloadData()
         DispatchQueue.main.async {
@@ -111,20 +126,31 @@ extension PostViewController: UITableViewDelegate, UITableViewDataSource, UIScro
         switch indexPath.section {
         case 0:
             guard let userProfileCell = tableView.dequeueReusableCell(withIdentifier: "UserProfileTableViewCell", for: indexPath) as? UserProfileTableViewCell else { return UITableViewCell() }
+            
+            userProfileCell.userName.text = postData?.writer
+            
             return userProfileCell
         case 1:
             guard let postContentCell = tableView.dequeueReusableCell(withIdentifier: "PostContentTableViewCell", for: indexPath) as? PostContentTableViewCell else { return UITableViewCell() }
             return postContentCell
         case 2:
             guard let numOfLikesCell = tableView.dequeueReusableCell(withIdentifier: "NumofLikesTableViewCell", for: indexPath) as? NumofLikesTableViewCell else { return UITableViewCell() }
+            
+            numOfLikesCell.numOfLikeLabel.text = "이 글을 \(postData?.likeNum ?? 0) 명이 좋아합니다."
+            
             return numOfLikesCell
         case 3:
             guard let numOfCommentsCell = tableView.dequeueReusableCell(withIdentifier: "NumOfCommentsTableViewCell", for: indexPath) as? NumOfCommentsTableViewCell else { return UITableViewCell() }
+            
+            numOfCommentsCell.numOfCommentLabel.text = "\(postData?.commentNum ?? 0)"
+            
             return numOfCommentsCell
         case 4:
             guard let postCommentsCell = tableView.dequeueReusableCell(withIdentifier: "PostCommentsTableViewCell", for: indexPath) as? PostCommentsTableViewCell else { return UITableViewCell() }
+            
             let postCommentDataModel = postCommentData[indexPath.row]
-            postCommentsCell.commentText.text = postCommentDataModel.comment
+            postCommentsCell.commentText.text = postCommentDataModel
+            
             return postCommentsCell
         default:
             return UITableViewCell()
@@ -137,7 +163,7 @@ extension PostViewController: UITableViewDelegate, UITableViewDataSource, UIScro
         let y: CGFloat = -scrollView.contentOffset.y
         let ratio = y / (maxImageTopHeight - minImageTopHeight)
         
-        topImage.alpha = ratio - 0.3
+        topView.alpha = ratio - 0.2
     }
 }
 
@@ -158,5 +184,31 @@ extension PostViewController: UITextFieldDelegate {
             self.commentButton.isEnabled = true
         }
         return true
+    }
+}
+
+// MARK: - 네트워킹
+
+extension PostViewController {
+    func getPostData() {
+        let url = "\(netWorkingData.basicURL)/forum/\(netWorkingData.forumID)"
+        
+        AF.request(url, method: .get)
+            .validate(statusCode: 200..<300)
+            .responseDecodable(of: PostDataModel.self) { response in
+                switch response.result {
+                case .success(let data):
+                    postData = data.data
+                    
+                    postCommentData.append(postData!.comment)
+                    self.postTitleLabel.text = postData?.title
+                    self.uploadTimeLabel.text = "\(HomeViewController.timeInterval(uploadTime: HomeViewController.toDate(uploadTime: postData?.createDate ?? "")!))"
+                    self.topImage.kf.setImage(with: URL(string: (postData?.forumImageURL[0])!))
+                    self.postTableView.reloadData()
+                    
+                case .failure(let error):
+                    print(error.localizedDescription)
+                }
+            }
     }
 }

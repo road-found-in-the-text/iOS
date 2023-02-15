@@ -22,7 +22,7 @@ struct Const {
             static let post = "PostViewController"
             static let report = "ReportViewController"
             static let reportAlert = "CustomAlertViewController"
-            static let search = "SearchViewController"
+            static let search = "SearchContainerViewController"
         }
     }
     

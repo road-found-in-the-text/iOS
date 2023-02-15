@@ -21,9 +21,9 @@
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ilP-Rb-FxP">
                         <rect key="frame" x="0.0" y="0.0" width="185" height="158"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="figure.soccer" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="G8B-TG-fIu">
-                                <rect key="frame" x="0.0" y="-0.3333333333333286" width="185" height="101"/>
-                                <color key="backgroundColor" red="0.55901892009999998" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G8B-TG-fIu">
+                                <rect key="frame" x="0.0" y="0.0" width="185" height="100"/>
+                                <color key="backgroundColor" name="Sub1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="FV2-81-7at"/>
                                 </constraints>
@@ -130,10 +130,12 @@
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="figure.soccer" catalog="system" width="126" height="128"/>
         <image name="ic_ comment" width="24" height="24"/>
         <image name="ic_image" width="24" height="24"/>
         <image name="ic_like" width="24" height="24"/>
+        <namedColor name="Sub1">
+            <color red="0.32156862745098042" green="0.38039215686274508" blue="0.41568627450980394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Sub2">
             <color red="0.67843137254901964" green="0.70980392156862748" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

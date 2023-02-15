@@ -18,6 +18,7 @@
 		21348A1B297677F4002190E5 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21348A1A297677F4002190E5 /* ReportViewController.swift */; };
 		213812402977A58700EC7B26 /* Post.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2138123F2977A58700EC7B26 /* Post.storyboard */; };
 		213812422977A5A800EC7B26 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213812412977A5A800EC7B26 /* PostViewController.swift */; };
+		21421636299D26BD008386B0 /* PostNetworkingDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21421635299D26BD008386B0 /* PostNetworkingDataModel.swift */; };
 		216023A429708131009DA16E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 216023A329708131009DA16E /* Home.storyboard */; };
 		2174690F29828662006B7950 /* PostCommentDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2174690E29828662006B7950 /* PostCommentDataModel.swift */; };
 		218DA9052970847F00D76C03 /* BestForumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218DA9032970847F00D76C03 /* BestForumCollectionViewCell.swift */; };
@@ -186,6 +187,7 @@
 		21348A1A297677F4002190E5 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		2138123F2977A58700EC7B26 /* Post.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Post.storyboard; sourceTree = "<group>"; };
 		213812412977A5A800EC7B26 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		21421635299D26BD008386B0 /* PostNetworkingDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostNetworkingDataModel.swift; sourceTree = "<group>"; };
 		216023A329708131009DA16E /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		2174690E29828662006B7950 /* PostCommentDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCommentDataModel.swift; sourceTree = "<group>"; };
 		218DA9032970847F00D76C03 /* BestForumCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BestForumCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -376,6 +378,7 @@
 				218DA907297084A700D76C03 /* BestForumDataModel.swift */,
 				21A2E3C8299789B800613F55 /* ForumDataModel.swift */,
 				210A9E8729714A660063972B /* SearchHistoryDataModel.swift */,
+				21421635299D26BD008386B0 /* PostNetworkingDataModel.swift */,
 				2174690E29828662006B7950 /* PostCommentDataModel.swift */,
 				21F4111A299B6B6000182D5A /* NetWorkingData.swift */,
 			);
@@ -1127,6 +1130,7 @@
 				89B0D7F0299683F30049087A /* ScriptEditDataManager.swift in Sources */,
 				2174690F29828662006B7950 /* PostCommentDataModel.swift in Sources */,
 				89AF34E729958F5C007A1197 /* ProfileEditViewController.swift in Sources */,
+				21421636299D26BD008386B0 /* PostNetworkingDataModel.swift in Sources */,
 				898B502629907E6C00D40E69 /* UserPageViewController.swift in Sources */,
 				89E0B03C29881C46007F6993 /* ScriptNavigationViewController.swift in Sources */,
 				5E32FC14296955910010A376 /* SceneDelegate.swift in Sources */,
