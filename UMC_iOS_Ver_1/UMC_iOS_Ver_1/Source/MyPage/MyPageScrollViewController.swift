@@ -8,6 +8,7 @@
 import UIKit
 
 import HPParallaxHeader
+import Kingfisher
 
 class MyPageScrollViewController: HPScrollViewController {
     
@@ -47,12 +48,16 @@ class MyPageScrollViewController: HPScrollViewController {
         guard let member = member else {
             assert(false)
         }
-        
         profileView.nicknameLabel.text = member.nickName ?? "닉네임"
         profileView.emailLabel.text = member.email
         profileView.rankImageView.image = UIImage(named: "Rank \(member.tier.capitalized)")
         profileView.bioLabel.text = member.introduction ?? ""
         profileView.bioLabel.sizeToFit()
+        
+        if let profileImageUrl = member.imageUrl {
+            let url = URL(string: profileImageUrl)
+            profileView.profileImageView.kf.setImage(with: url)
+        }
 
         headerHeight = 140 + profileView.bioLabel.frame.height + (navigationController?.navigationBar.frame.height ?? 40)
     }

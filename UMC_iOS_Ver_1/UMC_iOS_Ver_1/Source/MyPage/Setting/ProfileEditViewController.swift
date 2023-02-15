@@ -7,6 +7,8 @@
 
 import UIKit
 
+import Kingfisher
+
 class ProfileEditViewController: UIViewController {
     
     @IBOutlet var profileImageView: UIImageView!
@@ -15,6 +17,8 @@ class ProfileEditViewController: UIViewController {
     @IBOutlet var bioView: UIView!
     @IBOutlet var bioTextView: UITextView!
     @IBOutlet var bioTextCoundLabel: UILabel!
+    
+    var userInfo: MemberData?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -59,10 +63,19 @@ class ProfileEditViewController: UIViewController {
         nicknameTextField.setLeftPaddingPoints(10)
         nicknameTextField.setRightPaddingPoints(73)
         
+        nicknameTextField.text = userInfo?.nickName ?? ""
+        
         bioView.layer.borderColor = UIColor(named: "Sub3")?.cgColor
         bioView.layer.borderWidth = 1
         bioView.layer.cornerRadius = 6
         updateBioTextCountLabel(length: 0)
+        
+        bioTextView.text = userInfo?.introduction ?? ""
+        
+        if let profileImageUrl = userInfo?.imageUrl {
+            let url = URL(string: profileImageUrl)
+            profileImageView.kf.setImage(with: url)
+        }
         
     }
     

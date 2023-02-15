@@ -49,6 +49,8 @@ class SettingViewController: UIViewController {
             assert(false)
         }
         
+        profileViewController.userInfo = member
+        
         nextViewControllers[0] = [profileViewController]
         
         guard let alarmViewController = storyboard?.instantiateViewController(withIdentifier: "AlarmViewController") as? AlarmViewController else {
