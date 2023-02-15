@@ -21,7 +21,7 @@ class SettingViewController: UIViewController {
         ["이용약관", "개인정보 처리방침"],
         ["비밀번호 변경", "로그아웃", "계정탈퇴"]
     ]
-    private var nextViewControllers = [[UIViewController]]()
+    private var nextViewControllers: [[UIViewController]] = Array(repeating: [], count: 5)
     
     private let sectionHeaderIdentifier = "SectionHeader"
     private let cellIdentifier = "SettingCell"
@@ -29,6 +29,7 @@ class SettingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setNextViewControllers()
         configureNavigationBar()
         configureTableView()
     }
@@ -44,31 +45,39 @@ class SettingViewController: UIViewController {
     }
     
     func setNextViewControllers() {
+        guard let profileViewController = storyboard?.instantiateViewController(withIdentifier: "ProfileEditViewController") as? ProfileEditViewController else {
+            assert(false)
+        }
+        
+        nextViewControllers[0] = [profileViewController]
+        
         guard let alarmViewController = storyboard?.instantiateViewController(withIdentifier: "AlarmViewController") as? AlarmViewController else {
             assert(false)
         }
         
-        guard let profileViewController = storyboard?.instantiateViewController(withIdentifier: "ProfileEditViewController") as? ProfileEditViewController else {
+        guard let languageViewController = storyboard?.instantiateViewController(withIdentifier: "LanguageViewController") as? LanguageViewController else {
             assert(false)
         }
+        
+        nextViewControllers[1] = [alarmViewController, languageViewController]
+
         
         guard let proposalViewController = storyboard?.instantiateViewController(withIdentifier: "ProposalViewController") as? ProposalViewController else {
             assert(false)
         }
         
+        nextViewControllers[2] = [proposalViewController]
+        
         guard let termsOfUseViewController = storyboard?.instantiateViewController(withIdentifier: "TermsOfUseViewController") as? TermsOfUseViewController else {
             assert(false)
         }
-        
+                
         guard let privacyPolicyViewController = storyboard?.instantiateViewController(withIdentifier: "PrivacyPolicyViewController") as? PrivacyPolicyViewController else {
             assert(false)
         }
         
-        guard let rankViewController = storyboard?.instantiateViewController(withIdentifier: "RankViewController") as? RankViewController else {
-            assert(false)
-        }
+        nextViewControllers[3] = [termsOfUseViewController, privacyPolicyViewController]
         
-//        nextViewControllers.append(alarmViewController)
     }
 
 }
@@ -106,7 +115,7 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
         guard let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: sectionHeaderIdentifier) as? SettingHeaderView else {
             return UIView()
         }
-
+        
         header.separatorView.isHidden = section == 0 ? true : false
         header.titleLabel.text = sectionTitle[section]
         
@@ -126,10 +135,18 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let rankViewController = storyboard?.instantiateViewController(withIdentifier: "RankViewController") as? RankViewController else {
-            assert(false)
+        if indexPath.section == 4 {
+            return
         }
-        navigationController?.pushViewController(rankViewController, animated: true)
+        
+        let nextViewController: UIViewController
+        
+        if indexPath.section == 0 || indexPath.section == 2 {
+            nextViewController = nextViewControllers[indexPath.section][0]
+        } else {
+            nextViewController = nextViewControllers[indexPath.section][indexPath.row]
+        }
+        navigationController?.pushViewController(nextViewController, animated: true)
     }
     
     
