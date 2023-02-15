@@ -11,19 +11,24 @@ class ScriptPracticeViewController: UIViewController {
 
     //테이블 뷰
     @IBOutlet weak var tableView: UITableView!
+    var headerLabel = UILabel()
+    
     let imageView = UIImageView()
     let label_1 = UILabel()
     let label_2 = UILabel()
     var count = 0
+    
+    var userScript: MemberScript?
+    private var scriptData = [Script]()
     
     @objc func didTapButton(_ sender: UIButton) {
         guard let vc = self.storyboard?.instantiateViewController(withIdentifier: "CreateNewScriptViewController") as? CreateNewScriptViewController else { return }
         
         self.navigationController?.pushViewController(vc, animated: true)
         
-        count = count + 1
-        
-        UserDefaults.standard.set(count, forKey: "scriptCount")
+//        count = count + 1
+//
+//        UserDefaults.standard.set(count, forKey: "scriptCount")
     }
     
     override func viewDidLoad() {
@@ -36,8 +41,8 @@ class ScriptPracticeViewController: UIViewController {
         let header = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 32))
         header.backgroundColor = UIColor(hex: 0xf1f5f9)
         
-        let headerLabel = UILabel(frame: header.bounds)
-        headerLabel.text = "    내 대본 \(UserDefaults.standard.integer(forKey: "scriptCount"))"
+        headerLabel = UILabel(frame: header.bounds)
+        headerLabel.text = "    내 대본 \(scriptData.count)"
         headerLabel.textAlignment = .left
         headerLabel.font = UIFont.systemFont(ofSize: 14)
         headerLabel.textColor = UIColor(hex: 0x52616A)
@@ -61,9 +66,15 @@ class ScriptPracticeViewController: UIViewController {
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        print("나타남?")
-        print(UserDefaults.standard.integer(forKey: "scriptCount"))
-        if UserDefaults.standard.integer(forKey: "scriptCount") == 0{
+        MyPageDataManager().fetchMemberScriptData(id: 1, delegate: self)
+        
+        setTableViewStatus()
+    }
+    
+    func setTableViewStatus() {
+        headerLabel.text = "    내 대본 \(scriptData.count)"
+        
+        if scriptData.isEmpty {
             
             imageView.image = UIImage(named: "ic_script")
             imageView.frame = CGRect(x: 166, y: 286, width: 60, height: 60)
@@ -71,17 +82,17 @@ class ScriptPracticeViewController: UIViewController {
             
             label_1.text = "새로운 대본 연습을 시작해보세요"
             label_1.textColor = UIColor(red: 0.322, green: 0.38, blue: 0.416, alpha: 1)
-
+            
             label_1.font = UIFont.boldSystemFont(ofSize: 16)
             
             let padding_1: CGFloat = 10 // adjust the padding as needed
             label_1.frame = CGRect(x: 84, y: imageView.frame.maxY + padding_1, width: 230, height: 22)
             view.addSubview(label_1)
             
-        
+            
             label_2.text = "직접 대본을 만들고 실전처럼 연습해보세요."
             label_2.textColor = UIColor(red: 0.322, green: 0.38, blue: 0.416, alpha: 1)
-
+            
             label_2.font = UIFont(name: "AppleSDGothicNeoM00-Regular", size: 14)
             
             let padding_2: CGFloat = 10 // adjust the padding as needed
@@ -90,20 +101,38 @@ class ScriptPracticeViewController: UIViewController {
             view.addSubview(label_2)
             
         }
-        else{
+        else {
             imageView.isHidden = true
             label_1.isHidden = true
             label_2.isHidden = true
-            tableView.reloadData()
+            //            tableView.reloadData()
         }
     }
+}
+
+// MARK: - Networking
+extension ScriptPracticeViewController: MyPageStorageDelegate, ScriptEditDelegate {
+    func didFetchMemberScriptData(memberScript: MemberScript) {
+        self.userScript = memberScript
+        scriptData = [Script]()
+        memberScript.scripts.forEach { script in
+            ScriptEditDataManager().fetchScriptById(id: script.scriptId, delegate: self)
+        }
+    }
+    
+    func didFetchScriptById(result: Script) {
+        self.scriptData.append(result)
+        setTableViewStatus()
+        tableView.reloadData()
+    }
+    
 }
 
 extension ScriptPracticeViewController: UITableViewDelegate, UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
-        return UserDefaults.standard.integer(forKey: "scriptCount")
+        return scriptData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -114,15 +143,14 @@ extension ScriptPracticeViewController: UITableViewDelegate, UITableViewDataSour
             
         }
         
-        cell.title.text = UserDefaults.standard.string(forKey: "scriptName")
+        let script = scriptData[indexPath.row]
         
-        var tempContent = ""
-        for i in 0..<UserDefaults.standard.integer(forKey: "scriptCount"){
-            tempContent = tempContent + (UserDefaults.standard.string(forKey: "paragraphContent" + String(i)) ?? "")
-        }
-        cell.content.text = tempContent
+        cell.title.text = script.title
+        cell.content.text = script.contents
         
-        cell.info.text = String(UserDefaults.standard.integer(forKey: "scriptCount")) + " 페이지 · 방금"
+        let scriptDate = Date().timeAgo(script.createdDate) + " 전"
+        
+        cell.info.text = String(script.paragraphList.count) + " 페이지 · " + scriptDate
         
         
         return cell
@@ -134,6 +162,8 @@ extension ScriptPracticeViewController: UITableViewDelegate, UITableViewDataSour
         guard let nextViewController = storyboard.instantiateViewController(withIdentifier: "ScriptEditTabmanViewController") as? ScriptEditTabmanViewController else {
             assert(false, "Can't load next vc")
         }
+        nextViewController.script = scriptData[indexPath.row]
+        
         self.navigationController?.pushViewController(nextViewController, animated: true)
     }
 }
