@@ -93,6 +93,7 @@ class ScriptPTViewController: UIViewController {
             assert(false)
         }
         
+        nextViewController.scriptId = script?.scriptId
         nextViewController.elapsedTime = elapsedTime
         
         self.navigationController?.pushViewController(nextViewController, animated: true)

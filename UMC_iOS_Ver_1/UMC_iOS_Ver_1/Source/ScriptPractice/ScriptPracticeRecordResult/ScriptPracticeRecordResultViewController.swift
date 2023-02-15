@@ -24,6 +24,7 @@ class ScriptPracticeRecordResultViewController: UIViewController {
     
     @IBOutlet var doneButton: UIButton!
     
+    var scriptId: Int?
     var result: ScriptRecordData?
     
     private let resultChartLabels = ["분석력", "논리력", "창의력", "전달력", "전문성"]
@@ -127,7 +128,10 @@ class ScriptPracticeRecordResultViewController: UIViewController {
     
     @IBAction func doneButtonTapped(_ sender: UIButton) {
         if memoTextView.text.isExists && memoTextView.text != memoTextViewPlaceholder {
-            ScriptPracticeRecordResultDataManager().postScriptRecordMemo(scriptId: 1, memo: memoTextView.text, delegate: self)
+            guard let scriptId = scriptId else {
+                assert(false)
+            }
+            ScriptPracticeRecordResultDataManager().postScriptRecordMemo(scriptId: scriptId, memo: memoTextView.text, delegate: self)
         } else {
             pushNextViewController()
         }

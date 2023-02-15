@@ -31,6 +31,7 @@ class ScriptPracticeRecordViewController: UIViewController {
         PracticeQuestion(title: "전문성", firstQuestion: "발표 내용이 다른 학습자의 학습에 도움이 되었는가?", secondQuestion: "청중의 수준에 맞는 내용을 설명하였는가?")
     ]
     
+    var scriptId: Int?
     var elapsedTime: Int?
     
     var currentQuestionNumber = 1
@@ -143,6 +144,7 @@ class ScriptPracticeRecordViewController: UIViewController {
             assert(false)
         }
         
+        loadingViewController.scriptId = scriptId
         loadingViewController.elapsedTime = elapsedTime
         loadingViewController.answer = selectedAnswer
         loadingViewController.modalPresentationStyle = .fullScreen
@@ -246,6 +248,7 @@ extension ScriptPracticeRecordViewController: ScriptPracticeRecordLoadingProtoco
             assert(false)
         }
         
+        nextViewController.scriptId = scriptId
         nextViewController.result = result
         
         self.navigationController?.pushViewController(nextViewController, animated: true)

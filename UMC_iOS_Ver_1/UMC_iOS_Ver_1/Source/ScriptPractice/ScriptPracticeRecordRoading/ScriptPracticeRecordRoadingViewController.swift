@@ -19,6 +19,7 @@ class ScriptPracticeRecordRoadingViewController: UIViewController {
     
     var delegate: ScriptPracticeRecordLoadingProtocol?
     
+    var scriptId: Int?
     var elapsedTime: Int?
     var answer: [PracticeAnswer]?
 
@@ -37,7 +38,10 @@ class ScriptPracticeRecordRoadingViewController: UIViewController {
         
         let parameters = ScriptRecordDataManager().setPostScriptParameters(elapsedTime: elapsedTime, answer: answer)
         
-        ScriptRecordDataManager().postScriptRecord(scriptId: 1, parameters: parameters, delegate: self)
+        guard let scriptId = scriptId else {
+            assert(false)
+        }
+        ScriptRecordDataManager().postScriptRecord(scriptId: scriptId, parameters: parameters, delegate: self)
         
 //        DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
 //            self.dismiss(animated: false) {

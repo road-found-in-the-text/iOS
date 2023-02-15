@@ -13,6 +13,8 @@ class ScriptRecordViewController: UIViewController {
     
     @IBOutlet var collectionView: UICollectionView!
     
+    var scriptId: Int?
+    
     var recordResult = ScriptIdRecordData(resultCount: 0, mean: 0, totalElapsedMinute: 0, totalElapsedSecond: 0, records: [], memoList: [])
     
     private let headerIdentifier = "reusableView"
@@ -26,7 +28,10 @@ class ScriptRecordViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        ScriptRecordIdDataManager().fetchScriptRecordById(scriptId: 1, delegate: self)
+        guard let scriptId = scriptId else {
+            return
+        }
+        ScriptRecordIdDataManager().fetchScriptRecordById(scriptId: scriptId, delegate: self)
     }
 
 }

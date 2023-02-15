@@ -62,7 +62,7 @@ class ScriptEditTabmanViewController: TabmanViewController {
     }
     
     func configureNavigationItem() {
-//        self.navigationItem.title = scriptTitle
+        self.navigationItem.title = script?.title ?? ""
         self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "ic_more"), style: .plain, target: self, action: #selector(rightBarButtonItemTapped))
     }
     
@@ -76,6 +76,8 @@ class ScriptEditTabmanViewController: TabmanViewController {
             assert(false, "Can't load set vc")
         }
         
+        practiceSetViewController.script = script
+        
         viewControllers.append(practiceSetViewController)
         
         storyboard = UIStoryboard(name: "ScriptRecord", bundle: nil)
@@ -83,6 +85,8 @@ class ScriptEditTabmanViewController: TabmanViewController {
         guard let recordViewController = storyboard.instantiateViewController(withIdentifier: "ScriptRecordViewController") as? ScriptRecordViewController else {
             assert(false, "Can't load record vc")
         }
+        
+        recordViewController.scriptId = script?.scriptId
         
         viewControllers.append(recordViewController)
     }
@@ -93,18 +97,6 @@ class ScriptEditTabmanViewController: TabmanViewController {
         self.navigationItem.rightBarButtonItem?.isHidden = index == 1 ? true : false
     }
 
-}
-
-// MARK: - Networking
-extension ScriptEditTabmanViewController: ScriptEditDelegate {
-    func didFetchScriptById(result: Script) {
-        scriptTitle = result.title
-        self.navigationItem.title = scriptTitle
-        
-        if let vc = viewControllers[1] as? ScriptPracticeSetViewController {
-            vc.script = result
-        }
-    }
 }
 
 // MARK: - Tabman
