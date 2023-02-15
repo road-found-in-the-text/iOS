@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="UserPageSectionHeaderView" customModule="UMC_iOS_Ver_1" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="55"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="작성한 글" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OjZ-8s-YaI">
+                    <rect key="frame" x="16" y="23" width="74" height="24"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tqm-9M-M7N">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="1"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="8AO-bA-az2"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="OjZ-8s-YaI" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="7GI-eA-5I8"/>
+                <constraint firstItem="Tqm-9M-M7N" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="Vxl-LX-Vtq"/>
+                <constraint firstItem="Tqm-9M-M7N" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Zxj-b4-j3C"/>
+                <constraint firstAttribute="trailing" secondItem="Tqm-9M-M7N" secondAttribute="trailing" id="oI7-M1-q7b"/>
+                <constraint firstAttribute="bottom" secondItem="OjZ-8s-YaI" secondAttribute="bottom" constant="8" id="sdt-Bs-I4v"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="shadowView" destination="Tqm-9M-M7N" id="quW-P5-3dE"/>
+            </connections>
+            <point key="canvasLocation" x="223.66412213740458" y="108.80281690140846"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

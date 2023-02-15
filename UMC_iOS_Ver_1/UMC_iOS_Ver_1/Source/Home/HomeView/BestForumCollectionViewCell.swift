@@ -18,6 +18,18 @@ class BestForumCollectionViewCell: UICollectionViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        bestForumImage.layer.cornerRadius = 10
+        
+        //Cell에 그림자 효과
+        layer.masksToBounds = false
+        layer.shadowOpacity = 0.3
+        layer.shadowOffset = CGSize(width: 2, height: 2)
+        layer.shadowRadius = 2
+        
+        //Cell round corner
+        contentView.layer.cornerRadius = 10
+        contentView.layer.masksToBounds = true
     }
 
 }

@@ -13,7 +13,7 @@
         <!--Script Record View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="ScriptRecordViewController" customModule="UMC_iOS_Ver_1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScriptRecordViewController" id="Y6W-OH-hqX" customClass="ScriptRecordViewController" customModule="UMC_iOS_Ver_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -50,7 +50,7 @@
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0회" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gqi-Y8-c96">
                                                                     <rect key="frame" x="48" y="28.333333333333339" width="24.666666666666671" height="52.666666666666657"/>
                                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                                    <nil key="textColor"/>
+                                                                    <color key="textColor" name="Main"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
@@ -67,7 +67,7 @@
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0/10" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5cE-Z0-9eP">
                                                                     <rect key="frame" x="43" y="28.333333333333339" width="34.333333333333343" height="52.666666666666657"/>
                                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                                    <nil key="textColor"/>
+                                                                    <color key="textColor" name="Main"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
@@ -84,7 +84,7 @@
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxl-Dg-yYg">
                                                                     <rect key="frame" x="36.333333333333314" y="28.333333333333339" width="47.666666666666657" height="52.666666666666657"/>
                                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                                    <nil key="textColor"/>
+                                                                    <color key="textColor" name="Main"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                             </subviews>
@@ -149,7 +149,7 @@
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0회" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ueF-Qi-JJD">
                                                             <rect key="frame" x="14.000000000000002" y="30.333333333333336" width="24.666666666666671" height="19.333333333333336"/>
                                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
-                                                            <nil key="textColor"/>
+                                                            <color key="textColor" name="Main"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="인생을 풍부하게 피에 보는 길을 교향악이다. 인간이 트고, 수 능히 아니다. 우는 간에 것은 없으면 우리의 영원히 그들은 아니더면, 있다." lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0g-4h-YGJ">
@@ -189,13 +189,13 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="메모" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qXq-74-9Or">
-                                            <rect key="frame" x="36" y="14.333333333333334" width="31.333333333333329" height="21.666666666666664"/>
+                                            <rect key="frame" x="28" y="14.333333333333334" width="31.333333333333329" height="21.666666666666664"/>
                                             <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
-                                            <nil key="textColor"/>
+                                            <color key="textColor" name="Main"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="완벽한 연습을 위한 한 마디" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2V1-Jq-NKz">
-                                            <rect key="frame" x="75.333333333333329" y="18.333333333333332" width="138.33333333333337" height="15.666666666666668"/>
+                                            <rect key="frame" x="67.333333333333329" y="18.333333333333332" width="138.33333333333337" height="15.666666666666668"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <color key="textColor" name="Sub1"/>
                                             <nil key="highlightedColor"/>
@@ -205,7 +205,7 @@
                                         <constraint firstItem="2V1-Jq-NKz" firstAttribute="leading" secondItem="qXq-74-9Or" secondAttribute="trailing" constant="8" id="1i6-5p-fvG"/>
                                         <constraint firstAttribute="trailingMargin" relation="greaterThanOrEqual" secondItem="2V1-Jq-NKz" secondAttribute="trailing" constant="28" id="CnP-di-ENP"/>
                                         <constraint firstItem="qXq-74-9Or" firstAttribute="bottom" secondItem="2V1-Jq-NKz" secondAttribute="bottom" constant="2" id="EI9-Wr-aaf"/>
-                                        <constraint firstItem="qXq-74-9Or" firstAttribute="leading" secondItem="3Wd-Rh-Ejo" secondAttribute="leadingMargin" constant="28" id="ecu-jT-y3X"/>
+                                        <constraint firstItem="qXq-74-9Or" firstAttribute="leading" secondItem="3Wd-Rh-Ejo" secondAttribute="leading" constant="28" id="ecu-jT-y3X"/>
                                         <constraint firstItem="qXq-74-9Or" firstAttribute="centerY" secondItem="3Wd-Rh-Ejo" secondAttribute="centerY" id="xyX-ku-8dt"/>
                                     </constraints>
                                     <connections>
@@ -238,6 +238,9 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="Main">
+            <color red="0.11764705882352941" green="0.12549019607843137" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Sub1">
             <color red="0.32156862745098042" green="0.38039215686274508" blue="0.41568627450980394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

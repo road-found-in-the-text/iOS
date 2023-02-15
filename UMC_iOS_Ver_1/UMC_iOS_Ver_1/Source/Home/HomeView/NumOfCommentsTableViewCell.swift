@@ -9,6 +9,8 @@ import UIKit
 
 class NumOfCommentsTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var numOfCommentLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

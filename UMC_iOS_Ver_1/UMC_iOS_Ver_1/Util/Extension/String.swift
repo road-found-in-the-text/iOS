@@ -20,6 +20,10 @@ extension String {
         return self.trimmingCharacters(in: .whitespacesAndNewlines)
     }
     
+    var addZero: String {
+        return self.count == 1 ? "0" + self : self
+    }
+    
     
     // MARK: 다국어 지원 (localization)
     var localized: String {

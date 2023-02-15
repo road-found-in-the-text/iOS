@@ -13,17 +13,33 @@ class ScriptRecordViewController: UIViewController {
     
     @IBOutlet var collectionView: UICollectionView!
     
+    var recordResult = ScriptIdRecordData(resultCount: 0, mean: 0, totalElapsedMinute: 0, totalElapsedSecond: 0, records: [], memoList: [])
+    
     private let headerIdentifier = "reusableView"
     private let cellIdentifier = ["resultCell", "chartCell", "memoCell"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        ScriptRecordIdDataManager().fetchScriptRecordById(scriptId: 1, delegate: self)
     }
 
 }
 
+// MARK: - Networking
+extension ScriptRecordViewController: ScriptRecordIdDelegate {
+    func didFetchScriptRecordById(result: ScriptIdRecordData) {
+        recordResult = result
+        collectionView.reloadData()
+    }
+}
+
+// MARK: - UICollectionView
 extension ScriptRecordViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
@@ -31,44 +47,39 @@ extension ScriptRecordViewController: UICollectionViewDelegate, UICollectionView
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return section != 2 ? 1 : 3
+        return section != 2 ? 1 : recordResult.memoList.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         switch indexPath.section {
-        case 0:
+        case 0: // 연습 기록
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier[indexPath.section], for: indexPath) as? ScriptRecordResultCollectionViewCell else {
                 return UICollectionViewCell()
             }
+            cell.countLabel.text = "\(recordResult.resultCount)회"
+            cell.averageScoreLabel.text = "\(recordResult.mean)/10"
+            cell.totalPracticeTimeLabel.text = "\(String(recordResult.totalElapsedMinute).addZero) : \(String(recordResult.totalElapsedSecond).addZero)"
+            
             return cell
-        case 1:
+        case 1: // 연습 완벽도
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier[indexPath.section], for: indexPath) as? ScriptRecordChartCollectionViewCell else {
                 return UICollectionViewCell()
             }
             
-            let previousDataSet = RadarChartDataSet(
-                entries: [
-                    RadarChartDataEntry(value: 3.0),
-                    RadarChartDataEntry(value: 3.0),
-                    RadarChartDataEntry(value: 3.0),
-                    RadarChartDataEntry(value: 4.0),
-                    RadarChartDataEntry(value: 5.0),
-                ]
-            )
+            if recordResult.resultCount == 0 {
+                return cell
+            }
             
-            previousDataSet.colors = [UIColor(named: "Sub1")!]
-            previousDataSet.lineWidth = 2
-            previousDataSet.drawValuesEnabled = false
-            previousDataSet.label = "이전 연습"
+            let currentScore = recordResult.records[0]
             
             let dataSet = RadarChartDataSet(
                 entries: [
-                    RadarChartDataEntry(value: 4.0),
-                    RadarChartDataEntry(value: 3.0),
-                    RadarChartDataEntry(value: 4.0),
-                    RadarChartDataEntry(value: 5.0),
-                    RadarChartDataEntry(value: 3.0),
+                    RadarChartDataEntry(value: currentScore.score1),
+                    RadarChartDataEntry(value: currentScore.score2),
+                    RadarChartDataEntry(value: currentScore.score3),
+                    RadarChartDataEntry(value: currentScore.score4),
+                    RadarChartDataEntry(value: currentScore.score5),
                 ]
             )
             
@@ -77,17 +88,43 @@ extension ScriptRecordViewController: UICollectionViewDelegate, UICollectionView
             dataSet.drawValuesEnabled = false
             dataSet.label = "최근 연습"
             
-            
             let data = RadarChartData()
-            data.dataSets = [dataSet, previousDataSet]
+            data.dataSets = [dataSet]
+            
+            if recordResult.resultCount > 1 {
+                let previousScore = recordResult.records[1]
+                
+                let previousDataSet = RadarChartDataSet(
+                    entries: [
+                        RadarChartDataEntry(value: previousScore.score1),
+                        RadarChartDataEntry(value: previousScore.score2),
+                        RadarChartDataEntry(value: previousScore.score3),
+                        RadarChartDataEntry(value: previousScore.score4),
+                        RadarChartDataEntry(value: previousScore.score5),
+                    ]
+                )
+                
+                previousDataSet.colors = [UIColor(named: "Sub1")!]
+                previousDataSet.lineWidth = 2
+                previousDataSet.drawValuesEnabled = false
+                previousDataSet.label = "이전 연습"
+                
+                data.dataSets.append(previousDataSet)
+            }
             
             cell.resultChart.data = data
             
             return cell
-        case 2:
+        case 2: // 메모
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: cellIdentifier[indexPath.section], for: indexPath) as? ScriptRecordMemoCollectionViewCell else {
                 return UICollectionViewCell()
             }
+            
+            let memo = recordResult.memoList[indexPath.row]
+            
+            cell.numberLabel.text = "\(memo.resultCount)회"
+            cell.contentLabel.text = memo.memo
+            
             return cell
         default:
             assert(false, "cell을 찾을 수 없습니다.")
@@ -127,6 +164,7 @@ extension ScriptRecordViewController: UICollectionViewDelegate, UICollectionView
             case 2:
                 header.titleLabel.text = "메모"
                 header.subtitleLabel.text = "완벽한 연습을 위한 한 마디"
+                header.subtitleLabel.isHidden = false
             default:
                 assert(false)
             }

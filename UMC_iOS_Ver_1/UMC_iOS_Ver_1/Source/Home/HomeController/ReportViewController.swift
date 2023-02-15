@@ -10,7 +10,7 @@ import DLRadioButton
 
 class ReportViewController: UIViewController {
     
-    static var reportContent: String?
+    static var reportContent: String?   //신고 내용
     private let textViewPlaceholder = "신고 사유를 입력해주세요."
     
     @IBOutlet weak var textCountLabel: UILabel!
@@ -34,6 +34,8 @@ class ReportViewController: UIViewController {
         setReportButton()
     }
     
+    // MARK: - 신고 내용 목록 설정
+    
     //report 체크 버튼 기본 설정
     func setReportButton() {
         reportOptionButton1.setTitle("낚시/놀람/도배", for: .normal)
@@ -52,21 +54,55 @@ class ReportViewController: UIViewController {
         reportOptionButton7.addTarget(self, action: #selector(reportEtcButtonTap(_:)), for: .touchUpInside)
     }
     
-    //화면 클릭시 키보드 내리기
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        self.view.endEditing(true)
-    }
-    
     @objc func reportOptionButtonTap(_ sender:DLRadioButton) {
         ReportViewController.reportContent = sender.currentTitle!
         etcReportTextView.isEditable = false
     }
     
+    //기타 버튼 클릭 시 textView 수정 가능하게 기능
     @objc func reportEtcButtonTap(_ sender:DLRadioButton) {
         etcReportTextView.isEditable = true
         etcReportTextView.isUserInteractionEnabled = true
     }
     
+    // MARK: - 키보드 설정
+    
+    //화면 클릭시 키보드 내리기
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
+    // MARK: - 신고하기 버튼 클릭 시 alert 창
+    
+    func reportAlert() {
+        let alert = UIAlertController(title: "신고하시겠습니까?", message: nil, preferredStyle: .alert)
+        let alertAction = UIAlertAction(title: "신고", style: .default) { action in
+            guard let reportContent = ReportViewController.reportContent else { return }
+            print(reportContent)
+        }
+        let cancelAction = UIAlertAction(title: "취소", style: .cancel)
+        alert.addAction(alertAction)
+        alert.addAction(cancelAction)
+        present(alert, animated: true)
+    }
+    
+    //신고하기 버튼 클릭 시 팝업 창 띄우기
+    @IBAction func reportButtonTapped(_ sender: Any) {
+        //Custom alert 창 띄우기
+//        let alertStoryboard = UIStoryboard(name: Const.Storyboard.Name.reportAlert, bundle: nil)
+//        guard let alertVC = alertStoryboard.instantiateViewController(withIdentifier: Const.ViewController.identifier.reportAlert) as? CustomAlertViewController else { return }
+//        present(alertVC, animated: false)
+        reportAlert()
+    }
+    
+    @IBAction func backButtonTapped(_ sender: UIButton) {
+        dismiss(animated: true)
+    }
+}
+
+// MARK: - TextView 글자 수 제한 설정
+
+extension ReportViewController: UITextViewDelegate {
     //textView 글자 수 update
     func updateMemoTextCountLabel(length: Int) {
         let fullText = "\(length) / 80"
@@ -83,21 +119,6 @@ class ReportViewController: UIViewController {
         etcReportTextView.layer.cornerRadius = 10
     }
     
-    @IBAction func backButtonTapped(_ sender: UIButton) {
-        dismiss(animated: true)
-    }
-    
-    //신고하기 버튼 클릭 시 팝업 창 띄우기
-    @IBAction func reportButtonTapped(_ sender: Any) {
-        let alertStoryboard = UIStoryboard(name: Const.Storyboard.Name.reportAlert, bundle: nil)
-        guard let alertVC = alertStoryboard.instantiateViewController(withIdentifier: Const.ViewController.identifier.reportAlert) as? CustomAlertViewController else { return }
-        present(alertVC, animated: false)
-    }
-    
-    
-}
-
-extension ReportViewController: UITextViewDelegate {
     func textViewDidBeginEditing(_ textView: UITextView) {
         if textView.text == textViewPlaceholder {
             textView.text = nil

@@ -12,7 +12,7 @@
         <!--ScriptPT View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="ScriptPTViewController" customModule="UMC_iOS_Ver_1" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ScriptPTViewController" hidesBottomBarWhenPushed="YES" id="Y6W-OH-hqX" customClass="ScriptPTViewController" customModule="UMC_iOS_Ver_1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -47,6 +47,9 @@
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                         <state key="normal" title="연습 종료"/>
+                                        <connections>
+                                            <action selector="stopButtonTapped:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="yub-RE-SEU"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

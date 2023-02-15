@@ -11,4 +11,4 @@ struct PostCommentDataModel {
     let comment: String
 }
 
-var postCommentData: [PostCommentDataModel] = []
+var postCommentData: [String] = []

@@ -7,13 +7,21 @@
 
 import UIKit
 
+protocol ScriptBottomSheetDelegate: AnyObject {
+    func practiceStartButtonTapped(practiceTime: Int)
+}
+
 class ScriptBottomSheetViewController: UIViewController {
+    
+    var delegate: ScriptBottomSheetDelegate?
     
     @IBOutlet var pickerView: UIPickerView!
     @IBOutlet var practiceStartButton: UIButton!
     
     let minute = [Int](0...59).map{ String($0) }
     let second = [Int](0...59).map{ String($0) }
+    
+    var selectedTime = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -44,9 +52,18 @@ class ScriptBottomSheetViewController: UIViewController {
         secondLabel.textColor = .black
         pickerView.addSubview(secondLabel)
     }
+    
+    @IBAction func practiceStartButtonTapped(_ sender: UIButton) {
+        let minute = pickerView.selectedRow(inComponent: 0)
+        let second = pickerView.selectedRow(inComponent: 1)
+        let practiceTime = minute * 60 + second
+        
+        delegate?.practiceStartButtonTapped(practiceTime: practiceTime)
+    }
 
 }
 
+// MARK: - UIPickerView
 extension ScriptBottomSheetViewController: UIPickerViewDelegate, UIPickerViewDataSource {
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 2

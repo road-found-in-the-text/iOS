@@ -3,12 +3,13 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--글길-->
+        <!--Home View Controller-->
         <scene sceneID="SXM-5G-jWd">
             <objects>
                 <viewController storyboardIdentifier="Home" id="RwN-bz-acq" customClass="HomeViewController" customModule="UMC_iOS_Ver_1" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,9 +17,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="8yY-mr-JXQ">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="8yY-mr-JXQ">
                                 <rect key="frame" x="0.0" y="103" width="393" height="666"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="g6Q-P4-H9P"/>
@@ -31,21 +31,23 @@
                         </constraints>
                     </view>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="글길" id="maL-Ek-c3f">
+                    <navigationItem key="navigationItem" id="maL-Ek-c3f">
                         <rightBarButtonItems>
                             <barButtonItem image="ic_addPost" id="jdX-0N-p94">
+                                <color key="tintColor" name="Sub1"/>
                                 <connections>
                                     <segue destination="ms0-06-jSs" kind="presentation" modalPresentationStyle="fullScreen" id="Cv3-Hq-fCi"/>
                                 </connections>
                             </barButtonItem>
                             <barButtonItem image="ic_search" id="wr9-6R-snk">
+                                <color key="tintColor" name="Sub1"/>
                                 <connections>
                                     <segue destination="r5P-Bo-4mA" kind="show" id="lbC-1x-Khe"/>
                                 </connections>
                             </barButtonItem>
                         </rightBarButtonItems>
                     </navigationItem>
-                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="forumTableView" destination="8yY-mr-JXQ" id="EcE-p6-nWQ"/>
                     </connections>
@@ -98,6 +100,9 @@
         <image name="ic_addPost" width="24" height="24"/>
         <image name="ic_home_gray" width="24" height="24"/>
         <image name="ic_search" width="24" height="24"/>
+        <namedColor name="Sub1">
+            <color red="0.32156862745098042" green="0.38039215686274508" blue="0.41568627450980394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
