@@ -73,7 +73,26 @@ extension BestForumTableViewCell: UICollectionViewDataSource {
         collectionViewCell.numOfBestForumLikesLabel.text = "\(bestForumData.likeNum)"
         collectionViewCell.numOfBestForumPhotosLabel.text = "\(bestForumData.imageVideoNum)"
         collectionViewCell.numOfBestForumCommentsLabel.text = "\(bestForumData.commentNum)"
-        collectionViewCell.bestForumImage.kf.setImage(with: URL(string: bestForumData.forumImageURL![0]))
+        
+//        guard let url = URL(string: bestForumData.forumImageURL![0]) else {
+//            assert(false)
+//        }
+        if let forumImage = bestForumData.forumImageURL {
+            if forumImage.isEmpty {
+                print("없어")
+                return collectionViewCell
+            }
+            print(forumImage.first!)
+            guard let forumImage = forumImage.first!.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else {
+                assert(false)
+            }
+//            let url = URL(string: forumImage.first!)
+//            print(forumImage)
+            let url = URL(string: forumImage)
+            collectionViewCell.bestForumImage.kf.setImage(with: url)
+        } else {
+            print("아노대..")
+        }
 
         
         return collectionViewCell
