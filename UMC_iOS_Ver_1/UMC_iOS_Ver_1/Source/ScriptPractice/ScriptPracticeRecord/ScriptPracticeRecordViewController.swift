@@ -61,7 +61,7 @@ class ScriptPracticeRecordViewController: UIViewController {
     }
     
     @objc func closeButtonTapped() {
-        self.navigationController?.popViewController(animated: true)
+        dismissAndBackToScriptPracticeSet()
     }
     
     // MARK: - Style
@@ -138,6 +138,16 @@ class ScriptPracticeRecordViewController: UIViewController {
         }
     }
     
+    // MARK: - Find Next View Controller
+    func dismissAndBackToScriptPracticeSet() {
+        for viewController in self.navigationController!.viewControllers as Array {
+            if let nextViewController = viewController as? ScriptEditTabmanViewController {
+                nextViewController.pageIndex = 1
+                self.navigationController?.popToViewController(nextViewController, animated: true)
+            }
+        }
+    }
+    
     func presentLoadingViewController() {
         let storyboard = UIStoryboard(name: "ScriptPracticeRecordRoading", bundle: nil)
         guard let loadingViewController = storyboard.instantiateViewController(withIdentifier: "ScriptPracticeRecordRoadingViewController") as? ScriptPracticeRecordRoadingViewController else {
@@ -205,7 +215,7 @@ class ScriptPracticeRecordViewController: UIViewController {
     
     @IBAction func skipButtonTapped(_ sender: UIButton) {
         if currentQuestionNumber == 1 {
-            presentLoadingViewController()
+            dismissAndBackToScriptPracticeSet()
         } else {
             currentQuestionNumber -= 1
             
