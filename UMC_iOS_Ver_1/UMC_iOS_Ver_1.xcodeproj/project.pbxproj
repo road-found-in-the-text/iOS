@@ -162,8 +162,11 @@
 		89E0B03E29881C60007F6993 /* WriteScriptViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E0B03D29881C60007F6993 /* WriteScriptViewController.swift */; };
 		89E0B04129881C86007F6993 /* CreateNewScriptCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E0B04029881C86007F6993 /* CreateNewScriptCell.swift */; };
 		89E0B04329881C97007F6993 /* ScriptListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E0B04229881C97007F6993 /* ScriptListTableViewCell.swift */; };
+		89E2C599299BBE3C0076BC4E /* Member.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E2C598299BBE3C0076BC4E /* Member.swift */; };
+		89E2C59B299BC3DB0076BC4E /* MyPageDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E2C59A299BC3DB0076BC4E /* MyPageDataManager.swift */; };
 		89EACA0529878345003ACDD6 /* MyPageStorageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EACA0429878345003ACDD6 /* MyPageStorageTableViewCell.swift */; };
 		89EACA0A2987A12B003ACDD6 /* HPParallaxHeader in Frameworks */ = {isa = PBXBuildFile; productRef = 89EACA092987A12B003ACDD6 /* HPParallaxHeader */; };
+		89FE115C299D00B300D7113A /* MemberScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FE115B299D00B300D7113A /* MemberScript.swift */; };
 		9419EEF196C59F8A276BC2C0 /* Pods_UMC_iOS_Ver_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B928E9BB947B94197FC9A1 /* Pods_UMC_iOS_Ver_1.framework */; };
 		9627E4EC12C0657B54F74B64 /* Pods_UMC_iOS_Ver_1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D71B72BC0CFA2711D70661A /* Pods_UMC_iOS_Ver_1Tests.framework */; };
 /* End PBXBuildFile section */
@@ -345,7 +348,10 @@
 		89E0B03D29881C60007F6993 /* WriteScriptViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteScriptViewController.swift; sourceTree = "<group>"; };
 		89E0B04029881C86007F6993 /* CreateNewScriptCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNewScriptCell.swift; sourceTree = "<group>"; };
 		89E0B04229881C97007F6993 /* ScriptListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptListTableViewCell.swift; sourceTree = "<group>"; };
+		89E2C598299BBE3C0076BC4E /* Member.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Member.swift; sourceTree = "<group>"; };
+		89E2C59A299BC3DB0076BC4E /* MyPageDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageDataManager.swift; sourceTree = "<group>"; };
 		89EACA0429878345003ACDD6 /* MyPageStorageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageStorageTableViewCell.swift; sourceTree = "<group>"; };
+		89FE115B299D00B300D7113A /* MemberScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberScript.swift; sourceTree = "<group>"; };
 		9605E6568465799CFD279686 /* Pods-UMC_iOS_Ver_1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC_iOS_Ver_1Tests.release.xcconfig"; path = "Target Support Files/Pods-UMC_iOS_Ver_1Tests/Pods-UMC_iOS_Ver_1Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A0DB99903F02E1B48D715375 /* Pods-UMC_iOS_Ver_1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC_iOS_Ver_1Tests.debug.xcconfig"; path = "Target Support Files/Pods-UMC_iOS_Ver_1Tests/Pods-UMC_iOS_Ver_1Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B6F6FA7EC2A2DF7ADD8C68E3 /* Pods_UMC_iOS_Ver_1_UMC_iOS_Ver_1UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UMC_iOS_Ver_1_UMC_iOS_Ver_1UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -529,8 +535,8 @@
 			children = (
 				5E32FC47296956A40010A376 /* IndicatorView.swift */,
 				89C31EE8296DD8CB00CBF249 /* ImageLabelBarButton.swift */,
-				5E32FC49296956D70010A376 /* Extension */,
 				8979B246299636E100D80D83 /* Markdownosaur.swift */,
+				5E32FC49296956D70010A376 /* Extension */,
 			);
 			path = Util;
 			sourceTree = "<group>";
@@ -583,6 +589,7 @@
 		5E32FC5F29695C7A0010A376 /* MyPage */ = {
 			isa = PBXGroup;
 			children = (
+				89E2C597299BBE370076BC4E /* Entity */,
 				898B502D2990A17E00D40E69 /* Setting */,
 				89EACA032987832D003ACDD6 /* Cell */,
 				896F42E629869F6100677A05 /* View */,
@@ -595,6 +602,7 @@
 				898B50432990F2F700D40E69 /* NotificationViewController.swift */,
 				898B502729907E8300D40E69 /* UserPage.storyboard */,
 				898B502529907E6C00D40E69 /* UserPageViewController.swift */,
+				89E2C59A299BC3DB0076BC4E /* MyPageDataManager.swift */,
 			);
 			path = MyPage;
 			sourceTree = "<group>";
@@ -855,6 +863,15 @@
 				89E0B04229881C97007F6993 /* ScriptListTableViewCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		89E2C597299BBE370076BC4E /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				89E2C598299BBE3C0076BC4E /* Member.swift */,
+				89FE115B299D00B300D7113A /* MemberScript.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		89EACA032987832D003ACDD6 /* Cell */ = {
@@ -1179,6 +1196,7 @@
 				5E32FC552969576A0010A376 /* UIViewController.swift in Sources */,
 				89CD26DB2984DEDD00A8AD8A /* InterviewStartViewController.swift in Sources */,
 				5E32FC57296957840010A376 /* UIImageView.swift in Sources */,
+				89E2C599299BBE3C0076BC4E /* Member.swift in Sources */,
 				21D4B6E629791D3600D7B485 /* CustomAlertViewController.swift in Sources */,
 				896854B52975565400E70868 /* ScriptRecordViewController.swift in Sources */,
 				5E32FC552969576A0010A376 /* UIViewController.swift in Sources */,
@@ -1202,6 +1220,7 @@
 				21A2E3C9299789B800613F55 /* ForumDataModel.swift in Sources */,
 				218DA90F297084B200D76C03 /* ForumTableViewCell.swift in Sources */,
 				2196C38A2988F55A00EFC282 /* SelectScriptViewController.swift in Sources */,
+				89FE115C299D00B300D7113A /* MemberScript.swift in Sources */,
 				894BED72299648CE008D38E0 /* RankTableViewCell.swift in Sources */,
 				8932B509297E81580054D9A4 /* ScriptPracticeRecordRoadingViewController.swift in Sources */,
 				89273C0D2977CAEF00208B6D /* ScriptPTViewController.swift in Sources */,
@@ -1247,6 +1266,7 @@
 				21348A1B297677F4002190E5 /* ReportViewController.swift in Sources */,
 				21A6B4A82980E70200F084F6 /* PostContentTableViewCell.swift in Sources */,
 				89C3C9F22998C37A0072BDFE /* ScriptRecordDataManager.swift in Sources */,
+				89E2C59B299BC3DB0076BC4E /* MyPageDataManager.swift in Sources */,
 				89EACA0529878345003ACDD6 /* MyPageStorageTableViewCell.swift in Sources */,
 				210A9E8829714A660063972B /* SearchHistoryDataModel.swift in Sources */,
 				8971322F298021740093456B /* InterviewPracticeExViewController.swift in Sources */,

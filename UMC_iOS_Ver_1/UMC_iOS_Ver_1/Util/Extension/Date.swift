@@ -26,6 +26,16 @@ extension Date {
         return dateFormatter.string(from: self)
     }
     
+    func timeAgo(_ date: String) -> String {
+        let formatter = DateComponentsFormatter()
+        let date = date.DateFromWebtoApp
+        formatter.unitsStyle = .full
+        formatter.allowedUnits = [.year, .month, .day, .hour, .minute, .second]
+        formatter.zeroFormattingBehavior = .dropAll
+        formatter.maximumUnitCount = 1
+        return String(format: formatter.string(from: date, to: Date()) ?? "", locale: .current)
+    }
+    
     // MARK: 이미지 파일을 저장할 때 마땅한 이름이 없는 경우 현재 일시를 파일 이름으로 사용하기도 합니다.
     var fileName: String {
         let dateFormatter = DateFormatter()

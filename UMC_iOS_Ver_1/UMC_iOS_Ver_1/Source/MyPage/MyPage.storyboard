@@ -50,16 +50,13 @@
                                                     <rect key="frame" x="16" y="0.0" width="361" height="140"/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="제목" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aTo-kB-lWX">
-                                                    <rect key="frame" x="24" y="8" width="28" height="22"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="22" id="v87-2w-DQa"/>
-                                                    </constraints>
+                                                    <rect key="frame" x="24" y="7.9999999999999982" width="345" height="19.333333333333329"/>
                                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="suZ-aH-3cr">
-                                                    <rect key="frame" x="24" y="38" width="345" height="61"/>
+                                                    <rect key="frame" x="24" y="35.333333333333336" width="345" height="77.333333333333314"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="G5T-3V-8wK">
                                                             <rect key="frame" x="0.0" y="0.0" width="43" height="23"/>
@@ -79,8 +76,8 @@
                                                                 <constraint firstAttribute="width" constant="43" id="tYL-hZ-rRR"/>
                                                             </constraints>
                                                         </view>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJU-mc-U0e">
-                                                            <rect key="frame" x="0.0" y="27" width="345" height="34"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wJU-mc-U0e">
+                                                            <rect key="frame" x="0.0" y="27.000000000000004" width="337.33333333333331" height="50.333333333333343"/>
                                                             <string key="text">가난한 별 풀이 계집애들의 없이 겨울이 이름과 잔디가 걱정도 버리었습니다. 강아지, 이런 아름다운 하나에 옥 어머니, 거외다. 말 가난한 별에도 까닭이요, 가슴속에 된 버리었습니다. 내 별 한 토끼, 별 이름과, 차 있습니다. 멀리 이름을 밤을 다 흙으로 무덤 너무나 별 덮어 봅니다.</string>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <color key="textColor" name="Sub1"/>
@@ -89,30 +86,27 @@
                                                     </subviews>
                                                 </stackView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="71b-Nz-2iJ">
-                                                    <rect key="frame" x="23.999999999999993" y="115" width="93.333333333333314" height="17"/>
+                                                    <rect key="frame" x="23.999999999999993" y="116.33333333333333" width="93.333333333333314" height="15.666666666666671"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 페이지" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kw8-Qz-Dkb">
-                                                            <rect key="frame" x="0.0" y="0.0" width="45.666666666666664" height="17"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="45.666666666666664" height="15.666666666666666"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                             <color key="textColor" name="Sub2"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="﹒" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zaf-cK-0rt">
-                                                            <rect key="frame" x="45.666666666666671" y="0.0" width="13.333333333333336" height="17"/>
+                                                            <rect key="frame" x="45.666666666666671" y="0.0" width="13.333333333333336" height="15.666666666666666"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                             <color key="textColor" name="Sub2"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0일 전" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="81J-g6-cas">
-                                                            <rect key="frame" x="59" y="0.0" width="34.333333333333343" height="17"/>
+                                                            <rect key="frame" x="59" y="0.0" width="34.333333333333343" height="15.666666666666666"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                                             <color key="textColor" name="Sub2"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="17" id="FFn-33-c7i"/>
-                                                    </constraints>
                                                 </stackView>
                                             </subviews>
                                             <color key="backgroundColor" name="Sub4"/>
@@ -126,9 +120,10 @@
                                                 <constraint firstAttribute="trailing" secondItem="3tC-h2-Rlj" secondAttribute="trailing" constant="16" id="Unf-BB-Zdm"/>
                                                 <constraint firstItem="71b-Nz-2iJ" firstAttribute="leading" secondItem="3tC-h2-Rlj" secondAttribute="leading" constant="8" id="WrB-26-Ehy"/>
                                                 <constraint firstItem="aTo-kB-lWX" firstAttribute="top" secondItem="3tC-h2-Rlj" secondAttribute="top" constant="8" id="XhW-qk-M1Q"/>
-                                                <constraint firstItem="71b-Nz-2iJ" firstAttribute="top" secondItem="suZ-aH-3cr" secondAttribute="bottom" constant="16" id="hDK-A9-JEn"/>
                                                 <constraint firstItem="3tC-h2-Rlj" firstAttribute="leading" secondItem="Tel-bv-REz" secondAttribute="leading" constant="16" id="ir5-fJ-3sh"/>
                                                 <constraint firstItem="suZ-aH-3cr" firstAttribute="leading" secondItem="3tC-h2-Rlj" secondAttribute="leading" constant="8" id="lI0-TL-tog"/>
+                                                <constraint firstItem="3tC-h2-Rlj" firstAttribute="trailing" secondItem="aTo-kB-lWX" secondAttribute="trailing" constant="8" id="m32-cm-l63"/>
+                                                <constraint firstItem="3tC-h2-Rlj" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="71b-Nz-2iJ" secondAttribute="trailing" constant="8" id="uul-aE-ReT"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" name="Sub4"/>

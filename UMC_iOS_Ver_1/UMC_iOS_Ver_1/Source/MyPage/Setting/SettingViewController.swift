@@ -11,6 +11,8 @@ class SettingViewController: UIViewController {
     
     @IBOutlet var tableView: UITableView!
     
+    var member: MemberData?
+    
     private let sectionTitle = ["내 계정", "앱 설정", "글에서 발견한 길 응원하기", "약관 및 정책", "계정 관리"]
     private let sectionMenuTitle = [
         ["이메일", "프로필 수정"],
@@ -85,7 +87,7 @@ extension SettingViewController: UITableViewDelegate, UITableViewDataSource {
         
         if indexPath.section == 0 && indexPath.row == 0 {
             cell.emailLabel.isHidden = false
-            cell.emailLabel.text = "email"
+            cell.emailLabel.text = member?.email ?? "email"
             cell.chevronImageView.isHidden = true
         } else if indexPath.section == 4 {
             if indexPath.row == 1 {

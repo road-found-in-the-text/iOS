@@ -33,6 +33,15 @@ extension String {
         return String(format: NSLocalizedString(self, comment: ""), values)
     }
     
+    var DateFromWebtoApp: Date
+    {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss"
+        let date = dateFormatter.date(from: self)
+        dateFormatter.dateFormat = "MM-dd-yyyy"
+        dateFormatter.timeZone = .current
+        return date!
+    }
     
     // MARK: substring
     func substring(from: Int, to: Int) -> String {
