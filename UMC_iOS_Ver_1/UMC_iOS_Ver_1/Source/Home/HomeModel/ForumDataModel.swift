@@ -73,18 +73,3 @@ struct ForumScriptIDToRequest: Codable {
 }
 
 var forumData: [ForumData] = []
-
-//func getTotalPage() -> String {
-//    let url = "https://api.road-found-in-the-text-server.com/forum?page=1"
-//    
-//        AF.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: ["Content-Type":"application/json", "Accept":"application/json"])
-//            .validate(statusCode: 200..<300)
-//            .responseDecodable(of: ForumDataModel.self) { response in
-//                switch response.result {
-//                case .success(let data):
-//                    return data.totalPage
-//                case .failure(let error):
-//                    print(error.localizedDescription)
-//                }
-//            }
-//}

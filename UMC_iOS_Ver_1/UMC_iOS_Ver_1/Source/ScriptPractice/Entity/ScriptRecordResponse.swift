@@ -16,6 +16,7 @@ struct ScriptRecordResponse: Codable {
 
 struct ScriptRecordData: Codable {
     let resultCount: Int
+    let mean: Double?
     let score1: Double
     let score2: Double
     let score3: Double
@@ -24,6 +25,7 @@ struct ScriptRecordData: Codable {
     
     enum CodingKeys: String, CodingKey {
         case resultCount = "result_count"
+        case mean
         case score1
         case score2
         case score3

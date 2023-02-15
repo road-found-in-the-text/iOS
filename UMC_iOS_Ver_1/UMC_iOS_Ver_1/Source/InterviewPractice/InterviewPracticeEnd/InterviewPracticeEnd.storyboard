@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Interview Practice End View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="InterviewPracticeEndViewController" customModule="UMC_iOS_Ver_1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="t78-nJ-PKl" customClass="InterviewView" customModule="UMC_iOS_Ver_1" customModuleProvider="target">
+                                <rect key="frame" x="38" y="176" width="317" height="506"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" name="Sub4"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="t78-nJ-PKl" secondAttribute="trailing" constant="38" id="4oc-tD-QDq"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="t78-nJ-PKl" secondAttribute="bottom" constant="136" id="7D0-wo-jgZ"/>
+                            <constraint firstItem="t78-nJ-PKl" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" priority="500" constant="117" id="EEX-WH-hGb"/>
+                            <constraint firstItem="t78-nJ-PKl" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="38" id="k5C-lM-hHO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="interviewView" destination="t78-nJ-PKl" id="jtn-Ky-i2c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="70" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Sub4">
+            <color red="0.94117647058823528" green="0.96078431372549022" blue="0.97647058823529409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

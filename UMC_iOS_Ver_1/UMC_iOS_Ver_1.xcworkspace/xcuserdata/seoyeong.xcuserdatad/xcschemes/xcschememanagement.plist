@@ -101,7 +101,11 @@
 			<key>isShown</key>
 			<false/>
 			<key>orderHint</key>
+<<<<<<< HEAD
 			<integer>8</integer>
+=======
+			<integer>7</integer>
+>>>>>>> develop
 		</dict>
 	</dict>
 </dict>

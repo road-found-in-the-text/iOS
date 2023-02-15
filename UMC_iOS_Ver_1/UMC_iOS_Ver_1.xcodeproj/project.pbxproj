@@ -18,6 +18,7 @@
 		21348A1B297677F4002190E5 /* ReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21348A1A297677F4002190E5 /* ReportViewController.swift */; };
 		213812402977A58700EC7B26 /* Post.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2138123F2977A58700EC7B26 /* Post.storyboard */; };
 		213812422977A5A800EC7B26 /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213812412977A5A800EC7B26 /* PostViewController.swift */; };
+		21421636299D26BD008386B0 /* PostNetworkingDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21421635299D26BD008386B0 /* PostNetworkingDataModel.swift */; };
 		216023A429708131009DA16E /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 216023A329708131009DA16E /* Home.storyboard */; };
 		2174690F29828662006B7950 /* PostCommentDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2174690E29828662006B7950 /* PostCommentDataModel.swift */; };
 		218DA9052970847F00D76C03 /* BestForumCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218DA9032970847F00D76C03 /* BestForumCollectionViewCell.swift */; };
@@ -83,6 +84,10 @@
 		89273C082977B6DF00208B6D /* ScriptBottomSheetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89273C072977B6DF00208B6D /* ScriptBottomSheetViewController.swift */; };
 		89273C0B2977CAE600208B6D /* ScriptPT.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89273C0A2977CAE600208B6D /* ScriptPT.storyboard */; };
 		89273C0D2977CAEF00208B6D /* ScriptPTViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89273C0C2977CAEF00208B6D /* ScriptPTViewController.swift */; };
+		892C8F06299919310032A377 /* ScriptPracticeRecordResultDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892C8F05299919310032A377 /* ScriptPracticeRecordResultDataManager.swift */; };
+		892C8F08299919F40032A377 /* ScriptRecordMemoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892C8F07299919F40032A377 /* ScriptRecordMemoResponse.swift */; };
+		892C8F0A29991BC20032A377 /* ScriptIdRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892C8F0929991BC20032A377 /* ScriptIdRecord.swift */; };
+		892C8F0C29991CDE0032A377 /* ScriptRecordIdDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892C8F0B29991CDE0032A377 /* ScriptRecordIdDataManager.swift */; };
 		8932B507297E814F0054D9A4 /* ScriptPracticeRecordRoading.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8932B506297E814F0054D9A4 /* ScriptPracticeRecordRoading.storyboard */; };
 		8932B509297E81580054D9A4 /* ScriptPracticeRecordRoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8932B508297E81580054D9A4 /* ScriptPracticeRecordRoadingViewController.swift */; };
 		894BED6629963D4F008D38E0 /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 894BED6529963D4F008D38E0 /* PrivacyPolicyViewController.swift */; };
@@ -101,6 +106,8 @@
 		895820FE2987FBFA00D95B18 /* MyPageMyCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895820FD2987FBFA00D95B18 /* MyPageMyCommentViewController.swift */; };
 		896854B32975564200E70868 /* ScriptRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896854B22975564200E70868 /* ScriptRecord.storyboard */; };
 		896854B52975565400E70868 /* ScriptRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896854B42975565400E70868 /* ScriptRecordViewController.swift */; };
+		8971322D2980216E0093456B /* InterviewPracticeEx.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8971322C2980216E0093456B /* InterviewPracticeEx.storyboard */; };
+		8971322F298021740093456B /* InterviewPracticeExViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971322E298021740093456B /* InterviewPracticeExViewController.swift */; };
 		896F42E529869C4800677A05 /* MyPageStorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F42E429869C4800677A05 /* MyPageStorageViewController.swift */; };
 		896F42E829869F7B00677A05 /* MyPageStorageTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 896F42E729869F7B00677A05 /* MyPageStorageTableHeaderView.xib */; };
 		896F42EA29869FB100677A05 /* MyPageStorageTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F42E929869FB100677A05 /* MyPageStorageTableHeaderView.swift */; };
@@ -139,6 +146,12 @@
 		89C3C9F42998C6EC0072BDFE /* ScriptRecordResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C3C9F32998C6EC0072BDFE /* ScriptRecordResponse.swift */; };
 		89C87D5B297EAD7100723E08 /* ScriptPracticeRecordEndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89C87D5A297EAD7100723E08 /* ScriptPracticeRecordEndViewController.swift */; };
 		89C87D5D297EAD7500723E08 /* ScriptPracticeRecordEnd.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89C87D5C297EAD7500723E08 /* ScriptPracticeRecordEnd.storyboard */; };
+		89CD26D92984DED700A8AD8A /* InterviewStart.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CD26D82984DED700A8AD8A /* InterviewStart.storyboard */; };
+		89CD26DB2984DEDD00A8AD8A /* InterviewStartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD26DA2984DEDD00A8AD8A /* InterviewStartViewController.swift */; };
+		89CD26DE2984E02300A8AD8A /* InterviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD26DD2984E02300A8AD8A /* InterviewView.swift */; };
+		89CD26E02984E02A00A8AD8A /* InterviewView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89CD26DF2984E02A00A8AD8A /* InterviewView.xib */; };
+		89CD26E32984E91C00A8AD8A /* InterviewPracticeEnd.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CD26E22984E91C00A8AD8A /* InterviewPracticeEnd.storyboard */; };
+		89CD26E52984E92300A8AD8A /* InterviewPracticeEndViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD26E42984E92300A8AD8A /* InterviewPracticeEndViewController.swift */; };
 		89CD521B29744C1300E1F424 /* Charts in Frameworks */ = {isa = PBXBuildFile; productRef = 89CD521A29744C1300E1F424 /* Charts */; };
 		89CD521E29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89CD521D29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard */; };
 		89CD522029744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89CD521F29744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift */; };
@@ -189,6 +202,7 @@
 		21348A1A297677F4002190E5 /* ReportViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReportViewController.swift; sourceTree = "<group>"; };
 		2138123F2977A58700EC7B26 /* Post.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Post.storyboard; sourceTree = "<group>"; };
 		213812412977A5A800EC7B26 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		21421635299D26BD008386B0 /* PostNetworkingDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostNetworkingDataModel.swift; sourceTree = "<group>"; };
 		216023A329708131009DA16E /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
 		2174690E29828662006B7950 /* PostCommentDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCommentDataModel.swift; sourceTree = "<group>"; };
 		218DA9032970847F00D76C03 /* BestForumCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BestForumCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -259,6 +273,10 @@
 		89273C072977B6DF00208B6D /* ScriptBottomSheetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptBottomSheetViewController.swift; sourceTree = "<group>"; };
 		89273C0A2977CAE600208B6D /* ScriptPT.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPT.storyboard; sourceTree = "<group>"; };
 		89273C0C2977CAEF00208B6D /* ScriptPTViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPTViewController.swift; sourceTree = "<group>"; };
+		892C8F05299919310032A377 /* ScriptPracticeRecordResultDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeRecordResultDataManager.swift; sourceTree = "<group>"; };
+		892C8F07299919F40032A377 /* ScriptRecordMemoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordMemoResponse.swift; sourceTree = "<group>"; };
+		892C8F0929991BC20032A377 /* ScriptIdRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptIdRecord.swift; sourceTree = "<group>"; };
+		892C8F0B29991CDE0032A377 /* ScriptRecordIdDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordIdDataManager.swift; sourceTree = "<group>"; };
 		8932B506297E814F0054D9A4 /* ScriptPracticeRecordRoading.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeRecordRoading.storyboard; sourceTree = "<group>"; };
 		8932B508297E81580054D9A4 /* ScriptPracticeRecordRoadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeRecordRoadingViewController.swift; sourceTree = "<group>"; };
 		894BED6529963D4F008D38E0 /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
@@ -277,6 +295,8 @@
 		895820FD2987FBFA00D95B18 /* MyPageMyCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageMyCommentViewController.swift; sourceTree = "<group>"; };
 		896854B22975564200E70868 /* ScriptRecord.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptRecord.storyboard; sourceTree = "<group>"; };
 		896854B42975565400E70868 /* ScriptRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordViewController.swift; sourceTree = "<group>"; };
+		8971322C2980216E0093456B /* InterviewPracticeEx.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InterviewPracticeEx.storyboard; sourceTree = "<group>"; };
+		8971322E298021740093456B /* InterviewPracticeExViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewPracticeExViewController.swift; sourceTree = "<group>"; };
 		896F42E429869C4800677A05 /* MyPageStorageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageStorageViewController.swift; sourceTree = "<group>"; };
 		896F42E729869F7B00677A05 /* MyPageStorageTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPageStorageTableHeaderView.xib; sourceTree = "<group>"; };
 		896F42E929869FB100677A05 /* MyPageStorageTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageStorageTableHeaderView.swift; sourceTree = "<group>"; };
@@ -313,6 +333,12 @@
 		89C3C9F32998C6EC0072BDFE /* ScriptRecordResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordResponse.swift; sourceTree = "<group>"; };
 		89C87D5A297EAD7100723E08 /* ScriptPracticeRecordEndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeRecordEndViewController.swift; sourceTree = "<group>"; };
 		89C87D5C297EAD7500723E08 /* ScriptPracticeRecordEnd.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeRecordEnd.storyboard; sourceTree = "<group>"; };
+		89CD26D82984DED700A8AD8A /* InterviewStart.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InterviewStart.storyboard; sourceTree = "<group>"; };
+		89CD26DA2984DEDD00A8AD8A /* InterviewStartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewStartViewController.swift; sourceTree = "<group>"; };
+		89CD26DD2984E02300A8AD8A /* InterviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewView.swift; sourceTree = "<group>"; };
+		89CD26DF2984E02A00A8AD8A /* InterviewView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InterviewView.xib; sourceTree = "<group>"; };
+		89CD26E22984E91C00A8AD8A /* InterviewPracticeEnd.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InterviewPracticeEnd.storyboard; sourceTree = "<group>"; };
+		89CD26E42984E92300A8AD8A /* InterviewPracticeEndViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewPracticeEndViewController.swift; sourceTree = "<group>"; };
 		89CD521D29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeRecordResult.storyboard; sourceTree = "<group>"; };
 		89CD521F29744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptPracticeRecordResultViewController.swift; sourceTree = "<group>"; };
 		89DCF50A2977060000CB2296 /* ScriptPracticeSet.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptPracticeSet.storyboard; sourceTree = "<group>"; };
@@ -382,6 +408,7 @@
 				218DA907297084A700D76C03 /* BestForumDataModel.swift */,
 				21A2E3C8299789B800613F55 /* ForumDataModel.swift */,
 				210A9E8729714A660063972B /* SearchHistoryDataModel.swift */,
+				21421635299D26BD008386B0 /* PostNetworkingDataModel.swift */,
 				2174690E29828662006B7950 /* PostCommentDataModel.swift */,
 				21F4111A299B6B6000182D5A /* NetWorkingData.swift */,
 			);
@@ -583,6 +610,10 @@
 		5E32FC6029695C960010A376 /* InterviewPractice */ = {
 			isa = PBXGroup;
 			children = (
+				89CD26DC2984DFEF00A8AD8A /* View */,
+				89CD26E12984E90800A8AD8A /* InterviewPracticeEnd */,
+				89CD26D72984DECD00A8AD8A /* InterviewStart */,
+				8971322B298021130093456B /* InterviewPracticeEx */,
 				5E32FC6429695CFC0010A376 /* InterviewPractice.storyboard */,
 				5E32FC6A29695DF60010A376 /* InterviewPracticeViewController.swift */,
 			);
@@ -667,10 +698,20 @@
 				897C63492976B7E700CCF25F /* Cell */,
 				896854B22975564200E70868 /* ScriptRecord.storyboard */,
 				896854B42975565400E70868 /* ScriptRecordViewController.swift */,
+				892C8F0B29991CDE0032A377 /* ScriptRecordIdDataManager.swift */,
 			);
 			path = ScriptRecord;
 			sourceTree = "<group>";
 		};
+		8971322B298021130093456B /* InterviewPracticeEx */ = {
+			isa = PBXGroup;
+			children = (
+				8971322C2980216E0093456B /* InterviewPracticeEx.storyboard */,
+				8971322E298021740093456B /* InterviewPracticeExViewController.swift */,
+			);
+			path = InterviewPracticeEx;
+            sourceTree = "<group>";
+        };
 		896F42E629869F6100677A05 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -690,6 +731,8 @@
 				8971E9E929890ED200DF6ACD /* PracticeQuestion.swift */,
 				89B0D7ED299681C10049087A /* Script.swift */,
 				89C3C9F32998C6EC0072BDFE /* ScriptRecordResponse.swift */,
+				892C8F07299919F40032A377 /* ScriptRecordMemoResponse.swift */,
+				892C8F0929991BC20032A377 /* ScriptIdRecord.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -765,11 +808,39 @@
 			path = ScriptPracticeRecordEnd;
 			sourceTree = "<group>";
 		};
+		89CD26D72984DECD00A8AD8A /* InterviewStart */ = {
+			isa = PBXGroup;
+			children = (
+				89CD26D82984DED700A8AD8A /* InterviewStart.storyboard */,
+				89CD26DA2984DEDD00A8AD8A /* InterviewStartViewController.swift */,
+			);
+			path = InterviewStart;
+			sourceTree = "<group>";
+		};
+		89CD26DC2984DFEF00A8AD8A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				89CD26DD2984E02300A8AD8A /* InterviewView.swift */,
+				89CD26DF2984E02A00A8AD8A /* InterviewView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		89CD26E12984E90800A8AD8A /* InterviewPracticeEnd */ = {
+			isa = PBXGroup;
+			children = (
+				89CD26E22984E91C00A8AD8A /* InterviewPracticeEnd.storyboard */,
+				89CD26E42984E92300A8AD8A /* InterviewPracticeEndViewController.swift */,
+			);
+			path = InterviewPracticeEnd;
+			sourceTree = "<group>";
+		};
 		89CD521C29744CA100E1F424 /* ScriptPracticeRecordResult */ = {
 			isa = PBXGroup;
 			children = (
 				89CD521D29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard */,
 				89CD521F29744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift */,
+				892C8F05299919310032A377 /* ScriptPracticeRecordResultDataManager.swift */,
 			);
 			path = ScriptPracticeRecordResult;
 			sourceTree = "<group>";
@@ -957,9 +1028,11 @@
 				21A6B4B12980FA4B00F084F6 /* NumOfCommentsTableViewCell.xib in Resources */,
 				2195E0F0297672AA00203C49 /* Report.storyboard in Resources */,
 				896854B32975564200E70868 /* ScriptRecord.storyboard in Resources */,
+				8971322D2980216E0093456B /* InterviewPracticeEx.storyboard in Resources */,
 				89CD521E29744CB900E1F424 /* ScriptPracticeRecordResult.storyboard in Resources */,
 				89273C0B2977CAE600208B6D /* ScriptPT.storyboard in Resources */,
 				5E32FC1B296955930010A376 /* Assets.xcassets in Resources */,
+				89CD26D92984DED700A8AD8A /* InterviewStart.storyboard in Resources */,
 				898B502C299084BD00D40E69 /* UserPageSectionHeaderView.xib in Resources */,
 				210A9E8429713D9B0063972B /* Search.storyboard in Resources */,
 				898B502F2990A1BD00D40E69 /* Setting.storyboard in Resources */,
@@ -967,10 +1040,12 @@
 				895820FC2987E41600D95B18 /* MyPagePostTableViewCell.xib in Resources */,
 				21A6B4AD2980F76A00F084F6 /* NumofLikesTableViewCell.xib in Resources */,
 				218DA9062970847F00D76C03 /* BestForumCollectionViewCell.xib in Resources */,
+				89CD26E02984E02A00A8AD8A /* InterviewView.xib in Resources */,
 				898B50362990B7B400D40E69 /* SettingHeaderView.xib in Resources */,
 				89C87D5D297EAD7500723E08 /* ScriptPracticeRecordEnd.storyboard in Resources */,
 				2196C3882988F53700EFC282 /* SelectScript.storyboard in Resources */,
 				8932B507297E814F0054D9A4 /* ScriptPracticeRecordRoading.storyboard in Resources */,
+				89CD26E32984E91C00A8AD8A /* InterviewPracticeEnd.storyboard in Resources */,
 				213812402977A58700EC7B26 /* Post.storyboard in Resources */,
 				5E32FC19296955910010A376 /* Main.storyboard in Resources */,
 				21D1B40F29879A0300CDBE05 /* NestedCommentTableViewCell.xib in Resources */,
@@ -1104,17 +1179,22 @@
 			files = (
 				89AF34E929959C20007A1197 /* ProposalViewController.swift in Sources */,
 				5E32FC16296955910010A376 /* HomeViewController.swift in Sources */,
+				89CD26DE2984E02300A8AD8A /* InterviewView.swift in Sources */,
 				5E32FC6D29695DFF0010A376 /* MyPageViewController.swift in Sources */,
 				5E32FC4D296957030010A376 /* UIColor.swift in Sources */,
 				898B503D2990D29800D40E69 /* AlarmTableViewCell.swift in Sources */,
 				218DA910297084B200D76C03 /* BestForumTableViewCell.swift in Sources */,
+				892C8F0C29991CDE0032A377 /* ScriptRecordIdDataManager.swift in Sources */,
 				8971E9EA29890ED200DF6ACD /* PracticeQuestion.swift in Sources */,
 				5E32FC4B296956EB0010A376 /* Date.swift in Sources */,
+				892C8F06299919310032A377 /* ScriptPracticeRecordResultDataManager.swift in Sources */,
+				892C8F0A29991BC20032A377 /* ScriptIdRecord.swift in Sources */,
 				89E0B03E29881C60007F6993 /* WriteScriptViewController.swift in Sources */,
 				21A749BB2977AB4E00EBFE82 /* ViewControllerConstants.swift in Sources */,
 				89E0B04129881C86007F6993 /* CreateNewScriptCell.swift in Sources */,
 				898B503F2990D7F900D40E69 /* LanguageViewController.swift in Sources */,
 				5E32FC552969576A0010A376 /* UIViewController.swift in Sources */,
+				89CD26DB2984DEDD00A8AD8A /* InterviewStartViewController.swift in Sources */,
 				5E32FC57296957840010A376 /* UIImageView.swift in Sources */,
 				89E2C599299BBE3C0076BC4E /* Member.swift in Sources */,
 				21D4B6E629791D3600D7B485 /* CustomAlertViewController.swift in Sources */,
@@ -1126,6 +1206,7 @@
 				89CD522029744CC300E1F424 /* ScriptPracticeRecordResultViewController.swift in Sources */,
 				8979B247299636E100D80D83 /* Markdownosaur.swift in Sources */,
 				21A6B4B02980FA4B00F084F6 /* NumOfCommentsTableViewCell.swift in Sources */,
+				89CD26E52984E92300A8AD8A /* InterviewPracticeEndViewController.swift in Sources */,
 				21995FF62991067D00533F33 /* InterviewCheckTableViewCell.swift in Sources */,
 				5E32FC51296957350010A376 /* String.swift in Sources */,
 				897C634F2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift in Sources */,
@@ -1146,6 +1227,7 @@
 				89B0D7F0299683F30049087A /* ScriptEditDataManager.swift in Sources */,
 				2174690F29828662006B7950 /* PostCommentDataModel.swift in Sources */,
 				89AF34E729958F5C007A1197 /* ProfileEditViewController.swift in Sources */,
+				21421636299D26BD008386B0 /* PostNetworkingDataModel.swift in Sources */,
 				898B502629907E6C00D40E69 /* UserPageViewController.swift in Sources */,
 				89E0B03C29881C46007F6993 /* ScriptNavigationViewController.swift in Sources */,
 				5E32FC14296955910010A376 /* SceneDelegate.swift in Sources */,
@@ -1179,6 +1261,7 @@
 				89E0B04329881C97007F6993 /* ScriptListTableViewCell.swift in Sources */,
 				21F4111B299B6B6000182D5A /* NetWorkingData.swift in Sources */,
 				2133B7A5297419290037D85D /* AddPostViewController.swift in Sources */,
+				892C8F08299919F40032A377 /* ScriptRecordMemoResponse.swift in Sources */,
 				89B0D7EE299681C10049087A /* Script.swift in Sources */,
 				21348A1B297677F4002190E5 /* ReportViewController.swift in Sources */,
 				21A6B4A82980E70200F084F6 /* PostContentTableViewCell.swift in Sources */,
@@ -1186,6 +1269,7 @@
 				89E2C59B299BC3DB0076BC4E /* MyPageDataManager.swift in Sources */,
 				89EACA0529878345003ACDD6 /* MyPageStorageTableViewCell.swift in Sources */,
 				210A9E8829714A660063972B /* SearchHistoryDataModel.swift in Sources */,
+				8971322F298021740093456B /* InterviewPracticeExViewController.swift in Sources */,
 				895820F42987D79D00D95B18 /* MyPageMyPostViewController.swift in Sources */,
 				210A9E8D29714B100063972B /* SearchKeywordTableViewCell.swift in Sources */,
 				898B50412990D8C900D40E69 /* LanguageTableViewCell.swift in Sources */,

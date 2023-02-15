@@ -16,6 +16,8 @@ protocol CollectionViewCellDelegate: AnyObject {
 
 class BestForumTableViewCell: UITableViewCell, UICollectionViewDelegate {
     
+    let netWorkingData = NetWorkingData.shared
+    
     @IBOutlet weak var collectionView: UICollectionView!
     
     weak var cellDelegate: CollectionViewCellDelegate?
@@ -71,9 +73,7 @@ extension BestForumTableViewCell: UICollectionViewDataSource {
         collectionViewCell.numOfBestForumLikesLabel.text = "\(bestForumData.likeNum)"
         collectionViewCell.numOfBestForumPhotosLabel.text = "\(bestForumData.imageVideoNum)"
         collectionViewCell.numOfBestForumCommentsLabel.text = "\(bestForumData.commentNum)"
-//        if let imagePath = bestForumData.forumImageURL {
-//            KF.url(URL(string: imagePath[0])).set(to: collectionViewCell.bestForumImage)
-//        }
+        collectionViewCell.bestForumImage.kf.setImage(with: URL(string: bestForumData.forumImageURL![0]))
 
         
         return collectionViewCell
@@ -81,6 +81,9 @@ extension BestForumTableViewCell: UICollectionViewDataSource {
     
     //collectionView item 선택 시 화면 이동
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let bestForumData = bestForumData[indexPath.row]
+        netWorkingData.forumID = bestForumData.forumID
+        
         let cell = collectionView.cellForItem(at: indexPath) as? BestForumCollectionViewCell
         self.cellDelegate?.collectionView(collectionViewCell: cell, index: indexPath.item, didTappedInTableViewCell: self)
     }

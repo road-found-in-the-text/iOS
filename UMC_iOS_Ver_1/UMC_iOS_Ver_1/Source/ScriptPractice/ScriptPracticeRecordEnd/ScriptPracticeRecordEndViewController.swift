@@ -57,7 +57,6 @@ class ScriptPracticeRecordEndViewController: UIViewController {
         for viewController in self.navigationController!.viewControllers as Array {
             if let nextViewController = viewController as? ScriptEditTabmanViewController {
                 nextViewController.pageIndex = sender == againButton ? 1 : 2
-                print(nextViewController.pageIndex)
                 self.navigationController?.popToViewController(nextViewController, animated: true)
             }
         }

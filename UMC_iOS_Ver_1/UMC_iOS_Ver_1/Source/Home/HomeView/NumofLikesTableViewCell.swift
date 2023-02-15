@@ -9,6 +9,9 @@ import UIKit
 
 class NumofLikesTableViewCell: UITableViewCell {
 
+    
+    @IBOutlet weak var numOfLikeLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
