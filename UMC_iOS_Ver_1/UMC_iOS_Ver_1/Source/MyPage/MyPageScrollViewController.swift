@@ -19,6 +19,8 @@ class MyPageScrollViewController: HPScrollViewController {
         super.viewDidLoad()
         
 //        profileView.detailButton.addTarget(self, action: #selector(headerDetailButtonTapped), for: .touchUpInside)
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(headerDetailButtonTapped)))
+        
         configureNavigationBar()
         configureHeader()
         MyPageDataManager().fetchMemberData(id: 1, delegate: self)

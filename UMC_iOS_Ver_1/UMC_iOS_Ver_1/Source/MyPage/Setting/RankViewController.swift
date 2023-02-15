@@ -34,9 +34,41 @@ class RankViewController: UIViewController {
         super.viewDidLoad()
         
         navigationItem.title = "등급"
-
-        tableView.tableHeaderView = RankHeaderView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 229))
+        
+        configureTableView()
+    }
+    
+    func configureTableView() {
+        let tableViewHeader = RankHeaderView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 229))
+        
+        if let userRank = userRank {
+            tableViewHeader.rankImageView.image = UIImage(named: "Rank \(userRank.capitalized)")
+            tableViewHeader.rankLabel.text = getRankKoreanName()
+        }
+        
+        tableView.tableHeaderView = tableViewHeader
         tableView.register(UINib(nibName: "RankSectionHeaderView", bundle: nil), forHeaderFooterViewReuseIdentifier: sectionHeaderIdentifier)
+    }
+    
+    func getRankKoreanName() -> String {
+        guard let userRank = userRank else {
+            return "등급"
+        }
+        
+        switch userRank {
+        case "BRONZE":
+            return "브론즈"
+        case "SILVER":
+            return "실버"
+        case "GOLD":
+            return "골드"
+        case "PLATINUM":
+            return "플래티넘"
+        case "DIAMOND":
+            return "다이아몬드"
+        default:
+            return "등급"
+        }
     }
 
 }
@@ -53,6 +85,12 @@ extension RankViewController: UITableViewDelegate, UITableViewDataSource {
         }
         
         let rank = rankInfo[indexPath.row]
+        
+        if let userRank = userRank {
+            if rank.image == userRank.capitalized {
+                cell.myRankLabel.isHidden = false
+            }
+        }
         
         cell.rankImageView.image = UIImage(named: "Rank \(rank.image)")
         cell.rankLabel.text = rank.name
