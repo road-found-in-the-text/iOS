@@ -68,6 +68,8 @@ class SettingViewController: UIViewController {
             assert(false)
         }
         
+        proposalViewController.userEmail = member?.email
+        
         nextViewControllers[2] = [proposalViewController]
         
         guard let termsOfUseViewController = storyboard?.instantiateViewController(withIdentifier: "TermsOfUseViewController") as? TermsOfUseViewController else {

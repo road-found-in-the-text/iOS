@@ -13,6 +13,8 @@ class ProposalViewController: UIViewController {
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var sendButton: UIButton!
     
+    var userEmail: String?
+    
     private let proposalTextViewPlaceholder = "내용을 작성해주세요."
 
     override func viewDidLoad() {
@@ -53,6 +55,8 @@ class ProposalViewController: UIViewController {
         emailTextField.layer.cornerRadius = 6
         emailTextField.setLeftPaddingPoints(10)
         emailTextField.setRightPaddingPoints(73)
+        
+        emailTextField.text = userEmail ?? ""
         
         sendButton.layer.cornerRadius = 8
     }
