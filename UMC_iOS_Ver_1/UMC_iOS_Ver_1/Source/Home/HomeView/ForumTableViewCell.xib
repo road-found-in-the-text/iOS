@@ -18,30 +18,30 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M2s-NK-T06" userLabel="TitleLabel">
-                        <rect key="frame" x="15" y="20" width="325" height="20.333333333333329"/>
-                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
-                        <nil key="textColor"/>
+                        <rect key="frame" x="15" y="20" width="325" height="19.333333333333329"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <color key="textColor" name="Main"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SIy-Lc-QMw" userLabel="ContentLabel">
-                        <rect key="frame" x="15" y="50.333333333333329" width="325" height="50.333333333333329"/>
+                        <rect key="frame" x="15" y="49.333333333333329" width="325" height="50.333333333333329"/>
                         <string key="text">생의 유소년에게서 노래하며 위하여서 우리 인생에 창공에 피가 힘있다. 구하기 이상을 것은 것은 아름다우냐? 일월과 품에 현저하게 인간의 몸이 인간의 품었기 뼈 힘있다.
 놀이 없는 힘차게 인간에 끝까지 아니다. 싸인 수 충분히 그와 이상의 무엇을 속에서 말이다. 속잎나고, 소담스러운 어디 온갖 아니더면, 가는 이상, 보이는 봄바람이다.</string>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                        <nil key="textColor"/>
+                        <color key="textColor" name="Sub1"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="닉네임 · 1분 전" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQS-y7-ymh">
-                        <rect key="frame" x="15" y="115.66666666666667" width="71.333333333333329" height="14.333333333333329"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                        <nil key="textColor"/>
+                        <rect key="frame" x="15" y="114.66666666666667" width="77" height="15.666666666666671"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" name="Sub2"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="Gnp-gz-Etu">
-                        <rect key="frame" x="258.33333333333331" y="115.66666666666667" width="81.666666666666686" height="15.000000000000014"/>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Gnp-gz-Etu">
+                        <rect key="frame" x="233.66666666666666" y="114.66666666666667" width="106.33333333333334" height="15.000000000000014"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="fvz-2N-bsc">
-                                <rect key="frame" x="0.0" y="0.0" width="22.666666666666668" height="15"/>
+                                <rect key="frame" x="0.0" y="0.0" width="24" height="15"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_image" translatesAutoresizingMaskIntoConstraints="NO" id="Qaz-Dx-i35">
                                         <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
@@ -52,15 +52,15 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ys-w5-BUg">
-                                        <rect key="frame" x="18" y="0.0" width="4.6666666666666679" height="15"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                        <rect key="frame" x="18" y="0.0" width="6" height="15"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" name="Sub2"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="H2C-tS-3iB">
-                                <rect key="frame" x="25.666666666666686" y="0.0" width="22" height="15"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="H2C-tS-3iB">
+                                <rect key="frame" x="32.000000000000028" y="0.0" width="26.333333333333329" height="15"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_ comment" translatesAutoresizingMaskIntoConstraints="NO" id="yM7-za-9FT">
                                         <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
@@ -71,15 +71,15 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zfP-M1-8R6">
-                                        <rect key="frame" x="16" y="0.0" width="6" height="15"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                        <rect key="frame" x="18" y="0.0" width="8.3333333333333357" height="15"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" name="Sub2"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                             </stackView>
-                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XnJ-HR-sc8">
-                                <rect key="frame" x="50.666666666666686" y="0.0" width="31" height="15"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="XnJ-HR-sc8">
+                                <rect key="frame" x="66.333333333333343" y="0.0" width="40" height="15"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_like" translatesAutoresizingMaskIntoConstraints="NO" id="Xkf-Xl-D0P">
                                         <rect key="frame" x="0.0" y="0.0" width="15" height="15"/>
@@ -90,8 +90,8 @@
                                         </constraints>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="120" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="opa-me-ivi">
-                                        <rect key="frame" x="15" y="0.0" width="16" height="15"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                        <rect key="frame" x="18" y="0.0" width="22" height="15"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                         <color key="textColor" name="Sub2"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -129,6 +129,12 @@
         <image name="ic_ comment" width="24" height="24"/>
         <image name="ic_image" width="24" height="24"/>
         <image name="ic_like" width="24" height="24"/>
+        <namedColor name="Main">
+            <color red="0.11764705882352941" green="0.12549019607843137" blue="0.13333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Sub1">
+            <color red="0.32156862745098042" green="0.38039215686274508" blue="0.41568627450980394" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="Sub2">
             <color red="0.67843137254901964" green="0.70980392156862748" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

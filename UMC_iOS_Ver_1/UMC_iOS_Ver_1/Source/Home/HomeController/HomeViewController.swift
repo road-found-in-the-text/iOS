@@ -76,7 +76,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         let view = UIView()
         let label = UILabel()
         if section == 0 { label.text = "🔥 BEST Forum" } else { label.text = "Forum" }
-        label.font = .boldSystemFont(ofSize: 23)
+        label.font = .boldSystemFont(ofSize: 20)
         label.frame = CGRect(x: 20, y: 20, width: 250, height: 20)
         view.addSubview(label)
         view.backgroundColor = .white
