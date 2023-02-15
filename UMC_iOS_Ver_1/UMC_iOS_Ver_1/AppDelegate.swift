@@ -31,6 +31,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         IQKeyboardManager.shared.enableAutoToolbar = false
         IQKeyboardManager.shared.shouldResignOnTouchOutside = true
         
+        let defaults = UserDefaults.standard
+
+        // Remove all user defaults
+        defaults.removePersistentDomain(forName: Bundle.main.bundleIdentifier!)
+        
         return true
     }
     

@@ -14,29 +14,59 @@ class CreateNewScriptViewController: UIViewController {
     
     @IBOutlet weak var scriptNameTxtField: UITextField!
     
-    var countPage = 1 //페이지 개수 카운트해주는 변수
+    var originScriptName = String()
     
     @objc func didTapSaveBtn(_ sender: UIButton) {
         
-        print("저장")
+        UserDefaults.standard.set(scriptNameTxtField.text, forKey: "scriptName")
+        self.navigationItem.rightBarButtonItem?.tintColor = UIColor(hex: 0xADB5BD)
+        self.navigationItem.rightBarButtonItem?.isEnabled = false
+        
+        originScriptName = UserDefaults.standard.string(forKey: "scriptName") ?? ""
+        
+        dismissKeyboard()
     }
     
     //추가 버튼 눌렀을 때, count 1늘리고 reload
     @objc func didTapAddBtn(_ sender: UIButton) {
-        countPage = countPage + 1
+        
+        let countPage = UserDefaults.standard.integer(forKey: "pageCount") + 1
+        
+        UserDefaults.standard.set(countPage, forKey: "pageCount")
+        
         tableView.reloadData()
     }
     
     //페이지 지웠을때, count 1 감소 후 reload
     func didDeletePage(){
-        countPage = countPage - 1
+        let countPage = UserDefaults.standard.integer(forKey: "pageCount") - 1
+        
+        UserDefaults.standard.set(countPage, forKey: "pageCount")
     }
     
     var items = ["책 구매", "철수와 약속", "스터디 준비하기"]
     var itemsImageFile = ["cart.png", "clock.png", "pencil.png"]
     
+    //네비게이션 바 (저장) 버튼 색상 바꿔주기위한 감시 함수
+    @objc func isConditionComplete(_ textField: UITextField) {
+        //수정사항있으면 네이게이션 버튼 색 바뀜
+        
+        if (scriptNameTxtField.text != "") && (originScriptName != scriptNameTxtField.text){
+            self.navigationItem.rightBarButtonItem?.tintColor = UIColor.black
+            self.navigationItem.rightBarButtonItem?.isEnabled = true
+        }
+        else{
+            self.navigationItem.rightBarButtonItem?.tintColor = UIColor(hex: 0xADB5BD)
+            self.navigationItem.rightBarButtonItem?.isEnabled = false
+        }
+        
+    }
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        originScriptName = UserDefaults.standard.string(forKey: "scriptName") ?? ""
         
         tableView.delegate = self
         tableView.dataSource = self
@@ -53,7 +83,7 @@ class CreateNewScriptViewController: UIViewController {
         navigationItem.rightBarButtonItem = UIBarButtonItem(title: "저장", style: .plain, target: self, action: #selector(didTapSaveBtn))
         
         self.navigationItem.rightBarButtonItem?.tintColor = UIColor(hex: 0xADB5BD)
-        
+        self.navigationItem.rightBarButtonItem?.isEnabled = false
         
         //텍스트필드 아랫부분만 border 남기기
         let bottomLine = CALayer()
@@ -61,6 +91,7 @@ class CreateNewScriptViewController: UIViewController {
         bottomLine.backgroundColor = UIColor(hex: 0xC9D6DE).cgColor
         scriptNameTxtField.borderStyle = UITextField.BorderStyle.none
         scriptNameTxtField.layer.addSublayer(bottomLine)
+        scriptNameTxtField.text = UserDefaults.standard.string(forKey: "scriptName")
         
         
         //footer 부분 버튼 만드는 작업.
@@ -95,9 +126,14 @@ class CreateNewScriptViewController: UIViewController {
         
         footerBtn.addTarget(self, action: #selector(didTapAddBtn), for: .touchUpInside)
         
+        //위에서 만든 감시함수 적용
+        scriptNameTxtField.addTarget(self, action: #selector(CreateNewScriptViewController.isConditionComplete(_:)), for: .editingChanged)
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
+    }
 
 }
 
@@ -121,8 +157,8 @@ extension CreateNewScriptViewController: UITableViewDelegate, UITableViewDataSou
         }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return countPage
+
+        return UserDefaults.standard.integer(forKey: "pageCount")
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -143,8 +179,25 @@ extension CreateNewScriptViewController: UITableViewDelegate, UITableViewDataSou
         //TableViewCell 델리게이트 선언
         cell.delegate = self
         cell.delegateForHeight = self
-        cell.contentTxtView.text = "내용을 작성하세요."
-        cell.contentTxtView.textColor = UIColor.placeholderText
+        
+        if  UserDefaults.standard.string(forKey: "paragraphName" + String(indexPath.row + 1)) != nil {
+            cell.pageNameBtn.setTitle(UserDefaults.standard.string(forKey: "paragraphName" + String(indexPath.row + 1)), for: .normal)
+            cell.pageNameBtn.setTitleColor(.black, for: .normal)
+        }
+        else{
+            cell.pageNameBtn.setTitle(String(indexPath.row + 1) + " 페이지", for: .normal)
+            cell.pageNameBtn.setTitleColor(.placeholderText, for: .normal)
+        }
+        
+        if  UserDefaults.standard.string(forKey: "paragraphContent" + String(indexPath.row + 1)) != nil {
+            cell.contentTxtView.text = UserDefaults.standard.string(forKey: "paragraphContent" + String(indexPath.row + 1))
+            cell.contentTxtView.textColor = UIColor.black
+        }
+        else{
+            cell.contentTxtView.text = "내용을 작성하세요"
+            cell.pageLabel.textColor = UIColor.black
+        }
+    
         
         return cell
         
