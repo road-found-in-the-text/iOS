@@ -28,6 +28,9 @@ class MyPageStorageViewController: UIViewController {
         }
         
         MyPageDataManager().fetchMemberScriptData(id: 1, delegate: self)
+        
+        self.tableView.rowHeight = UITableView.automaticDimension
+        self.tableView.estimatedRowHeight = 148
     }
     
     func registerTableViewHeader() {
@@ -86,7 +89,11 @@ extension MyPageStorageViewController: UITableViewDelegate, UITableViewDataSourc
         return header
     }
     
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 148
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        return 148
+//    }
+    
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableView.automaticDimension
     }
 }

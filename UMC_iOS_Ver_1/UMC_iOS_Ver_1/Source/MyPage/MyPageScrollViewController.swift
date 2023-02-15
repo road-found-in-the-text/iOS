@@ -69,6 +69,8 @@ class MyPageScrollViewController: HPScrollViewController {
         guard let nextViewController = storyboard.instantiateViewController(withIdentifier: "SettingViewController") as? SettingViewController else {
             assert(false)
         }
+        nextViewController.member = self.member
+        
         self.navigationController?.pushViewController(nextViewController, animated: true)
     }
     
