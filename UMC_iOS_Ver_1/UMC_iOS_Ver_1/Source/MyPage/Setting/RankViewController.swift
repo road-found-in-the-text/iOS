@@ -18,6 +18,7 @@ class RankViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     
     var userRank: String?
+    var userScript: MemberScript?
     
     private let rankInfo = [
         RankInfo(image: "Bronze", name: "브론즈", scriptCount: "0"),
@@ -35,15 +36,16 @@ class RankViewController: UIViewController {
         
         navigationItem.title = "등급"
         
-        configureTableView()
+        MyPageDataManager().fetchMemberScriptData(id: 1, delegate: self)
     }
     
     func configureTableView() {
         let tableViewHeader = RankHeaderView(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 229))
         
-        if let userRank = userRank {
+        if let userRank = userRank, let userScript = userScript {
             tableViewHeader.rankImageView.image = UIImage(named: "Rank \(userRank.capitalized)")
             tableViewHeader.rankLabel.text = getRankKoreanName()
+            tableViewHeader.scriptCountLabel.text = "스크립트 \(userScript.count)개"
         }
         
         tableView.tableHeaderView = tableViewHeader
@@ -71,6 +73,14 @@ class RankViewController: UIViewController {
         }
     }
 
+}
+
+// MARK - Networking
+extension RankViewController: MyPageStorageDelegate {
+    func didFetchMemberScriptData(memberScript: MemberScript) {
+        self.userScript = memberScript
+        configureTableView()
+    }
 }
 
 // MARK: - UITableView
