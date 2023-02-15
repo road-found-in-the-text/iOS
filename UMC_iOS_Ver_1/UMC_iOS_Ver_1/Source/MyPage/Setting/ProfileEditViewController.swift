@@ -68,9 +68,10 @@ class ProfileEditViewController: UIViewController {
         bioView.layer.borderColor = UIColor(named: "Sub3")?.cgColor
         bioView.layer.borderWidth = 1
         bioView.layer.cornerRadius = 6
-        updateBioTextCountLabel(length: 0)
         
         bioTextView.text = userInfo?.introduction ?? ""
+        
+        updateBioTextCountLabel(length: bioTextView.text.count)
         
         if let profileImageUrl = userInfo?.imageUrl {
             let url = URL(string: profileImageUrl)
