@@ -37,5 +37,9 @@ class MyPageProfileView: UIView {
         detailButton.imageView?.setImageColor(color: UIColor(named: "Sub2") ?? UIColor())
         
     }
+    
+    @IBAction func detailButtonTapped() {
+        print("아오")
+    }
 
 }

@@ -18,6 +18,7 @@ class MyPageScrollViewController: HPScrollViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+//        profileView.detailButton.addTarget(self, action: #selector(headerDetailButtonTapped), for: .touchUpInside)
         configureNavigationBar()
         configureHeader()
         MyPageDataManager().fetchMemberData(id: 1, delegate: self)
@@ -54,7 +55,7 @@ class MyPageScrollViewController: HPScrollViewController {
         headerHeight = 140 + profileView.bioLabel.frame.height + (navigationController?.navigationBar.frame.height ?? 40)
     }
     
-    // MARK: - Navigation Bar Button Items
+    // MARK: - Actions
     @objc func notificationBarButtonItemTapped() {
         guard let nextViewController = storyboard?.instantiateViewController(withIdentifier: "NotificationViewController") as? NotificationViewController else {
             return
@@ -70,7 +71,19 @@ class MyPageScrollViewController: HPScrollViewController {
         }
         self.navigationController?.pushViewController(nextViewController, animated: true)
     }
-
+    
+    @objc func headerDetailButtonTapped() {
+        let storyboard = UIStoryboard(name: "Setting", bundle: nil)
+        guard let nextViewController = storyboard.instantiateViewController(withIdentifier: "RankViewController") as? RankViewController else {
+            return
+        }
+        
+        if let member = member {
+            nextViewController.userRank = member.tier
+        }
+        
+        self.navigationController?.pushViewController(nextViewController, animated: true)
+    }
 }
 
 // MARK: - Networking

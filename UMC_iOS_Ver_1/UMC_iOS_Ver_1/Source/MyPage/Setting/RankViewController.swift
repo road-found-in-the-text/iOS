@@ -17,6 +17,8 @@ class RankViewController: UIViewController {
     
     @IBOutlet var tableView: UITableView!
     
+    var userRank: String?
+    
     private let rankInfo = [
         RankInfo(image: "Bronze", name: "브론즈", scriptCount: "0"),
         RankInfo(image: "Silver", name: "실버", scriptCount: "3"),

@@ -11,6 +11,9 @@ class MyPageStorageViewController: UIViewController {
     
     @IBOutlet var tableView: UITableView!
     
+    private var memberScript: MemberScript?
+    private var scriptData = [Script]()
+    
     private let headerViewIdentifier = "storageHeader"
     private let cellIdentifier = "storageCell"
 
@@ -23,6 +26,8 @@ class MyPageStorageViewController: UIViewController {
         if #available(iOS 15.0, *) {
           tableView.sectionHeaderTopPadding = 0
         }
+        
+        MyPageDataManager().fetchMemberScriptData(id: 1, delegate: self)
     }
     
     func registerTableViewHeader() {
@@ -31,18 +36,42 @@ class MyPageStorageViewController: UIViewController {
     }
 }
 
+// MARK: - Networking
+extension MyPageStorageViewController: MyPageStorageDelegate, ScriptEditDelegate {
+    func didFetchMemberScriptData(memberScript: MemberScript) {
+        self.memberScript = memberScript
+        memberScript.scripts.forEach { script in
+            ScriptEditDataManager().fetchScriptById(id: script.scriptId, delegate: self)
+        }
+    }
+    
+    func didFetchScriptById(result: Script) {
+        self.scriptData.append(result)
+        tableView.reloadData()
+    }
+    
+}
+// MARK: - UITableView
 extension MyPageStorageViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return scriptData.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? MyPageStorageTableViewCell else {
             return UITableViewCell()
         }
+
+        let script = scriptData[indexPath.row]
         
-        cell.typeLabel.text = "어쩌고저쩌고"
-        cell.setTypeViewWidth()
+        cell.titleLabel.text = script.title
+        cell.contentLabel.text = script.contents
+        cell.pageLabel.text = "\(script.paragraphList.count) 페이지"
+        cell.timeLabel.text = Date().timeAgo(script.createdDate) + " 전"
+        
+        cell.typeLabel.isHidden = true
+        cell.typeView.isHidden = true
+//        cell.setTypeViewWidth()
         
         return cell
     }
@@ -51,6 +80,8 @@ extension MyPageStorageViewController: UITableViewDelegate, UITableViewDataSourc
         guard let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: headerViewIdentifier) as? MyPageStorageTableHeaderView else {
             return UIView()
         }
+        
+        header.selectedCellAmountLabel.text = "\(scriptData.count)"
                 
         return header
     }
