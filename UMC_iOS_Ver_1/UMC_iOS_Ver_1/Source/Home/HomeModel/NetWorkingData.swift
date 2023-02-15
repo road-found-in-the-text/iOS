@@ -14,6 +14,8 @@ class NetWorkingData {
 
     var totalPage = 0
     var numOfPage = 1
+    
+    var forumID = 0
 
     private init() { }
 }

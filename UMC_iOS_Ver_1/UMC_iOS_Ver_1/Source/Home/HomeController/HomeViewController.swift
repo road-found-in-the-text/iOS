@@ -145,6 +145,9 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
     
     //셀 선택 시 화면이동
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let forumData = forumData[indexPath.row]
+        netWorkingData.forumID = forumData.forumID
+        
         let postStoryboard = UIStoryboard(name: Const.Storyboard.Name.post, bundle: nil)
         guard let postVC = postStoryboard.instantiateViewController(withIdentifier: Const.ViewController.identifier.post) as? PostViewController else { return }
         self.navigationController?.pushViewController(postVC, animated: true)
@@ -171,6 +174,8 @@ extension HomeViewController: ForumDataDelegate {
     
     func getForumData() {
         netWorkingData.numOfPage = 1
+        
+        forumData = []
         
         AF.request(url, method: .get, parameters: nil, encoding: JSONEncoding.default, headers: ["Content-Type":"application/json", "Accept":"application/json"])
             .validate(statusCode: 200..<300)

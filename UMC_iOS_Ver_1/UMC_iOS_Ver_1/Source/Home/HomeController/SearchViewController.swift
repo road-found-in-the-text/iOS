@@ -128,6 +128,7 @@ extension SearchViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        SearchViewController.searchKeyword = searchHistoryData[indexPath.row]
         getForumData()
         setUI(hide: true)
     }
@@ -176,8 +177,6 @@ extension SearchViewController: ForumDataDelegate {
     }
     
     func getForumData() {
-        
-        print("hp")
         netWorkingData.numOfPage = 1
         
         AF.request(url, method: .get)
@@ -189,7 +188,6 @@ extension SearchViewController: ForumDataDelegate {
                     self.netWorkingData.totalPage = data.totalPage
                     self.netWorkingData.numOfPage += 1
                     self.searchContainerVC.contentsTableView?.reloadData()
-                    print("hi")
                     if self.netWorkingData.numOfPage <= self.netWorkingData.totalPage {
                         self.getForumData()
                     }
