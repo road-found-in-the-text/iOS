@@ -26,7 +26,7 @@ class ScriptPracticeRecordResultViewController: UIViewController {
     
     var result: ScriptRecordData?
     
-    private let resultChartLabels = ["분석력", "논리력", "전문성", "전달력", "창의력"]
+    private let resultChartLabels = ["분석력", "논리력", "창의력", "전달력", "전문성"]
     private let memoTextViewPlaceholder = "내용을 입력해주세요."
 
     // MARK: - Lifecycle
@@ -126,12 +126,27 @@ class ScriptPracticeRecordResultViewController: UIViewController {
     }
     
     @IBAction func doneButtonTapped(_ sender: UIButton) {
+        if memoTextView.text.isExists && memoTextView.text != memoTextViewPlaceholder {
+            ScriptPracticeRecordResultDataManager().postScriptRecordMemo(scriptId: 1, memo: memoTextView.text, delegate: self)
+        } else {
+            pushNextViewController()
+        }
+    }
+    
+    func pushNextViewController() {
         let storyboard = UIStoryboard(name: "ScriptPracticeRecordEnd", bundle: nil)
         guard let nextViewController = storyboard.instantiateViewController(withIdentifier: "ScriptPracticeRecordEndViewController") as? ScriptPracticeRecordEndViewController else {
             assert(false)
         }
         
         self.navigationController?.pushViewController(nextViewController, animated: true)
+    }
+}
+
+// MARK: - Networking
+extension ScriptPracticeRecordResultViewController: ScriptRecordMemoDelegate {
+    func didPostScriptRecordMemo() {
+        pushNextViewController()
     }
 }
 
