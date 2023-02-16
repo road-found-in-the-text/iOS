@@ -223,6 +223,7 @@ extension LoginWithEmailViewController{
 
                         //혹시 같은 기기내에서 아이디 두번 만들수도 있으니 isAutoLogin값 false로 바꿔줌
                         UserDefaults.standard.set(false, forKey: "isAutoLogin")
+                        UserDefaults.standard.set(true, forKey: "loginUser")
                     }
                     else{
                         

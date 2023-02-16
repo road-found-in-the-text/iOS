@@ -13,24 +13,29 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var forumTableView: UITableView!
     
     override func viewWillAppear(_ animated: Bool) {
-        
+
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let storyboard = UIStoryboard(name: "LoginPage", bundle: nil)
-        guard let vc = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController else { return }
+        if UserDefaults.standard.bool(forKey: "loginUser") != true{
+            UserDefaults.standard.set(false, forKey: "loginUser")
+            let storyboard = UIStoryboard(name: "LoginPage", bundle: nil)
+            guard let vc = storyboard.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController else { return }
 
-        let newNavController = UINavigationController(rootViewController: vc)
-        newNavController.modalPresentationStyle = .fullScreen
-        self.present(newNavController, animated: false, completion: nil)
+            let newNavController = UINavigationController(rootViewController: vc)
+            newNavController.modalPresentationStyle = .fullScreen
+            self.present(newNavController, animated: false, completion: nil)
+        }
+        
         
         
         registerXib()
         forumTableView.delegate = self
         forumTableView.dataSource = self
     }
+    
     
     //커스텀cell 등록
     private func registerXib() {
