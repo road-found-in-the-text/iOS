@@ -106,11 +106,11 @@
 		895820FE2987FBFA00D95B18 /* MyPageMyCommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895820FD2987FBFA00D95B18 /* MyPageMyCommentViewController.swift */; };
 		896854B32975564200E70868 /* ScriptRecord.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 896854B22975564200E70868 /* ScriptRecord.storyboard */; };
 		896854B52975565400E70868 /* ScriptRecordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896854B42975565400E70868 /* ScriptRecordViewController.swift */; };
-		8971322D2980216E0093456B /* InterviewPracticeEx.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8971322C2980216E0093456B /* InterviewPracticeEx.storyboard */; };
-		8971322F298021740093456B /* InterviewPracticeExViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971322E298021740093456B /* InterviewPracticeExViewController.swift */; };
 		896F42E529869C4800677A05 /* MyPageStorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F42E429869C4800677A05 /* MyPageStorageViewController.swift */; };
 		896F42E829869F7B00677A05 /* MyPageStorageTableHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 896F42E729869F7B00677A05 /* MyPageStorageTableHeaderView.xib */; };
 		896F42EA29869FB100677A05 /* MyPageStorageTableHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 896F42E929869FB100677A05 /* MyPageStorageTableHeaderView.swift */; };
+		8971322D2980216E0093456B /* InterviewPracticeEx.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8971322C2980216E0093456B /* InterviewPracticeEx.storyboard */; };
+		8971322F298021740093456B /* InterviewPracticeExViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971322E298021740093456B /* InterviewPracticeExViewController.swift */; };
 		8971E9EA29890ED200DF6ACD /* PracticeQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8971E9E929890ED200DF6ACD /* PracticeQuestion.swift */; };
 		8979B24229962A7D00D80D83 /* TermsOfUseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8979B24129962A7D00D80D83 /* TermsOfUseViewController.swift */; };
 		8979B245299636C300D80D83 /* Markdown in Frameworks */ = {isa = PBXBuildFile; productRef = 8979B244299636C300D80D83 /* Markdown */; };
@@ -167,6 +167,7 @@
 		89EACA0529878345003ACDD6 /* MyPageStorageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89EACA0429878345003ACDD6 /* MyPageStorageTableViewCell.swift */; };
 		89EACA0A2987A12B003ACDD6 /* HPParallaxHeader in Frameworks */ = {isa = PBXBuildFile; productRef = 89EACA092987A12B003ACDD6 /* HPParallaxHeader */; };
 		89FE115C299D00B300D7113A /* MemberScript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FE115B299D00B300D7113A /* MemberScript.swift */; };
+		89FE115E299DB7A500D7113A /* ScriptEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89FE115D299DB7A500D7113A /* ScriptEditViewController.swift */; };
 		9419EEF196C59F8A276BC2C0 /* Pods_UMC_iOS_Ver_1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49B928E9BB947B94197FC9A1 /* Pods_UMC_iOS_Ver_1.framework */; };
 		9627E4EC12C0657B54F74B64 /* Pods_UMC_iOS_Ver_1Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D71B72BC0CFA2711D70661A /* Pods_UMC_iOS_Ver_1Tests.framework */; };
 /* End PBXBuildFile section */
@@ -295,11 +296,11 @@
 		895820FD2987FBFA00D95B18 /* MyPageMyCommentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageMyCommentViewController.swift; sourceTree = "<group>"; };
 		896854B22975564200E70868 /* ScriptRecord.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScriptRecord.storyboard; sourceTree = "<group>"; };
 		896854B42975565400E70868 /* ScriptRecordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptRecordViewController.swift; sourceTree = "<group>"; };
-		8971322C2980216E0093456B /* InterviewPracticeEx.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InterviewPracticeEx.storyboard; sourceTree = "<group>"; };
-		8971322E298021740093456B /* InterviewPracticeExViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewPracticeExViewController.swift; sourceTree = "<group>"; };
 		896F42E429869C4800677A05 /* MyPageStorageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageStorageViewController.swift; sourceTree = "<group>"; };
 		896F42E729869F7B00677A05 /* MyPageStorageTableHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyPageStorageTableHeaderView.xib; sourceTree = "<group>"; };
 		896F42E929869FB100677A05 /* MyPageStorageTableHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageStorageTableHeaderView.swift; sourceTree = "<group>"; };
+		8971322C2980216E0093456B /* InterviewPracticeEx.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = InterviewPracticeEx.storyboard; sourceTree = "<group>"; };
+		8971322E298021740093456B /* InterviewPracticeExViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterviewPracticeExViewController.swift; sourceTree = "<group>"; };
 		8971E9E929890ED200DF6ACD /* PracticeQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeQuestion.swift; sourceTree = "<group>"; };
 		8979B24129962A7D00D80D83 /* TermsOfUseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfUseViewController.swift; sourceTree = "<group>"; };
 		8979B246299636E100D80D83 /* Markdownosaur.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Markdownosaur.swift; sourceTree = "<group>"; };
@@ -352,6 +353,7 @@
 		89E2C59A299BC3DB0076BC4E /* MyPageDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageDataManager.swift; sourceTree = "<group>"; };
 		89EACA0429878345003ACDD6 /* MyPageStorageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageStorageTableViewCell.swift; sourceTree = "<group>"; };
 		89FE115B299D00B300D7113A /* MemberScript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberScript.swift; sourceTree = "<group>"; };
+		89FE115D299DB7A500D7113A /* ScriptEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScriptEditViewController.swift; sourceTree = "<group>"; };
 		9605E6568465799CFD279686 /* Pods-UMC_iOS_Ver_1Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC_iOS_Ver_1Tests.release.xcconfig"; path = "Target Support Files/Pods-UMC_iOS_Ver_1Tests/Pods-UMC_iOS_Ver_1Tests.release.xcconfig"; sourceTree = "<group>"; };
 		A0DB99903F02E1B48D715375 /* Pods-UMC_iOS_Ver_1Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-UMC_iOS_Ver_1Tests.debug.xcconfig"; path = "Target Support Files/Pods-UMC_iOS_Ver_1Tests/Pods-UMC_iOS_Ver_1Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		B6F6FA7EC2A2DF7ADD8C68E3 /* Pods_UMC_iOS_Ver_1_UMC_iOS_Ver_1UITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_UMC_iOS_Ver_1_UMC_iOS_Ver_1UITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -660,6 +662,7 @@
 			children = (
 				89028EC1296C6B3800B28DB7 /* ScriptEdit.storyboard */,
 				89028EC3296C6B5900B28DB7 /* ScriptEditTabmanViewController.swift */,
+				89FE115D299DB7A500D7113A /* ScriptEditViewController.swift */,
 				89B0D7EF299683F30049087A /* ScriptEditDataManager.swift */,
 			);
 			path = ScriptEdit;
@@ -703,15 +706,6 @@
 			path = ScriptRecord;
 			sourceTree = "<group>";
 		};
-		8971322B298021130093456B /* InterviewPracticeEx */ = {
-			isa = PBXGroup;
-			children = (
-				8971322C2980216E0093456B /* InterviewPracticeEx.storyboard */,
-				8971322E298021740093456B /* InterviewPracticeExViewController.swift */,
-			);
-			path = InterviewPracticeEx;
-            sourceTree = "<group>";
-        };
 		896F42E629869F6100677A05 /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -723,6 +717,15 @@
 				898B50292990849B00D40E69 /* UserPageSectionHeaderView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		8971322B298021130093456B /* InterviewPracticeEx */ = {
+			isa = PBXGroup;
+			children = (
+				8971322C2980216E0093456B /* InterviewPracticeEx.storyboard */,
+				8971322E298021740093456B /* InterviewPracticeExViewController.swift */,
+			);
+			path = InterviewPracticeEx;
 			sourceTree = "<group>";
 		};
 		8971E9E829890E7400DF6ACD /* Entity */ = {
@@ -1207,6 +1210,7 @@
 				8979B247299636E100D80D83 /* Markdownosaur.swift in Sources */,
 				21A6B4B02980FA4B00F084F6 /* NumOfCommentsTableViewCell.swift in Sources */,
 				89CD26E52984E92300A8AD8A /* InterviewPracticeEndViewController.swift in Sources */,
+				89FE115E299DB7A500D7113A /* ScriptEditViewController.swift in Sources */,
 				21995FF62991067D00533F33 /* InterviewCheckTableViewCell.swift in Sources */,
 				5E32FC51296957350010A376 /* String.swift in Sources */,
 				897C634F2976B9BD00CCF25F /* ScriptRecordChartCollectionViewCell.swift in Sources */,

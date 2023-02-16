@@ -15,7 +15,7 @@ class ScriptEditTabmanViewController: TabmanViewController {
     var scriptTitle = ""
     var script: Script?
     
-    private var viewControllers = [UIViewController()]
+    private var viewControllers = [UIViewController]()
     private let barButtonTitle = ["편집", "연습", "기록"]
     var pageIndex = 0
 
@@ -71,6 +71,14 @@ class ScriptEditTabmanViewController: TabmanViewController {
     }
     
     func setViewControllers() {
+        guard let scriptEditViewController = storyboard?.instantiateViewController(withIdentifier: "ScriptEditViewController") as? ScriptEditViewController else {
+            assert(false)
+        }
+        
+        scriptEditViewController.script = script
+        
+        viewControllers.append(scriptEditViewController)
+        
         var storyboard = UIStoryboard(name: "ScriptPracticeSet", bundle: nil)
         guard let practiceSetViewController = storyboard.instantiateViewController(withIdentifier: "ScriptPracticeSetViewController") as? ScriptPracticeSetViewController else {
             assert(false, "Can't load set vc")
