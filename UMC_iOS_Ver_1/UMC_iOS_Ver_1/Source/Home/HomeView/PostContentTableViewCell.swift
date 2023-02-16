@@ -8,6 +8,8 @@
 import UIKit
 
 class PostContentTableViewCell: UITableViewCell {
+    
+    @IBOutlet var contentLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

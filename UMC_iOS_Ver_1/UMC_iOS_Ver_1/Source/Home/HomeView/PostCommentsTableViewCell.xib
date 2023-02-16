@@ -105,7 +105,9 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="commentLikeNum" destination="KDL-Rq-0Bx" id="F3t-LL-JCm"/>
                 <outlet property="commentText" destination="lSw-zf-zN5" id="75b-tI-fp1"/>
+                <outlet property="commentUserNickname" destination="7c6-op-wmb" id="WWZ-xs-Yq6"/>
                 <outlet property="commentUserProfile" destination="rLX-AY-o3F" id="pwS-uo-ZTs"/>
             </connections>
             <point key="canvasLocation" x="-15.9375" y="54.929577464788736"/>

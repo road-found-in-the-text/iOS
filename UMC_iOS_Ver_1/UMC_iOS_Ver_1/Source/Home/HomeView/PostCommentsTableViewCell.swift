@@ -11,7 +11,9 @@ class PostCommentsTableViewCell: UITableViewCell {
 
     
     @IBOutlet weak var commentUserProfile: UIImageView!
+    @IBOutlet weak var commentUserNickname: UILabel!
     @IBOutlet weak var commentText: UILabel!
+    @IBOutlet weak var commentLikeNum: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()

@@ -24,12 +24,15 @@ class PostViewController: UIViewController {
     @IBOutlet weak var postTitleLabel: UILabel!
     @IBOutlet weak var uploadTimeLabel: UILabel!
     
+    var comments: PostCommentDataModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        postCommentData = []
+//        postCommentData = []
         
         getPostData()
+        getPostCommentData()
         
         commentTextField.delegate = self
         
@@ -91,11 +94,11 @@ class PostViewController: UIViewController {
     @IBAction func commentButtonTapped(_ sender: UIButton) {
         guard let commentText = commentTextField.text else { return }
         let task = commentText
-        postCommentData.append(task)
+//        postCommentData.append(task)
         postTableView.reloadData()
         DispatchQueue.main.async {
-            let indexPath = IndexPath(row: postCommentData.count - 1, section: 4)
-            self.postTableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
+//            let indexPath = IndexPath(row: postCommentData.count - 1, section: 4)
+//            self.postTableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
         }       //댓글 추가시 tableView bottom으로 이동
     }
 }
@@ -116,7 +119,7 @@ extension PostViewController: UITableViewDelegate, UITableViewDataSource, UIScro
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 4 {
-            return postCommentData.count
+            return comments?.data.count ?? 0
         } else {
             return 1
         }
@@ -132,6 +135,8 @@ extension PostViewController: UITableViewDelegate, UITableViewDataSource, UIScro
             return userProfileCell
         case 1:
             guard let postContentCell = tableView.dequeueReusableCell(withIdentifier: "PostContentTableViewCell", for: indexPath) as? PostContentTableViewCell else { return UITableViewCell() }
+            
+            postContentCell.contentLabel.text = postData?.comment
             return postContentCell
         case 2:
             guard let numOfLikesCell = tableView.dequeueReusableCell(withIdentifier: "NumofLikesTableViewCell", for: indexPath) as? NumofLikesTableViewCell else { return UITableViewCell() }
@@ -148,8 +153,12 @@ extension PostViewController: UITableViewDelegate, UITableViewDataSource, UIScro
         case 4:
             guard let postCommentsCell = tableView.dequeueReusableCell(withIdentifier: "PostCommentsTableViewCell", for: indexPath) as? PostCommentsTableViewCell else { return UITableViewCell() }
             
-            let postCommentDataModel = postCommentData[indexPath.row]
-            postCommentsCell.commentText.text = postCommentDataModel
+            guard let comment = comments?.data[indexPath.row] else {
+                return postCommentsCell
+            }
+            postCommentsCell.commentUserNickname.text = comment.writer
+            postCommentsCell.commentLikeNum.text = "좋아요 \(comment.likeNum)개"
+            postCommentsCell.commentText.text = comment.content
             
             return postCommentsCell
         default:
@@ -200,14 +209,41 @@ extension PostViewController {
                 case .success(let data):
                     postData = data.data
                     
-                    postCommentData.append(postData!.comment)
                     self.postTitleLabel.text = postData?.title
                     self.uploadTimeLabel.text = "\(HomeViewController.timeInterval(uploadTime: HomeViewController.toDate(uploadTime: postData?.createDate ?? "")!))"
-                    self.topImage.kf.setImage(with: URL(string: (postData?.forumImageURL[0])!))
+                    if let forumImage = postData?.forumImageURL {
+                        if forumImage.isEmpty {
+                            print("없어")
+                            return
+                        }
+                        guard let forumImage = forumImage.first!.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else {
+                            assert(false)
+                        }
+                        let url = URL(string: forumImage)
+                        self.topImage.kf.setImage(with: url)
+                    } else {
+                        print("아노대..")
+                    }
                     self.postTableView.reloadData()
                     
                 case .failure(let error):
                     print(error.localizedDescription)
+                }
+            }
+    }
+    
+    func getPostCommentData() {
+        let url = "\(netWorkingData.basicURL)/forum/\(netWorkingData.forumID)/comment"
+        
+        AF.request(url, method: .get)
+            .validate()
+            .responseDecodable(of: PostCommentDataModel.self) { response in
+                switch response.result {
+                case .success(let response):
+                    self.comments = response
+                    self.postTableView.reloadData()
+                case .failure(let error):
+                    print(String(describing: error))
                 }
             }
     }

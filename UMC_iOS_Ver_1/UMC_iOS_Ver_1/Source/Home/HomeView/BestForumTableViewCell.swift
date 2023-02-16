@@ -82,7 +82,6 @@ extension BestForumTableViewCell: UICollectionViewDataSource {
                 print("없어")
                 return collectionViewCell
             }
-            print(forumImage.first!)
             guard let forumImage = forumImage.first!.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else {
                 assert(false)
             }
